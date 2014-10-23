@@ -1,0 +1,23 @@
+{
+  "name": "kernel",
+  "version": "0.0.0",
+  "description": "The Hacker Union kernel server.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node kernel.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hackerunion/root"
+  },
+  "author": "Brandon T. Diamond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackerunion/kernel/issues"
+  },
+  "homepage": "https://github.com/hackerunion/kernel",
+  "dependencies": {
+    "cgi": "^0.3.0"
+  }
+}

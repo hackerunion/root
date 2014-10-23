@@ -1,0 +1,41 @@
+[
+  { 
+    "id": "createusers",
+    "priority": 0,
+    "context": "boot",
+    "info": "create all users",
+    "process": "/root/bin/createusers"
+  },
+
+  { 
+    "id": "creategroups",
+    "priority": 1,
+    "context": "boot",
+    "info": "create and assign groups",
+    "process": "/root/bin/creategroups"
+  },
+
+  { 
+    "id": "restoremeta",
+    "priority": 3,
+    "context": "boot",
+    "info": "restore filesystem metadata",
+    "process": "/root/bin/restoremeta"
+  },
+
+  {
+    "id": "decrypt",
+    "priority": 4,
+    "context": "boot",
+    "info": "decrypt protected files",
+    "process": "/root/bin/decrypt"
+  },
+
+  {
+    "id": "encrypt",
+    "priority": 0,
+    "context": "halt",
+    "info": "encrypt protected files",
+    "process": "/root/bin/encrypt"
+  }
+]

@@ -1,0 +1,1 @@
+Essential configuration data is to be stored here.

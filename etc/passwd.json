@@ -1,0 +1,19 @@
+[
+  {
+    "username": "root",
+    "password": "*",
+    "uid": 1,
+    "gid": 1,
+    "info": "root user",
+    "shell": "/root/bin/shell"
+  },
+
+  {
+    "username": "nobody",
+    "password": "*",
+    "uid": 2,
+    "gid": 2,
+    "info": "unknown user",
+    "shell": "/root/bin/shell"
+  }
+]

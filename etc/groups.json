@@ -1,0 +1,22 @@
+[
+  {
+    "group": "root",
+    "gid": 1,
+    "info": "root user",
+    "users": [1]
+  },
+
+  {
+    "group": "admin",
+    "gid": 0,
+    "info": "users with admin access",
+    "users": [1]
+  },
+
+  {
+    "group": "unknown",
+    "gid": 1,
+    "info": "unknown user",
+    "users": [2]
+  }
+]

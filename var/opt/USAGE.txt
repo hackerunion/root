@@ -1,0 +1,1 @@
+Variable data files for user-contributed applications are to be stored here.

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "pusherror",
+    "priority": 1,
+    "info": "could not push changes to remote",
+    "users": [ 1 ],
+    "groups": [ 0 ]
+  },
+
+  {
+    "id": "pullerror",
+    "priority": 1,
+    "info": "could not pull changes from remote",
+    "users": [ 1 ],
+    "groups": [ 0 ]
+  },
+
+  {
+    "id": "kernelerror",
+    "priority": 0,
+    "info": "the kernel crashed",
+    "users": [ 1 ],
+    "groups": [ 0 ]
+  }
+]
