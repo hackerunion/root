@@ -1,8 +1,0 @@
-[
-  {
-    "name": "shell",
-    "aid": 1,
-    "info": "default server browser"
-    # TODO: support oauth2 authorizations using this file
-  }
-]

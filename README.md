@@ -39,4 +39,5 @@ The earlier instance is disconnected with the new instance injected as a replace
 By convention, files with “.shared” extensions should not be modified outside of the server process. Doing so can lead to merge conflicts which halt deployment and generate a notification to administrators.
  
 During a re-deploy, the server determines whether any managed directories are dirty. If the directories are dirty, the initial deploy is cancelled and a new push is issued to the repository. This, in turn, leads to a re-deploy.
+
 All output is subject to final security processing. A secure mapping of opaque tokens to values is maintained in an encrypted, shared database. These mappings are used to replace tokens within the output stream to their corresponding decrypted values.
