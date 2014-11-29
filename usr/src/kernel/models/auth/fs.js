@@ -1,30 +1,32 @@
-var fs = require('fs');
 var pass = require('pwd');
+var core = require('../../utils/core');
 
 module.exports = function(app) {
   var model = {};
   var storage = app.get('storage');
-  
-  model.readPasswd = function(cb) {
-    fs.readFile(app.get('passwd'), 'utf8', function (err, data) {
-      cb(err, err ? null : JSON.parse(data));
-    });
-  };
 
   model.init = function() {
+    storage.setItem('oauth.authCodes', []);
     storage.setItem('oauth.accessTokens', []);
     storage.setItem('oauth.refreshTokens', []);
     storage.setItem('oauth.clients', [
         {
-          clientId : 'test',
-          clientSecret : 'password',
-          redirectUri : ''
-        }
+          clientId: 'test',
+          clientSecret: 'password',
+          redirectUri: ''
+        },
+
+				{
+					clientId : 'root',
+					clientSecret: '',
+					redirectUri: '',
+					root: true
+				}
     ]);
 
     storage.setItem('oauth.authorizedClientIds', {
         password: [
-          'test'
+					'root'
         ],
         refresh_token: [
           'test'
@@ -59,9 +61,15 @@ module.exports = function(app) {
    */
   
   model.getAuthCode = function (authCode, callback) {
-  };
-  
-  model.saveAuthCode = function (authCode, clientId, expires, user, callback) {
+    var oauthAuthCodes = storage.getItem('oauth.authCodes');
+
+    for(var i = 0, len = oauthAuthCodes.length; i < len; i++) {
+      var elem = oauthAuthCodes[i];
+      if(elem.authCode === authCode) {
+        return callback(false, elem);
+      }
+    }
+    callback(false, false);
   };
   
   model.getAccessToken = function (bearerToken, callback) {
@@ -90,11 +98,15 @@ module.exports = function(app) {
   
   model.getClient = function (clientId, clientSecret, callback) {
     var oauthClients = storage.getItem('oauth.clients');
+		var isRoot = function(elem) {
+			// root key is stored privately in an environment variable
+			return elem.clientId === 'root' && clientSecret === app.get('secret key');
+		};
 
     for(var i = 0, len = oauthClients.length; i < len; i++) {
       var elem = oauthClients[i];
       if(elem.clientId === clientId &&
-        (clientSecret === null || elem.clientSecret === clientSecret)) {
+        (clientSecret === null || elem.clientSecret === clientSecret || isRoot(elem))) {
         return callback(false, elem);
       }
     }
@@ -103,11 +115,25 @@ module.exports = function(app) {
   
   model.grantTypeAllowed = function (clientId, grantType, callback) {
     var authorizedClientIds = storage.getItem('oauth.authorizedClientIds');
-
     callback(false, authorizedClientIds[grantType] &&
       authorizedClientIds[grantType].indexOf(clientId.toLowerCase()) >= 0);
   };
   
+  model.saveAuthCode = function (authCode, clientId, expires, user, callback) {
+    var oauthAuthCodes = storage.getItem('oauth.authCodes');
+
+    oauthAuthCodes.unshift({
+      authCode: authCode,
+      clientId: clientId,
+      userId: user.id,
+      expires: expires
+    });
+  
+    storage.setItem('oauth.authCodes', oauthAuthCodes);
+
+    callback(false);
+  };
+
   model.saveAccessToken = function (accessToken, clientId, expires, userId, callback) {
     var oauthAccessTokens = storage.getItem('oauth.accessTokens');
 
@@ -142,9 +168,9 @@ module.exports = function(app) {
    * Required to support password grant type
    */
   model.getUser = function (username, password, callback) {
-    this.readPasswd(function(err, passwd) {
+    core.readPasswd(app, function(err, passwd) {
       if (err) {
-        callback(false, false);
+        return callback(false, false);
       }
 
       for(var i = 0, len = passwd.length; i < len; i++) {
@@ -166,5 +192,5 @@ module.exports = function(app) {
     });
   };
   
-  return model.init();
+	return model.init();
 }

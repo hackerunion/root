@@ -13,6 +13,28 @@ we can provide chown, chmod, etc as commands so that access can be controlled
 
 roll up stats/permissions on push?
 
+notes
+=====
+
+once user logs in via basic auth, the Authorization header is set to basic credentials. This causes conflict
+with the oauth server, which expects ONE of query, body, or this header to contain a token. Since in some
+cases the query AND the header contain a token, an error is raised. In other instances, when logging in,
+the header contains a completely invalid token.
+
+We need a way for users to login and then to access the site in a way that is consistent with the API. Maybe
+we redirect the user to a url with a `access_token` parameter? This would require that all URLs are private...
+
+We can also "convert" the basic auth into an access token via the Bearer syntax. This might work but is a bit
+ugly.
+
+What we need is a way to fetch the token from the session (for logged in users only!), and inject this as the
+token considered for authentication flows. I think maybe a middleware that handles this (augmentedOauth?) could
+do the trick...
+
+1. if user is logged in...
+2. ensure authorization header is set to the appropriate token, ignoring basic auth header
+3. it might make sense for logging in to "disable" API access since apis shouldn't be "logged in"
+
 spec
 ====
 

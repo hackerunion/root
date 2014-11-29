@@ -1,1 +1,1 @@
-[{"clientId":"test","clientSecret":"password","redirectUri":""}]
+[{"clientId":"test","clientSecret":"password","redirectUri":""},{"clientId":"root","clientSecret":"","redirectUri":"","root":true}]
