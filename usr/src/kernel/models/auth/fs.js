@@ -9,6 +9,22 @@ module.exports = function(app) {
     storage.setItem('oauth.authCodes', []);
     storage.setItem('oauth.accessTokens', []);
     storage.setItem('oauth.refreshTokens', []);
+    
+    storage.setItem('oauth.authorizedClientIds', {
+        // password requests can only be issued by the root client (us)
+        password: [
+					'1'
+        ],
+        refresh_token: [
+          '*'
+        ],
+        authorization_code: [
+          '*'
+        ]
+      });
+
+    return model; 
+    // --- avoid clearing our db every time we reload... ---
     storage.setItem('oauth.clients', [
         {
           clientId: 'test',
@@ -23,18 +39,6 @@ module.exports = function(app) {
 					root: true
 				}
     ]);
-
-    storage.setItem('oauth.authorizedClientIds', {
-        password: [
-					'root'
-        ],
-        refresh_token: [
-          'test'
-        ],
-        authorization_code: [
-          'test'
-        ]
-      });
 
    storage.setItem('oauth.users', [
         {
@@ -74,7 +78,7 @@ module.exports = function(app) {
   
   model.getAccessToken = function (bearerToken, callback) {
     var oauthAccessTokens = storage.getItem('oauth.accessTokens');
-
+    
     for(var i = 0, len = oauthAccessTokens.length; i < len; i++) {
       var elem = oauthAccessTokens[i];
       if(elem.accessToken === bearerToken) {
@@ -97,35 +101,42 @@ module.exports = function(app) {
   };
   
   model.getClient = function (clientId, clientSecret, callback) {
-    var oauthClients = storage.getItem('oauth.clients');
-		var isRoot = function(elem) {
-			// root key is stored privately in an environment variable
-			return elem.clientId === 'root' && clientSecret === app.get('secret key');
-		};
-
-    for(var i = 0, len = oauthClients.length; i < len; i++) {
-      var elem = oauthClients[i];
-      if(elem.clientId === clientId &&
-        (clientSecret === null || elem.clientSecret === clientSecret || isRoot(elem))) {
-        return callback(false, elem);
+    // clients and users are 1:1 (similar to unix convention)
+    this.getUser(clientId, clientSecret, function(err, user) {
+      if (!err && user) {
+        // map user to client fields
+        user.clientId = user.id
+        user.clientSecret = user.password
+        user.redirectUri = user.uri
       }
-    }
-    callback(false, false);
+
+      return callback(err, user);
+    }, true, true);
   };
   
-  model.grantTypeAllowed = function (clientId, grantType, callback) {
+  model.grantTypeAllowed = function (clientId, grantType, callback, strict) {
     var authorizedClientIds = storage.getItem('oauth.authorizedClientIds');
-    callback(false, authorizedClientIds[grantType] &&
-      authorizedClientIds[grantType].indexOf(clientId.toLowerCase()) >= 0);
+    callback(false, authorizedClientIds[grantType] && (
+      authorizedClientIds[grantType].indexOf(clientId.toLowerCase()) >= 0 ||
+      (!strict && authorizedClientIds[grantType].indexOf("*") >=0)));
   };
-  
+  /*
+
+    TODO: WE ARE CURRENTLY STORING USERID TO DETERMINE WHETHER ACCESS IS ALLOWED. THIS IS PREFERABLE AS IT IS SMALLER BUT WILL REQUIRE LOOKUPS TO RESOLVE REQ.USER TO 
+    FULL USER OBJECT. WE CURRENTLY HAVE REQ.USER SET USING THE AUTHTOKEN AND REQ.SESSION.USER SET BY LOGGING IN EXPLICITLY. IS IT POSSIBLE THESE WON'T MATCH? MAYBE.
+    WE NEED TO UNIFY THESE IDEAS.
+
+    NOTE THAT I ALREADY CHANGED USERID: USER.ID TO USER:USER... HAVEN'T FIXED CODE ELSEWHERE
+
+
+  */
   model.saveAuthCode = function (authCode, clientId, expires, user, callback) {
     var oauthAuthCodes = storage.getItem('oauth.authCodes');
 
     oauthAuthCodes.unshift({
       authCode: authCode,
       clientId: clientId,
-      userId: user.id,
+      user: user,
       expires: expires
     });
   
@@ -134,28 +145,28 @@ module.exports = function(app) {
     callback(false);
   };
 
-  model.saveAccessToken = function (accessToken, clientId, expires, userId, callback) {
+  model.saveAccessToken = function (accessToken, clientId, expires, user, callback) {
     var oauthAccessTokens = storage.getItem('oauth.accessTokens');
 
     oauthAccessTokens.unshift({
       accessToken: accessToken,
       clientId: clientId,
-      userId: userId,
+      user: user,
       expires: expires
     });
-  
+    
     storage.setItem('oauth.accessTokens', oauthAccessTokens);
 
     callback(false);
   };
   
-  model.saveRefreshToken = function (refreshToken, clientId, expires, userId, callback) {
+  model.saveRefreshToken = function (refreshToken, clientId, expires, user, callback) {
     var oauthRefreshTokens = storage.getItem('oauth.refreshTokens');
 
     oauthRefreshTokens.unshift({
       refreshToken: refreshToken,
       clientId: clientId,
-      userId: userId,
+      user: user,
       expires: expires
     });
 
@@ -167,7 +178,11 @@ module.exports = function(app) {
   /*
    * Required to support password grant type
    */
-  model.getUser = function (username, password, callback) {
+
+  model.getUser = function (username, password, callback, noPass, byId) {
+    // allow querying by other fields (namely uid)
+    var field = byId ? 'uid' : 'username';
+
     core.readPasswd(app, function(err, passwd) {
       if (err) {
         return callback(false, false);
@@ -175,7 +190,15 @@ module.exports = function(app) {
 
       for(var i = 0, len = passwd.length; i < len; i++) {
         var elem = passwd[i];
-        if(elem.username === username) {
+        
+        if(elem[field] === username) {
+          // set canonical id to uid
+          elem.id = elem.uid;
+
+          if (noPass) {
+            return callback(false, elem);
+          }
+
           pass.hash(password, elem.password.salt, function(err, hash) {
             if (elem.password.hash == hash) {
               return callback(false, elem);

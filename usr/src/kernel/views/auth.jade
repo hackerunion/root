@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 #{client.username} would like to sudo to your account
+  h2 You are logged in as #{user.username}
+  form(method="post")
+    input(type="submit", name="allow", value="yes")
+    input(type="submit", name="allow", value="no")

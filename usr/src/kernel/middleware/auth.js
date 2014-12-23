@@ -5,13 +5,15 @@ var core = require('../utils/core');
 
 module.exports = function(app) {
   var oauthPasswordRequest = function(req, res, username, password, next) {
+    var root_uid = 1;
+
     request.post(app.get('uri') + app.get('system path') + 'password', { 
       json: true, 
       form: {
         grant_type: 'password',
         username: username,
         password: password,
-        client_id: 'root',
+        client_id: root_uid,
         client_secret: app.get('secret key')
       },
     }, function (err, res, body) {
@@ -24,8 +26,10 @@ module.exports = function(app) {
           return next(true);
         }
         
+        // this defines the fields available in the user object
         next(false, {
           username: username,
+          id: passwd.uid,
           token: body,
           passwd: passwd
         });
@@ -55,9 +59,6 @@ module.exports = function(app) {
 
       // log user in
       req.session.user = user;
-
-      // avoid confusing oauth with basic credentials
-      res.removeHeader('Authorization');
       
       return next();
     });

@@ -1,10 +1,9 @@
 [
   {
     "username": "root",
-    "password": { "hash": "", "salt": "" },
-    "secret": { "hash": "", "salt": "" },
-    "uid": 1,
-    "gid": 1,
+    "password": { "hash": "Cln0MUqsjW+fiPJIA9LsflzFTV3N6VfcjFV2EPZsKdsRe4ylLYMhcAx2cOaJKvoBLSnH/ABcbFJvgtdbSgNfPNyiXCFg0ndse0dt445odEytTwnt34k4GBugmJsP178ef8ywhawnVP3ke1aj4OB65hoLdYsY84xdUrafZ+wAFHU=", "salt": "1Van8Za2QfUN5/STMhPs1mDbHCTUy9m1AkMG748OAvCLapyu7u+BFpTJEjjLI6ssXjEiW63PBkw0y2HNiR0aY15xkQPKrLKjrcjeBeLK423+Kow/+C4sHT0Cd8VA7qt2CWmEW/CXQ1RoMF7mnh5XfOlIp1nb6zN51IUny2mowLw=" },
+    "uid": "1",
+    "gid": "1",
     "info": "root user",
     "shell": "/root/bin/shell",
     "service": false,
@@ -14,9 +13,8 @@
   {
     "username": "nobody",
     "password": { "hash": "", "salt": "" },
-    "secret": { "hash": "", "salt": "" },
-    "uid": 2,
-    "gid": 2,
+    "uid": "2",
+    "gid": "2",
     "info": "unknown user",
     "shell": "/root/bin/shell",
     "service": false,
@@ -26,24 +24,33 @@
   {
     "username": "shell",
     "password": { "hash": "", "salt": "" },
-    "secret": { "hash": "", "salt": "" },
-    "uid": 3,
-    "gid": 3,
+    "uid": "3",
+    "gid": "3",
     "info": "directory server",
     "shell": "/root/bin/shell",
     "service": true,
-    "uri": "*"
+    "uri": null
   },
 
   {
     "username": "test",
     "password": { "hash": "Cln0MUqsjW+fiPJIA9LsflzFTV3N6VfcjFV2EPZsKdsRe4ylLYMhcAx2cOaJKvoBLSnH/ABcbFJvgtdbSgNfPNyiXCFg0ndse0dt445odEytTwnt34k4GBugmJsP178ef8ywhawnVP3ke1aj4OB65hoLdYsY84xdUrafZ+wAFHU=", "salt": "1Van8Za2QfUN5/STMhPs1mDbHCTUy9m1AkMG748OAvCLapyu7u+BFpTJEjjLI6ssXjEiW63PBkw0y2HNiR0aY15xkQPKrLKjrcjeBeLK423+Kow/+C4sHT0Cd8VA7qt2CWmEW/CXQ1RoMF7mnh5XfOlIp1nb6zN51IUny2mowLw=" },
-    "secret": { "hash": "", "salt": "" },
-    "uid": 4,
-    "gid": 4,
-    "info": "test user",
-    "shell": "/root/bin/shell",
+    "uid": "4",
+    "gid": "4",
+    "info": "test user (pass: password)",
+    "shell": "/sbin/session",
     "service": false,
-    "uri": "*"
+    "uri": null
+  },
+
+  {
+    "username": "stub",
+    "password": { "hash": "Cln0MUqsjW+fiPJIA9LsflzFTV3N6VfcjFV2EPZsKdsRe4ylLYMhcAx2cOaJKvoBLSnH/ABcbFJvgtdbSgNfPNyiXCFg0ndse0dt445odEytTwnt34k4GBugmJsP178ef8ywhawnVP3ke1aj4OB65hoLdYsY84xdUrafZ+wAFHU=", "salt": "1Van8Za2QfUN5/STMhPs1mDbHCTUy9m1AkMG748OAvCLapyu7u+BFpTJEjjLI6ssXjEiW63PBkw0y2HNiR0aY15xkQPKrLKjrcjeBeLK423+Kow/+C4sHT0Cd8VA7qt2CWmEW/CXQ1RoMF7mnh5XfOlIp1nb6zN51IUny2mowLw=" },
+    "uid": "5",
+    "gid": "5",
+    "info": "test user (pass: password)",
+    "shell": "/sbin/session",
+    "service": true,
+    "uri": "http://google.com/"
   }
 ]

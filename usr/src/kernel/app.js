@@ -69,6 +69,7 @@ storage.initSync({ dir: app.get('swap') });
 app.oauth = oauthServer({
   model: authModel(app),
   grants: ['password', 'authorization_code', 'refresh_token'],
+  clientIdRegex: /^\d+$/i, /* uids are treated as client IDs */
   debug: true
 });
 
@@ -84,14 +85,15 @@ if (!app.get('production')) {
     res.send('Secret area');
   });
 
-  app.get(sbin + 'session', authUtils.hideBasicHeader, app.oauth.authorise(), function(req, res) {
+  app.get(sbin + 'session', authUtils.injectBearerToken, app.oauth.authorise(), function(req, res) {
     res.send({ 'session': req.session });
   });
 }
 
-// 
+// login user
 app.get(sbin + 'login', auth(app), function(req, res, next) {
-  var shell = sbin + 'session'; // req.session.user
+  // special case: user is still stored in session
+  var shell = req.session.user.passwd.shell;
   
   if (req.body.redirect) {
     return res.redirect(req.body.redirect + '?client_id=' +
@@ -103,20 +105,33 @@ app.get(sbin + 'login', auth(app), function(req, res, next) {
 
 // show them the "do you authorise xyz app to access your content?" page
 app.get(sbin + 'auth', function (req, res, next) {
+  // special case: user is still stored in session
   if (!req.session.user) {
     // If they aren't logged in, send them to your own login implementation
     return res.redirect('/login?redirect=' + req.path + '&client_id=' +
         req.query.client_id + '&redirect_uri=' + req.query.redirect_uri);
   }
+  
+  app.oauth.model.getClient(req.query.client_id, null, function(err, client) {
+    var fail = function(err) {
+      return res.render('error', { 'error': err });
+    }
+    
+    if (err || !client) {
+      return fail("invalid client");
+    }
 
-  res.render('auth', {
-    client_id: req.query.client_id,
-    redirect_uri: req.query.redirect_uri
+    res.render('auth', {
+      'user': req.session.user,
+      'client': client, 
+      'redirect_uri': req.query.redirect_uri
+    });
   });
 });
 
 // handle authorise
 app.post(sbin + 'auth', function (req, res, next) {
+  // special case: user is still stored in session
   if (!req.session.user) {
     return res.redirect('/login?client_id=' + req.query.client_id +
       '&redirect_uri=' + req.query.redirect_uri);
@@ -124,16 +139,14 @@ app.post(sbin + 'auth', function (req, res, next) {
 
   next();
 }, app.oauth.authCodeGrant(function (req, next) {
-  // The first param should to indicate an error
-  // The second param should a bool to indicate if the user did authorise the app
-  // The third param should for the user/uid (only used for passing to saveAuthCode)
-  next(null, req.body.allow === 'yes', req.session.user.id, req.session.user);
+  // special case: user is still stored in session
+  next(null, req.body.allow === 'yes', req.session.user);
 }));
 
 app.post(sbin + 'password', app.oauth.grant());
 
 app.get('/', app.oauth.authorise(), function (req, res) {
-  res.send('Secret area');
+  res.send({ 'user': req.user });
 });
 
 app.use(app.oauth.errorHandler());
