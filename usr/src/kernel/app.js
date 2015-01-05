@@ -19,23 +19,27 @@ var bodyParser = require('body-parser');
 var oauthServer = require('oauth2-server');
 
 var routes = require('./routes/index');
+var core = require('./utils/core');
+var auth = require('./utils/auth');
 var authModel = require('./models/auth/fs');
-var auth = require('./middleware/auth');
-var authUtils = require('./utils/auth');
 
 var app = express();
 
-// environment setup
+/*
+ * Initialize environment
+ */
+
 app.set('port', process.env.PORT || 3000);
-app.set('uri', ('http://localhost:' + app.get('port')) || process.env.URI);
+app.set('uri', process.env.URI || ('http://localhost:' + app.get('port')));
 app.set('password', process.env.PASSWORD || 'password');
-app.set('secret key', process.env.SECRET_KEY || 'password');
-app.set('cookie key', process.env.COOKIE_KEY || 'unsafe');
+app.set('cookie secret', process.env.COOKIE_SECRET || 'unsafe');
 app.set('root', process.env.ROOT || path.resolve(__dirname, '../../..') );
+app.set('root uid', process.env.ROOT_UID || '1');
+app.set('root secret', process.env.ROOT_SECRET || 'password');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.set('storage', storage);
-app.set('system path', '/sbin/');
+app.set('system path', process.env.SYSTEM_PATH || '/sbin/');
 app.set('swap', process.env.SWAP || (path.resolve(app.get('root'), 'var/run/kernel')));
 app.set('passwd', process.env.PASSWD || (path.resolve(app.get('root'), 'etc/passwd.json')));
 app.set('trust proxy', 1) // trust first proxy, cookie-session
@@ -46,10 +50,16 @@ switch(app.get('env')) {
     break;
 
   default:
+    app.set('production', false);
     break;
 }
 
-// uncomment after placing your favicon in /public
+var sbin = app.get('system path');
+
+/*
+ * Install base middleware.
+ */
+
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -58,129 +68,137 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
-  secret: app.get('cookie key'),
+  secret: app.get('cookie secret'),
   signed: true
 }));
 
-// initialize storage
+/*
+ * Prepare utilities.
+ */
+
+// simple fs-based data layer
 storage.initSync({ dir: app.get('swap') });
 
-// oauth server
+// helpers and middleware
+app.auth = auth(app);
+app.core = core(app);
+
+// oauth server implementation
 app.oauth = oauthServer({
   model: authModel(app),
   grants: ['password', 'authorization_code', 'refresh_token'],
-  clientIdRegex: /^\d+$/i, /* uids are treated as client IDs */
+  clientIdRegex: /^\d+$/i, // uids are treated as client IDs
   debug: true
 });
 
-// system calls
-var sbin = app.get('system path');
+/*
+ * Handle oauth authentication requests.
+ */
 
-// process oauth access tokens (promote from session, if logged in?)
 app.all(sbin + 'token', app.oauth.grant());
 
-// display contents of session
-if (!app.get('production')) {
-  app.get(sbin + 'secret', app.oauth.authorise(), function (req, res) {
-    res.send('Secret area');
-  });
+/*
+ * Prompt for credentials and redirect to shell (login and logout are identical).
+ */
 
-  app.get(sbin + 'session', authUtils.injectBearerToken, app.oauth.authorise(), function(req, res) {
-    res.send({ 'session': req.session });
-  });
+app.get(RegExp(sbin + 'login' + '|' + sbin + 'logout'), 
+  app.auth.logout(),
+  app.auth.authorise(),
+  app.auth.oauthify(),
+  app.oauth.authorise(),
+  app.core.passwd(),
+  function(req, res, next) {
+    res.redirect(req.user.passwd.shell);
+  }
+);
+
+/*
+ * Allow third-party authorization; user authorized strictly via basic.
+ */
+
+app.get(sbin + 'auth',
+  app.auth.authorise(),
+  app.auth.oauthify(),
+  app.oauth.authorise(),
+  function (req, res, next) {
+    app.oauth.model.getClient(req.query.client_id, null, function(err, client) {
+      var fail = function(err) {
+        return res.render('error', { 'error': err });
+      }
+      
+      if (err || !client) {
+        return fail("invalid client");
+      }
+  
+      res.render('auth', {
+        'auth': req.session.user,
+        'client': client, 
+        'redirect_uri': req.query.redirect_uri
+      });
+    });
+  }
+);
+
+/*
+ * Complete authorization; user authorized strictly via basic.
+ */
+
+app.post(sbin + 'auth',
+  app.auth.authorise(),
+  app.auth.oauthify(),
+  app.oauth.authorise(),
+  app.oauth.authCodeGrant(function (req, next) {
+    next(null, req.body.allow === 'yes', req.session.user);
+  })
+);
+
+app.get('/', function (req, res) {
+  res.send({ foo: "bar" });
+});
+
+
+/*
+ * Testing views only visible during debugging
+ */
+
+if (!app.get('production')) {
+  app.get(sbin + 'dump',
+    app.auth.authorise(), 
+    app.auth.oauthify(),
+    app.oauth.authorise(),
+    app.core.passwd(),
+    
+    function(req, res) {
+      res.send({ 'user': req.user, 'session': req.session });
+    }
+  );
 }
 
-// login user
-app.get(sbin + 'login', auth(app), function(req, res, next) {
-  // special case: user is still stored in session
-  var shell = req.session.user.passwd.shell;
-  
-  if (req.body.redirect) {
-    return res.redirect(req.body.redirect + '?client_id=' +
-      req.body.client_id + '&redirect_uri=' + req.body.redirect_uri);
-  }
+/*
+ * Error handling.
+ */
 
-  res.redirect(shell);
-});
+// these only affect error rendering if auth error encountered
+app.use(app.auth.rejectInteractive(/oauth/),
+        app.oauth.errorHandler()
+);
 
-// show them the "do you authorise xyz app to access your content?" page
-app.get(sbin + 'auth', function (req, res, next) {
-  // special case: user is still stored in session
-  if (!req.session.user) {
-    // If they aren't logged in, send them to your own login implementation
-    return res.redirect('/login?redirect=' + req.path + '&client_id=' +
-        req.query.client_id + '&redirect_uri=' + req.query.redirect_uri);
-  }
-  
-  app.oauth.model.getClient(req.query.client_id, null, function(err, client) {
-    var fail = function(err) {
-      return res.render('error', { 'error': err });
-    }
-    
-    if (err || !client) {
-      return fail("invalid client");
-    }
-
-    res.render('auth', {
-      'user': req.session.user,
-      'client': client, 
-      'redirect_uri': req.query.redirect_uri
-    });
-  });
-});
-
-// handle authorise
-app.post(sbin + 'auth', function (req, res, next) {
-  // special case: user is still stored in session
-  if (!req.session.user) {
-    return res.redirect('/login?client_id=' + req.query.client_id +
-      '&redirect_uri=' + req.query.redirect_uri);
-  }
-
-  next();
-}, app.oauth.authCodeGrant(function (req, next) {
-  // special case: user is still stored in session
-  next(null, req.body.allow === 'yes', req.session.user);
-}));
-
-app.post(sbin + 'password', app.oauth.grant());
-
-app.get('/', app.oauth.authorise(), function (req, res) {
-  res.send({ 'user': req.user });
-});
-
-app.use(app.oauth.errorHandler());
-
-// catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
 
-// error handlers
-
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
-}
-
-// production error handler
-// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
         message: err.message,
-        error: {}
+        error: app.get('production') ? {} : err
     });
 });
 
+/*
+ * Take a bow.
+ */
 
 module.exports = app;

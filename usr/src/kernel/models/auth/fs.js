@@ -1,10 +1,9 @@
 var pass = require('pwd');
-var core = require('../../utils/core');
 
 module.exports = function(app) {
   var model = {};
   var storage = app.get('storage');
-
+  
   model.init = function() {
     storage.setItem('oauth.authCodes', []);
     storage.setItem('oauth.accessTokens', []);
@@ -105,9 +104,9 @@ module.exports = function(app) {
     this.getUser(clientId, clientSecret, function(err, user) {
       if (!err && user) {
         // map user to client fields
-        user.clientId = user.id
-        user.clientSecret = user.password
-        user.redirectUri = user.uri
+        user.clientId = user.id;
+        user.clientSecret = user.passwd.password;
+        user.redirectUri = user.passwd.uri;
       }
 
       return callback(err, user);
@@ -120,23 +119,14 @@ module.exports = function(app) {
       authorizedClientIds[grantType].indexOf(clientId.toLowerCase()) >= 0 ||
       (!strict && authorizedClientIds[grantType].indexOf("*") >=0)));
   };
-  /*
-
-    TODO: WE ARE CURRENTLY STORING USERID TO DETERMINE WHETHER ACCESS IS ALLOWED. THIS IS PREFERABLE AS IT IS SMALLER BUT WILL REQUIRE LOOKUPS TO RESOLVE REQ.USER TO 
-    FULL USER OBJECT. WE CURRENTLY HAVE REQ.USER SET USING THE AUTHTOKEN AND REQ.SESSION.USER SET BY LOGGING IN EXPLICITLY. IS IT POSSIBLE THESE WON'T MATCH? MAYBE.
-    WE NEED TO UNIFY THESE IDEAS.
-
-    NOTE THAT I ALREADY CHANGED USERID: USER.ID TO USER:USER... HAVEN'T FIXED CODE ELSEWHERE
-
-
-  */
+  
   model.saveAuthCode = function (authCode, clientId, expires, user, callback) {
     var oauthAuthCodes = storage.getItem('oauth.authCodes');
 
     oauthAuthCodes.unshift({
       authCode: authCode,
       clientId: clientId,
-      user: user,
+      userId: user.id,
       expires: expires
     });
   
@@ -151,7 +141,7 @@ module.exports = function(app) {
     oauthAccessTokens.unshift({
       accessToken: accessToken,
       clientId: clientId,
-      user: user,
+      userId: user.id,
       expires: expires
     });
     
@@ -166,7 +156,7 @@ module.exports = function(app) {
     oauthRefreshTokens.unshift({
       refreshToken: refreshToken,
       clientId: clientId,
-      user: user,
+      userId: user.id,
       expires: expires
     });
 
@@ -183,7 +173,7 @@ module.exports = function(app) {
     // allow querying by other fields (namely uid)
     var field = byId ? 'uid' : 'username';
 
-    core.readPasswd(app, function(err, passwd) {
+    app.core.readPasswd(function(err, passwd) {
       if (err) {
         return callback(false, false);
       }
@@ -192,16 +182,18 @@ module.exports = function(app) {
         var elem = passwd[i];
         
         if(elem[field] === username) {
-          // set canonical id to uid
-          elem.id = elem.uid;
+          var user = {
+            'id': elem.uid,
+            'passwd': elem
+          };
 
           if (noPass) {
-            return callback(false, elem);
+            return callback(false, user);
           }
 
           pass.hash(password, elem.password.salt, function(err, hash) {
             if (elem.password.hash == hash) {
-              return callback(false, elem);
+              return callback(false, user);
             }
             
             callback(false, false);

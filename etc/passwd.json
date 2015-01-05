@@ -38,7 +38,7 @@
     "uid": "4",
     "gid": "4",
     "info": "test user (pass: password)",
-    "shell": "/sbin/session",
+    "shell": "/sbin/dump",
     "service": false,
     "uri": null
   },
@@ -49,7 +49,7 @@
     "uid": "5",
     "gid": "5",
     "info": "test user (pass: password)",
-    "shell": "/sbin/session",
+    "shell": "/sbin/dump",
     "service": true,
     "uri": "http://google.com/"
   }
