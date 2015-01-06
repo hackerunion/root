@@ -1,5 +1,7 @@
-var fs = require('fs');
 var _ = require('lodash');
+var fs = require('fs');
+var cgi = require('cgi');
+var path = require('path');
 
 module.exports = function(app) {
   var self = {};
@@ -53,6 +55,25 @@ module.exports = function(app) {
         next();
       });
     }
+  };
+
+  self.spawn = function(sudo) {
+    return function(req, res, next) {
+      var script = path.resolve(app.get('root'), path.normalize(req.path).slice(1));
+      var options = {
+        'cwd': app.get('root')
+      };
+
+      if (sudo) {
+        options.uid = parseInt(req.user.id);
+      }
+
+      console.log("Running...", script);
+
+      var handler = cgi(script, options);
+      
+      return handler(req, res, next);
+    };
   };
 
   return self.init();

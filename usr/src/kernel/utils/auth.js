@@ -71,19 +71,20 @@ module.exports = function(app) {
     };
   };
   
-  self.guard = function(strict) {
+  self.guard = function(basic) {
     return function(req, res, next) {
-      if ((req.session.user || req.user) && (!strict || req.basic)) {
+      if ((req.session.user || req.user) && (!basic || req.basic)) {
         return next();
       }
 
       self._reject(req, res);
     };
   };
-
+  
+  // TODO: this forces oauth clients to add "api" flag to all requests... probably should fix this
   self.rejectInteractive = function(filter) {
     return function(err, req, res, next) {
-      if (!err || req.query.cli || (filter && !filter.test(err.name))) {
+      if (!err || req.query.api || (filter && !filter.test(err.name))) {
         return next(err);
       }
       
@@ -91,7 +92,7 @@ module.exports = function(app) {
     }
   };
 
-  self.authorise = function() {
+  self.basic = function() {
     var oauthPasswordRequest = function(req, res, username, password, next) {
       request.post(app.get('uri') + app.get('system path') + 'token', { 
         json: true, 
@@ -141,6 +142,15 @@ module.exports = function(app) {
         req.session.user = user;
 
         return next();
+      });
+    };
+  };
+
+  self.authorise = function() {
+    // attempt basic auth + oauthification in one shot
+    return function(req, res, next) {
+      self.basic()(req, res, function() {
+        self.oauthify()(req, res, next);
       });
     };
   };

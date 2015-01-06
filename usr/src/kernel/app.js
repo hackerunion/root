@@ -1,13 +1,3 @@
-/*
-var http = require('http');
-var path = require('path');
-var cgi = require('cgi');
-
-var script = path.resolve(__dirname, 'root/hello.cgi');
-
-http.createServer( cgi(script) ).listen(3000);
-*/
-
 var express = require('express');
 var session = require('cookie-session');
 var path = require('path');
@@ -104,7 +94,6 @@ app.all(sbin + 'token', app.oauth.grant());
 app.get(RegExp(sbin + 'login' + '|' + sbin + 'logout'), 
   app.auth.logout(),
   app.auth.authorise(),
-  app.auth.oauthify(),
   app.oauth.authorise(),
   app.core.passwd(),
   function(req, res, next) {
@@ -113,12 +102,11 @@ app.get(RegExp(sbin + 'login' + '|' + sbin + 'logout'),
 );
 
 /*
- * Allow third-party authorization; user authorized strictly via basic.
+ * Allow third-party authorization (i.e., "sudo").
  */
 
 app.get(sbin + 'auth',
   app.auth.authorise(),
-  app.auth.oauthify(),
   app.oauth.authorise(),
   function (req, res, next) {
     app.oauth.model.getClient(req.query.client_id, null, function(err, client) {
@@ -140,22 +128,25 @@ app.get(sbin + 'auth',
 );
 
 /*
- * Complete authorization; user authorized strictly via basic.
+ * Complete authorization process.
  */
 
 app.post(sbin + 'auth',
   app.auth.authorise(),
-  app.auth.oauthify(),
   app.oauth.authorise(),
   app.oauth.authCodeGrant(function (req, next) {
     next(null, req.body.allow === 'yes', req.session.user);
   })
 );
 
-app.get('/', function (req, res) {
-  res.send({ foo: "bar" });
-});
+/*
+ * CGI access to the server.
+ */
 
+app.all('*',
+  app.auth.authorise(),
+  app.oauth.authorise(),
+  app.core.spawn(true));
 
 /*
  * Testing views only visible during debugging
@@ -164,7 +155,6 @@ app.get('/', function (req, res) {
 if (!app.get('production')) {
   app.get(sbin + 'dump',
     app.auth.authorise(), 
-    app.auth.oauthify(),
     app.oauth.authorise(),
     app.core.passwd(),
     
@@ -179,7 +169,7 @@ if (!app.get('production')) {
  */
 
 // these only affect error rendering if auth error encountered
-app.use(app.auth.rejectInteractive(/oauth/),
+app.use(app.auth.rejectInteractive(/oauth/i),
         app.oauth.errorHandler()
 );
 
