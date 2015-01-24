@@ -143,9 +143,10 @@ app.post(sbin + 'auth',
  * CGI access to the server.
  */
 
-app.all('*',
+app.all(RegExp("^(?!" + sbin + ")"),
   app.auth.authorise(),
   app.oauth.authorise(),
+  app.core.passwd(),
   app.core.spawn(true));
 
 /*

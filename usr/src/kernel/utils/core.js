@@ -65,7 +65,8 @@ module.exports = function(app) {
       };
 
       if (sudo) {
-        options.uid = parseInt(req.user.id);
+        options.uid = 501 || parseInt(req.user.passwd.uid);
+        options.gid = 20 || parseInt(req.user.passwd.gid);
       }
 
       console.log("Running...", script);
