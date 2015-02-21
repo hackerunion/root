@@ -8,7 +8,6 @@ console.log("Content-Type: text/plain");
 console.log("");
 
 // And anything else up to EOF is the http response body.
-console.log("Hello, world!\n");
 console.log("Here is my UID: ", process.getuid(),"\n");
 console.log("Here is my GID: ", process.getgid(), "\n");
 console.log("Here is my environment:\n\n", process.env);
