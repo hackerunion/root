@@ -16,6 +16,13 @@ roll up stats/permissions on push?
 notes
 =====
 
+latest stuff:
+
+- there should be a way to switch to "readonly" so that we can bundle fs, push, pull, re-deply, then redirect
+- i.e., vm1 => readonly >> vm1 => push >> vm2 ==> pull >> vm2 ==> readwrite >> vm2 [replace] vm1 >> vm1 => halt
+
+old stuff:
+
 once user logs in via basic auth, the Authorization header is set to basic credentials. This causes conflict
 with the oauth server, which expects ONE of query, body, or this header to contain a token. Since in some
 cases the query AND the header contain a token, an error is raised. In other instances, when logging in,
