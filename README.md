@@ -20,6 +20,7 @@ latest stuff:
 
 - there should be a way to switch to "readonly" so that we can bundle fs, push, pull, re-deply, then redirect
 - i.e., vm1 => readonly >> vm1 => push >> vm2 ==> pull >> vm2 ==> readwrite >> vm2 [replace] vm1 >> vm1 => halt
+- also, don't forget that the convention is hidden files are shared (i.e., ".whatever" must only be app-modified)
 
 old stuff:
 
