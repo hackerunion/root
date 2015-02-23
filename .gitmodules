@@ -1,3 +1,3 @@
 [submodule "usr/src/kernel"]
 	path = usr/src/kernel
-	url = https://github.com/hackerunion/kernel
+	url = git@github.com:hackerunion/kernel.git
