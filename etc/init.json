@@ -4,7 +4,7 @@
     "priority": 0,
     "context": "boot",
     "info": "create all users",
-    "process": "/root/bin/createusers"
+    "process": "/sbin/createusers"
   },
 
   { 
@@ -12,15 +12,15 @@
     "priority": 1,
     "context": "boot",
     "info": "create and assign groups",
-    "process": "/root/bin/creategroups"
+    "process": "/sbin/creategroups"
   },
 
   { 
-    "id": "restoremeta",
+    "id": "restorefs",
     "priority": 3,
     "context": "boot",
     "info": "restore filesystem metadata",
-    "process": "/root/bin/restoremeta"
+    "process": "/sbin/restorefs"
   },
 
   {
@@ -28,7 +28,7 @@
     "priority": 4,
     "context": "boot",
     "info": "decrypt protected files",
-    "process": "/root/bin/decrypt"
+    "process": "/sbin/decrypt"
   },
 
   {
@@ -36,6 +36,14 @@
     "priority": 0,
     "context": "halt",
     "info": "encrypt protected files",
-    "process": "/root/bin/encrypt"
+    "process": "/sbin/encrypt"
+  },
+  
+  {
+    "id": "bundle",
+    "priority": 1,
+    "context": "halt",
+    "info": "bundle system for preservation",
+    "process": "/sbin/bundle"
   }
 ]

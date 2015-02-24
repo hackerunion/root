@@ -1,7 +1,7 @@
 [
   {
     "username": "root",
-    "password": "",
+    "password": "*",
     "uid": "1",
     "gid": "1",
     "info": "root user",
@@ -12,7 +12,7 @@
 
   {
     "username": "nobody",
-    "password": "",
+    "password": "*",
     "uid": "2",
     "gid": "2",
     "info": "unknown user",
@@ -23,7 +23,7 @@
 
   {
     "username": "shell",
-    "password": ,
+    "password": "*",
     "uid": "3",
     "gid": "3",
     "info": "directory server",
@@ -34,7 +34,7 @@
 
   {
     "username": "test",
-    "password": ,
+    "password": "*",
     "uid": "4",
     "gid": "4",
     "info": "test user (pass: password)",
@@ -45,7 +45,7 @@
 
   {
     "username": "stub",
-    "password": ,
+    "password": "*",
     "uid": "5",
     "gid": "5",
     "info": "test user (pass: password)",
