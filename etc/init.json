@@ -1,7 +1,15 @@
 [
+  {
+    "id": "fsck",
+    "priority": 0,
+    "context": "boot",
+    "info": "sanity check",
+    "process": "/sbin/fsck"
+  },
+
   { 
     "id": "createusers",
-    "priority": 0,
+    "priority": 1,
     "context": "boot",
     "info": "create all users",
     "process": "/sbin/createusers"
@@ -9,7 +17,7 @@
 
   { 
     "id": "creategroups",
-    "priority": 1,
+    "priority": 2,
     "context": "boot",
     "info": "create and assign groups",
     "process": "/sbin/creategroups"
