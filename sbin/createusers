@@ -14,7 +14,7 @@ field() {
 
 last() {
 	l=`echo "$PASSWD" | cut -d',' -f1 | cut -c2- | sort -rn | head -1`
-	[ -z "$l" ] && echo '-1' || echo $l
+	echo ${l:--1}
 }
 
 bool() {
