@@ -1,0 +1,39 @@
+#!/bin/bash
+
+ROOT='..'
+
+source "$ROOT/lib/sh/common.sh"
+
+INIT=`cat $ROOT/etc/init.json | json -b`
+if (( $? )); then
+  echo "FAIL: init.json is not valid JSON!"
+  exit 1
+fi
+
+PASSWD=`cat $ROOT/etc/passwd.json | json -b`
+if (( $? )); then
+  echo "FAIL: passwd.json is not valid JSON!"
+  exit 2
+fi
+
+GRPS=`cat $ROOT/etc/groups.json | json -b`
+
+if (( $? )); then
+  echo "FAIL: groups.json is not valid JSON!"
+  exit 3
+fi
+
+validate_init() {
+  KEYS="context\nid\ninfo\npriority\nprocess"
+  fields "$INIT"
+}
+
+validate_passwd() {
+ true
+}
+
+validate_groups() {
+  true
+}
+
+validate_init

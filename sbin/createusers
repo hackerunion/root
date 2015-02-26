@@ -4,34 +4,21 @@ ROOT='..'
 HOME="$ROOT/home"
 SKEL="$ROOT/etc/skel"
 
+source "$ROOT/lib/sh/common.sh"
+
 PASSWD=`cat $ROOT/etc/passwd.json | json -b`
 
-field() {
-	ENTRY=$1
-	FIELD=$2
-	echo "$PASSWD" | grep -i "\[$ENTRY,\"$FIELD\"\]" | cut -f 2 | sed -e 's/^"\(.*\)"$/\1/'
-}
-
-last() {
-	l=`echo "$PASSWD" | cut -d',' -f1 | cut -c2- | sort -rn | head -1`
-	echo ${l:--1}
-}
-
-bool() {
-	[ -n "$1" ] && [ "$1" != "false" ] && echo "true"
-}
-
-for ((l=`last`, i=0; i<=l; i++)); do
+for ((l=`last "$PASSWD"`, i=0; i<=l; i++)); do
 	SVC=$(bool `field $i service`)
 
 	echo \
 	useradd --no-user-group	\
 					--base-dir 					"$HOME" \
 					--skel 							"$SKEL" \
-					--uid 							"`field $i uid`" \
-					--shell 						"`field $i shell`" \
-					--password 					"`field $i password`" \
-					--comment 					"{ \"uri\": \"`field $i uri`\", \"info\": \"`field $i info`\", \"service\": ${SVC:-false} }" \
+					--uid 							"`field "$PASSWD" $i uid`" \
+					--shell 						"`field "$PASSWD" $i shell`" \
+					--password 					"`field "$PASSWD" $i password`" \
+					--comment 					"{ \"uri\": \"`field "$PASSWD" $i uri`\", \"info\": \"`field "$PASSWD" $i info`\", \"service\": ${SVC:-false} }" \
 					${SVC:+--system} \
-					`field $i username`
+					`field "$PASSWD" $i username`
 done
