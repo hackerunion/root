@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+HOME="$ROOT/home"
+GROUP=`cat $ROOT/etc/group.json | json -b`
+
+for ((l=`last "$GROUP"`, i=0; i<=l; i++)); do
+	echo \
+	groupadd --gid "`field "$GROUP" $i gid`" `field "$GROUP" $i group`
+done
+

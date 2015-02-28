@@ -1,0 +1,14 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+GROUP=`cat $ROOT/etc/group.json | json -b`
+
+for ((l=`last "$GROUP"`, i=0; i<=l; i++)); do
+  GRP="`field "$GROUP" $i group`"
+
+  for USR in `field "$GROUP" $i users | grep -Fv "$GRP"`; do
+	  echo \
+    usermod -a -G "$GRP" "$USR"
+  done
+done

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+ACL="$ROOT/etc/permissions.acl"
+echo \
+getfacl -R "$ROOT" \> "$ACL"

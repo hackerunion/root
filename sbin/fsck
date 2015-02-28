@@ -1,39 +1,44 @@
 #!/bin/bash
 
-ROOT='..'
+if [ \! -d "$ROOT" ]; then
+  echo "The root environment variable must be set to valid directory"
+  exit 1
+fi
 
 source "$ROOT/lib/sh/common.sh"
 
 INIT=`cat $ROOT/etc/init.json | json -b`
 if (( $? )); then
   echo "FAIL: init.json is not valid JSON!"
-  exit 1
+  exit 2
 fi
 
 PASSWD=`cat $ROOT/etc/passwd.json | json -b`
 if (( $? )); then
   echo "FAIL: passwd.json is not valid JSON!"
-  exit 2
-fi
-
-GRPS=`cat $ROOT/etc/groups.json | json -b`
-
-if (( $? )); then
-  echo "FAIL: groups.json is not valid JSON!"
   exit 3
 fi
 
+GROUP=`cat $ROOT/etc/group.json | json -b`
+if (( $? )); then
+  echo "FAIL: group.json is not valid JSON!"
+  exit 4
+fi
+
 validate_init() {
-  KEYS="context\nid\ninfo\npriority\nprocess"
-  fields "$INIT"
+  true
 }
 
 validate_passwd() {
- true
+  true
 }
 
-validate_groups() {
+validate_group() {
+  # TODO Validate that every user has their own group
   true
 }
 
 validate_init
+validate_group
+validate_passwd
+

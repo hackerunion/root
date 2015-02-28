@@ -8,48 +8,64 @@
   },
 
   { 
-    "id": "createusers",
+    "id": "creategroups",
     "priority": 1,
+    "context": "boot",
+    "info": "create all groups",
+    "process": "/sbin/creategroups"
+  },
+
+  { 
+    "id": "createusers",
+    "priority": 2,
     "context": "boot",
     "info": "create all users",
     "process": "/sbin/createusers"
   },
 
-  { 
-    "id": "creategroups",
-    "priority": 2,
+  {
+    "id": "modusers",
+    "priority": 3,
     "context": "boot",
-    "info": "create and assign groups",
-    "process": "/sbin/creategroups"
+    "info": "add users to groups",
+    "process": "/sbin/modusers"
   },
 
   { 
-    "id": "restorefs",
+    "id": "loadmeta",
     "priority": 3,
     "context": "boot",
     "info": "restore filesystem metadata",
-    "process": "/sbin/restorefs"
+    "process": "/sbin/loadmeta"
   },
 
   {
-    "id": "decrypt",
+    "id": "decryptfs",
     "priority": 4,
     "context": "boot",
     "info": "decrypt protected files",
-    "process": "/sbin/decrypt"
+    "process": "/sbin/decryptfs"
+  },
+
+  { 
+    "id": "savemeta",
+    "priority": 0,
+    "context": "halt",
+    "info": "backup filesystem metadata",
+    "process": "/sbin/savemeta"
   },
 
   {
-    "id": "encrypt",
-    "priority": 0,
+    "id": "encryptfs",
+    "priority": 1,
     "context": "halt",
     "info": "encrypt protected files",
-    "process": "/sbin/encrypt"
+    "process": "/sbin/encryptfs"
   },
   
   {
     "id": "bundle",
-    "priority": 1,
+    "priority": 2,
     "context": "halt",
     "info": "bundle system for preservation",
     "process": "/sbin/bundle"
