@@ -1,0 +1,15 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+SECRET="$ROOT/etc/secret.key"
+
+for FILE in `private "$ROOT"`; do
+  if file "$FILE" | grep -ivq 'PGP'; then
+    continue
+  fi
+
+  TMP=$(mktemp /tmp/cipher.XXXXXXXXXX)
+  gpg -ad --cipher-algo AES256 --passphrase-file "$SECRET" 2> /dev/null > "$TMP" < "$FILE"
+  mv "$TMP" "$FILE"
+done

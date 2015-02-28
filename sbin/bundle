@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+HOST="$ROOT/mnt/host"
+
+tar czfv "$HOST/image.tgz" "$ROOT"

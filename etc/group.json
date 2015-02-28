@@ -1,0 +1,50 @@
+[
+  {
+    "group": "admin",
+    "gid": "0",
+    "info": "users with admin access",
+    "users": ["root"]
+  },
+
+  {
+    "group": "root",
+    "gid": "1",
+    "info": "root user",
+    "users": ["root"]
+  },
+
+  {
+    "group": "nobody",
+    "gid": "2",
+    "info": "unknown user",
+    "users": ["nobody"]
+  },
+
+  {
+    "group": "shell",
+    "gid": "3",
+    "info": "directory server",
+    "users": ["shell"]
+  },
+
+  {
+    "group": "test",
+    "gid": "4",
+    "info": "test user",
+    "users": ["test"]
+  },
+
+  {
+    "group": "stub",
+    "gid": "5",
+    "info": "stub user",
+    "users": ["stub"]
+  },
+
+  {
+    "group": "testers",
+    "gid": "6",
+    "info": "accounts used for testing",
+    "users": ["test", "stub"]
+  }
+]

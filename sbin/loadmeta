@@ -1,0 +1,6 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+ACL="$ROOT/etc/permissions.acl"
+echo setfacl --restore=$ACL
