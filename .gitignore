@@ -1,3 +1,6 @@
+# Secret key
+*.ignore
+
 # Host files
 mnt/host
 
