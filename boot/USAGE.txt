@@ -1,1 +1,0 @@
-This directory contains information related to instance deployment.
