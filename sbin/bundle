@@ -5,3 +5,5 @@ source "$ROOT/lib/sh/common.sh"
 HOST="$ROOT/mnt/host"
 
 tar czfv "$HOST/image.tgz" "$ROOT"
+
+# TODO consider adding all, committing, and then git exporting
