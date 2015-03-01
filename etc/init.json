@@ -47,6 +47,14 @@
     "process": "/sbin/decryptfs"
   },
 
+  {
+    "id": "startcron",
+    "priority": 5,
+    "context": "boot",
+    "info": "start the cron daemon",
+    "process": "/sbin/startcron"
+  },
+
   { 
     "id": "savemeta",
     "priority": 0,

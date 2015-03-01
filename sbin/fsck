@@ -25,6 +25,12 @@ if (( $? )); then
   exit 4
 fi
 
+GROUP=`cat $ROOT/etc/crontab.json | json -b`
+if (( $? )); then
+  echo "FAIL: crontab.json is not valid JSON!"
+  exit 5
+fi
+
 validate_init() {
   true
 }

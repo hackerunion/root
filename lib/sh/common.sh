@@ -33,3 +33,7 @@ private() {
 bool() {
 	[ -n "$1" ] && [ "$1" != "false" ] && echo "true"
 }
+
+noblank() {
+  echo -e "$1" | sed -e :a -e '/./,$!d;/^\n*$/{$d;N;};/\n$/ba'
+}

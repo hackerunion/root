@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+CRON=`cat $ROOT/etc/crontab.json | json -b`
+CRONTAB=""
+
+for ((l=`last "$CRON"`, i=0; i<=l; i++)); do
+  CRONTAB="$CRONTAB\n$(field "$CRON" $i pattern) $(field "$CRON" $i command)"
+done
+
+noblank "$CRONTAB" | crontab

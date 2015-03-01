@@ -2,7 +2,6 @@
 
 source "$ROOT/lib/sh/common.sh"
 
-HOME="$ROOT/home"
 GROUP=`cat $ROOT/etc/group.json | json -b`
 
 for ((l=`last "$GROUP"`, i=0; i<=l; i++)); do
