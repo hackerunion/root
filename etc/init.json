@@ -69,13 +69,5 @@
     "context": "halt",
     "info": "encrypt protected files",
     "process": "/sbin/encryptfs"
-  },
-  
-  {
-    "id": "bundle",
-    "priority": 2,
-    "context": "halt",
-    "info": "bundle system for preservation",
-    "process": "/sbin/bundle"
   }
 ]
