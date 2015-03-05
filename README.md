@@ -1,6 +1,8 @@
 root
 ====
 
+Hello from the server!
+
 conforms to http://www.pathname.com/fhs/pub/fhs-2.3.html
 
 better to use unix concept of user/pw so that we can offload rights/perissions/ownership/setuid messiness
