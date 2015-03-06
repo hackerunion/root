@@ -7,6 +7,8 @@ fi
 
 source "$ROOT/lib/sh/common.sh"
 
+SECRET="$ROOT/etc/key.secret"
+
 INIT=`cat $ROOT/etc/init.json | json -b`
 if (( $? )); then
   echo "FAIL: init.json is not valid JSON!"
@@ -44,7 +46,14 @@ validate_group() {
   true
 }
 
+validate_key() {
+  if [ ! -r "$SECRET" ]; then
+    echo "FAIL: secret key not found!"
+    exit 6
+  fi
+}
+
 validate_init
 validate_group
 validate_passwd
-
+validate_key

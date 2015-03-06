@@ -2,7 +2,10 @@
 
 source "$ROOT/lib/sh/common.sh"
 
-SECRET="$ROOT/etc/secret.key"
+SECRET="$ROOT/etc/key.secret"
+
+# Ensure permissions are appropriate for the secret key
+chmod 0400 "$SECRET"
 
 for FILE in `private "$ROOT"`; do
   if file "$FILE" | grep -iq 'PGP'; then
