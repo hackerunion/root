@@ -1,5 +1,6 @@
-# Secret key
+# Avoid committing certain files
 *.ignore
+*.secret
 
 # Host files
 mnt/host
