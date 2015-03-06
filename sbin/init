@@ -1,0 +1,37 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+INIT=`cat $ROOT/etc/init.json | json -b`
+CONTEXT="$1"
+
+if echo "$CONTEXT" | grep -viq '^\(boot\|halt\)$'; then
+  echo "Invalid context. Exiting..."
+  exit 1
+fi
+
+echo "[$CONTEXT] Starting `date`"
+
+function runner() {
+  PROCESS="$1"
+  if ! "$ROOT$PROCESS"; then
+    echo "[$CONTEXT] $PROCESS failed ($?)"
+    exit 2
+  fi
+}
+
+TASKS=""
+FIRST=true
+
+for ((l=`last "$INIT"`, i=0; i<=l; i++)); do
+  if field "$INIT" $i context | grep -qi "$CONTEXT"; then
+    TASKS="$TASKS`[[ $FIRST == true ]] && echo -n || echo "\n" ``field "$INIT" $i priority`:`field "$INIT" $i process`"
+    FIRST=
+  fi
+done
+
+echo -e "$TASKS" | sort -u | cut -d':' -f2 | while read line; do
+  runner "$line"
+done
+
+exit 0

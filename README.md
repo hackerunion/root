@@ -3,6 +3,8 @@ root
 
 Hello from the server!
 
+Reminder: ROOT env variable must not have a trailing "/"
+
 conforms to http://www.pathname.com/fhs/pub/fhs-2.3.html
 
 better to use unix concept of user/pw so that we can offload rights/perissions/ownership/setuid messiness
