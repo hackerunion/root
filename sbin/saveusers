@@ -1,0 +1,43 @@
+#!/bin/bash
+
+source "$ROOT/lib/sh/common.sh"
+
+HOME="$ROOT/home"
+DEST="$ROOT/etc/passwd.json"
+TMP=$(mktemp /tmp/passwd.XXXXXXXXXX)
+
+cat /etc/passwd | while read LINE; do
+  # If home directory is in root, assume valid member
+  if echo "$LINE" | cut -d: -f6 | grep -q "^$HOME"; then
+    USERNAME="`echo "$LINE" | cut -d: -f1`"
+    INFO="`echo "$LINE" | cut -d: -f5`"
+
+    if echo "$INFO" | json -b 2> /dev/null; then
+      JSON="`echo "$INFO" | json -b`"
+      INFO="`field "$JSON" 0 info`"
+      SERVICE="`field "$JSON" 0 service`"
+      URI="`field "$JSON" 0 uri`"
+
+    else
+      echo "WARNING: malformed info found for $USERNAME..." >&2
+      URI="null"
+      SERVICE="false"
+    fi
+    
+    cat <<JSON
+  {
+    "username": "$USERNAME",
+    "password": "`cat /etc/shadow 2> /dev/null | grep -q "^$USERNAME" | cut -d: -f2`",
+    "uid": "`echo "$LINE" | cut -d: -f3`",
+    "gid": "`echo "$LINE" | cut -d: -f4`",
+    "info": "$INFO",
+    "shell": "`echo "$LINE" | cut -d: -f3`",
+    "service": $SERVICE,
+    "uri": `[[ "$URI" == "null" ]] && echo null || echo "$URI"`
+  },
+JSON
+  fi
+done > "$TMP"
+
+echo -e "[\n`noblank "$(nocomma "$(cat "$TMP")")"`\n]" > "$DEST"
+rm "$TMP"

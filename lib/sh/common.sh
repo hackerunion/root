@@ -37,3 +37,11 @@ bool() {
 noblank() {
   echo -e "$1" | sed -e :a -e '/./,$!d;/^\n*$/{$d;N;};/\n$/ba'
 }
+
+nocomma() {
+  echo -e "$1" | sed -e '$s/ *, *$//'
+}
+
+members() {
+  cat /etc/passwd | grep "^[^:]*:[^:]*:[^:]*:[^:]*:[^:]*:$1" | cut -d: -f1
+}

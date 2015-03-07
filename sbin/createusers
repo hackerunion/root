@@ -9,7 +9,6 @@ PASSWD=`cat $ROOT/etc/passwd.json | json -b`
 for ((l=`last "$PASSWD"`, i=0; i<=l; i++)); do
 	SVC=$(bool `field $i service`)
 
-	echo \
 	useradd --no-user-group	\
 					--base-dir 					"$HOME" \
 					--skel 							"$SKEL" \

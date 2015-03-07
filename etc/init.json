@@ -63,9 +63,25 @@
     "process": "/sbin/savemeta"
   },
 
+  { 
+    "id": "savegroups",
+    "priority": 1,
+    "context": "halt",
+    "info": "save all groups",
+    "process": "/sbin/savegroups"
+  },
+
+  { 
+    "id": "saveusers",
+    "priority": 2,
+    "context": "halt",
+    "info": "save all users",
+    "process": "/sbin/saveusers"
+  },
+
   {
     "id": "encryptfs",
-    "priority": 1,
+    "priority": 3,
     "context": "halt",
     "info": "encrypt protected files",
     "process": "/sbin/encryptfs"

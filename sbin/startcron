@@ -9,4 +9,4 @@ for ((l=`last "$CRON"`, i=0; i<=l; i++)); do
   CRONTAB="$CRONTAB\n$(field "$CRON" $i pattern) $(field "$CRON" $i command)"
 done
 
-echo noblank "$CRONTAB" \| crontab
+noblank "$CRONTAB" | crontab
