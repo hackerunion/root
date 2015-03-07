@@ -23,3 +23,5 @@ done > "$TMP"
 
 echo -e "[\n`noblank "$(nocomma "$(cat "$TMP")")"`\n]" > "$DEST"
 rm "$TMP"
+
+exit 0

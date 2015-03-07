@@ -1,56 +1,12 @@
 [
   {
-    "username": "root",
-    "password": "*",
-    "uid": "1",
-    "gid": "1",
-    "info": "root user",
-    "shell": "/root/bin/shell",
-    "service": false,
-    "uri": null
-  },
-
-  {
-    "username": "nobody",
-    "password": "*",
-    "uid": "2",
-    "gid": "2",
-    "info": "unknown user",
-    "shell": "/root/bin/shell",
-    "service": false,
-    "uri": null
-  },
-
-  {
-    "username": "shell",
-    "password": "*",
-    "uid": "3",
-    "gid": "3",
-    "info": "directory server",
-    "shell": "/root/bin/shell",
-    "service": true,
-    "uri": null
-  },
-
-  {
-    "username": "test",
-    "password": "*",
-    "uid": "4",
-    "gid": "4",
-    "info": "test user (pass: password)",
+    "username": "server",
+    "password": "$1$VXyg.VQV$UMgl1EVwOCNazi/HIRvHQ.",
+    "uid": "1337",
+    "gid": "1337",
+    "info": "server user",
     "shell": "/sbin/dump",
     "service": false,
     "uri": null
-  },
-
-  {
-    "username": "stub",
-    "password": "*",
-    "uid": "5",
-    "gid": "5",
-    "info": "test user (pass: password)",
-    "shell": "/sbin/dump",
-    "service": true,
-    "uri": "http://google.com/"
   }
 ]

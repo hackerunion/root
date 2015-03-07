@@ -12,8 +12,8 @@ cat /etc/passwd | while read LINE; do
     USERNAME="`echo "$LINE" | cut -d: -f1`"
     INFO="`echo "$LINE" | cut -d: -f5`"
 
-    if echo "$INFO" | json -b 2> /dev/null; then
-      JSON="`echo "$INFO" | json -b`"
+    if echo "$INFO" | base64 -d 2> /dev/null && echo "$INFO" | base64 -d 2> /dev/null | json -b 2> /dev/null; then
+      JSON="`echo "$INFO" | base64 -d | json -b`"
       INFO="`field "$JSON" 0 info`"
       SERVICE="`field "$JSON" 0 service`"
       URI="`field "$JSON" 0 uri`"
@@ -41,3 +41,5 @@ done > "$TMP"
 
 echo -e "[\n`noblank "$(nocomma "$(cat "$TMP")")"`\n]" > "$DEST"
 rm "$TMP"
+
+exit 0

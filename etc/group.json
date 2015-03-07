@@ -1,43 +1,7 @@
 [
   {
-    "group": "admin",
-    "gid": "0",
-    "users": ["root"]
-  },
-
-  {
-    "group": "root",
-    "gid": "1",
-    "users": ["root"]
-  },
-
-  {
-    "group": "nobody",
-    "gid": "2",
-    "users": ["nobody"]
-  },
-
-  {
-    "group": "shell",
-    "gid": "3",
-    "users": ["shell"]
-  },
-
-  {
-    "group": "test",
-    "gid": "4",
-    "users": ["test"]
-  },
-
-  {
-    "group": "stub",
-    "gid": "5",
-    "users": ["stub"]
-  },
-
-  {
-    "group": "testers",
-    "gid": "6",
-    "users": ["test", "stub"]
+    "group": "server",
+    "gid": "1337",
+    "users": ["server"]
   }
 ]

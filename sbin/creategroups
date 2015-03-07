@@ -7,3 +7,5 @@ GROUP=`cat $ROOT/etc/group.json | json -b`
 for ((l=`last "$GROUP"`, i=0; i<=l; i++)); do
 	groupadd --gid "`field "$GROUP" $i gid`" `field "$GROUP" $i group`
 done
+
+exit 0

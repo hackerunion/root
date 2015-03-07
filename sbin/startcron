@@ -10,3 +10,5 @@ for ((l=`last "$CRON"`, i=0; i<=l; i++)); do
 done
 
 noblank "$CRONTAB" | crontab
+
+exit 0

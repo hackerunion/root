@@ -11,3 +11,5 @@ for ((l=`last "$GROUP"`, i=0; i<=l; i++)); do
     usermod -a -G "$GRP" "$USR"
   done
 done
+
+exit 0

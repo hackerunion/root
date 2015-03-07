@@ -8,15 +8,18 @@ PASSWD=`cat $ROOT/etc/passwd.json | json -b`
 
 for ((l=`last "$PASSWD"`, i=0; i<=l; i++)); do
 	SVC=$(bool `field $i service`)
-
+  COMMENT=$(echo "{ \"uri\": \"`field "$PASSWD" $i uri`\", \"info\": \"`field "$PASSWD" $i info`\", \"service\": ${SVC:-false} }" | base64 -w 0)
 	useradd --no-user-group	\
+          --create-home \
 					--base-dir 					"$HOME" \
 					--skel 							"$SKEL" \
 					--uid 							"`field "$PASSWD" $i uid`" \
 					--gid 							"`field "$PASSWD" $i gid`" \
 					--shell 						"`field "$PASSWD" $i shell`" \
 					--password 					"`field "$PASSWD" $i password`" \
-					--comment 					"{ \"uri\": \"`field "$PASSWD" $i uri`\", \"info\": \"`field "$PASSWD" $i info`\", \"service\": ${SVC:-false} }" \
+					--comment 					"$COMMENT" \
 					${SVC:+--system} \
 					`field "$PASSWD" $i username`
 done
+
+exit 0

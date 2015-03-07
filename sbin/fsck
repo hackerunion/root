@@ -57,3 +57,5 @@ validate_init
 validate_group
 validate_passwd
 validate_key
+
+exit 0

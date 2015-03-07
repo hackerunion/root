@@ -16,3 +16,5 @@ for FILE in `private "$ROOT"`; do
   gpg -ad --cipher-algo AES256 --passphrase-file "$SECRET" 2> /dev/null > "$TMP" < "$FILE"
   mv "$TMP" "$FILE"
 done
+
+exit 0

@@ -4,3 +4,5 @@ source "$ROOT/lib/sh/common.sh"
 
 ACL="$ROOT/etc/permissions.acl"
 getfacl -R "$ROOT" > "$ACL"
+
+exit 0
