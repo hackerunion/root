@@ -1,9 +1,9 @@
 #!/bin/bash
 
-source "$ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/sh/common.sh"
 
-HOST="$ROOT/mnt/host"
+HOST="$SERVER_ROOT/mnt/host"
 
-tar czfv "$HOST/image.tgz" "$ROOT"
+tar czfv "$HOST/image.tgz" "$SERVER_ROOT"
 
 # TODO consider adding all, committing, and then git exporting

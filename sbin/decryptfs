@@ -1,19 +1,19 @@
 #!/bin/bash
 
-source "$ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/sh/common.sh"
 
 if [ -z "$SERVER_SECRET" ]; then
   echo "Server secret missing from environment."
   exit 1
 fi
 
-for FILE in `private "$ROOT"`; do
+for FILE in `private "$SERVER_ROOT"`; do
   if file "$FILE" | grep -ivq 'PGP'; then
     continue
   fi
 
-  TMP=$(mktemp -t server)
-  
+  TMP=`mktemp /tmp/server.XXXXXX`
+
   if gpg -ad --cipher-algo AES256 --passphrase "$SERVER_SECRET" > "$TMP" < "$FILE"; then
     mv "$TMP" "$FILE"
   else

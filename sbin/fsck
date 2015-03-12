@@ -1,33 +1,33 @@
 #!/bin/bash
 
-if [ \! -d "$ROOT" ]; then
+if [ \! -d "$SERVER_ROOT" ]; then
   echo "The root environment variable must be set to valid directory"
   exit 1
 fi
 
-source "$ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/sh/common.sh"
 
-SECRET="$ROOT/etc/key.secret"
+SECRET="$SERVER_ROOT/etc/key.secret"
 
-INIT=`cat $ROOT/etc/init.json | json -b`
+INIT=`cat $SERVER_ROOT/etc/init.json | json -b`
 if (( $? )); then
   echo "FAIL: init.json is not valid JSON!"
   exit 2
 fi
 
-PASSWD=`cat $ROOT/etc/passwd.json | json -b`
+PASSWD=`cat $SERVER_ROOT/etc/passwd.json | json -b`
 if (( $? )); then
   echo "FAIL: passwd.json is not valid JSON!"
   exit 3
 fi
 
-GROUP=`cat $ROOT/etc/group.json | json -b`
+GROUP=`cat $SERVER_ROOT/etc/group.json | json -b`
 if (( $? )); then
   echo "FAIL: group.json is not valid JSON!"
   exit 4
 fi
 
-GROUP=`cat $ROOT/etc/crontab.json | json -b`
+GROUP=`cat $SERVER_ROOT/etc/crontab.json | json -b`
 if (( $? )); then
   echo "FAIL: crontab.json is not valid JSON!"
   exit 5

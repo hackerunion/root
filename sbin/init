@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source "$ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/sh/common.sh"
 
-INIT=`cat $ROOT/etc/init.json | json -b`
+INIT=`cat $SERVER_ROOT/etc/init.json | json -b`
 CONTEXT="$1"
 
 if echo "$CONTEXT" | grep -viq '^\(boot\|halt\)$'; then
@@ -14,7 +14,7 @@ echo "[$CONTEXT] Starting `date`"
 
 function runner() {
   PROCESS="$1"
-  if ! "$ROOT$PROCESS"; then
+  if ! "$SERVER_ROOT$PROCESS"; then
     echo "[$CONTEXT] $PROCESS failed ($?)"
     exit 2
   fi

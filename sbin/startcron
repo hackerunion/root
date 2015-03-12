@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source "$ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/sh/common.sh"
 
-CRON=`cat $ROOT/etc/crontab.json | json -b`
+CRON=`cat $SERVER_ROOT/etc/crontab.json | json -b`
 CRONTAB=""
 
 for ((l=`last "$CRON"`, i=0; i<=l; i++)); do

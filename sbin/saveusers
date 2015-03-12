@@ -1,10 +1,10 @@
 #!/bin/bash
 
-source "$ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/sh/common.sh"
 
-HOME="$ROOT/home"
-DEST="$ROOT/etc/passwd.json"
-TMP=$(mktemp -t server)
+HOME="$SERVER_ROOT/home"
+DEST="$SERVER_ROOT/etc/passwd.json"
+TMP=`mktemp /tmp/server.XXXXXX`
 
 cat /etc/passwd | while read LINE; do
   # If home directory is in root, assume valid member

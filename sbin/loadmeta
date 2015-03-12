@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source "$ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/sh/common.sh"
 
-ACL="$ROOT/etc/permissions.acl"
+ACL="$SERVER_ROOT/etc/permissions.acl"
 setfacl --restore=$ACL
 
 exit 0

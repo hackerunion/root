@@ -1,10 +1,10 @@
 #!/bin/bash
 
-source "$ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/sh/common.sh"
 
-ACL="$ROOT/etc/permissions.acl"
+ACL="$SERVER_ROOT/etc/permissions.acl"
 
 # This excludes *any* files containing the blacklisted paths anywhere in its path
-find "$ROOT" -not \( -path '*node_modules*' -o -path '*.git*' \) -print0  | xargs -0 getfacl -p > "$ACL"
+find "$SERVER_ROOT" -not \( -path '*node_modules*' -o -path '*.git*' \) -print0  | xargs -0 getfacl -p > "$ACL"
 
 exit 0
