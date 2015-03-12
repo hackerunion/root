@@ -4,7 +4,13 @@ field() {
   JSON="$1"
 	ENTRY="$2"
 	FIELD="$3"
-	echo "$JSON" | grep -i "\[$ENTRY,\"$FIELD\".*\]" | cut -f 2 | sed -e 's/^"\(.*\)"$/\1/'
+  QUERY="\[$ENTRY,\"$FIELD\".*\]"
+  
+  if [[ "$ENTRY" == '*' ]]; then
+    QUERY="\[.*\"$FIELD\".*]"
+  fi
+
+	echo "$JSON" | grep -i "$QUERY" | cut -f 2 | sed -e 's/^"\(.*\)"$/\1/'
 }
 
 fields() {

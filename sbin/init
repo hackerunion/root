@@ -14,12 +14,10 @@ echo "[$CONTEXT] Starting `date`"
 
 function runner() {
   PROCESS="$1"
-  set -x
   if ! "$ROOT$PROCESS"; then
     echo "[$CONTEXT] $PROCESS failed ($?)"
     exit 2
   fi
-  set +x
 }
 
 TASKS=""

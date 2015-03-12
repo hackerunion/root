@@ -4,38 +4,36 @@ source "$ROOT/lib/sh/common.sh"
 
 HOME="$ROOT/home"
 DEST="$ROOT/etc/passwd.json"
-TMP=$(mktemp /tmp/passwd.XXXXXXXXXX)
+TMP=$(mktemp -t server)
 
 cat /etc/passwd | while read LINE; do
   # If home directory is in root, assume valid member
   if echo "$LINE" | cut -d: -f6 | grep -q "^$HOME"; then
     USERNAME="`echo "$LINE" | cut -d: -f1`"
     INFO="`echo "$LINE" | cut -d: -f5`"
-
-    if echo "$INFO" | base64 -d 2> /dev/null && echo "$INFO" | base64 -d 2> /dev/null | json -b 2> /dev/null; then
+    
+    if echo "$INFO" | base64 -d | json -b > /dev/null 2>&1; then
       JSON="`echo "$INFO" | base64 -d | json -b`"
-      INFO="`field "$JSON" 0 info`"
-      SERVICE="`field "$JSON" 0 service`"
-      URI="`field "$JSON" 0 uri`"
-
+      INFO="`field "$JSON" \* info`"
+      SERVICE="`field "$JSON" \* service`"
+      URI="`field "$JSON" \* uri`"
     else
       echo "WARNING: malformed info found for $USERNAME..." >&2
       URI="null"
       SERVICE="false"
     fi
-    
-    cat <<JSON
-  {
-    "username": "$USERNAME",
-    "password": "`cat /etc/shadow 2> /dev/null | grep -q "^$USERNAME" | cut -d: -f2`",
-    "uid": "`echo "$LINE" | cut -d: -f3`",
-    "gid": "`echo "$LINE" | cut -d: -f4`",
-    "info": "$INFO",
-    "shell": "`echo "$LINE" | cut -d: -f3`",
-    "service": $SERVICE,
-    "uri": `[[ "$URI" == "null" ]] && echo null || echo "$URI"`
-  },
-JSON
+
+    echo \
+      "{" \
+      "\"username\": \"$USERNAME\"," \
+      "\"password\": \"`cat /etc/shadow 2> /dev/null | grep "^$USERNAME" | cut -d: -f2`\"," \
+      "\"uid\": \"`echo "$LINE" | cut -d: -f3`\"," \
+      "\"gid\": \"`echo "$LINE" | cut -d: -f4`\"," \
+      "\"info\": \"$INFO\"," \
+      "\"shell\": \"`echo "$LINE" | cut -d: -f7`\"," \
+      "\"service\": $SERVICE," \
+      "\"uri\": `[[ "$URI" == "null" ]] && echo null || echo "$URI"`" \
+      "},"
   fi
 done > "$TMP"
 

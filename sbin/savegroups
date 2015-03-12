@@ -4,21 +4,19 @@ source "$ROOT/lib/sh/common.sh"
 
 HOME="$ROOT/home"
 DEST="$ROOT/etc/group.json"
-TMP=$(mktemp /tmp/group.XXXXXXXXXX)
+TMP=$(mktemp -t server)
 
 cat /etc/group | while read LINE; do
   if echo "$LINE" | grep -q '^ *#'; then
     continue
   fi
 
-  # This would be cleaner if more seds supported boundaries
-  cat <<JSON
-  {
-    "group": "`echo "$LINE" | cut -d: -f1`",
-    "gid": "`echo "$LINE" | cut -d: -f3`",
-    "users": [`echo "$LINE" | cut -d: -f4 | sed -e 's/ *, */", "/g' -e 's/^/"/' -e 's/\$/"/' | sed -e 's/""//' `]
-  },
-JSON
+  echo -e \
+    "{" \
+    "\"group\": \"`echo "$LINE" | cut -d: -f1`\"," \
+    "\"gid\": \"`echo "$LINE" | cut -d: -f3`\"," \
+    "\"users\": [`echo "$LINE" | cut -d: -f4 | sed -e 's/ *, */", "/g' -e 's/^/"/' -e 's/\$/"/' | sed -e 's/""//' `]" \
+    "},"
 done > "$TMP"
 
 echo -e "[\n`noblank "$(nocomma "$(cat "$TMP")")"`\n]" > "$DEST"

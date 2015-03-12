@@ -2,19 +2,23 @@
 
 source "$ROOT/lib/sh/common.sh"
 
-SECRET="$ROOT/etc/key.secret"
-
-# Ensure permissions are appropriate for the secret key
-chmod 0400 "$SECRET"
+if [ -z "$SERVER_SECRET" ]; then
+  echo "Server secret missing from environment."
+  exit 1
+fi
 
 for FILE in `private "$ROOT"`; do
   if file "$FILE" | grep -ivq 'PGP'; then
     continue
   fi
 
-  TMP=$(mktemp /tmp/cipher.XXXXXXXXXX)
-  gpg -ad --cipher-algo AES256 --passphrase-file "$SECRET" 2> /dev/null > "$TMP" < "$FILE"
-  mv "$TMP" "$FILE"
+  TMP=$(mktemp -t server)
+  
+  if gpg -ad --cipher-algo AES256 --passphrase "$SERVER_SECRET" > "$TMP" < "$FILE"; then
+    mv "$TMP" "$FILE"
+  else
+    rm "$TMP"
+  fi
 done
 
 exit 0
