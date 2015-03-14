@@ -7,8 +7,6 @@ fi
 
 source "$SERVER_ROOT/lib/sh/common.sh"
 
-SECRET="$SERVER_ROOT/etc/key.secret"
-
 INIT=`cat $SERVER_ROOT/etc/init.json | json -b`
 if (( $? )); then
   echo "FAIL: init.json is not valid JSON!"
@@ -47,8 +45,8 @@ validate_group() {
 }
 
 validate_key() {
-  if [ ! -r "$SECRET" ]; then
-    echo "FAIL: secret key not found!"
+  if [ -z "$SERVER_SECRET" ]; then
+    echo "Server secret missing from environment."
     exit 6
   fi
 }
