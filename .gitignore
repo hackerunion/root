@@ -2,6 +2,9 @@
 *.ignore
 *.secret
 
+# Temporary directory
+tmp/*
+
 # Host files
 mnt/host
 
@@ -39,6 +42,3 @@ node_modules
 
 # Vim temporary files
 *.sw[po]
-
-# Temporary directory
-tmp/*

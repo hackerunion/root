@@ -3,6 +3,7 @@
 source "$SERVER_ROOT/lib/sh/common.sh"
 
 INIT=`cat $SERVER_ROOT/etc/init.json | json -b`
+LOG="$SERVER_ROOT/tmp/init.log"
 CONTEXT="$1"
 
 if echo "$CONTEXT" | grep -viq '^\(boot\|halt\)$'; then
@@ -10,14 +11,18 @@ if echo "$CONTEXT" | grep -viq '^\(boot\|halt\)$'; then
   exit 1
 fi
 
-echo "[$CONTEXT] Starting `date`"
+echo "[$CONTEXT] Starting `date`" >> "$LOG"
 
 function runner() {
   PROCESS="$1"
+  echo "[$CONTEXT] $PROCESS starting..." >> "$LOG"
+
   if ! "$SERVER_ROOT$PROCESS"; then
-    echo "[$CONTEXT] $PROCESS failed ($?)"
+    echo "[$CONTEXT] $PROCESS failed ($?)" >> "$LOG"
     exit 2
   fi
+
+  echo "[$CONTEXT] $PROCESS ok ($?)" >> "$LOG"
 }
 
 TASKS=""
