@@ -5,6 +5,9 @@
 # Temporary directory
 tmp/*
 
+# Process-specific files
+var/run/*
+
 # Host files
 mnt/host
 
