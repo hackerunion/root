@@ -48,6 +48,14 @@ nocomma() {
   echo -e "$1" | sed -e '$s/ *, *$//'
 }
 
+nullstring() {
+  if echo -e "$1" | grep -q '^null$'; then
+    echo 'null';
+  else
+    echo "\"$1\"";
+  fi
+}
+
 members() {
   cat /etc/passwd | grep "^[^:]*:[^:]*:[^:]*:[^:]*:[^:]*:$1" | cut -d: -f1
 }
