@@ -1,21 +1,42 @@
 doctype html
-html(lang="en")
+html(lang='en')
   head
     title= pageTitle
     script(type='text/javascript', src='/usr/lib/js/klass/min.js')
     script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
+    script(type='text/javascript', src='/usr/lib/js/async/dev.js')
+    script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
     script(type='text/javascript', src='/var/www/shell/js/kernel.js')
     script(type='text/javascript', src='/var/www/shell/js/app.js')
+    link(rel='stylesheet', type='text/css', href='/var/www/shell/css/style.css')
   body
-    h1 Jade - node template engine
-    h2 #{message}
-    #container.col
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Jade is a terse and simple
-        templating language with a
-        strong focus on performance
-        and powerful features.
+    .container
+      main
+        nav
+          .title-wrapper
+            .title
+              a(href='/')
+                img(src='/var/www/shell/img/hu.svg').logo
+              .name
+                | hacker_union/
+              .secondary
+                | established MMIX
+
+          .list-wrapper
+            .list
+              ul
+                li
+                  h3#message
+              ul#dir
+          
+        .content-wrapper
+          .content
+            #content
+
+      footer
+        .left
+          a(href="")
+            | Join your local meeting
+        .right.
+          | &copy; 2015 Hacker Union
+

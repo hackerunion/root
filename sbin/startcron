@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "$SERVER_ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/bash/common.bash"
 
 CRON=`cat $SERVER_ROOT/etc/crontab.json | json -b`
 CRONTAB=""

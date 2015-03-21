@@ -1,10 +1,15 @@
 #!/bin/bash
 
+source "$SERVER_ROOT/usr/lib/bash/cgi/getvar.bash"
+source "$SERVER_ROOT/usr/lib/bash/json/escape.bash"
+
+cgi_getvars GET path
+
 FILE=""
 STATUS=200;
 
-if [ -r "$QUERY_STRING" ]; then
-  FILE="$(cat "$QUERY_STRING" 2> /dev/null)";
+if [ -r "$path" ]; then
+  FILE="$(cat "$path" 2> /dev/null)"
 else
   STATUS=500
 fi
@@ -12,4 +17,4 @@ fi
 echo "Content-type: application/json"
 echo "Status: $STATUS"
 echo ""
-echo "{ \"file\": \"$QUERY_STRING\", \"value\": \""${FILE//\"/\\\"}"\" }"
+echo "{ \"path\": \"$path\", \"value\": `json_escape "$FILE"` }"

@@ -1,17 +1,16 @@
 (function(global) {
-    var Kernel = klass(function(env) {
+    var Kernel = klass(function(env, cb) {
         this.env = _.extend({
             cwd: [],
-            handlers: {},
-            helpers: {}
+            handlers: {}
         }, env);
 
-        this.cd(env.cwd);
+        this.cb = cb || function(err, ctx, uri, opts) { console.log(err ? "Fail: " + err : "[" + ctx + "] " + uri); next(err); };
     })
     .statics({
         DEFAULT_HANDLER: '?',
-        CAT_ENDPOINT: ['/bin/cat.cgi'],
-        LS_ENDPOINT: ['/bin/ls.cgi'],
+        CAT_ENDPOINT: ['bin', 'cat.cgi'],
+        LS_ENDPOINT: ['bin', 'ls.cgi'],
 
         withScripts: function(srcList, callback) {
             var numScripts = srcList.length;
@@ -74,25 +73,25 @@
             if (Array.isArray(uri)) {
                 return uri;
             }
-
-            var dirs = (uri || '').split('/');
-            var relative = false;
-
-            if (dirs.length && dirs[0] == '') {
-                dirs = this.env.cwd.concat(dirs.slice(1));
-            } 
             
-            _.reduce(dirs, function(all, c) { if (c == '.') return all; if (c == '..') return all.slice(0, -1); return all.concat([c]); }, []);
+            var dirs = (uri || '').split('/');
+            var absolute = dirs[0] == '';
+            
+            if (absolute) {
+                dirs.shift();
+            } else {
+                dirs = this.env.cwd.concat(dirs);
+            } 
 
-            return dirs;
+            return _.reduce(dirs, function(all, c) { if (c == '.') return all; if (c == '..') return all.slice(0, -1); return all.concat(c); }, []);
+        },
+
+        bind_listener: function(cb) {
+            this.cb = cb 
         },
 
         bind_handlers: function(handlers) {
             this.env.handlers = _.extend(this.env.handlers, handlers);
-        },
-
-        register_helper: function(name, helper) {
-            this.helpers[name] = helper;
         },
 
         dirname: function(uri) {
@@ -102,67 +101,70 @@
         filename: function(uri) {
             var path = this.path(uri);
             var file = path[path.length - 1];
-
-            if (file == '.' || file == '..') {
+            
+            if (file[0] == '.') {
                 return { basename: file, suffix: '', special: true };
             }
-
+            
             var parts = file.split('.');
 
-            return { basename: file[0], suffix: file[1].toLowerCase(), special: false };
+            return { basename: parts[0], suffix: parts.length > 1 ? parts[1].toLowerCase() : "", special: false };
         },
 
-        uri: function(path, dir) {
-            return '/' + this.path(path).join('/') + (dir ? '/' : '');
+        uri: function(path) {
+            return '/' + this.path(path).join('/');
         },
 
-        cd: function(uri, cb) {
+        cd: function(uri, next) {
             var kernel = this;
             var path = kernel.path(uri);
-            var cb = cb || function(err, v) { console.log("cd()", "error:", err, "value:", v); };
+            var next = next || kernel.cb;
 
-            kernel.env.cwd = path;
-            kernel._fetch(Kernel.LS_ENDPOINT.concat(path), function(err, dir) {
-                if (err) {
-                    return cb(err);
+            kernel._fetch(Kernel.LS_ENDPOINT, path, function(err, obj) {
+                if (err || !obj) {
+                    return next(err, 'cd');
                 }
 
-                // find all index files in current directory and build thunks to eval each before CDing into directory
-                var index_funcs = _.map(_.filter(dir.files, function(f) { return 0 == f.search(/index\./); }), function(f) {
-                    return function(cb2) { kernel.exec(path.concat([f]), null, cb2); };
+                var opts = { 'dir': obj.value };
+
+                // find all index files in current directory and inject exec callback
+                var index_funcs = _.map(_.filter(opts.dir, function(file) { return 0 == file.path.search(/index\.|README\./) && '-' == file.type; }), function(file) {
+                    return function(cnt) {
+                        kernel.exec(kernel.uri(path.concat(file.path)), null, function(err) { next.apply(this, arguments); cnt(err); });
+                    };
                 });
                 
-                // TODO: install async
                 // evaluate all index funcs (from above) in parallel (if no index functions, the callback is always invoked)
                 return async.parallel(index_funcs, function(err, data) {
-                    if (err) {
-                        return cb(err);
-                    }
-                    
-                    kernel._cd(path, cb);          
-                });
-            }, true);
+                  // update current working directory
+                  if (!err) {
+                    kernel.env.cwd = path;
+                  }
+                  
+                  return next(err, 'cd', kernel.uri(kernel.env.cwd), opts); });
+            });
         },
         
-        exec: function(uri, opts, cb) {
+        exec: function(uri, opts, next) {
             var kernel = this;
             var path = kernel.path(uri);
             var file = kernel.filename(uri);
+            var next = next || kernel.cb;
             var opts = opts || {};
-            var cb = cb || function(err, v) { console.log("exec()", "error:", err, "value:", v); };
-            var handlerPath;
+            var handler;
 
             // can't execute special files like "." and ".."
             if (file.special) {
-                return cb("Not executable", null); 
+                return next("Not executable", "exec"); 
             }
 
-            kernel._fetch(Kernel.CAT_ENDPOINT.concat(path), function(err, data) {
-                if (err) {
-                    return cb(err);
+            kernel._fetch(Kernel.CAT_ENDPOINT, path, function(err, obj) {
+                if (err || !obj) {
+                    return next(err);
                 }
 
                 // check for an explicit handler
+                var data = obj.value;
                 var shebang = data.match(/#!\s*([^\n\r]*)([\s\S]*)/);
                 var meta = {};
 
@@ -172,68 +174,67 @@
                     } catch (e) {
                         /* nop */
                     }
-                
+          
                     data = shebang[2];
                 }
 
                 // attempt to lookup handler by extension, or default handler
                 if (meta.handler) {
-                    handlerPath = meta.handler;
+                    handler = meta.handler;
                 } else if (file.suffix in kernel.env.handlers) {
-                    handlerPath = kernel.env.handlers[file.suffix];
+                    handler = kernel.env.handlers[file.suffix];
                 } else if (Kernel.DEFAULT_HANDLER in kernel.env.handlers)  {
-                    handlerPath = kernel.env.handlers[Kernel.DEFAULT_HANDLER];
+                    handler = kernel.env.handlers[Kernel.DEFAULT_HANDLER];
                 } else {
-                    return cb("No handler", null);
+                    return next("No handler", null);
                 }
 
                 opts['data'] = data;
                 opts['meta'] = meta;
 
                 // fetch handler via api
-                kernel._fetch(Kernel.CAT_ENDPOINT.concat(kernel.path(handlerPath)), function(err, src) {
+                var cb = function(err, src) {
                     if (err) {
-                        return cb(err);
+                        return next(err);
                     }
-                
-                    var handler = window.eval.call(window, src);
                     
-                    handler(opts, function() {
-                        kernel._exec(path, opts, cb);
-                    });
-                });
+                    if (src) {
+                      // source must be enclosed in parenthesis
+                      if (src.value[0] != '(' || src.value[src.value.length-1] != ')') {
+                        src.value = '(' + src.value + ')';
+                      }
+
+                      handler = window.eval.call(window, src.value);
+                    }
+
+                    handler(null, 'eval', kernel.uri(path), opts, next);
+                };
+                
+                if (_.isFunction(handler)) {
+                  return cb();
+                }
+
+                kernel._fetch(Kernel.CAT_ENDPOINT,  kernel.path(handler), cb);
             });
         },
 
-        _fetch: function(path, cb, dir) {
-            $.get(this.uri(path, dir))
-             .done(function(data) { cb(null, data); })
-             .fail(function() { cb("Fetch failed", null); });
-        },
-
-        _exec: function(path, opts, cb) {
-            /* invoked after a file is executed */
-            if (cb) {
-                cb(null, path, opts);
-            }
-        },
-
-        _cd: function(path, cb) {
-            /* invoked after a directory change */
-            if (cb) {
-                cb(null, path);
-            }
-        },
+        _fetch: function(endpoint, path, cb) {
+            $.ajax({
+                'type': 'GET',
+                'url': this.uri(endpoint),
+                'data': { 'path': this.uri(path) },
+                'success': function(data) { cb(null, data); },
+                'error': function(x, e, msg) { cb(msg); }
+            });
+        }
     });
 
-    // NOTE: helpers should be encapsulated in the kernel somehow; .helpers?
-    // should also have a .register_helper thing, work like modules
-
+    global.Kernel = Kernel;
     global.$kernel = new Kernel({
       'handlers': {
-        '?': function(opts, cb) {
-            console.log("default-handler", opts.data);
-            return cb();
+        '?': function(err, ctx, uri, opts, cb) {
+            opts['markup'] = '<pre>' + opts.data + '</pre>';
+            return cb.apply(this, arguments);
         }
       }
     });

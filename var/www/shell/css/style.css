@@ -1,0 +1,188 @@
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+*,
+*:before,
+*:after {
+  outline: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+a,
+input[type="submit"] {
+  cursor: pointer; }
+
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+strong,
+b {
+  font-weight: bold; }
+
+em,
+i {
+  font-style: italic; }
+
+iframe {
+  display: block; }
+
+/* clearfix groups */
+.group:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+* html .group {
+  zoom: 1;
+  /* IE6 */ }
+
+*:first-child + html .group {
+  zoom: 1;
+  /* IE7 */ }
+
+* {
+  box-sixing: border-box; }
+
+::-moz-selection {
+  background: #29ff82;
+  color: #272928;
+  text-shadow: none; }
+
+::selection {
+  background: #29ff82;
+  color: #272928;
+  text-shadow: none; }
+
+html, body {
+  background: url("/var/www/shell/img/lines.svg") repeat scroll 0 0 #222222;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+body {
+  margin: 0;
+  color: #29ff82;
+  font-family: "Andale Mono", AndaleMono, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+  body .container {
+    height: 100%; }
+    body .container main {
+      height: 100%; }
+      body .container main nav,
+      body .container main .content {
+        height: 100%; }
+      body .container main nav {
+        position: fixed;
+        height: 100%;
+        width: 330px;
+        background: #272928 url(../img/lines.svg);
+        border-right: 1px solid rgba(64, 66, 65, 0.41);
+        text-shadow: 0 0 2px rgba(41, 255, 130, 0.5); }
+        body .container main nav .title-wrapper {
+          padding: 10px; }
+          body .container main nav .title-wrapper .title {
+            padding: 7px;
+            border-top: 3px double #29ff82;
+            border-bottom: 3px double #29ff82;
+            height: 100px; }
+            body .container main nav .title-wrapper .title img.logo {
+              float: left;
+              padding: 10px 15px;
+              border-right: 1px solid #29ff82; }
+            body .container main nav .title-wrapper .title .name {
+              color: #29ff82;
+              border-bottom: 1px solid #29ff82;
+              margin-left: 85px;
+              padding: 10px 5px 10px 10px;
+              font-size: 25px; }
+            body .container main nav .title-wrapper .title .secondary {
+              color: #29ff82;
+              margin-left: 80px;
+              padding: 10px 10px 10px 15px;
+              font-size: 18px; }
+        body .container main nav .list-wrapper {
+          height: 100%; }
+          body .container main nav .list-wrapper .list {
+            height: 100%;
+            padding: 10px 10px 10px 0px; }
+            body .container main nav .list-wrapper .list ul {
+              padding-left: 20px; }
+              body .container main nav .list-wrapper .list ul li {
+                color: #29ff82;
+                font-size: 15px;
+                line-height: 24px; }
+                body .container main nav .list-wrapper .list ul li div.icon {
+                  display: inline-block;
+                  width: 20px;
+                  text-align: center; }
+                body .container main nav .list-wrapper .list ul li a {
+                  color: #29ff82;
+                  text-decoration: none; }
+                  body .container main nav .list-wrapper .list ul li a:hover {
+                    color: #8fffbe;
+                    text-decoration: none; }
+      body .container main .content-wrapper {
+        background: url("/var/www/shell/img/grid.png") repeat scroll 0 0 transparent;
+        margin: 0;
+        padding: 10px 0 40px 330px;
+        width: 100%;
+        height: 100%; }
+        body .container main .content-wrapper .content {
+          overflow-y: auto;
+          padding: 20px; }
+    body .container footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 40px;
+      background: #1b1c1b;
+      width: 100%;
+      padding: 0 10px;
+      color: #a5aaa8;
+      font-size: 15px;
+      line-height: 40px; }
+      body .container footer .left {
+        float: left; }
+      body .container footer .right {
+        float: right; }
+      body .container footer a {
+        color: #a5aaa8; }
+        body .container footer a:hover {
+          color: #a5aaa8; }

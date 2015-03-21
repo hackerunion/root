@@ -5,7 +5,7 @@ if [ \! -d "$SERVER_ROOT" ]; then
   exit 1
 fi
 
-source "$SERVER_ROOT/lib/sh/common.sh"
+source "$SERVER_ROOT/lib/bash/common.bash"
 
 INIT=`cat $SERVER_ROOT/etc/init.json | json -b`
 if (( $? )); then
