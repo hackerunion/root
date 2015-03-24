@@ -13,5 +13,5 @@ process.chdir(__dirname);
 var fn = jade.compileFile('templates/index.jade');
 
 console.log(fn({
-  'message': 'hello world'
+  'username': process.env.USER || 'guest'
 }));

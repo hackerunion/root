@@ -48,5 +48,6 @@
 { "group": "messagebus", "gid": "108", "users": [] },
 { "group": "crontab", "gid": "109", "users": [] },
 { "group": "Debian-exim", "gid": "110", "users": [] },
-{ "group": "server", "gid": "1337", "users": [] }
+{ "group": "server", "gid": "1337", "users": [] },
+{ "group": "guest", "gid": "1338", "users": [] }
 ]

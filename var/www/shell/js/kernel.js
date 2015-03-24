@@ -114,6 +114,14 @@
         uri: function(path) {
             return '/' + this.path(path).join('/');
         },
+        
+        cwd: function() {
+            return this.env.cwd;
+        },
+
+        web: function(path) {
+            return this.uri(this.env.cwd.concat(path).slice(1));
+        },
 
         cd: function(uri, next) {
             var kernel = this;

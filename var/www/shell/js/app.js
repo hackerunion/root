@@ -12,6 +12,17 @@ $(function() {
           return $kernel.cd(f.path);
         }
 
+        // if file is executable, prompt user to run
+        if (f.type == '*') {
+          if(confirm("Run the executable \"" + f.path + "\"?")) {
+            exec(null, {
+              'markup': '<iframe seamless class="exec" src="' + $kernel.web(f.path) + '"></iframe>'
+            });
+
+            return;
+          }
+        }
+
         return $kernel.exec(f.path);
       })));
     });

@@ -37,6 +37,8 @@ html(lang='en')
         .left
           a(href="")
             | Join your local meeting
-        .right.
-          | &copy; 2015 Hacker Union
+        .right
+         | Logged in as 
+         b #{username} 
+         | (#[a(href="/sbin/logout") sudo])
 

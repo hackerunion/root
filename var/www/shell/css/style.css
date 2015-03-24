@@ -57,6 +57,14 @@ i {
 iframe {
   display: block; }
 
+iframe.exec {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #fff;
+  color: #0f0; }
+
 /* clearfix groups */
 .group:after {
   visibility: hidden;
@@ -107,6 +115,7 @@ body {
       height: 100%; }
       body .container main nav,
       body .container main .content {
+        position: relative;
         height: 100%; }
       body .container main nav {
         position: fixed;
