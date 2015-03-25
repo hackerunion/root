@@ -2,6 +2,7 @@
     var Kernel = klass(function(env, cb) {
         this.env = _.extend({
             cwd: [],
+            root: [],
             handlers: {}
         }, env);
 
@@ -123,10 +124,18 @@
             return this.uri(this.env.cwd.concat(path).slice(1));
         },
 
+        chroot: function(uri) {
+          this.env.root = this.path(uri);
+        },
+
         cd: function(uri, next) {
             var kernel = this;
             var path = kernel.path(uri);
             var next = next || kernel.cb;
+            
+            if (_.some(kernel.env.root, function (v, i) { return i >= path.length || v != path[i]; })) {
+              return next('Access denied');
+            }
 
             kernel._fetch(Kernel.LS_ENDPOINT, path, function(err, obj) {
                 if (err || !obj) {

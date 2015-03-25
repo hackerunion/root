@@ -58,12 +58,11 @@ iframe {
   display: block; }
 
 iframe.exec {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
+  width: 100%;
+  height: 100%;
   background: #fff;
-  color: #0f0; }
+  color: #000;
+  border: 10px solid #1b1c1b; }
 
 /* clearfix groups */
 .group:after {
@@ -95,7 +94,8 @@ iframe.exec {
   text-shadow: none; }
 
 html, body {
-  background: url("/var/www/shell/img/lines.svg") repeat scroll 0 0 #222222;
+  background: url("/var/www/shell/img/grid.png") repeat scroll 0 0 #222;
+  background: #111;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -116,7 +116,8 @@ body {
       body .container main nav,
       body .container main .content {
         position: relative;
-        height: 100%; }
+        height: 100%;
+        width: 100%; }
       body .container main nav {
         position: fixed;
         height: 100%;
@@ -159,7 +160,7 @@ body {
                 line-height: 24px; }
                 body .container main nav .list-wrapper .list ul li div.icon {
                   display: inline-block;
-                  width: 20px;
+                  width: 30px;
                   text-align: center; }
                 body .container main nav .list-wrapper .list ul li a {
                   color: #29ff82;
@@ -168,14 +169,18 @@ body {
                     color: #8fffbe;
                     text-decoration: none; }
       body .container main .content-wrapper {
-        background: url("/var/www/shell/img/grid.png") repeat scroll 0 0 transparent;
         margin: 0;
-        padding: 10px 0 40px 330px;
-        width: 100%;
-        height: 100%; }
+        padding: 00px 0 40px 330px;
+        width: 100%; }
         body .container main .content-wrapper .content {
           overflow-y: auto;
-          padding: 20px; }
+          padding: 20px 20px 20px 40px; }
+          body .container main .content-wrapper .content a {
+            color: #29ff82; }
+          body .container main .content-wrapper .content a:visited {
+            color: #8fffbe; }
+          body .container main .content-wrapper .content a:hover {
+            color: #fff; }
     body .container footer {
       position: fixed;
       bottom: 0;
@@ -194,4 +199,4 @@ body {
       body .container footer a {
         color: #a5aaa8; }
         body .container footer a:hover {
-          color: #a5aaa8; }
+          color: #29ff82; }

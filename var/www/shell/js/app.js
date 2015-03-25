@@ -1,33 +1,42 @@
 $(function() {
   var cd = function(uri, opts) {
     var $dir = $('#dir').hide().empty();
+    var $content = $('#content').hide();
     var $message = $("#message");
+    var $index = null;
 
     $message.text(uri);
 
     (opts.dir || []).concat({ path: '..', type: '/' }).forEach(function(f) {
-      $dir.append($("<li />").append($("<a>" + f.path + f.type + "</a>", { 'href': '#' }).click(function() {
+      var $e = $('#templates ' + (f.type == '/' ? '.folder' : '.file')).clone().appendTo($dir);
+      
+      if (f.type == '-' && /^index\..*/.test(f.path)) {
+        $index = $e;
+      }
 
+      $e.find('a').text(f.path + f.type).click(function() {
         if (f.type == '/') {
           return $kernel.cd(f.path);
         }
 
-        // if file is executable, prompt user to run
+        // if file is executable, load in frame
         if (f.type == '*') {
-          if(confirm("Run the executable \"" + f.path + "\"?")) {
-            exec(null, {
-              'markup': '<iframe seamless class="exec" src="' + $kernel.web(f.path) + '"></iframe>'
-            });
-
-            return;
-          }
+          return exec(null, {
+            'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>'
+          });
         }
 
         return $kernel.exec(f.path);
-      })));
+      });
     });
 
     $dir.show();
+    $content.show();
+
+    // automatically access index, if found
+    if ($index) {
+      $index.click();
+    }
   };
 
   var exec = function(uri, opts) {
@@ -55,5 +64,6 @@ $(function() {
     exec(uri, opts);
   });
 
-  $kernel.cd('/srv');
+  $kernel.chroot('/srv');
+  $kernel.cd('/srv/var/www/public');
 });

@@ -15,7 +15,7 @@ html(lang='en')
         nav
           .title-wrapper
             .title
-              a(href='/')
+              a(href='#{home}')
                 img(src='/var/www/shell/img/hu.svg').logo
               .name
                 | hacker_union/
@@ -30,8 +30,7 @@ html(lang='en')
               ul#dir
           
         .content-wrapper
-          .content
-            #content
+          .content#content
 
       footer
         .left
@@ -42,3 +41,13 @@ html(lang='en')
          b #{username} 
          | (#[a(href="/sbin/logout") sudo])
 
+      #templates
+        li.folder
+          .icon
+            img(src='/var/www/shell/img/folder.svg')
+          a(href='#') /
+
+        li.file
+          .icon
+            img(src='/var/www/shell/img/file.svg')
+          a(href='#') /

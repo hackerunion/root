@@ -13,5 +13,6 @@ process.chdir(__dirname);
 var fn = jade.compileFile('templates/index.jade');
 
 console.log(fn({
-  'username': process.env.USER || 'guest'
+  'username': process.env.USER || 'guest',
+  'home': (process.env.HOME || '/home/guest').replace('/srv', '')
 }));
