@@ -601,8 +601,8 @@ group::rwx
 other::r-x
 
 # file: /srv/boot/build/cert.pem
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
 group::---
 other::---
@@ -615,8 +615,8 @@ group::rw-
 other::r--
 
 # file: /srv/boot/build/key.pem
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
 group::---
 other::---
