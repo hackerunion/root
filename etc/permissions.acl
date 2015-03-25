@@ -691,6 +691,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/boot/bin/babysit
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
 # file: /srv/boot/bin/launch
 # owner: 500
 # group: 497
