@@ -64,6 +64,9 @@ iframe.exec {
   color: #000;
   border: 10px solid #1b1c1b; }
 
+#message {
+  word-break: break-word; }
+
 /* clearfix groups */
 .group:after {
   visibility: hidden;

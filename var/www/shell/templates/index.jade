@@ -8,6 +8,9 @@ html(lang='en')
     script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
     script(type='text/javascript', src='/var/www/shell/js/kernel.js')
     script(type='text/javascript', src='/var/www/shell/js/app.js')
+    script(type='text/javascript').
+      boot('/srv', '#{home}');
+
     link(rel='stylesheet', type='text/css', href='/var/www/shell/css/style.css')
   body
     .container

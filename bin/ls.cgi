@@ -11,7 +11,7 @@ STATUS=500
 if [ -d "$path" -a -x "$path" ]; then
   DATA="["
   
-  for ITEM in `ls -F "$path" 2> /dev/null`; do
+  for ITEM in `ls -aLF "$path" 2> /dev/null`; do
     TYPE="-"
 
     if echo "$ITEM" | grep -q '[\/\*@=%\|]$'; then

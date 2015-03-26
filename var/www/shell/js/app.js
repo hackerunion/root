@@ -1,69 +1,102 @@
-$(function() {
-  var cd = function(uri, opts) {
-    var $dir = $('#dir').hide().empty();
-    var $content = $('#content').hide();
-    var $message = $("#message");
-    var $index = null;
+function boot(root, home) {
+  $(function() {
+    var MSG_MAX = 25;
+    
+    var msg = function(s, is_uri) {
+      var cnt = '...';
 
-    $message.text(uri);
+      if (is_uri && s.length > MSG_MAX) {
+        var path = s.split('/');
+        var res = '';
+        
+        _.forEachRight(path, function(p) {
+          res = (p ? '/' + p : p) + res;
 
-    (opts.dir || []).concat({ path: '..', type: '/' }).forEach(function(f) {
-      var $e = $('#templates ' + (f.type == '/' ? '.folder' : '.file')).clone().appendTo($dir);
-      
-      if (f.type == '-' && /^index\..*/.test(f.path)) {
-        $index = $e;
+          if (res.length > MSG_MAX) {
+            return false;
+          }
+
+          s = res;
+        });
+
+        if (res) {
+          s = cnt + s;
+        }
       }
 
-      $e.find('a').text(f.path + f.type).click(function() {
-        if (f.type == '/') {
-          return $kernel.cd(f.path);
-        }
+      if (s.length > MSG_MAX) {
+        s = cnt + s.slice(-MSG_MAX);
+      }
 
-        // if file is executable, load in frame
-        if (f.type == '*') {
-          return exec(null, {
-            'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>'
-          });
-        }
+      $("#message").text(s);
+    };
 
-        return $kernel.exec(f.path);
-      });
-    });
-
-    $dir.show();
-    $content.show();
-
-    // automatically access index, if found
-    if ($index) {
-      $index.click();
-    }
-  };
-
-  var exec = function(uri, opts) {
-    var $content = $('#content');
-    $content.html(opts['markup'] || '(no output)');
-  };
-
-  var error = function(err, ctx) {
-    $("#message").text("Error: " + err + (ctx ? (' (' + ctx + ')') : ''));
-  };
+    var cd = function(uri, opts) {
+      var $dir = $('#dir').hide().empty();
+      var $content = $('#content').hide();
+      var $message = $("#message");
+      var $index = null;
   
-  $kernel.bind_handlers({
-    'md': '/srv/var/www/shell/js/handlers/markdown.js'
+      msg(uri, true);
+  
+      (opts.dir || []).forEach(function(f) {
+        var $e = $('#templates ' + (f.type == '/' ? '.folder' : '.file')).clone().appendTo($dir);
+        
+        if (f.type == '-' && /^index\..*/.test(f.path)) {
+          $index = $e;
+        }
+  
+        $e.find('a').text(f.path + f.type).click(function() {
+          if (f.type == '/') {
+            return $kernel.cd(f.path);
+          }
+  
+          // if file is executable, load in frame
+          if (f.type == '*') {
+            return exec(null, {
+              'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>'
+            });
+          }
+  
+          return $kernel.exec(f.path);
+        });
+      });
+  
+      $dir.show();
+      $content.show();
+  
+      // automatically access index, if found
+      if ($index) {
+        $index.click();
+      }
+    };
+  
+    var exec = function(uri, opts) {
+      var $content = $('#content');
+      $content.html(opts['markup'] || '(no output)');
+    };
+  
+    var error = function(err, ctx) {
+      msg("Error: " + err + (ctx ? (' (' + ctx + ')') : ''));
+    };
+    
+    $kernel.bind_handlers({
+      'md': '/srv/var/www/shell/js/handlers/markdown.js'
+    });
+  
+    $kernel.bind_listener(function(err, ctx, uri, opts) {
+      if (err) {
+        return error(err, ctx);
+      }
+  
+      if (ctx == 'cd') {
+        return cd(uri, opts);
+      }
+  
+      exec(uri, opts);
+    });
+    
+    $kernel.chroot(root);
+    $kernel.cd(root + home);
   });
-
-  $kernel.bind_listener(function(err, ctx, uri, opts) {
-    if (err) {
-      return error(err, ctx);
-    }
-
-    if (ctx == 'cd') {
-      return cd(uri, opts);
-    }
-
-    exec(uri, opts);
-  });
-
-  $kernel.chroot('/srv');
-  $kernel.cd('/srv/var/www/public');
-});
+}

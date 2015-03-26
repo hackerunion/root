@@ -143,22 +143,49 @@
                 }
 
                 var opts = { 'dir': obj.value };
+                var process = function(opts) {
+                  // remove hidden and special files
+                  opts.dir = _.filter(opts.dir, function(file) { return file.path && (file.path[0] != '.' || file.path == '..'); });
 
-                // find all index files in current directory and inject exec callback
-                var index_funcs = _.map(_.filter(opts.dir, function(file) { return 0 == file.path.search(/index\.|README\./) && '-' == file.type; }), function(file) {
-                    return function(cnt) {
-                        kernel.exec(kernel.uri(path.concat(file.path)), null, function(err) { next.apply(this, arguments); cnt(err); });
-                    };
-                });
-                
-                // evaluate all index funcs (from above) in parallel (if no index functions, the callback is always invoked)
-                return async.parallel(index_funcs, function(err, data) {
-                  // update current working directory
-                  if (!err) {
-                    kernel.env.cwd = path;
-                  }
+                  // find all index files in current directory and inject exec callback
+                  var index_funcs = _.map(_.filter(opts.dir, function(file) { return 0 == file.path.search(/index\.|README\./) && '-' == file.type; }), function(file) {
+                      return function(cnt) {
+                          kernel.exec(kernel.uri(path.concat(file.path)), null, function(err) { next.apply(this, arguments); cnt(err); });
+                      };
+                  });
                   
-                  return next(err, 'cd', kernel.uri(kernel.env.cwd), opts); });
+                  // evaluate all index funcs (from above) in parallel (if no index functions, the callback is always invoked)
+                  return async.parallel(index_funcs, function(err, data) {
+                    // update current working directory
+                    if (!err) {
+                      kernel.env.cwd = path;
+                    }
+                    
+                    return next(err, 'cd', kernel.uri(kernel.env.cwd), opts);
+                  });
+                };
+                
+                // collect metadata from directory ".index" file (if it exists)
+                if (_.findWhere(opts.dir, { 'path': '.index' })) {
+                  return kernel._fetch(Kernel.CAT_ENDPOINT, path.concat('.index'), function(err, obj) {
+                    var index = null;
+                    
+                    if (!err && obj) {
+                      try {
+                        index = JSON.parse(obj.value);
+                      } catch (e) {
+                        // nop
+                      }
+                    }
+                    
+                    // if a file appears in the index, it is included in the listing; else, it is hidden
+                    opts.dir = _.filter(opts.dir, function (file) { return !index || file.path == '..' || _.findWhere(index, _.pick(file, 'path')); });
+
+                    return process(opts);
+                  });
+                }
+
+                process(opts);
             });
         },
         
