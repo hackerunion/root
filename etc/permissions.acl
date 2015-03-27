@@ -686,7 +686,7 @@ other::r-x
 
 # file: /srv/boot/bin/webssh
 # owner: 500
-# group: 497
+# group: 500
 user::rwx
 group::rwx
 other::r-x
@@ -726,6 +726,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/boot/bin/install-shell
+# owner: 500
+# group: 500
+user::rwx
+group::rwx
+other::r-x
+
 # file: /srv/boot/bin/launch
 # owner: 500
 # group: 497
@@ -756,7 +763,7 @@ other::r-x
 
 # file: /srv/boot/bin/install
 # owner: 500
-# group: 497
+# group: 500
 user::rwx
 group::rwx
 other::r-x
@@ -777,21 +784,21 @@ other::r-x
 
 # file: /srv/boot/lib/Makefile.m4
 # owner: 500
-# group: 497
+# group: 500
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/boot/lib/config.m4
 # owner: 500
-# group: 497
+# group: 500
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/boot/lib/Dockerfile.m4
 # owner: 500
-# group: 497
+# group: 500
 user::rw-
 group::rw-
 other::r--
@@ -1334,13 +1341,6 @@ other::r--
 user::rwx
 group::rwx
 other::r-x
-
-# file: /srv/dummy
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
 
 # file: /srv/lib
 # owner: 500
