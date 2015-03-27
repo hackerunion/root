@@ -67,6 +67,9 @@ iframe.exec {
 #message {
   word-break: break-word; }
 
+#shell {
+  display: none; }
+
 /* clearfix groups */
 .group:after {
   visibility: hidden;
@@ -174,6 +177,7 @@ body {
       body .container main .content-wrapper {
         margin: 0;
         padding: 00px 0 40px 330px;
+        height: 100%;
         width: 100%; }
         body .container main .content-wrapper .content {
           overflow-y: auto;

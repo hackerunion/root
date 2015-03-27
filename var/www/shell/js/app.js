@@ -79,6 +79,25 @@ function boot(root, home) {
     var error = function(err, ctx) {
       msg("Error: " + err + (ctx ? (' (' + ctx + ')') : ''));
     };
+
+    var shell = function() {
+      $("#content").toggle();
+      $("#shell").toggle();
+    };
+    
+    var $btn = $("#shell-btn");
+
+    $btn.click(function() {
+      shell();
+
+      if ($btn.text()[0] == '+') {
+        $btn.text('-' + $btn.text().slice(1))
+      } else {
+        $btn.text('+' + $btn.text().slice(1))
+      }
+
+      return false;
+    });
     
     $kernel.bind_handlers({
       'md': '/srv/var/www/shell/js/handlers/markdown.js'

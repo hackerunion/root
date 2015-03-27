@@ -14,5 +14,6 @@ var fn = jade.compileFile('templates/index.jade');
 
 console.log(fn({
   'username': process.env.USER || 'guest',
-  'home': (process.env.HOME || '/home/guest').replace('/srv', '')
+  'home': (process.env.HOME || '/home/guest').replace('/srv', ''),
+  'shell': (process.env.SHELL_URI || 'https://52.11.72.188:4200/')
 }));

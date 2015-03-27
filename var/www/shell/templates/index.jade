@@ -34,7 +34,8 @@ html(lang='en')
           
         .content-wrapper
           .content#content
-
+          .content#shell
+            iframe.exec(src="#{shell}")
       footer
         .left
           a(href="")
@@ -42,7 +43,9 @@ html(lang='en')
         .right
          | Logged in as 
          b #{username} 
-         | (#[a(href="/sbin/logout") sudo])
+         | (#[a(href="/sbin/logout") sudo]) | 
+         a(href="#")#shell-btn
+           | +term
 
       #templates
         li.folder
