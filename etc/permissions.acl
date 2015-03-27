@@ -1335,6 +1335,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/dummy
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/lib
 # owner: 500
 # group: 497
