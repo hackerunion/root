@@ -20,9 +20,10 @@ for ((l=`last "$PASSWD"`, i=0; i<=l; i++)); do
 					--password 					"`field "$PASSWD" $i password`" \
 					--comment 					"$COMMENT" \
 					${SVC:+--system} \
-					$NAME \
-  && chown -R "$NAME:$NAME" "$HOME" \
-  && chmod -R "$HOME" 644
+					$NAME
+
+  chown -R "$NAME:$NAME" "$HOME"
+  chmod -R "$HOME" 644
 done
 
 exit 0

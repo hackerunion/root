@@ -10,8 +10,8 @@
     })
     .statics({
         DEFAULT_HANDLER: '?',
-        CAT_ENDPOINT: ['bin', 'cat.cgi'],
-        LS_ENDPOINT: ['bin', 'ls.cgi'],
+        CAT_ENDPOINT: ['cgi-bin', 'cat'],
+        LS_ENDPOINT: ['cgi-bin', 'ls'],
 
         withScripts: function(srcList, callback) {
             var numScripts = srcList.length;
