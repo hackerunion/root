@@ -9,6 +9,7 @@ PASSWD=`cat $SERVER_ROOT/etc/passwd.json | json -b`
 for ((l=`last "$PASSWD"`, i=0; i<=l; i++)); do
 	SVC=$(bool `field $i service`)
   COMMENT=$(echo "{ \"uri\": `nullstring $(field "$PASSWD" $i uri)`, \"info\": \"`field "$PASSWD" $i info`\", \"service\": ${SVC:-false} }" | base64 -w 0)
+  NAME="`field "$PASSWD" $i username`"
 	useradd --no-user-group	\
           --create-home \
 					--base-dir 					"$HOME" \
@@ -19,7 +20,9 @@ for ((l=`last "$PASSWD"`, i=0; i<=l; i++)); do
 					--password 					"`field "$PASSWD" $i password`" \
 					--comment 					"$COMMENT" \
 					${SVC:+--system} \
-					`field "$PASSWD" $i username`
+					$NAME \
+  && chown -R "$NAME:$NAME" "$HOME" \
+  && chmod -R "$HOME" 644
 done
 
 exit 0
