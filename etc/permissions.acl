@@ -1,0 +1,1407 @@
+# file: /srv
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/cgi-bin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/cgi-bin/setuid
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/cgi-bin/hello
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/cgi-bin/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/cgi-bin/setall
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/cgi-bin/goodbye
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/cgi-bin/setgid
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/local
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/local/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/local/bin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/local/bin/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/bin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/bin/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/package.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/utils
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/utils/auth.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/utils/core.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/utils/common.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/models
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/models/auth
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/models/auth/fs.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/README.md
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/LICENSE
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/init.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/routes
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/routes/auth.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/routes/index.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/bin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/bin/boot.js
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/views
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/views/error.jade
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/views/auth.jade
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/views/index.jade
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/views/layout.jade
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/app.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/public
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/public/stylesheets
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/public/stylesheets/style.less
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/public/stylesheets/style.css
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/public/images
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/public/images/favicon.ico
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel-scripts
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel-scripts/password.sh
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel-scripts/_code_old.sh
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel-scripts/auth_uri.sh
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel-scripts/code.sh
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/lib
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/js
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/js/marked
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/js/marked/dev.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/lib/js/zepto
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/js/zepto/min.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/lib/js/lodash
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/js/lodash/modern.min.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/lib/js/async
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/js/async/dev.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/lib/js/klass
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/js/klass/min.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/lib/bash
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/bash/json
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/bash/json/escape.bash
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/lib/bash/cgi
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/lib/bash/cgi/getvar.bash
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/tmp
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/tmp/init.log
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/tmp/README
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/cgi-bin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/cgi-bin/ls
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/cgi-bin/cat
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/opt
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/opt/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/opt/helloworld
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/opt/helloworld/cgi-bin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/opt/helloworld/cgi-bin/hello
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/index.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/README
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/guest
+# owner: guest
+# group: guest
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/guest/.index
+# owner: guest
+# group: guest
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/guest/index.md
+# owner: guest
+# group: guest
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/guest/README
+# owner: guest
+# group: guest
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/guest/index.cgi
+# owner: guest
+# group: guest
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/README.md
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/LICENSE
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/Dockerfile
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/.dockerignore
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/build
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/build/cert.pem
+# owner: 500
+# group: 497
+user::rw-
+group::---
+other::---
+
+# file: /srv/boot/build/package.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/build/key.pem
+# owner: 500
+# group: 497
+user::rw-
+group::---
+other::---
+
+# file: /srv/boot/Makefile
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/README.md
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/TODO
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/configure
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/bin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/webssh
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/opt
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/opt/git-sync
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/development
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/mkhash
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/babysit
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/install-shell
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/launch
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/poke
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/mkcert
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/agent
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/install
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/bin/mkuser
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/lib
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/boot/lib/Makefile.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/lib/config.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/lib/Dockerfile.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/lib/common.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/srv
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/srv/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/srv/contact
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/srv/contact/contact.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/mnt
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/mnt/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/bin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/bin/json
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/bin/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/sbin
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/startcron
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/savegroups
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/README.md
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/sbin/auth
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/createusers
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/decryptfs
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/savemeta
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/password
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/code
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/login
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/saveusers
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/shutdown
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/bundle
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/loadmeta
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/init
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/fsck
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/logout
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/creategroups
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/token
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/modusers
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/encryptfs
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/etc
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/etc/init.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/etc/group.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/etc/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/etc/crontab.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/etc/passwd.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/etc/skel
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/etc/skel/README
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/etc/skel/index.cgi
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/etc/permissions.acl
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/etc/alarms.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/run
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/run/kernel
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/run/kernel/oauth.authCodes
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/run/kernel/oauth.refreshTokens
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/run/kernel/oauth.authorizedClientIds
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/run/kernel/oauth.accessTokens
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/opt
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/opt/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/shell
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/shell/package.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/css
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/shell/css/style.css
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/base.html
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/img
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/shell/img/lines2.svg
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/img/folder.svg
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/img/lines.svg
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/img/grid.png
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/img/hu.svg
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/img/file.svg
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/js
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/shell/js/handlers
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/shell/js/handlers/markdown.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/js/app.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/js/kernel.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/favicon.ico
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/templates
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/shell/templates/index.jade
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/index.cgi
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/lib
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/lib/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/lib/bash
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/lib/bash/common.bash
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/index.cgi
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
