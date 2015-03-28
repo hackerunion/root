@@ -1,0 +1,1 @@
+Each member is given access to a directory in this folder.
