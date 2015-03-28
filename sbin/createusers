@@ -23,7 +23,7 @@ for ((l=`last "$PASSWD"`, i=0; i<=l; i++)); do
           $NAME
 
   chown -R "$NAME:$NAME" "$HOME/$NAME"
-  chmod -R "$HOME" 644
+  chmod -R u+rw,g+r,o+r "$HOME/$NAME" 
 done
 
 exit 0
