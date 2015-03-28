@@ -1,5 +1,0 @@
-Hacker Union
-============
-
-Welcome!
---------

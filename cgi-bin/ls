@@ -11,15 +11,15 @@ STATUS=500
 if [ -d "$path" -a -x "$path" ]; then
   DATA="["
   
-  for ITEM in "$(ls -aLF "$path" 2> /dev/null)"; do
+  for ITEM in `ls -aLF "$path" 2> /dev/null | sed -e 's/\*$/!/'`; do
     TYPE="-"
 
-    if echo "$ITEM" | grep -q '[\/\*@=%\|]$'; then
+    if echo "$ITEM" | grep -q '[\/\*@=%\|!]$'; then
       TYPE="${ITEM:${#ITEM}-1}"
       ITEM="${ITEM::${#ITEM}-1}"
     fi
 
-    DATA="$DATA { \"path\": `json_escape "$ITEM"`, \"type\": \"$TYPE\" },"
+    DATA="$DATA { \"path\": `json_escape "$ITEM"`, \"type\": \"${TYPE/!/*}\" },"
   done
   
   DATA=$(echo "$DATA" | sed -e 's/,\?$/ ]/')

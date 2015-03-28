@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
   head
-    title= pageTitle
+    title Hacker Union
     script(type='text/javascript', src='/usr/lib/js/klass/min.js')
     script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
     script(type='text/javascript', src='/usr/lib/js/async/dev.js')
@@ -35,7 +35,13 @@ html(lang='en')
         .content-wrapper
           .content#content
           .content#shell
-            iframe.exec(src="#{shell}")
+            if shell
+              iframe.exec(src="#{shell}")
+            else
+              pre.exec
+                h1 Web-based terminal disabled 
+                h3 Connect manually via ssh:
+                input(type="text", size="100", value="ssh://#{username}@#{ssh}")
       footer
         .left
           a(href="")

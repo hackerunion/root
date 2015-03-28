@@ -4,6 +4,7 @@ function boot(root, home) {
     
     var msg = function(s, is_uri) {
       var cnt = '...';
+      var s = s || 'Unknown error';
 
       if (is_uri && s.length > MSG_MAX) {
         var path = s.split('/');
@@ -47,18 +48,21 @@ function boot(root, home) {
         }
   
         $e.find('a').text(f.path + f.type).click(function() {
-          if (f.type == '/') {
-            return $kernel.cd(f.path);
+          switch(f.type) {
+            case '/':
+              $kernel.cd(f.path);
+              break
+          
+            case '*':
+              // if file is executable, load in frame
+              exec(null, { 'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>' }); 
+              break;
+           
+            default:
+              $kernel.exec(f.path);
           }
-  
-          // if file is executable, load in frame
-          if (f.type == '*') {
-            return exec(null, {
-              'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>'
-            });
-          }
-  
-          return $kernel.exec(f.path);
+
+          return false;
         });
       });
   
