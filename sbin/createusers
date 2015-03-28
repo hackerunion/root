@@ -7,22 +7,22 @@ SKEL="$SERVER_ROOT/etc/skel"
 PASSWD=`cat $SERVER_ROOT/etc/passwd.json | json -b`
 
 for ((l=`last "$PASSWD"`, i=0; i<=l; i++)); do
-	SVC=$(bool `field $i service`)
+  SVC=$(bool `field $i service`)
   COMMENT=$(echo "{ \"uri\": `nullstring $(field "$PASSWD" $i uri)`, \"info\": \"`field "$PASSWD" $i info`\", \"service\": ${SVC:-false} }" | base64 -w 0)
   NAME="`field "$PASSWD" $i username`"
-	useradd --no-user-group	\
+  useradd --no-user-group \
           --create-home \
-					--base-dir 					"$HOME" \
-					--skel 							"$SKEL" \
-					--uid 							"`field "$PASSWD" $i uid`" \
-					--gid 							"`field "$PASSWD" $i gid`" \
-					--shell 						"`field "$PASSWD" $i shell`" \
-					--password 					"`field "$PASSWD" $i password`" \
-					--comment 					"$COMMENT" \
-					${SVC:+--system} \
-					$NAME
+          --home-dir          "$HOME/$NAME" \
+          --skel              "$SKEL" \
+          --uid               "`field "$PASSWD" $i uid`" \
+          --gid               "`field "$PASSWD" $i gid`" \
+          --shell             "`field "$PASSWD" $i shell`" \
+          --password          "`field "$PASSWD" $i password`" \
+          --comment           "$COMMENT" \
+          ${SVC:+--system} \
+          $NAME
 
-  chown -R "$NAME:$NAME" "$HOME"
+  chown -R "$NAME:$NAME" "$HOME/$NAME"
   chmod -R "$HOME" 644
 done
 
