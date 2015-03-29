@@ -1,0 +1,152 @@
+#!/usr/bin/env node
+
+var MAX_URI = 128;
+var MAX_INFO = 64;
+var MAX_USERNAME = 16;
+var MIN_USERNAME = 1;
+var MIN_PASSWORD = 5;
+
+// ensure that all paths are relative to this file's actual location
+process.chdir(__dirname);
+
+var _ = require('lodash');
+var fs = require('fs');
+var url = require('url');
+var child_process = require('child_process');
+
+var body = require('../lib/js/body');
+
+function response(code, value) {
+  console.log("Status: " + code);
+  console.log("Content-Type: application/json")
+  console.log("\n");
+  
+  if (value) {
+    console.log(value);
+    //console.log(JSON.stringify(value));
+  }
+
+  return false;
+};
+
+function passwd() {
+  try {
+    return require('../etc/passwd.json');
+  } catch(e) {
+    return response(500, 'Unable to read password file');
+  }
+};
+
+function sanitize(qs) {
+  // quick validation
+  if (!qs.username || !qs.password) {
+    return response(500, 'Password and username are required');
+  }
+
+  if (qs.username.length > MAX_USERNAME) {
+    return response(500, 'Username is too long');
+  }
+  
+  if (qs.username.length < MIN_USERNAME) {
+    return response(500, 'Username is too short');
+  }
+
+  qs.username = qs.username.toLowerCase();
+
+  if (qs.password.length < MIN_PASSWORD) {
+    return response(500, 'Password is too short');
+  }
+
+  if (qs.info.length > MAX_INFO) {
+    return response(500, 'Notes are too long');
+  }
+
+  if (qs.uri) {
+    if (qs.uri.length > MAX_URI) {
+      return response(500, 'URI is too long');
+    }
+
+    var parsed = url.parse(uri);
+
+    if (!parsed.host || -1 == ['http:', 'https:'].indexOf(parsed.protocol)) {
+      return response(500, 'Invalid URI');
+    }
+
+    qs.uri = url.format(parsed);
+  }
+
+  if (qs.service && !qs.uri) {
+    return response(500, 'Services must include a URI');
+  }
+
+  return true;
+};
+
+if (!/post/i.test(process.env.REQUEST_METHOD)) {
+  var html="";
+  
+  html += '<html>';
+  html += '<body>';
+  html += '<h1>Add a User</h1>';
+  html += '<hr />';
+  html += '<form method="post">';
+  html += '  <label for="username">Username:</label> <input type="text" name="username" /> <br />';
+  html += '  <label for="password">Password:</label> <input type="password" name="password" /> <br />';
+  html += '  <label for="info">Note:</label> <input type="text" name="info" /> <br />';
+  html += '  <label for="service">Is Service:</label> <input type="checkbox" name="service" /> <br />';
+  html += '  <label for="uri">URI (optional):</label> <input type="text" name="uri" /> <br />';
+  html += '  <input type="submit" value="Create User" />';
+  html += '</form>';
+  html += '</body>';
+  html += '</html>';
+ 
+  return console.log("Status: 200\nContent-Type: text/html\n\n" + html);
+}
+
+body.parse(process.stdin, function(err, qs) {
+  var data;
+  var uid;
+
+  if (err) {
+    return response(500, err);
+  }
+  
+  if (!sanitize(qs)) return;
+  if (!(data = passwd())) return;
+  
+  // sort by UID for convenience later
+  data = _.sortByOrder(data, 'uid', false);
+  uid = parseInt(data[0].uid) + 1;
+
+  if (_.findWhere(data, { 'username': qs.username })) {
+    return response(500, 'Username already in use');
+  }
+  
+  fs.writeFile('/tmp/passwd.json', JSON.stringify(data.concat({
+    'username': qs.username,
+    'password': qs.passwd,
+    'uid': uid,
+    'gid': uid,
+    'info': qs.info || '',
+    'service': !!qs.service,
+    'uri': qs.uri || ''
+  })));
+  
+  response(200);
+
+  var ls = child_process.spawn('../sbin/env', [], {
+    'cwd': process.cwd(),
+    'uid': 0,
+    'gid': 0
+  });
+  
+  ls.stdout.setEncoding('utf-8').on('data', function(data) {
+    console.log(data);
+  });
+
+  ls.on('close', function (code) {
+    console.log('child process exited with code ' + code);
+  });
+
+  //return response(200, qs);
+});
