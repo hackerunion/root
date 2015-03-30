@@ -12,6 +12,7 @@ process.chdir(__dirname);
 var _ = require('lodash');
 var fs = require('fs');
 var url = require('url');
+var crypt = require('crypt3');
 var child_process = require('child_process');
 
 var body = require('../lib/js/body');
@@ -29,11 +30,27 @@ function response(code, value) {
   return false;
 };
 
-function passwd() {
+function nullify(v) {
+  if (!v || !v.length) {
+    return null;
+  }
+
+  return v;
+};
+
+function etcPasswd() {
   try {
-    return require('../etc/passwd.json');
+    return _.sortByOrder(require('../etc/passwd.json'), 'uid', false);
   } catch(e) {
     return response(500, 'Unable to read password file');
+  }
+};
+
+function etcGroup() {
+  try {
+    return _.sortByOrder(require('../etc/group.json'), 'gid', false);
+  } catch(e) {
+    return response(500, 'Unable to read group file');
   }
 };
 
@@ -66,7 +83,7 @@ function sanitize(qs) {
       return response(500, 'URI is too long');
     }
 
-    var parsed = url.parse(uri);
+    var parsed = url.parse(qs.uri);
 
     if (!parsed.host || -1 == ['http:', 'https:'].indexOf(parsed.protocol)) {
       return response(500, 'Invalid URI');
@@ -104,49 +121,59 @@ if (!/post/i.test(process.env.REQUEST_METHOD)) {
 }
 
 body.parse(process.stdin, function(err, qs) {
-  var data;
   var uid;
+  var gid;
+  var hash;
+  var users;
+  var groups;
 
   if (err) {
     return response(500, err);
   }
   
   if (!sanitize(qs)) return;
-  if (!(data = passwd())) return;
-  
-  // sort by UID for convenience later
-  data = _.sortByOrder(data, 'uid', false);
-  uid = parseInt(data[0].uid) + 1;
+  if (!(users = etcPasswd())) return;
+  if (!(groups = etcGroup())) return;
 
-  if (_.findWhere(data, { 'username': qs.username })) {
+  if (_.findWhere(users, { 'username': qs.username })) {
     return response(500, 'Username already in use');
   }
+
+  if (_.findWhere(groups, { 'group': qs.username })) {
+    return response(500, 'Username already in use (group)');
+  }
   
-  fs.writeFile('/tmp/passwd.json', JSON.stringify(data.concat({
+  // select next sequential uid and gid
+  uid = parseInt(users[0].uid) + 1 + "";
+  gid = parseInt(groups[0].gid) + 1 + "";
+
+  fs.writeFile('../etc/group.json', JSON.stringify(groups.concat({
+    'group': qs.username,
+    'gid': gid,
+    'users': []
+  })));
+
+  fs.writeFile('../etc/passwd.json', JSON.stringify(users.concat({
     'username': qs.username,
-    'password': qs.passwd,
+    'password': crypt(qs.passwd),
     'uid': uid,
-    'gid': uid,
+    'gid': gid,
     'info': qs.info || '',
     'service': !!qs.service,
     'uri': qs.uri || ''
   })));
   
-  response(200);
-
-  var ls = child_process.spawn('../sbin/env', [], {
+  var sync = child_process.spawn('../sbin/sync', [], {
     'cwd': process.cwd(),
     'uid': 0,
     'gid': 0
   });
   
-  ls.stdout.setEncoding('utf-8').on('data', function(data) {
-    console.log(data);
-  });
+  sync.on('close', function (code) {
+    if (!code) {
+      return response(500, 'Sync error: ' + code);
+    }
 
-  ls.on('close', function (code) {
-    console.log('child process exited with code ' + code);
+    response(200);
   });
-
-  //return response(200, qs);
 });

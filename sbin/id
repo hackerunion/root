@@ -1,5 +1,2 @@
 #!/bin/bash 
-
-env
-
-exit 0
+id

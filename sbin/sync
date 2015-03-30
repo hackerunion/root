@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SBIN="$SERVER_ROOT/sbin"
+
+$SBIN/createusers && $SBIN/creategroups && $SBIN/modusers
