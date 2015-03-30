@@ -105,7 +105,7 @@ if (!/post/i.test(process.env.REQUEST_METHOD)) {
   
   html += '<html>';
   html += '<body>';
-  html += '<h1>Add a User</h1>';
+  html += '<h1>Add User</h1>';
   html += '<hr />';
   html += '<form method="post">';
   html += '  <label for="username">Username:</label> <input type="text" name="username" /> <br />';
@@ -113,7 +113,7 @@ if (!/post/i.test(process.env.REQUEST_METHOD)) {
   html += '  <label for="info">Note:</label> <input type="text" name="info" /> <br />';
   html += '  <label for="service">Is Service:</label> <input type="checkbox" name="service" /> <br />';
   html += '  <label for="uri">URI (optional):</label> <input type="text" name="uri" /> <br />';
-  html += '  <input type="submit" value="Create User" />';
+  html += '  <input type="submit" value="Create User" onclick="javascript:this.remove();"/>';
   html += '</form>';
   html += '</body>';
   html += '</html>';
