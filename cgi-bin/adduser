@@ -40,7 +40,7 @@ function nullify(v) {
 
 function etcPasswd() {
   try {
-    return _.sortByOrder(require('../etc/passwd.json'), 'uid', false);
+    return _.sortBy(require('../etc/passwd.json'), function (x) { return -1 * x.uid; });
   } catch(e) {
     return response(500, 'Unable to read password file');
   }
@@ -48,7 +48,7 @@ function etcPasswd() {
 
 function etcGroup() {
   try {
-    return _.sortByOrder(require('../etc/group.json'), 'gid', false);
+    return _.sortBy(require('../etc/group.json'), function (x) { return -1 * x.gid; });
   } catch(e) {
     return response(500, 'Unable to read group file');
   }
@@ -99,6 +99,7 @@ function sanitize(qs) {
   return true;
 };
 
+// this is included for convenience
 if (!/post/i.test(process.env.REQUEST_METHOD)) {
   var html="";
   
@@ -155,7 +156,7 @@ body.parse(process.stdin, function(err, qs) {
 
   fs.writeFile('../etc/passwd.json', JSON.stringify(users.concat({
     'username': qs.username,
-    'password': crypt(qs.passwd),
+    'password': crypt(qs.password),
     'uid': uid,
     'gid': gid,
     'info': qs.info || '',
@@ -170,8 +171,8 @@ body.parse(process.stdin, function(err, qs) {
   });
   
   sync.on('close', function (code) {
-    if (!code) {
-      return response(500, 'Sync error: ' + code);
+    if (code) {
+      return response(500, 'Sync error (' + code + ')');
     }
 
     response(200);
