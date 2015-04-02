@@ -8,8 +8,9 @@ tmp/*
 # Process-specific files
 var/run/*
 
-# Host files
+# Host and sandbox files
 mnt/host
+mnt/sandbox
 
 # Junk
 .DS_Store
