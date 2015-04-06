@@ -1,6 +1,16 @@
 function boot(root, home) {
   $(function() {
     var MSG_MAX = 25;
+    var S_ISDIR = function(m) { return m & 0x4000 };
+    var AUTO = null;
+
+    var autopilot = function(file) {
+      if (file || file === null) {
+        AUTO = file;
+      }
+
+      return AUTO;
+    };
     
     var msg = function(s, is_uri) {
       var cnt = '...';
@@ -31,23 +41,28 @@ function boot(root, home) {
 
       $("#message").text(s);
     };
+    
+    var stat = function(uri, opts) {
+    };
 
     var cd = function(uri, opts) {
       var $dir = $('#dir').hide().empty();
       var $content = $('#content').hide();
       var $message = $("#message");
       var $index = null;
+      var wander = true;
+      var ap = autopilot();
   
       msg(uri, true);
   
       (opts.dir || []).forEach(function(f) {
         var $e = $('#templates ' + (f.type == '/' ? '.folder' : '.file')).clone().appendTo($dir);
-        
-        if (f.type == '-' && /^index\..*/.test(f.path)) {
+
+        if (wander && f.type == '-' && /^index\..*/.test(f.path)) {
           $index = $e;
         }
   
-        $e.find('a').text(f.path + f.type).click(function() {
+        var $a = $e.find('a').text(f.path + f.type).click(function() {
           switch(f.type) {
             case '/':
               $kernel.cd(f.path);
@@ -55,7 +70,7 @@ function boot(root, home) {
           
             case '*':
               // if file is executable, load in frame
-              exec(null, { 'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>' }); 
+              exec(null, { 'seamless': true, 'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>' }); 
               break;
            
             default:
@@ -64,12 +79,20 @@ function boot(root, home) {
 
           return false;
         });
+        
+        if (ap == f.path) {
+          autopilot(null);
+          $index = $a;
+          wander = false;
+        }
       });
   
+      history.pushState(null, null, '#' + $kernel.noroot(uri));
+
       $dir.show();
       $content.show();
   
-      // automatically access index, if found
+      // automatically access index (or autopilot item), if found
       if ($index) {
         $index.click();
       }
@@ -77,27 +100,49 @@ function boot(root, home) {
   
     var exec = function(uri, opts) {
       var $content = $('#content');
+      
+      shell(true);
+
+      if (opts.seamless) {
+        $content.addClass('seamless');
+      } else {
+        $content.removeClass('seamless');
+      }
+    
       $content.html(opts['markup'] || '(no output)');
+
+      history.pushState(null, null, '#' + $kernel.noroot(uri));
     };
   
     var error = function(err, ctx) {
       msg("Error: " + err + (ctx ? (' (' + ctx + ')') : ''));
     };
 
-    var shell = function() {
-      $("#content").toggle();
-      $("#shell").toggle();
-    };
-    
-    var $btn = $("#shell-btn");
+    var $shell_btn = $("#shell-btn");
+    var shell = function(hide) {
+      var visible = $shell_btn.text()[0] == '-';
 
-    $btn.click(function() {
+      if (hide) {
+        if (visible) $shell_btn.click();
+        return;
+      }
+      
+      if (visible) {
+        $("#shell").hide();
+        $("#content").show();
+      } else {
+        $("#content").hide();
+        $("#shell").show();
+      }
+    };
+
+    $shell_btn.click(function() {
       shell();
 
-      if ($btn.text()[0] == '+') {
-        $btn.text('-' + $btn.text().slice(1))
+      if ($shell_btn.text()[0] == '+') {
+        $shell_btn.text('-' + $shell_btn.text().slice(1))
       } else {
-        $btn.text('+' + $btn.text().slice(1))
+        $shell_btn.text('+' + $shell_btn.text().slice(1))
       }
 
       return false;
@@ -107,7 +152,7 @@ function boot(root, home) {
       'md': '/srv/var/www/shell/js/handlers/markdown.js'
     });
   
-    $kernel.bind_listener(function(err, ctx, uri, opts) {
+    var ui = function(err, ctx, uri, opts) {
       if (err) {
         return error(err, ctx);
       }
@@ -115,11 +160,26 @@ function boot(root, home) {
       if (ctx == 'cd') {
         return cd(uri, opts);
       }
+      
+      if (ctx == 'stat') {
+        return stat(uri, opts);
+      }
   
       exec(uri, opts);
-    });
-    
+    };
+
+    $kernel.bind_listener(ui);
     $kernel.chroot(root);
-    $kernel.cd(root + home);
+    
+    var dest = root + home;
+
+    if (window.location.hash) {
+      dest = root + window.location.hash.slice(1);
+      
+      autopilot($kernel.filename(dest).full);
+      dest = $kernel.dirname(dest);
+    }
+    
+    $kernel.cd(dest);
   });
 }

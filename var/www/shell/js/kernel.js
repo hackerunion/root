@@ -12,6 +12,7 @@
         DEFAULT_HANDLER: '?',
         CAT_ENDPOINT: ['cgi-bin', 'cat'],
         LS_ENDPOINT: ['cgi-bin', 'ls'],
+        STAT_ENDPOINT: ['cgi-bin', 'stat'],
 
         withScripts: function(srcList, callback) {
             var numScripts = srcList.length;
@@ -82,7 +83,11 @@
                 dirs.shift();
             } else {
                 dirs = this.env.cwd.concat(dirs);
-            } 
+            }
+
+            while(dirs.length > 1 && '' == dirs[dirs.length - 1]) {
+              dirs.pop();
+            }
 
             return _.reduce(dirs, function(all, c) { if (c == '.') return all; if (c == '..') return all.slice(0, -1); return all.concat(c); }, []);
         },
@@ -104,12 +109,12 @@
             var file = path[path.length - 1];
             
             if (file[0] == '.') {
-                return { basename: file, suffix: '', special: true };
+                return { basename: file, suffix: '', special: true, full: file };
             }
             
             var parts = file.split('.');
 
-            return { basename: parts[0], suffix: parts.length > 1 ? parts[1].toLowerCase() : "", special: false };
+            return { basename: parts[0], suffix: parts.length > 1 ? parts[1].toLowerCase() : "", special: false, full: file };
         },
 
         uri: function(path) {
@@ -126,6 +131,10 @@
 
         chroot: function(uri) {
           this.env.root = this.path(uri);
+        },
+
+        noroot: function(uri) {
+          return (uri || "").replace(this.uri(this.env.root), '');
         },
 
         cd: function(uri, next) {
@@ -230,7 +239,7 @@
                 } else if (Kernel.DEFAULT_HANDLER in kernel.env.handlers)  {
                     handler = kernel.env.handlers[Kernel.DEFAULT_HANDLER];
                 } else {
-                    return next("No handler", null);
+                    return next('No handler', 'exec');
                 }
 
                 opts['data'] = data;
@@ -239,7 +248,7 @@
                 // fetch handler via api
                 var cb = function(err, src) {
                     if (err) {
-                        return next(err);
+                        return next(err, 'exec');
                     }
                     
                     if (src) {
@@ -251,7 +260,7 @@
                       handler = window.eval.call(window, src.value);
                     }
 
-                    handler(null, 'eval', kernel.uri(path), opts, next);
+                    handler(null, 'exec', kernel.uri(path), opts, next);
                 };
                 
                 if (_.isFunction(handler)) {
@@ -259,6 +268,20 @@
                 }
 
                 kernel._fetch(Kernel.CAT_ENDPOINT,  kernel.path(handler), cb);
+            });
+        },
+
+        stat: function(uri, next) {
+            var kernel = this;
+            var path = kernel.path(uri);
+            var next = next || kernel.cb;
+
+            kernel._fetch(Kernel.STAT_ENDPOINT, path, function(err, obj) {
+                if (err || !obj || !obj.value) {
+                    return next(err, 'stat');
+                }
+                
+                next(null, 'stat', kernel.uri(path), obj);
             });
         },
 

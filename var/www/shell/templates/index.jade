@@ -11,6 +11,7 @@ html(lang='en')
     script(type='text/javascript').
       boot('/srv', '#{home}');
 
+    link(rel='stylesheet', type='text/css', href='/var/www/shell/css/normalize.css')
     link(rel='stylesheet', type='text/css', href='/var/www/shell/css/style.css')
   body
     .container
@@ -33,8 +34,18 @@ html(lang='en')
               ul#dir
           
         .content-wrapper
-          .content#content
-          .content#shell
+          header
+            .left
+              a(href="")
+                | hack together
+            .right
+             | logged in as 
+             b #{username} 
+             | (#[a(href="/sbin/logout") sudo]) | 
+             a(href="#")#shell-btn
+               | +term
+
+          .content.seamless#shell
             if shell
               iframe.exec(src="#{shell}")
             else
@@ -42,16 +53,9 @@ html(lang='en')
                 h1 Web-based terminal disabled 
                 h3 Connect manually via ssh:
                 input(type="text", size="100", value="ssh://#{username}@#{ssh}")
-      footer
-        .left
-          a(href="")
-            | Join your local meeting
-        .right
-         | Logged in as 
-         b #{username} 
-         | (#[a(href="/sbin/logout") sudo]) | 
-         a(href="#")#shell-btn
-           | +term
+
+          .frame
+          .content#content
 
       #templates
         li.folder

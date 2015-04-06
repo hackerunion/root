@@ -1,0 +1,21 @@
+#!/bin/bash
+
+source "$SERVER_ROOT/usr/lib/bash/cgi/getvar.bash"
+source "$SERVER_ROOT/usr/lib/bash/json/escape.bash"
+
+cgi_getvars GET path
+
+JSON=""
+STATUS=200;
+
+# yes, this is pretty hacky and insecure -- and yet, here we are
+if [ -r "$path" ]; then
+  JSON="`node -e \"console.log(JSON.stringify(require('fs').statSync('${path}')))\"`"
+else
+  STATUS=500
+fi
+
+echo "Content-type: application/json"
+echo "Status: $STATUS"
+echo ""
+echo "{ \"path\": \"$path\", \"value\": $JSON }"
