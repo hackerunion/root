@@ -117,6 +117,76 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/usr/src/kernel/test
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/test/utils
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/test/utils/common.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/test/models
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/test/models/auth
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/src/kernel/test/models/auth/fs.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/test/test.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/test/env.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/test/mocha.opts
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/usr/src/kernel/test/common.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/usr/src/kernel/package.json
 # owner: 500
 # group: 497
@@ -509,6 +579,20 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/cgi-bin/stat
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/cgi-bin/adduser
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
 # file: /srv/cgi-bin/cat
 # owner: 500
 # group: 497
@@ -564,13 +648,6 @@ other::r-x
 user::rwx
 group::r-x
 other::r-x
-
-# file: /srv/home/server/.index
-# owner: server
-# group: server
-user::rw-
-group::rw-
-other::r--
 
 # file: /srv/home/server/README
 # owner: server
@@ -845,6 +922,13 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/boot/lib/sync.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/boot/lib/common.m4
 # owner: 500
 # group: 497
@@ -1048,6 +1132,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/sbin/sync
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/sbin/token
 # owner: 500
 # group: 497
@@ -1063,6 +1154,13 @@ group::rwx
 other::r-x
 
 # file: /srv/sbin/encryptfs
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/sbin/id
 # owner: 500
 # group: 497
 user::rwx
@@ -1118,7 +1216,14 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/etc/skel/.index
+# file: /srv/etc/skel/sandbox
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/etc/skel/sandbox/README
 # owner: 500
 # group: 497
 user::rw-
@@ -1126,6 +1231,20 @@ group::rw-
 other::r--
 
 # file: /srv/etc/skel/README
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/etc/skel/.ssh
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/etc/skel/.ssh/authorized_keys
 # owner: 500
 # group: 497
 user::rw-
@@ -1258,6 +1377,20 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/var/www/shell/css/typebase.css
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/shell/css/normalize.css
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/var/www/shell/img
 # owner: 500
 # group: 497
@@ -1378,6 +1511,20 @@ group::rwx
 other::r-x
 
 # file: /srv/lib/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/lib/js
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/lib/js/body.js
 # owner: 500
 # group: 497
 user::rw-
