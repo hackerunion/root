@@ -22,8 +22,8 @@ function boot(root, home) {
         
         _.forEachRight(path, function(p) {
           res = (p ? '/' + p : p) + res;
-
-          if (res.length > MSG_MAX) {
+          
+          if (res.length + cnt.length > MSG_MAX) {
             return false;
           }
 

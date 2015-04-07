@@ -103,14 +103,25 @@ html, body {
 }
 
 body {
-  background: #1b1c1b;
   background: #000;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased;
   margin: 0;
-  height: 100%;
+}
+
+body .container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+body .container main {
+  position: relative;
+  min-height: 100%;
 }
 
 body .container main nav, body .container main .content {
@@ -196,12 +207,11 @@ body .container main .content-wrapper {
   bottom: 0px;
   overflow: auto;
   color: #000;
-  background: #aaa;
-  background: url('../img/grid.png') #bbb repeat 0 0;
+  background: url('../img/grid.png') #999 repeat 0 0;
+  border-left: 1px solid #ccc;
 }
 
 body .container main .content-wrapper .content {
-  margin: 20px;
   margin: 25px;
   padding: 10px 80px 10px 40px;
   background: #eee;
@@ -234,8 +244,7 @@ body .container main .content-wrapper .content a:hover {
 
 body .container header {
   height: 40px;
-  background: #29ff82;
-  background: #ddd;
+  background: #eee;
   color: #1b1c1b;
   font-size: 15px;
   line-height: 40px;
@@ -266,9 +275,9 @@ body .container header a {
   text-shadow: none;
 }
 
-body .container, body .container main, body .container main nav .list-wrapper {
-  height: 100%;
+body .container main .content-wrapper .content a {
 }
 
-body .container main .content-wrapper .content a {
+.clear {
+  clear: both;
 }
