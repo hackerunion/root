@@ -5,9 +5,6 @@
 # Temporary directory
 tmp/*
 
-# Process-specific files
-var/run/*
-
 # Host and sandbox files
 mnt/host
 mnt/sandbox

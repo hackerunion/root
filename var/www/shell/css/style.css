@@ -62,6 +62,10 @@ iframe.exec {
   height: 100%;
 }
 
+pre {
+  word-break: break-word;
+}
+
 #message {
   word-break: break-word;
 }

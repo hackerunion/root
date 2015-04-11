@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source "$SERVER_ROOT/lib/bash/common.bash"
+
+chmod -R go-rwx "$SERVER_ROOT/var/run/" "$SERVER_ROOT/boot/" "$SERVER_ROOT/sbin/"
+
+exit 0

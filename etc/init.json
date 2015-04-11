@@ -48,8 +48,16 @@
   },
 
   {
-    "id": "startcron",
+    "id": "securefs",
     "priority": 6,
+    "context": "boot",
+    "info": "apply reasonable permissions",
+    "process": "/sbin/securefs"
+  },
+
+  {
+    "id": "startcron",
+    "priority": 7,
     "context": "boot",
     "info": "start the cron daemon",
     "process": "/sbin/startcron"
