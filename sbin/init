@@ -3,7 +3,7 @@
 source "$SERVER_ROOT/lib/bash/common.bash"
 
 INIT=`cat $SERVER_ROOT/etc/init.json | json -b`
-LOG="$SERVER_ROOT/tmp/init.log"
+LOG="$SERVER_ROOT/var/log/init"
 CONTEXT="$1"
 
 if echo "$CONTEXT" | grep -viq '^\(boot\|halt\)$'; then
