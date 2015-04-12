@@ -2,8 +2,8 @@
 *.ignore
 *.secret
 
-# Temporary directory
-tmp
+# Temporary directory's contents
+tmp/*
 
 # Host and sandbox files
 mnt/host
@@ -13,7 +13,7 @@ mnt/sandbox
 .DS_Store
 
 # Logs
-var/log
+var/log/*
 logs
 *.log
 
