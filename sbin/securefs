@@ -2,9 +2,6 @@
 
 source "$SERVER_ROOT/lib/bash/common.bash"
 
-chmod -R go-rwx "$SERVER_ROOT/var/run/" "$SERVER_ROOT/sbin/"
-
-# protect host files from the server while ensuring they are still accessible to the host
-mount -o bind "$SERVER_ROOT/mnt/host" "$SERVER_ROOT/boot/host"
+chmod -R go-rwx "$SERVER_ROOT/var/run/" "$SERVER_ROOT/sbin/" "$SERVER_ROOT/boot/host"
 
 exit 0

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source "$SERVER_ROOT/lib/bash/common.bash"
+
+chown -R "$HOST_UID:$HOST_GID" "$SERVER_ROOT"
+chmod -R u+rwx "$SERVER_ROOT"
+
+exit 0
