@@ -93,13 +93,5 @@
     "context": "halt",
     "info": "encrypt protected files",
     "process": "/sbin/encryptfs"
-  },
-
-  {
-    "id": "releasefs",
-    "priority": 4,
-    "context": "halt",
-    "info": "release files to host",
-    "process": "/sbin/releasefs"
   }
 ]
