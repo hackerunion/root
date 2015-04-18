@@ -2,6 +2,6 @@
 
 source "$SERVER_ROOT/lib/bash/common.bash"
 
-chmod -R go-rwx "$SERVER_ROOT/var/run/" "$SERVER_ROOT/sbin/" "$SERVER_ROOT/boot/host"
+chmod -R go-rwx "$SERVER_ROOT/var/run/" "$SERVER_ROOT/sbin/" "$SERVER_ROOT/boot/host/"
 
 exit 0
