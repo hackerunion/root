@@ -5,13 +5,6 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/x
-# owner: 500
-# group: 500
-user::rw-
-group::rw-
-other::r--
-
 # file: /srv/bin
 # owner: 500
 # group: 497
