@@ -6,10 +6,10 @@ group::rwx
 other::r-x
 
 # file: /srv/x
-# owner: 500
-# group: 500
+# owner: root
+# group: root
 user::rw-
-group::rw-
+group::---
 other::---
 
 # file: /srv/bin
