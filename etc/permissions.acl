@@ -40,13 +40,6 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/tmp/init.log
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/srv
 # owner: 500
 # group: 497
@@ -803,21 +796,217 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/boot/host
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/mkuser
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/mkcert
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/mksudo
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/opt
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/opt/git-sync
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/agent
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/webssh
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/install-shell
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/poke
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/babysit
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/mkhash
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/bin/install
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/Dockerfile
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/host/TODO
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/host/configure
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/Makefile
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/host/sbin
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/sbin/babysit
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/build
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/build/cert.pem
+# owner: 500
+# group: 497
+user::rw-
+group::---
+other::---
+
+# file: /srv/boot/host/build/key.pem
+# owner: 500
+# group: 497
+user::rw-
+group::---
+other::---
+
+# file: /srv/boot/host/build/package.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/host/lib
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/boot/host/lib/Makefile.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/host/lib/config.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/host/lib/common.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/host/lib/sync.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/boot/host/lib/Dockerfile.m4
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/boot/bin
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/mkuser
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/mkcert
 # owner: 500
 # group: 497
 user::rwx
@@ -838,83 +1027,6 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/boot/bin/opt
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/opt/git-sync
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/agent
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/webssh
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/install-shell
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/poke
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/babysit
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/mkhash
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/bin/install
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/Dockerfile
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/boot/TODO
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
 # file: /srv/boot/USAGE.txt
 # owner: 500
 # group: 497
@@ -923,90 +1035,6 @@ group::rw-
 other::r--
 
 # file: /srv/boot/README.md
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/boot/configure
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/Makefile
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/boot/build
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/build/cert.pem
-# owner: root
-# group: root
-user::rw-
-group::---
-other::---
-
-# file: /srv/boot/build/key.pem
-# owner: root
-# group: root
-user::rw-
-group::---
-other::---
-
-# file: /srv/boot/build/package.json
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/boot/lib
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/boot/lib/Makefile.m4
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/boot/lib/config.m4
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/boot/lib/common.m4
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/boot/lib/sync.m4
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/boot/lib/Dockerfile.m4
 # owner: 500
 # group: 497
 user::rw-
@@ -1031,64 +1059,71 @@ other::r-x
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/auth
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/shutdown
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/savemeta
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/init
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/saveusers
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/modusers
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
+
+# file: /srv/sbin/lockfs
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
 
 # file: /srv/sbin/decryptfs
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/bundle
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/README.md
 # owner: 500
@@ -1108,92 +1143,106 @@ other::r--
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/encryptfs
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/password
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/id
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
+
+# file: /srv/sbin/securefs
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
 
 # file: /srv/sbin/createusers
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
+
+# file: /srv/sbin/releasefs
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
 
 # file: /srv/sbin/code
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/creategroups
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/savegroups
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/fsck
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/login
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/token
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/logout
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/sbin/loadmeta
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
-other::r-x
+group::rw-
+other::r--
 
 # file: /srv/var
 # owner: 500
@@ -1201,6 +1250,34 @@ other::r-x
 user::rwx
 group::rwx
 other::r-x
+
+# file: /srv/var/log
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/log/init
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/log/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/log/agent
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/var/USAGE.txt
 # owner: 500
@@ -1227,43 +1304,43 @@ other::r--
 # owner: root
 # group: root
 user::rwx
-group::r-x
-other::r-x
+group::---
+other::---
 
 # file: /srv/var/run/kernel
 # owner: root
 # group: root
 user::rwx
-group::r-x
-other::r-x
+group::---
+other::---
 
 # file: /srv/var/run/kernel/oauth.authCodes
 # owner: root
 # group: root
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
 # file: /srv/var/run/kernel/oauth.accessTokens
 # owner: root
 # group: root
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
 # file: /srv/var/run/kernel/oauth.authorizedClientIds
 # owner: root
 # group: root
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
 # file: /srv/var/run/kernel/oauth.refreshTokens
 # owner: root
 # group: root
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
 # file: /srv/var/www
 # owner: 500
@@ -1426,6 +1503,34 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/var/lock
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/lock/USAGE.txt
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/lock/kernel
+# owner: root
+# group: root
+user::rwx
+group::---
+other::---
+
+# file: /srv/var/lock/kernel/run
+# owner: root
+# group: root
+user::rw-
+group::---
+other::---
+
 # file: /srv/lib
 # owner: 500
 # group: 497
@@ -1462,6 +1567,13 @@ group::rwx
 other::r-x
 
 # file: /srv/lib/bash/common.bash
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/lib/bash/lock.bash
 # owner: 500
 # group: 497
 user::rw-
