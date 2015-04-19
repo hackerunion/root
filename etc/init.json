@@ -104,10 +104,10 @@
   },
 
   {
-    "id": "unlockfs",
+    "id": "releasefs",
     "priority": 4,
     "context": "halt",
     "info": "release the filesystem",
-    "process": "/sbin/unlockfs"
+    "process": "/sbin/releasefs"
   }
 ]
