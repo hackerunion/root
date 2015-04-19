@@ -2,9 +2,6 @@
 
 source "$SERVER_ROOT/lib/bash/lock.bash"
 
-mkdir -p "$LOCK_ROOT"
-touch "$LOCK_FILE"
-
-chmod -R go-rwx "$LOCK_ROOT" "$LOCK_FILE"
+rm "$LOCK_FILE"
 
 exit 0
