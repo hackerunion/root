@@ -28,12 +28,20 @@ array() {
   (( $? )) || ( echo "$RESULT" | cut -f2 | tr -d '"' )
 }
 
-public() {
+public_root() {
   find "$1" -type f -perm -004
 }
 
-private() {
+private_root() {
   find "$1" -type f \! -perm -004
+}
+
+public() {
+  find "$1" \! -path "$1/boot/*" \! -path "$1/usr/src/kernel/*" -type f -perm -004
+}
+
+private() {
+  find "$1" \! -path "$1/boot/*" \! -path "$1/usr/src/kernel/*" -type f \! -perm -004
 }
 
 bool() {
