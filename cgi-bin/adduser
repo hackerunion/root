@@ -23,8 +23,7 @@ function response(code, value) {
   console.log("\n");
   
   if (value) {
-    console.log(value);
-    //console.log(JSON.stringify(value));
+    console.log(JSON.stringify(value));
   }
 
   return false;
@@ -113,7 +112,7 @@ if (!/post/i.test(process.env.REQUEST_METHOD)) {
   html += '  <label for="info">Note:</label> <input type="text" name="info" /> <br />';
   html += '  <label for="service">Is Service:</label> <input type="checkbox" name="service" /> <br />';
   html += '  <label for="uri">URI (optional):</label> <input type="text" name="uri" /> <br />';
-  html += '  <input type="submit" value="Create User" onclick="javascript:this.remove();"/>';
+  html += '  <input type="submit" value="Create User" onclick="javascript:this.hide();"/>';
   html += '</form>';
   html += '</body>';
   html += '</html>';
@@ -147,34 +146,39 @@ body.parse(process.stdin, function(err, qs) {
   // select next sequential uid and gid
   uid = parseInt(users[0].uid) + 1 + "";
   gid = parseInt(groups[0].gid) + 1 + "";
-
-  fs.writeFile('../etc/group.json', JSON.stringify(groups.concat({
-    'group': qs.username,
-    'gid': gid,
-    'users': []
-  })));
-
-  fs.writeFile('../etc/passwd.json', JSON.stringify(users.concat({
-    'username': qs.username,
-    'password': crypt(qs.password),
-    'uid': uid,
-    'gid': gid,
-    'info': qs.info || '',
-    'service': !!qs.service,
-    'uri': qs.uri || ''
-  })));
   
-  var sync = child_process.spawn('../sbin/sync', [], {
-    'cwd': process.cwd(),
-    'uid': 0,
-    'gid': 0
-  });
+  try {
+    fs.writeFile('../etc/group.json', JSON.stringify(groups.concat({
+      'group': qs.username,
+      'gid': gid,
+      'users': []
+    })));
   
-  sync.on('close', function (code) {
-    if (code) {
-      return response(500, 'Sync error (' + code + ')');
-    }
+    fs.writeFile('../etc/passwd.json', JSON.stringify(users.concat({
+      'username': qs.username,
+      'password': crypt(qs.password),
+      'uid': uid,
+      'gid': gid,
+      'info': qs.info || '',
+      'service': !!qs.service,
+      'uri': qs.uri || ''
+    })));
+    
+    var sync = child_process.spawn('../sbin/sync', [], {
+      'cwd': process.cwd(),
+      'uid': 0,
+      'gid': 0
+    });
+    
+    sync.on('close', function (code) {
+      if (code) {
+        return response(500, 'Sync error (' + code + ')');
+      }
+  
+      response(200);
+    });
 
-    response(200);
-  });
+  } catch (e) {
+    response(401);
+  }
 });

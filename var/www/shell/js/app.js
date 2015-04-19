@@ -74,7 +74,7 @@ function boot(root, home) {
           
             case '*':
               // if file is executable, load in frame
-              exec(null, { 'seamless': true, 'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>' }); 
+              exec(uri + '/' + f.path, { 'seamless': true, 'markup': '<iframe class="exec" src="' + $kernel.web(f.path) + '"></iframe>' }); 
               break;
            
             default:
@@ -90,7 +90,7 @@ function boot(root, home) {
           wander = false;
         }
       });
-  
+      
       history.pushState(null, null, '#' + $kernel.noroot(uri));
       
       $nav.removeClass('loading');
@@ -115,7 +115,6 @@ function boot(root, home) {
       }
     
       $content.html(opts['markup'] || '(no output)');
-
       history.pushState(null, null, '#' + $kernel.noroot(uri));
     };
   
@@ -169,7 +168,7 @@ function boot(root, home) {
       if (ctx == 'stat') {
         return stat(uri, opts);
       }
-  
+      
       exec(uri, opts);
     };
 
