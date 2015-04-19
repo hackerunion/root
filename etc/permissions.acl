@@ -5,6 +5,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/x
+# owner: 500
+# group: 500
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/bin
 # owner: 500
 # group: 497
@@ -1614,6 +1621,76 @@ other::r-x
 user::rw-
 group::rw-
 other::r--
+
+# file: /srv/home/server/.npm
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/nodemon
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/nodemon/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/nodemon
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/nodemon/1.3.7
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/nodemon/1.3.7/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/nodemon/1.3.7/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/nodemon/1.3.7/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/_locks
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/home/server/index.cgi
 # owner: server
