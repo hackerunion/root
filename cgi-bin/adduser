@@ -112,7 +112,7 @@ if (!/post/i.test(process.env.REQUEST_METHOD)) {
   html += '  <label for="info">Note:</label> <input type="text" name="info" /> <br />';
   html += '  <label for="service">Is Service:</label> <input type="checkbox" name="service" /> <br />';
   html += '  <label for="uri">URI (optional):</label> <input type="text" name="uri" /> <br />';
-  html += '  <input type="submit" value="Create User" onclick="javascript:this.hide();"/>';
+  html += '  <input type="submit" value="Create User" />';
   html += '</form>';
   html += '</body>';
   html += '</html>';
@@ -148,13 +148,13 @@ body.parse(process.stdin, function(err, qs) {
   gid = parseInt(groups[0].gid) + 1 + "";
   
   try {
-    fs.writeFile('../etc/group.json', JSON.stringify(groups.concat({
+    fs.writeFileSync('../etc/group.json', JSON.stringify(groups.concat({
       'group': qs.username,
       'gid': gid,
       'users': []
     })));
   
-    fs.writeFile('../etc/passwd.json', JSON.stringify(users.concat({
+    fs.writeFileSync('../etc/passwd.json', JSON.stringify(users.concat({
       'username': qs.username,
       'password': crypt(qs.password),
       'uid': uid,
@@ -175,10 +175,10 @@ body.parse(process.stdin, function(err, qs) {
         return response(500, 'Sync error (' + code + ')');
       }
   
-      response(200);
+      return response(200);
     });
 
   } catch (e) {
-    response(401);
+    return response(401, "Permission denied");
   }
 });
