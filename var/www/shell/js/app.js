@@ -47,6 +47,7 @@ function boot(root, home) {
 
     var cd = function(uri, opts) {
       var $dir = $('#dir').hide().empty();
+      var $nav = $('nav');
       var $content = $('#content').hide();
       var $message = $("#message");
       var $index = null;
@@ -65,6 +66,9 @@ function boot(root, home) {
         var $a = $e.find('a').text(f.path + f.type).click(function() {
           switch(f.type) {
             case '/':
+              $nav.addClass('loading');
+              setTimeout(function() { $nav.removeClass('loading'); }, 5000);
+
               $kernel.cd(f.path);
               break
           
@@ -88,7 +92,8 @@ function boot(root, home) {
       });
   
       history.pushState(null, null, '#' + $kernel.noroot(uri));
-
+      
+      $nav.removeClass('loading');
       $dir.show();
       $content.show();
   

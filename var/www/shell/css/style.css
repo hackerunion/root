@@ -55,6 +55,11 @@ em, i {
   font-style: italic;
 }
 
+nav.loading {
+  opacity: 0.5;
+  cursor: wait;
+}
+
 iframe.exec {
   display: block;
   padding: 0 !important;
