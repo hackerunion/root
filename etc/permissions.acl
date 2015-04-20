@@ -5,13 +5,6 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/x
-# owner: root
-# group: root
-user::rw-
-group::---
-other::---
-
 # file: /srv/bin
 # owner: 500
 # group: 497
@@ -1622,12 +1615,47 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/server/sandbox
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/index.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/.index.md.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/index.cgi
 # owner: server
 # group: server
 user::rwx
 group::rwx
 other::r-x
+
+# file: /srv/home/server/.ssh
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.ssh/authorized_keys
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/USAGE.txt
 # owner: 500
