@@ -1608,6 +1608,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/home/server/.bash_history
+# owner: server
+# group: server
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/server/README
 # owner: server
 # group: server
@@ -1623,6 +1630,13 @@ group::rwx
 other::r-x
 
 # file: /srv/home/server/sandbox/index.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/wenting.md
 # owner: server
 # group: server
 user::rw-
@@ -1676,6 +1690,13 @@ other::r-x
 # group: guest
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/home/guest/index.html
+# owner: guest
+# group: guest
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/home/guest/README
