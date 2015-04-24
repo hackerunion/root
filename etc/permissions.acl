@@ -973,7 +973,7 @@ other::r--
 
 # file: /srv/boot/host/lib/Makefile.m4
 # owner: 500
-# group: 497
+# group: 500
 user::rw-
 group::rw-
 other::r--
@@ -1609,8 +1609,8 @@ group::rwx
 other::r-x
 
 # file: /srv/home/server/.bash_history
-# owner: server
-# group: server
+# owner: root
+# group: root
 user::rw-
 group::---
 other::---
