@@ -125,6 +125,8 @@ function boot(root, home) {
     var $shell_btn = $("#shell-btn");
     var shell = function(hide) {
       var visible = $shell_btn.text()[0] == '-';
+      var $shell = $("#shell");
+      var $content = $("#content");
 
       if (hide) {
         if (visible) $shell_btn.click();
@@ -132,11 +134,17 @@ function boot(root, home) {
       }
       
       if (visible) {
-        $("#shell").hide();
-        $("#content").show();
+        $shell.hide();
+        $content.show();
       } else {
-        $("#content").hide();
-        $("#shell").show();
+        $content.hide();
+        $shell.show();
+
+        // hackishly force reload (due to limitations of web shell)
+        if (!$shell.hasClass("shell-iframe-hack")) {
+          var f = $shell.addClass("shell-iframe-hack")[0];
+          f.src = f.src;
+        }
       }
     };
 
