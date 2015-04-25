@@ -817,6 +817,13 @@ user::rwx
 group::rw-
 other::r--
 
+# file: /srv/boot/host/bin/resync
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
 # file: /srv/boot/host/bin/mkcert
 # owner: 500
 # group: 497
@@ -1363,13 +1370,6 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/var/www/shell/templates/.index.jade.swp
-# owner: 500
-# group: 500
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/var/www/shell/templates/index.jade
 # owner: 500
 # group: 497
@@ -1391,25 +1391,11 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/var/www/shell/js/.kernel.js.swp
-# owner: 500
-# group: 500
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/var/www/shell/js/app.js
 # owner: 500
 # group: 497
 user::rw-
 group::rw-
-other::r--
-
-# file: /srv/var/www/shell/js/.app.js.swp
-# owner: 500
-# group: 500
-user::rw-
-group::r--
 other::r--
 
 # file: /srv/var/www/shell/js/handlers
@@ -1424,13 +1410,6 @@ other::r-x
 # group: 497
 user::rw-
 group::rw-
-other::r--
-
-# file: /srv/var/www/shell/.index.cgi.swp
-# owner: 500
-# group: 500
-user::rw-
-group::r--
 other::r--
 
 # file: /srv/var/www/shell/img
@@ -1495,13 +1474,6 @@ other::r-x
 user::rwx
 group::rwx
 other::r-x
-
-# file: /srv/var/www/shell/css/.style.css.swp
-# owner: 500
-# group: 500
-user::rw-
-group::r--
-other::r--
 
 # file: /srv/var/www/shell/css/style.css
 # owner: 500
@@ -1664,13 +1636,6 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/.welcome.md.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/sandbox/index.html
 # owner: server
 # group: server
@@ -1691,13 +1656,6 @@ other::r--
 user::rw-
 group::rw-
 other::r--
-
-# file: /srv/home/server/sandbox/.index.html.swp
-# owner: server
-# group: server
-user::rw-
-group::---
-other::---
 
 # file: /srv/home/server/index.cgi
 # owner: server
