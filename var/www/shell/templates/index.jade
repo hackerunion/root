@@ -13,6 +13,10 @@ html(lang='en')
 
     link(rel='stylesheet', type='text/css', href='/var/www/shell/css/normalize.css')
     link(rel='stylesheet', type='text/css', href='/var/www/shell/css/style.css')
+
+    if noui
+      link(rel='stylesheet', type='text/css', href='/var/www/shell/css/noui.css')
+
   body
     .container
       main
@@ -69,3 +73,7 @@ html(lang='en')
           .icon
             img(src='/var/www/shell/img/file.svg')
           a(href='#') /
+
+
+
+      pre #{thing}

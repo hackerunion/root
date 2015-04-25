@@ -2,14 +2,25 @@ function boot(root, home) {
   $(function() {
     var MSG_MAX = 25;
     var S_ISDIR = function(m) { return m & 0x4000 };
+    var CPID = null;
     var AUTO = null;
-
+    
     var autopilot = function(file) {
       if (file || file === null) {
         AUTO = file;
       }
 
       return AUTO;
+    };
+
+    var contentShow = function() {
+      clearTimeout(CPID);
+      CPID = setTimeout(function() { $("#content").show(); }, 1000);
+    };
+
+    var contentHide = function() {
+      clearTimeout(CPID);
+      CPID = setTimeout(function() { $("#content").hide(); }, 1000);
     };
     
     var msg = function(s, is_uri) {
@@ -48,12 +59,12 @@ function boot(root, home) {
     var cd = function(uri, opts) {
       var $dir = $('#dir').hide().empty();
       var $nav = $('nav');
-      var $content = $('#content').hide();
       var $message = $("#message");
       var $index = null;
-      var wander = true;
+      var wander = false;
       var ap = autopilot();
-  
+      
+      contentHide();
       msg(uri, true);
   
       (opts.dir || []).forEach(function(f) {
@@ -92,15 +103,15 @@ function boot(root, home) {
       });
       
       history.pushState(null, null, '#' + $kernel.noroot(uri));
-      
-      $nav.removeClass('loading');
-      $dir.show();
-      $content.show();
   
       // automatically access index (or autopilot item), if found
       if ($index) {
         $index.click();
       }
+      
+      $nav.removeClass('loading');
+      $dir.show();
+      contentShow();
     };
   
     var exec = function(uri, opts) {
@@ -143,7 +154,7 @@ function boot(root, home) {
         // hackishly force reload (due to limitations of web shell)
         if (!$shell.hasClass("shell-iframe-hack")) {
           var f = $shell.addClass("shell-iframe-hack").find('iframe')[0];
-	  f.src = f.src;
+	        f.src = f.src;
         }
       }
     };

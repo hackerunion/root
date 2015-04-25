@@ -221,6 +221,7 @@ body .container main .content-wrapper {
 }
 
 body .container main .content-wrapper .content {
+  display: none;
   margin: 25px;
   padding: 10px 80px 10px 40px;
   background: #eee;
