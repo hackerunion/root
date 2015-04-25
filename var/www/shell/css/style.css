@@ -228,6 +228,18 @@ body .container main .content-wrapper .content {
   border-width: 0px 1px 1px 0px;
 }
 
+body .container main .content-wrapper .content ul {
+  list-style-type: square;
+}
+
+body .container main .content-wrapper .content ol {
+  list-style-type: decimal;
+}
+
+body .container main .content-wrapper .content li {
+  margin-bottom: 10px;
+}
+
 body .container main .content-wrapper .content.seamless {
   position: absolute;
   padding: 0px;

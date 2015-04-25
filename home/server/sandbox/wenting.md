@@ -1,5 +1,0 @@
-### WENTING RULEZ
-
-========
-
-WASSUP

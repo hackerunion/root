@@ -1629,14 +1629,14 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/index.md
+# file: /srv/home/server/sandbox/what.md
 # owner: server
 # group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/sandbox/wenting.md
+# file: /srv/home/server/sandbox/index.md
 # owner: server
 # group: server
 user::rw-
@@ -1649,6 +1649,13 @@ other::r--
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/home/server/sandbox/.what.md.swp
+# owner: server
+# group: server
+user::rw-
+group::---
+other::---
 
 # file: /srv/home/server/index.cgi
 # owner: server

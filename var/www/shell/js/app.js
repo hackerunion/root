@@ -142,8 +142,8 @@ function boot(root, home) {
 
         // hackishly force reload (due to limitations of web shell)
         if (!$shell.hasClass("shell-iframe-hack")) {
-          var f = $shell.addClass("shell-iframe-hack")[0];
-          f.src = f.src;
+          var f = $shell.addClass("shell-iframe-hack").find('iframe')[0];
+	  f.src = f.src;
         }
       }
     };
