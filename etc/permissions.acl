@@ -194,13 +194,6 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/usr/src/kernel/views/index.jade
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
 # file: /srv/usr/src/kernel/views/layout.jade
 # owner: 500
 # group: 497
@@ -293,27 +286,6 @@ group::rw-
 other::r--
 
 # file: /srv/usr/src/kernel/utils/common.js
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/usr/src/kernel/routes
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/usr/src/kernel/routes/index.js
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/usr/src/kernel/routes/auth.js
 # owner: 500
 # group: 497
 user::rw-
