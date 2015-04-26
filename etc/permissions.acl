@@ -1629,6 +1629,13 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/server/sandbox/.index.html.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/index.cgi
 # owner: server
 # group: server
