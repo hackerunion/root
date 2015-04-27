@@ -64,11 +64,28 @@ function boot(root, home) {
       var wander = false;
       var ap = autopilot();
       
+      var dir = opts.dir || [];
+      var index = opts.index || [];
+
       contentHide();
       msg(uri, true);
-  
-      (opts.dir || []).forEach(function(f) {
+      
+			_.sortByOrder(index, 'order', false).forEach(function(idx) {
+        Array.prototype.unshift.apply(dir, _.remove(dir, 'path', idx.path));
+      });
+      
+      dir.forEach(function(f) {
+        var meta = _.findWhere(index, { 'path': f.path }) || {};
+
+        if (f.path != '..' && meta.hide) {
+          return true;
+        }
+        
         var $e = $('#templates ' + (f.type == '/' ? '.folder' : '.file')).clone().appendTo($dir);
+
+        if (meta.special) {
+          $e.addClass('special'); 
+        }
 
         if (wander && f.type == '-' && /^index\..*/.test(f.path)) {
           $index = $e;
@@ -125,7 +142,7 @@ function boot(root, home) {
         $content.removeClass('seamless');
       }
     
-      $content.html(opts['markup'] || '(no output)');
+      $content.html(opts['markup']);
       history.pushState(null, null, '#' + $kernel.noroot(uri));
     };
   

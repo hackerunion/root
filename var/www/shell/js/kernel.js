@@ -187,8 +187,8 @@
                       }
                     }
                     
-                    // if a file appears in the index, it is included in the listing; else, it is hidden
-                    opts.dir = _.filter(opts.dir, function (file) { return !index || file.path == '..' || _.findWhere(index, _.pick(file, 'path')); });
+                    // the index specifies metadata for the file
+		    opts.index = index;
 
                     return process(opts);
                   });
