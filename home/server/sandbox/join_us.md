@@ -4,5 +4,5 @@
 
 ----
 
-<iframe src='/home/server/sandbox/apply.cgi'></iframe>
+<iframe src="/home/server/sandbox/apply.cgi" width="100%" height="500px"></iframe>
 

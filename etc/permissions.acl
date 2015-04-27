@@ -1370,13 +1370,6 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/var/www/shell/js/.app.js.swp
-# owner: 500
-# group: 500
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/var/www/shell/js/handlers
 # owner: 500
 # group: 497
@@ -1453,13 +1446,6 @@ other::r-x
 user::rwx
 group::rwx
 other::r-x
-
-# file: /srv/var/www/shell/css/.style.css.swp
-# owner: 500
-# group: 500
-user::rw-
-group::r--
-other::r--
 
 # file: /srv/var/www/shell/css/style.css
 # owner: 500
@@ -1609,8 +1595,8 @@ group::rwx
 other::r-x
 
 # file: /srv/home/server/.bash_history
-# owner: server
-# group: server
+# owner: root
+# group: root
 user::rw-
 group::---
 other::---
