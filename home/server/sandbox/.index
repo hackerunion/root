@@ -5,5 +5,6 @@
         { "path": "our_mission.md", "order": 4 },
         { "path": "our_server.md", "order": 5 },
         { "path": "start_chapter.md", "order": 6 },
-        { "path": "index.md", "hide": true }
+        { "path": "index.md", "hide": true },
+        { "path": "apply", "hide": true }
 ]

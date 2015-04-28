@@ -1447,6 +1447,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/var/www/shell/css/.style.css.swp
+# owner: 500
+# group: 500
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/shell/css/style.css
 # owner: 500
 # group: 497
@@ -1636,6 +1643,41 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/server/sandbox/apply
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/apply/data
+# owner: server
+# group: server
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/server/sandbox/apply/.index.cgi.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/apply/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/.index.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/sandbox/.join_us.md.swp
 # owner: server
 # group: server
@@ -1691,13 +1733,6 @@ other::r--
 user::rw-
 group::rw-
 other::r--
-
-# file: /srv/home/server/sandbox/apply.cgi
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::r-x
 
 # file: /srv/home/server/index.cgi
 # owner: server
