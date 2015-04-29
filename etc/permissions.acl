@@ -1363,11 +1363,25 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/var/www/shell/js/.kernel.js.swp
+# owner: 500
+# group: 500
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/shell/js/app.js
 # owner: 500
 # group: 497
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/var/www/shell/js/.app.js.swp
+# owner: 500
+# group: 500
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/var/www/shell/js/handlers
@@ -1644,8 +1658,8 @@ group::rwx
 other::r-x
 
 # file: /srv/home/server/sandbox/apply/data
-# owner: root
-# group: root
+# owner: server
+# group: server
 user::rw-
 group::---
 other::---
@@ -1660,6 +1674,7 @@ other::r--
 # file: /srv/home/server/sandbox/apply/index.cgi
 # owner: server
 # group: server
+# flags: s--
 user::rwx
 group::rwx
 other::r-x

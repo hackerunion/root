@@ -61,7 +61,6 @@ function boot(root, home) {
       var $nav = $('nav');
       var $message = $("#message");
       var $index = null;
-      var wander = false;
       var ap = autopilot();
       
       var dir = opts.dir || [];
@@ -85,10 +84,6 @@ function boot(root, home) {
 
         if (meta.special) {
           $e.addClass('special'); 
-        }
-
-        if (wander && f.type == '-' && /^index\..*/.test(f.path)) {
-          $index = $e;
         }
   
         var $a = $e.find('a').text(f.path + f.type).click(function() {
@@ -115,7 +110,6 @@ function boot(root, home) {
         if (ap == f.path) {
           autopilot(null);
           $index = $a;
-          wander = false;
         }
       });
       
@@ -207,19 +201,24 @@ function boot(root, home) {
       
       exec(uri, opts);
     };
+    
+    var navigate = function(dest) {
+      autopilot($kernel.filename(root + dest).full);
+      $kernel.cd($kernel.dirname(root + dest), null, true);
+    };
 
     $kernel.bind_listener(ui);
     $kernel.chroot(root);
     
-    var dest = root + home;
+    $(window).on('hashchange', function(e) {
+      navigate(e.newURL.split('#').slice(-1)[0]);
+      return false;
+    });
 
     if (window.location.hash) {
-      dest = root + window.location.hash.slice(1);
-      
-      autopilot($kernel.filename(dest).full);
-      dest = $kernel.dirname(dest);
+      navigate(window.location.hash.slice(1));
+    } else {
+      navigate(home);
     }
-    
-    $kernel.cd(dest);
   });
 }
