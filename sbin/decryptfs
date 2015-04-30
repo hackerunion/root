@@ -15,10 +15,11 @@ for FILE in `private "$SERVER_ROOT"`; do
   TMP=`mktemp /tmp/server.XXXXXX`
 
   if gpg -ad --cipher-algo AES256 --passphrase "$SERVER_SECRET" > "$TMP" < "$FILE"; then
-    mv "$TMP" "$FILE"
-  else
-    rm "$TMP"
+    # this should preserve file permissions (mv would not)
+    cat "$TMP" > "$FILE"
   fi
+  
+  rm "$TMP"
 done
 
 exit 0
