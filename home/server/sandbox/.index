@@ -1,0 +1,10 @@
+[
+        { "path": "about_us.md", "order": 1, "special": true },
+        { "path": "join_us.md", "order": 2, "special": true },
+        { "path": "upcoming_events.md", "order": 3 },
+        { "path": "our_mission.md", "order": 4 },
+        { "path": "our_server.md", "order": 5 },
+        { "path": "start_chapter.md", "order": 6 },
+        { "path": "index.md", "hide": true },
+        { "path": "apply", "hide": true }
+]

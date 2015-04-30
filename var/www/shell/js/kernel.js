@@ -137,7 +137,7 @@
           return (uri || "").replace(this.uri(this.env.root), '');
         },
 
-        cd: function(uri, next) {
+        cd: function(uri, next, strict) {
             var kernel = this;
             var path = kernel.path(uri);
             var next = next || kernel.cb;
@@ -157,7 +157,7 @@
                   opts.dir = _.filter(opts.dir, function(file) { return file.path && (file.path[0] != '.' || file.path == '..'); });
 
                   // find all index files in current directory and inject exec callback
-                  var index_funcs = _.map(_.filter(opts.dir, function(file) { return 0 == file.path.search(/^(index\.|README)/) && '-' == file.type; }), function(file) {
+                  var index_funcs = _.map(_.filter(opts.dir, function(file) { return !strict && 0 == file.path.search(/^(index\.|README)/) && '-' == file.type; }), function(file) {
                       return function(cnt) {
                           kernel.exec(kernel.uri(path.concat(file.path)), null, function(err) { next.apply(this, arguments); cnt(err); });
                       };
@@ -187,8 +187,8 @@
                       }
                     }
                     
-                    // if a file appears in the index, it is included in the listing; else, it is hidden
-                    opts.dir = _.filter(opts.dir, function (file) { return !index || file.path == '..' || _.findWhere(index, _.pick(file, 'path')); });
+                    // the index specifies metadata for the file
+		                opts.index = index;
 
                     return process(opts);
                   });

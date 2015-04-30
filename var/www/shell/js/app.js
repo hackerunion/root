@@ -61,17 +61,29 @@ function boot(root, home) {
       var $nav = $('nav');
       var $message = $("#message");
       var $index = null;
-      var wander = false;
       var ap = autopilot();
       
+      var dir = opts.dir || [];
+      var index = opts.index || [];
+
       contentHide();
       msg(uri, true);
-  
-      (opts.dir || []).forEach(function(f) {
+      
+			_.sortByOrder(index, 'order', false).forEach(function(idx) {
+        Array.prototype.unshift.apply(dir, _.remove(dir, 'path', idx.path));
+      });
+      
+      dir.forEach(function(f) {
+        var meta = _.findWhere(index, { 'path': f.path }) || {};
+
+        if (f.path != '..' && meta.hide) {
+          return true;
+        }
+        
         var $e = $('#templates ' + (f.type == '/' ? '.folder' : '.file')).clone().appendTo($dir);
 
-        if (wander && f.type == '-' && /^index\..*/.test(f.path)) {
-          $index = $e;
+        if (meta.special) {
+          $e.addClass('special'); 
         }
   
         var $a = $e.find('a').text(f.path + f.type).click(function() {
@@ -98,7 +110,6 @@ function boot(root, home) {
         if (ap == f.path) {
           autopilot(null);
           $index = $a;
-          wander = false;
         }
       });
       
@@ -125,7 +136,7 @@ function boot(root, home) {
         $content.removeClass('seamless');
       }
     
-      $content.html(opts['markup'] || '(no output)');
+      $content.html(opts['markup']);
       history.pushState(null, null, '#' + $kernel.noroot(uri));
     };
   
@@ -190,19 +201,24 @@ function boot(root, home) {
       
       exec(uri, opts);
     };
+    
+    var navigate = function(dest) {
+      autopilot($kernel.filename(root + dest).full);
+      $kernel.cd($kernel.dirname(root + dest), null, true);
+    };
 
     $kernel.bind_listener(ui);
     $kernel.chroot(root);
     
-    var dest = root + home;
+    $(window).on('hashchange', function(e) {
+      navigate(e.newURL.split('#').slice(-1)[0]);
+      return false;
+    });
 
     if (window.location.hash) {
-      dest = root + window.location.hash.slice(1);
-      
-      autopilot($kernel.filename(dest).full);
-      dest = $kernel.dirname(dest);
+      navigate(window.location.hash.slice(1));
+    } else {
+      navigate(home);
     }
-    
-    $kernel.cd(dest);
   });
 }

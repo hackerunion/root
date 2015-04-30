@@ -111,6 +111,10 @@ html, body {
   display: none;
 }
 
+#dir {
+  display: none;
+}
+
 body {
   background: #000;
   -webkit-font-smoothing: antialiased;
@@ -192,6 +196,17 @@ body .container main nav .list-wrapper .list ul li {
   line-height: 24px;
 }
 
+body .container main nav .list-wrapper .list ul li.special a {
+  color: #000;
+  background: #29ff82;
+  text-shadow: none; 
+}
+
+body .container main nav .list-wrapper .list ul li.special a:hover {
+  background: #8fffbe;
+  color: #000;
+}
+
 body .container main nav .list-wrapper .list ul li div.icon {
   display: inline-block;
   width: 30px;
@@ -238,7 +253,16 @@ body .container main .content-wrapper .content ol {
 }
 
 body .container main .content-wrapper .content li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+body .container main .content-wrapper .content p {
+  line-height: 1.2em;
+  padding-left: 4px;
+}
+
+body .container main .content-wrapper .content h2 {
+  margin-top: 1.4em;
 }
 
 body .container main .content-wrapper .content.seamless {

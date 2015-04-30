@@ -194,13 +194,6 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/usr/src/kernel/views/index.jade
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
 # file: /srv/usr/src/kernel/views/layout.jade
 # owner: 500
 # group: 497
@@ -293,27 +286,6 @@ group::rw-
 other::r--
 
 # file: /srv/usr/src/kernel/utils/common.js
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/usr/src/kernel/routes
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
-# file: /srv/usr/src/kernel/routes/index.js
-# owner: 500
-# group: 497
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/usr/src/kernel/routes/auth.js
 # owner: 500
 # group: 497
 user::rw-
@@ -1622,6 +1594,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/home/server/.bash_history
+# owner: root
+# group: root
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/server/README
 # owner: server
 # group: server
@@ -1636,21 +1615,113 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/index.html
+# file: /srv/home/server/sandbox/.index
 # owner: server
 # group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/sandbox/welcome.md
+# file: /srv/home/server/sandbox/index.md
 # owner: server
 # group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/sandbox/what_is_this.md
+# file: /srv/home/server/sandbox/start_chapter.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/apply
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/apply/data
+# owner: root
+# group: root
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/server/sandbox/apply/.index.cgi.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/apply/index.cgi
+# owner: server
+# group: server
+# flags: s--
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/.index.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/.join_us.md.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/about_us.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/our_server.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/.about_us.md.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/join_us.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/our_mission.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/.index.md.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/upcoming_events.md
 # owner: server
 # group: server
 user::rw-
