@@ -137,6 +137,7 @@ function boot(root, home) {
       }
     
       $content.html(opts['markup']);
+
       history.pushState(null, null, '#' + $kernel.noroot(uri));
     };
   

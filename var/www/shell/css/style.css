@@ -69,6 +69,7 @@ iframe.exec {
 
 pre {
   word-break: break-word;
+  overflow: visible;
 }
 
 #message {

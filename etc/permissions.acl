@@ -1342,6 +1342,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/var/www/shell/templates/.index.jade.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/shell/templates/index.jade
 # owner: 500
 # group: 497
@@ -1368,6 +1375,13 @@ other::r--
 # group: 497
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/var/www/shell/js/.app.js.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/var/www/shell/js/handlers
@@ -1446,6 +1460,13 @@ other::r-x
 user::rwx
 group::rwx
 other::r-x
+
+# file: /srv/var/www/shell/css/.style.css.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/var/www/shell/css/style.css
 # owner: 500
@@ -1650,13 +1671,6 @@ user::rw-
 group::---
 other::---
 
-# file: /srv/home/server/sandbox/apply/.index.cgi.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/sandbox/apply/index.cgi
 # owner: server
 # group: server
@@ -1664,20 +1678,6 @@ other::r--
 user::rwx
 group::rwx
 other::r-x
-
-# file: /srv/home/server/sandbox/.index.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/.join_us.md.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
 
 # file: /srv/home/server/sandbox/about_us.md
 # owner: server
@@ -1693,13 +1693,6 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/sandbox/.about_us.md.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/sandbox/join_us.md
 # owner: server
 # group: server
@@ -1712,13 +1705,6 @@ other::r--
 # group: server
 user::rw-
 group::rw-
-other::r--
-
-# file: /srv/home/server/sandbox/.index.md.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
 other::r--
 
 # file: /srv/home/server/sandbox/upcoming_events.md
@@ -1767,21 +1753,57 @@ other::r-x
 # owner: guest
 # group: guest
 user::rw-
-group::rw-
+group::r--
 other::r--
 
-# file: /srv/home/guest/index.html
+# file: /srv/home/guest/index.md
 # owner: guest
 # group: guest
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/guest/README
+# file: /srv/home/guest/start_chapter.md
 # owner: guest
 # group: guest
 user::rw-
-group::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/apply
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/apply/data
+# owner: server
+# group: server
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/guest/apply/index.cgi
+# owner: server
+# group: server
+# flags: s--
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/about_us.md
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/our_server.md
+# owner: guest
+# group: guest
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/home/guest/index.cgi
@@ -1790,6 +1812,27 @@ other::r--
 user::rwx
 group::rwx
 other::r-x
+
+# file: /srv/home/guest/join_us.md
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/our_mission.md
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/upcoming_events.md
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/LICENSE
 # owner: 500
