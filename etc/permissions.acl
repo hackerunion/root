@@ -1342,13 +1342,6 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/var/www/shell/templates/.index.jade.swp
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/var/www/shell/templates/index.jade
 # owner: 500
 # group: 497
@@ -1375,13 +1368,6 @@ other::r--
 # group: 497
 user::rw-
 group::rw-
-other::r--
-
-# file: /srv/var/www/shell/js/.app.js.swp
-# owner: root
-# group: root
-user::rw-
-group::r--
 other::r--
 
 # file: /srv/var/www/shell/js/handlers
@@ -1460,13 +1446,6 @@ other::r-x
 user::rwx
 group::rwx
 other::r-x
-
-# file: /srv/var/www/shell/css/.style.css.swp
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
 
 # file: /srv/var/www/shell/css/style.css
 # owner: 500
