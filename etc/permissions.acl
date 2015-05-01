@@ -1608,6 +1608,13 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/server/index.md
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/sandbox
 # owner: server
 # group: server
