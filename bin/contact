@@ -1,0 +1,73 @@
+#!/usr/bin/env node
+
+var db = require("../etc/contact.json");
+var readline = require("readline");
+
+var send_email = function(endpoint) {
+  var subject = null;
+  var message = "";
+
+  var rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+    terminal: false
+  });
+
+  rl.on("line", function(line) {
+    if (subject === null) {
+      if (!line.indexOf("Subject:")) {
+        subject = line.slice(8).trim();
+        return;
+      }
+
+      subject = "";
+    }
+    
+    message += line + "\n";
+    return;
+  });
+
+  rl.on("close", function() {
+    
+  });
+};
+
+if (process.argv.length <= 2) {
+  console.error("Usage: login");
+  return process.exit(1);
+}
+
+var username = process.argv[2].toLowerCase();
+var endpoint;
+var channel;
+var record;
+
+db.forEach(function(v) {
+  if (v.username == username) {
+    record = v;
+    return false;
+  }
+});
+
+if (!record) {
+  console.error("Login not found");
+  return process.exit(1);
+}
+
+channel = record.preferred || "email";
+endpoint = record[channel][0];
+
+if (!endpoint) {
+  console.error("Contact info not found");
+  return process.exit(1);
+}
+
+switch(channel) {
+  case "email":
+    send_email(endpoint);
+    break;
+
+  default:
+    console.error("Unable to contact via", channel);
+    return process.exit(1);
+}
