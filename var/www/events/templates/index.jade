@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    title Events
+    script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
+    script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='/var/www/events/js/app.js')
+
+    link(rel='stylesheet', type='text/css', href='/var/www/events/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='/var/www/events/css/style.css')
+
+  body
+    main
+      h3 Explore our events
+      table
+        thead
+          tr
+            th.
+              Date
+            th.
+              Event
+            th.
+              Details
+            th.
+              Public
+            th.
+              Actions
+        tbody
+          tr
+            td.
+              5/5/2015
+            td.
+              Hack Night
+            td
+              a(href="#").
+                Work on projects with fellow hackers
+            td.
+              &cross;
+            td
+              button RSVP
+              button Share
+              button Export
+    aside
+      h3 Details
+      pre.
+        All about the event

@@ -1489,6 +1489,97 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/var/www/events
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/events/templates
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/events/templates/index.jade
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/events/js
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/events/js/app.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/events/img
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/events/index.cgi
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/events/css
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/var/www/events/css/style.css
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/events/css/normalize.css
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/events/css/typebase.css
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/events/favicon.ico
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/var/www/events/package.json
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/var/lock
 # owner: 500
 # group: 497

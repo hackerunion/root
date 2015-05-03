@@ -6,4 +6,4 @@
 
 <iframe src="/home/guest/apply/index.cgi" width="100%" height="500px" style="border: 0px;"></iframe>
 
-[1]: #/home/guest/join_us.md
+[1]: #/home/guest/upcoming_events.md

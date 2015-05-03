@@ -41,9 +41,6 @@ if test -n "$MESSAGE"; then
 fi
 
 cat <<EOF
-$(whoami)
-$(id)
-$(env)
 <form method="post">
   <p>
     <label>Your name:<br /><input type="text" name="name" value="$name" /></label>
