@@ -26,6 +26,13 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/bin/contact
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
 # file: /srv/tmp
 # owner: 500
 # group: 497
@@ -633,6 +640,13 @@ other::r-x
 # group: 497
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/etc/contact.json
+# owner: root
+# group: root
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/etc/USAGE.txt
