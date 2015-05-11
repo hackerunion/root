@@ -71,6 +71,16 @@
     "process": "/sbin/startcron"
   },
 
+  {
+  # TODO: add list of commands to run after boot, in parallel. useful for installing dependencies without blocking launch
+    "id": "rc",
+    "priority": 9,
+    "context": "boot",
+    "info": "run arbitrary user commands",
+    "async": true,
+    "process": "/sbin/rc"
+  },
+
   { 
     "id": "savemeta",
     "priority": 0,
