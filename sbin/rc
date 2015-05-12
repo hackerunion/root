@@ -1,0 +1,25 @@
+#!/bin/bash
+
+source "$SERVER_ROOT/lib/bash/common.bash"
+
+LOG="$SERVER_ROOT/var/log/rc"
+RC="$SERVER_ROOT/etc/rc"
+
+function runner() {
+  PROCESS="$1"
+  
+}
+
+pushd $RC &> /dev/null
+CMDS=`ls | sort -n`
+popd &> /dev/null
+
+for c in $CMDS; do 
+  if test -x "$RC/$c"; then
+    echo "[`date`] Running $RC/$c" >> "$LOG"
+    "$RC/$c" >> "$LOG"
+    echo "[`date`] Exit ($?)" >> "$LOG"
+  fi
+done
+
+exit 0

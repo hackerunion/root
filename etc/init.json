@@ -72,7 +72,6 @@
   },
 
   {
-  # TODO: add list of commands to run after boot, in parallel. useful for installing dependencies without blocking launch
     "id": "rc",
     "priority": 9,
     "context": "boot",
