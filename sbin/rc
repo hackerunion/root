@@ -17,7 +17,7 @@ popd &> /dev/null
 for c in $CMDS; do 
   if test -x "$RC/$c"; then
     echo "[`date`] Running $RC/$c" >> "$LOG"
-    "$RC/$c" >> "$LOG"
+    "$RC/$c" >> "$LOG" 2>&1
     echo "[`date`] Exit ($?)" >> "$LOG"
   fi
 done
