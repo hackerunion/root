@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+// In a CGI script, first the http headers are written.
+// "Status" is a special header that will be used as the response status code.
+console.log("Status: 201");
+console.log("Content-Type: text/plain");
+
+// A blank line ends the headers.
+console.log("");
+
+// And anything else up to EOF is the http response body.
+console.log("Hello, world!\n");
+console.log("Here is my UID: ", process.getuid(),"\n");
+console.log("Here is my GID: ", process.getgid(), "\n");
+console.log("Here is my environment:\n\n", process.env);
+require('node-ses');
+console.log(require('node-ses'));

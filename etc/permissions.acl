@@ -1587,13 +1587,6 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/var/www/events/img
-# owner: 500
-# group: 497
-user::rwx
-group::rwx
-other::r-x
-
 # file: /srv/var/www/events/index.cgi
 # owner: 500
 # group: 497
@@ -1853,6 +1846,13 @@ other::r--
 user::rw-
 group::rw-
 other::r--
+
+# file: /srv/home/server/hello
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/home/server/index.cgi
 # owner: server
