@@ -19,7 +19,7 @@
 { "group": "cdrom", "gid": "24", "users": [] },
 { "group": "floppy", "gid": "25", "users": [] },
 { "group": "tape", "gid": "26", "users": [] },
-{ "group": "sudo", "gid": "27", "users": [server] },
+{ "group": "sudo", "gid": "27", "users": ["server"] },
 { "group": "audio", "gid": "29", "users": [] },
 { "group": "dip", "gid": "30", "users": [] },
 { "group": "www-data", "gid": "33", "users": [] },
