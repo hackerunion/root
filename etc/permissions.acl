@@ -1346,29 +1346,29 @@ other::---
 # owner: root
 # group: root
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
 # file: /srv/var/run/kernel/oauth.accessTokens
 # owner: root
 # group: root
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
 # file: /srv/var/run/kernel/oauth.authorizedClientIds
 # owner: root
 # group: root
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
 # file: /srv/var/run/kernel/oauth.refreshTokens
 # owner: root
 # group: root
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
 # file: /srv/var/www
 # owner: 500
@@ -1640,6 +1640,13 @@ other::r--
 # owner: 500
 # group: 497
 user::rwx
+group::---
+other::---
+
+# file: /srv/var/lock/kernel/run
+# owner: root
+# group: root
+user::rw-
 group::---
 other::---
 
