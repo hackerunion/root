@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 var db = require("../etc/contact.json");
-var api = require("../etc/aws/ses.json");
+var aws = require("../etc/aws.json");
+var ses = require("node-ses");
 var readline = require("readline");
 
 var send_email = function(endpoint) {
@@ -29,7 +30,22 @@ var send_email = function(endpoint) {
   });
 
   rl.on("close", function() {
-    
+    var client = ses.createClient(aws);
+
+    client.sendemail({
+      to: endpoint,
+      from: "no-reply@hackerunion.org",
+      subject: subject,
+      message: message,
+      altText: message
+    }, function(err) {
+      if (err) {
+        console.error(err);
+        return process.exit(1);
+      }
+
+      return process.exit(0);
+    });
   });
 };
 
