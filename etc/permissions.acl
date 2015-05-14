@@ -671,10 +671,10 @@ group::rw-
 other::r--
 
 # file: /srv/etc/group.json
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
-group::rw-
+group::r--
 other::r--
 
 # file: /srv/etc/rc
@@ -748,10 +748,10 @@ group::rw-
 other::r--
 
 # file: /srv/etc/permissions.acl
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
-group::rw-
+group::r--
 other::r--
 
 # file: /srv/etc/passwd.json
@@ -1343,32 +1343,32 @@ group::---
 other::---
 
 # file: /srv/var/run/kernel/oauth.authCodes
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/var/run/kernel/oauth.accessTokens
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/var/run/kernel/oauth.authorizedClientIds
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/var/run/kernel/oauth.refreshTokens
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/var/www
 # owner: 500
@@ -1643,13 +1643,6 @@ user::rwx
 group::---
 other::---
 
-# file: /srv/var/lock/kernel/run
-# owner: root
-# group: root
-user::rw-
-group::---
-other::---
-
 # file: /srv/lib
 # owner: 500
 # group: 497
@@ -1721,8 +1714,8 @@ group::rwx
 other::r-x
 
 # file: /srv/home/server
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rwx
 group::rwx
 other::r-x
@@ -1731,61 +1724,61 @@ other::r-x
 # owner: root
 # group: root
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/home/server/README
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/index.md
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/server/aws.json
-# owner: server
-# group: server
+# owner: root
+# group: root
 user::rw-
 group::r--
-other::---
+other::r--
 
 # file: /srv/home/server/sandbox
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/server/sandbox/.index
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/index.md
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/start_chapter.md
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/apply
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rwx
 group::rwx
 other::r-x
@@ -1794,76 +1787,76 @@ other::r-x
 # owner: root
 # group: root
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/home/server/sandbox/apply/index.cgi
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 # flags: s--
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/server/sandbox/about_us.md
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/our_server.md
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/join_us.md
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/our_mission.md
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/upcoming_events.md
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/hello
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rwx
 group::r-x
 other::r-x
 
 # file: /srv/home/server/index.cgi
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/server/.ssh
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rwx
 group::r-x
 other::r-x
 
 # file: /srv/home/server/.ssh/authorized_keys
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 user::rw-
 group::r--
 other::r--
@@ -1876,93 +1869,93 @@ group::rw-
 other::r--
 
 # file: /srv/home/guest
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/guest/.index
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/index.md
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/start_chapter.md
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/apply
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rwx
 group::r-x
 other::r-x
 
 # file: /srv/home/guest/apply/data
-# owner: server
-# group: server
+# owner: root
+# group: root
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/home/guest/apply/index.cgi
-# owner: server
-# group: server
+# owner: 1337
+# group: 1337
 # flags: s--
 user::rwx
 group::r-x
 other::r-x
 
 # file: /srv/home/guest/about_us.md
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/our_server.md
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/index.cgi
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/guest/join_us.md
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/our_mission.md
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/upcoming_events.md
-# owner: guest
-# group: guest
+# owner: 1338
+# group: 1338
 user::rw-
 group::r--
 other::r--
