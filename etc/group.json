@@ -1,5 +1,4 @@
 [
-{ "group": "server", "gid": "1337", "users": [] },
 { "group": "root", "gid": "0", "users": [] },
 { "group": "daemon", "gid": "1", "users": [] },
 { "group": "bin", "gid": "2", "users": [] },
@@ -48,5 +47,6 @@
 { "group": "ssh", "gid": "107", "users": [] },
 { "group": "messagebus", "gid": "108", "users": [] },
 { "group": "crontab", "gid": "109", "users": [] },
-{ "group": "Debian-exim", "gid": "110", "users": [] }
+{ "group": "Debian-exim", "gid": "110", "users": [] },
+{ "group": "server", "gid": "1337", "users": [] }
 ]

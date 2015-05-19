@@ -894,6 +894,13 @@ user::rwx
 group::rw-
 other::r--
 
+# file: /srv/boot/host/bin/mkgroup
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
 # file: /srv/boot/host/bin/mkhash
 # owner: 500
 # group: 497
@@ -1721,8 +1728,8 @@ group::rwx
 other::r-x
 
 # file: /srv/home/server
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rwx
 group::rwx
 other::r-x
@@ -1735,57 +1742,113 @@ group::r--
 other::r--
 
 # file: /srv/home/server/README
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/index.md
-# owner: 1337
-# group: 1337
+# file: /srv/home/server/.npm
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/node-ses
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/node-ses/.cache.json
+# owner: server
+# group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/aws.json
-# owner: root
-# group: root
+# file: /srv/home/server/.npm/node-ses
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/node-ses/1.0.0
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/node-ses/1.0.0/package.tgz
+# owner: server
+# group: server
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/home/server/.npm/node-ses/1.0.0/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/node-ses/1.0.0/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/_locks
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/home/server/sandbox
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/server/sandbox/.index
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/index.md
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/start_chapter.md
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/apply
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rwx
 group::rwx
 other::r-x
@@ -1798,72 +1861,65 @@ group::r--
 other::r--
 
 # file: /srv/home/server/sandbox/apply/index.cgi
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 # flags: s--
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/server/sandbox/about_us.md
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/our_server.md
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/join_us.md
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/our_mission.md
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/upcoming_events.md
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/hello
-# owner: 1337
-# group: 1337
-user::rwx
-group::r-x
-other::r-x
-
 # file: /srv/home/server/index.cgi
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/server/.ssh
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rwx
 group::r-x
 other::r-x
 
 # file: /srv/home/server/.ssh/authorized_keys
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 user::rw-
 group::r--
 other::r--
@@ -1918,8 +1974,8 @@ group::r--
 other::r--
 
 # file: /srv/home/guest/apply/index.cgi
-# owner: 1337
-# group: 1337
+# owner: server
+# group: server
 # flags: s--
 user::rwx
 group::r-x
