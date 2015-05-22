@@ -1,4 +1,5 @@
 [
+{ "group": "guest", "gid": "1338", "users": [] },
 { "group": "server", "gid": "1337", "users": [] },
 { "group": "root", "gid": "0", "users": [] },
 { "group": "daemon", "gid": "1", "users": [] },

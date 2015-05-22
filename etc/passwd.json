@@ -1,3 +1,4 @@
 [
+{ "username": "guest", "password": "$1$tz0tjdjk$IGYoEs78J1soZnki58gCT.", "uid": "1338", "gid": "1338", "info": "managed user", "shell": "/sbin/nologin", "service": false, "uri": null },
 { "username": "server", "password": "$1$9gK/TYmg$RIfKHNX873DgKG0XB14jR1", "uid": "1337", "gid": "1337", "info": "managed user", "shell": "/bin/bash", "service": false, "uri": null }
 ]
