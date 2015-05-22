@@ -1811,13 +1811,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/.npm/_locks
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
 # file: /srv/home/server/sandbox
 # owner: server
 # group: server
@@ -1932,36 +1925,36 @@ group::rw-
 other::r--
 
 # file: /srv/home/guest
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/guest/.index
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/index.md
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/start_chapter.md
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/apply
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rwx
 group::r-x
 other::r-x
@@ -1982,43 +1975,43 @@ group::r-x
 other::r-x
 
 # file: /srv/home/guest/about_us.md
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/our_server.md
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/index.cgi
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rwx
 group::rwx
 other::r-x
 
 # file: /srv/home/guest/join_us.md
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/our_mission.md
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rw-
 group::r--
 other::r--
 
 # file: /srv/home/guest/upcoming_events.md
-# owner: 1338
-# group: 1338
+# owner: guest
+# group: guest
 user::rw-
 group::r--
 other::r--
