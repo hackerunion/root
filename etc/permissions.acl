@@ -1741,11 +1741,11 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/README
+# file: /srv/home/server/.bashrc
 # owner: server
 # group: server
 user::rw-
-group::rw-
+group::r--
 other::r--
 
 # file: /srv/home/server/.npm
@@ -1890,6 +1890,13 @@ group::rw-
 other::r--
 
 # file: /srv/home/server/sandbox/upcoming_events.md
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/README.md
 # owner: server
 # group: server
 user::rw-
