@@ -669,7 +669,7 @@ other::r--
 # group: root
 user::rw-
 group::r--
-other::r--
+other::---
 
 # file: /srv/etc/init.json
 # owner: 500
@@ -1911,6 +1911,13 @@ other::r--
 # group: server
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/home/server/.bash_profile
+# owner: server
+# group: server
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/home/server/README.md
