@@ -6,6 +6,7 @@ process.chdir(__dirname);
 var fs = require('fs');
 var jade = require('jade');
 var path = require('path');
+var querystring = require('querystring');
 var body = require('/srv/lib/js/body');
 var lockFile = require('/srv/lib/js/lockfile');
 
@@ -71,14 +72,17 @@ console.log("");
 
 var fn = jade.compileFile('templates/index.jade');
 var events = require(eventsPath);
+var qs = querystring.parse(process.env.QUERY_STRING);
+var focus = qs.id;
 
 events = events.filter(function(a) {
-  return Date.parse(a.timestamp) >= Date.now();
+  return a.id == focus || Date.parse(a.timestamp) >= Date.now();
 }).sort(function(a, b) {
-  return Date.parse(a.timestamp) - Date.parse(b.timestamp);
+  return (a.id == focus ? -1 : (b.id == focus ? 1 : Date.parse(a.timestamp) - Date.parse(b.timestamp)));
 });
 
 console.log(fn({
   'user': process.env.USER,
+  'focus': focus,
   'events': events
 }));

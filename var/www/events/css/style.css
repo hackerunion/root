@@ -45,6 +45,23 @@ aside pre {
 
 }
 
+.event.focus {
+  background: #ffd;
+}
+
+.event.focus .show-summary {
+  font-weight: bold;
+}
+
+.event.focus em {
+  font-weight: bold;
+}
+
+.event.focus td {
+  border-bottom-width: 4px;
+  border-bottom-style: double;
+}
+
 .event .public,
 .event .private {
 }
@@ -57,9 +74,19 @@ aside pre {
   color: #ff5500;
 }
 
+.event a.invisible {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
 .event button {
-  font-size: 12px;
-  margin: 2px;
+  margin: 10px;
+  font-size: 14px;
+  display: block;
+}
+
+.event .calendar-button {
+  font-size: 10px;
 }
 
 #details h3 { 

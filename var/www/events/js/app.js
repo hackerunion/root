@@ -1,12 +1,46 @@
   $(function() {
-    $(".show-summary").click(function(e) {
-      $("#details h3").text(e.target.getAttribute("data-name"));
-      $("#details pre").html(e.target.getAttribute("data-details"));
+    $(".utc").each(function() {
+      var $this = $(this);
+      $this.text((new Date($this.text())).toLocaleString());
+    });
+
+    $(".show-summary").click(function() {
+      $("#details h3").text(this.getAttribute("data-name"));
+      $("#details pre").html(this.getAttribute("data-details"));
       return false;
     });
 
-    $("button.rsvp").click(function(e) {
-      var $btn = $(e.target);
+    $("button.add").each(function() {
+      var $btn = $(this);
+      var ev = $btn.data('event');
+    
+      // need to add the duration field to the data file
+      ev.duration |= 3600; 
+      
+      var cal = createCalendar({
+        options: {
+          'class': 'calendar-button'
+        },
+        data: {
+          title: ev.name,
+          start: new Date(ev.timestamp),
+          duration: ev.duration / 60,
+          address: ev.address || "See description",
+          description: ev.details
+        }
+      });
+      
+      $btn.replaceWith(cal);
+      $("label", cal).hide().click();
+    });
+
+    $("button.link").click(function() {
+      prompt("Here is this event's link:", window.location.href.split('?')[0] + "?id=" + $(this).data('eid'));
+      return;
+    });
+
+    $("button.rsvp").click(function() {
+      var $btn = $(this);
       var user = $btn.data('user');
       var eid = $btn.data('eid');
       var email = null;

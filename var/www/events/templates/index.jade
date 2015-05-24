@@ -4,7 +4,14 @@ html(lang='en')
     title Events
     script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
     script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='/var/www/events/js/ouical.min.js')
     script(type='text/javascript', src='/var/www/events/js/app.js')
+
+    if focus
+      script(type='text/javascript').
+        $(function() {
+          $(".event.focus .show-summary").click();
+        });
 
     link(rel='stylesheet', type='text/css', href='/var/www/events/css/normalize.css')
     link(rel='stylesheet', type='text/css', href='/var/www/events/css/style.css')
@@ -21,36 +28,45 @@ html(lang='en')
             th.
               Details
             th.
-              Public
-            th.
-              Guests
+              RSVPs
             th.
               Actions
+            th.
+              Export to&hellip;
         tbody
           each event in events
-            tr.event
-              td.
-                #{(new Date(event.timestamp)).toLocaleString()}
-              td.
-                #{event.name}
+            tr(class=event.id == focus ? ["event", "focus"] : ["event"])
               td
-                a(href="#", class="show-summary", data-details=event.details, data-name=event.name).
+                a(name="event-" + event.id)
+                small
+                  code
+                    abbr(title="Duration: " + (event.duration ? event.duration/60.0 + " minutes" : "unknown")).utc= event.timestamp
+                    - var hours = parseInt(event.duration / 3600)
+                    if hours
+                      span &nbsp;
+                    while hours--
+                      span &#8986;
+              td
+                a(href="#", class="show-summary", data-details=event.details, data-name=event.name)
+                  | #{event.name}
+                unless event.public
+                  | &nbsp;
+                  abbr(title="Members-only") &#128274;
+              td
+                em.
                   #{event.summary}
-              td
-                if event.public
-                  span.public(title="Yes") &#10004;
-                else
-                  span.private(title="No") &#10007;
               td.
                 #{event.rsvp.length} / #{event.capacity}
               td
                 button.rsvp(data-eid=event.id, data-user=user)
-                  if event.rsvp.indexOf("user:" + user) == -1
-                    | RSVP
-                  else
-                    | Undo RSVP
-                button Share
-                button Export
+                  strong
+                    if event.rsvp.indexOf("user:" + user) == -1
+                      | RSVP
+                    else
+                      | Undo RSVP
+                button.link(data-eid=event.id) Copy Link
+              td
+                button.add(data-event=event) Add to Calendar
     aside#details
       h3 Details
       pre.
