@@ -51,32 +51,40 @@ var send_email = function(endpoint) {
 
 if (process.argv.length <= 2) {
   console.error("Usage: login");
+  console.error("Usage: channel endpoint");
   return process.exit(1);
 }
 
 var username = process.argv[2].toLowerCase();
+var lookup = process.argv.length != 4;
 var endpoint;
 var channel;
 var record;
 
-db.forEach(function(v) {
-  if (v.username == username) {
-    record = v;
-    return false;
+if (lookup) {
+  db.forEach(function(v) {
+    if (v.username == username) {
+      record = v;
+      return false;
+    }
+  });
+  
+  if (!record) {
+    console.error("Login not found");
+    return process.exit(1);
   }
-});
+  
+  channel = record.preferred || "email";
+  endpoint = record[channel][0];
+  
+  if (!endpoint) {
+    console.error("Contact info not found");
+    return process.exit(1);
+  }
 
-if (!record) {
-  console.error("Login not found");
-  return process.exit(1);
-}
-
-channel = record.preferred || "email";
-endpoint = record[channel][0];
-
-if (!endpoint) {
-  console.error("Contact info not found");
-  return process.exit(1);
+} else {
+  channel = process.argv[2].toLowerCase();
+  endpoint = process.argv[3];
 }
 
 switch(channel) {

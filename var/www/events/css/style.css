@@ -5,11 +5,13 @@ body {
 
 table {
   border: 1px solid #aaa;
+  width: 100%;
 }
 
 table thead {
   background: #aaa;
   border-bottom: 2px solid #aaa;
+  text-align: left;
 }
 
 table td,
@@ -22,7 +24,7 @@ table td {
 }
 
 main {
-  width: 75%;
+  width: 78%;
 }
 
 aside {
@@ -31,11 +33,37 @@ aside {
   top: 0px;
   bottom: 0px;
   width: 20%;
-  border-left: 1px solid #aaa;
-  padding-left: 20px;
+  padding-left: 2%;
   overflow: auto;
 }
 
 aside pre {
   font-size: 12px;
+}
+
+.event {
+
+}
+
+.event .public,
+.event .private {
+}
+
+.event .public {
+  color: #0a0;
+}
+
+.event .private {
+  color: #ff5500;
+}
+
+.event button {
+  font-size: 12px;
+  margin: 2px;
+}
+
+#details h3 { 
+  margin: 0px;
+  margin-top: 10px;
+  color: #888;
 }

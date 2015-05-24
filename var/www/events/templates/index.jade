@@ -11,7 +11,6 @@ html(lang='en')
 
   body
     main
-      h3 Explore our events
       table
         thead
           tr
@@ -24,23 +23,35 @@ html(lang='en')
             th.
               Public
             th.
+              Guests
+            th.
               Actions
         tbody
-          tr
-            td.
-              5/5/2015
-            td.
-              Hack Night
-            td
-              a(href="#").
-                Work on projects with fellow hackers
-            td.
-              &cross;
-            td
-              button RSVP
-              button Share
-              button Export
-    aside
+          each event in events
+            tr.event
+              td.
+                #{(new Date(event.timestamp)).toLocaleString()}
+              td.
+                #{event.name}
+              td
+                a(href="#", class="show-summary", data-details=event.details, data-name=event.name).
+                  #{event.summary}
+              td
+                if event.public
+                  span.public(title="Yes") &#10004;
+                else
+                  span.private(title="No") &#10007;
+              td.
+                #{event.rsvp.length} / #{event.capacity}
+              td
+                button.rsvp(data-eid=event.id, data-user=user)
+                  if event.rsvp.indexOf("user:" + user) == -1
+                    | RSVP
+                  else
+                    | Undo RSVP
+                button Share
+                button Export
+    aside#details
       h3 Details
       pre.
         All about the event
