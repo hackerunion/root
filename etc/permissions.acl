@@ -36,9 +36,10 @@ other::r--
 # file: /srv/bin/contact
 # owner: root
 # group: root
+# flags: s--
 user::rwx
 group::r-x
-other::r-x
+other::r--
 
 # file: /srv/tmp
 # owner: 500
@@ -68,16 +69,16 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/srv/contact
-# owner: 500
-# group: 497
+# file: /srv/srv/events
+# owner: server
+# group: server
 user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/srv/contact/contact.json
-# owner: 500
-# group: 497
+# file: /srv/srv/events/events.json
+# owner: server
+# group: server
 user::rw-
 group::rw-
 other::r--
@@ -661,6 +662,13 @@ other::r--
 # group: 497
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/etc/aws.json
+# owner: root
+# group: root
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/etc/init.json
@@ -1581,8 +1589,9 @@ group::rw-
 other::r--
 
 # file: /srv/var/www/events/index.cgi
-# owner: 500
-# group: 497
+# owner: server
+# group: server
+# flags: s--
 user::rwx
 group::rwx
 other::r-x
@@ -1632,9 +1641,10 @@ other::r--
 # file: /srv/var/lock
 # owner: 500
 # group: 497
+# flags: --t
 user::rwx
 group::rwx
-other::r-x
+other::rwx
 
 # file: /srv/var/lock/USAGE.txt
 # owner: 500
@@ -1677,6 +1687,13 @@ other::r--
 user::rwx
 group::rwx
 other::r-x
+
+# file: /srv/lib/js/lockfile.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
 
 # file: /srv/lib/js/body.js
 # owner: 500
