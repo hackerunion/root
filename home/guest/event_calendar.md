@@ -1,6 +1,6 @@
-# Under Construction
+# Upcoming Events
 
-Please visit http://meetup.com/nyhacker to sign up for our events.
+Please join us for one of our regular events.
 
 ----
 

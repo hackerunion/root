@@ -365,6 +365,10 @@ body .container main .content-wrapper .content a {
     top: 40px !important;
   }
 
+  .content {
+    margin: 0px !important;
+  }	
+
   nav,
   .content-wrapper {
     position: relative !important;
@@ -376,5 +380,13 @@ body .container main .content-wrapper .content a {
     overflow: inherit !important;
     float: left !important;
     clear: both !important;
+  }
+
+  #shell-btn {
+    display: none;
+  }
+
+  header .right:after {
+    content: "mini";
   }
 }
