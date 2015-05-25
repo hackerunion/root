@@ -17,6 +17,10 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='/var/www/events/css/style.css')
 
   body
+    aside#details
+      h3 Details
+      pre.
+        All about the event
     main
       table
         thead
@@ -64,10 +68,6 @@ html(lang='en')
                       | RSVP
                     else
                       | Undo RSVP
-                button.link(data-eid=event.id) Copy Link
+                button.link(data-eid=event.id) Link
               td
                 button.add(data-event=event) Add to Calendar
-    aside#details
-      h3 Details
-      pre.
-        All about the event

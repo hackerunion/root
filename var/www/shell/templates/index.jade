@@ -17,6 +17,8 @@ html(lang='en')
     if noui
       link(rel='stylesheet', type='text/css', href='/var/www/shell/css/noui.css')
 
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css')
+
   body
     .container
       main
@@ -41,7 +43,7 @@ html(lang='en')
           header
             .left
               a(href="#/home/guest/")
-                | learn more
+                | go home 
             .right
              | logged in as 
              b #{username} 
@@ -73,3 +75,9 @@ html(lang='en')
           .icon
             img(src='/var/www/shell/img/file.svg')
           a(href='#') /
+
+
+    .github-fork-ribbon-wrapper.right-bottom
+      .github-fork-ribbon
+        a(href='https://github.com/hackerunion/root') Fork me on GitHub
+

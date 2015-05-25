@@ -94,3 +94,48 @@ aside pre {
   margin-top: 10px;
   color: #888;
 }
+
+@media (max-width: 400px) {
+  table {
+    position: relative !important;
+    float: left !important;
+    clear: left !important;
+    display: block !important;
+    width: auto !important;
+  }
+
+  th, tr, td {
+    font-size: 14px !important;
+    padding: 2px !important;
+    margin: 2px !important;
+    border: 0px !important;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    border-bottom: 4px solid #ccc !important;
+  }
+
+  td {
+    display: block;
+  }
+
+  main {
+    position: relative !important;
+    float: left !important;
+    clear: left !important;
+    display: block !important;
+    width: auto !important;
+  }
+
+  aside {
+    position: relative !important;
+    float: left !important;
+    clear: left !important;
+    display: block !important;
+    width: auto !important;
+  }
+}

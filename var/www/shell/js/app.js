@@ -24,17 +24,20 @@ function boot(root, home) {
     };
     
     var msg = function(s, is_uri) {
+      var $msg = $("#message");
       var cnt = '...';
+      var root = '';
       var s = s || 'Unknown error';
 
       if (is_uri && s.length > MSG_MAX) {
         var path = s.split('/');
         var res = '';
         
-        _.forEachRight(path, function(p) {
+        _.forEachRight(path, function(p, i) {
           res = (p ? '/' + p : p) + res;
           
           if (res.length + cnt.length > MSG_MAX) {
+            root = path.slice(0, i+1).join("/");
             return false;
           }
 
@@ -49,8 +52,30 @@ function boot(root, home) {
       if (s.length > MSG_MAX) {
         s = cnt + s.slice(-MSG_MAX);
       }
+      
+      if (!is_uri) {
+        return $msg.text(s);
+      }
 
-      $("#message").text(s);
+      var $nav = $("nav");
+      var path = root;
+      
+      $msg.empty();
+
+      if (!s.indexOf(cnt)) {
+        $msg.append("<span>" + cnt + "</span>");
+      }
+
+      s.match(/\/[^\/]+/g).forEach(function(v) {
+        var dir = path += v;
+
+        $msg.append($("<a />").text(v).click(function() {
+          $nav.addClass('loading');
+          setTimeout(function() { $nav.removeClass('loading'); }, 5000);
+
+          $kernel.cd(dir);
+        }));
+      });
     };
     
     var stat = function(uri, opts) {

@@ -332,3 +332,49 @@ body .container main .content-wrapper .content a {
 .clear {
   clear: both;
 }
+
+.github-fork-ribbon {
+  background: #000 !important;
+  font-family: "Andale Mono", AndaleMono, monospace !important;
+}
+
+.github-fork-ribbon a {
+  border: 4px double #29ff82 !important;
+  color: #29ff82 !important;
+}
+
+.github-fork-ribbon a:hover {
+  border: 4px double #8fffbe !important;
+  color: #8fffbe !important;
+}
+
+@media (max-width: 500px) {
+  .github-fork-ribbon-wrapper {
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 11px !important;
+  }
+
+  .container {
+    top: 40px !important;
+  }
+
+  nav,
+  .content-wrapper {
+    position: relative !important;
+    display: block !important;
+    top: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+    bottom: inherit !important;
+    overflow: inherit !important;
+    float: left !important;
+    clear: both !important;
+  }
+}
