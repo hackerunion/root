@@ -1,3 +1,3 @@
-= This is the server's personal home on the web
+# This is the server's personal home on the web
 
-AIN'T IT GRAND!?
+_AIN'T IT GRAND!?_

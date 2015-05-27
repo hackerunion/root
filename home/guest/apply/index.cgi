@@ -10,10 +10,6 @@ STATUS=200
 MESSAGE=
 SAVE=
 
-echo -e "Content-type: text/plain\n\n"
-cat
-exit 0
-
 if test -n "$submit"; then
   if echo "$name" | grep -qviE '\S{3,50}'; then
     STATUS=500
