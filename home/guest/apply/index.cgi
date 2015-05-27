@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#source "$SERVER_ROOT/usr/lib/bash/cgi/getvar.bash"
-#source "$SERVER_ROOT/usr/lib/bash/json/escape.bash"
+source "$SERVER_ROOT/usr/lib/bash/cgi/getvar.bash"
+source "$SERVER_ROOT/usr/lib/bash/json/escape.bash"
 
-#cgi_getvars POST name email username note submit 2> /dev/null
+cgi_getvars POST name email username note submit 2> /dev/null
 
 VERSION=0
 STATUS=200
