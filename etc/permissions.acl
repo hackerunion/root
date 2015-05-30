@@ -119,11 +119,11 @@ group::rwx
 other::r-x
 
 # file: /srv/cgi-bin/adduser
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rwx
-group::rwx
-other::r-x
+group::r-x
+other::---
 
 # file: /srv/usr
 # owner: 500
@@ -692,7 +692,14 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/etc/rc/0ses
+# file: /srv/etc/rc/1ses
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/etc/rc/0js
 # owner: root
 # group: root
 user::rwx
@@ -1764,6 +1771,13 @@ other::r-x
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/home/server/admin
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/home/server/.bashrc
 # owner: server

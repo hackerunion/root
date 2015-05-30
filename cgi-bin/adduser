@@ -1,184 +1,39 @@
-#!/usr/bin/env node
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
 
-var MAX_URI = 128;
-var MAX_INFO = 64;
-var MAX_USERNAME = 16;
-var MIN_USERNAME = 1;
-var MIN_PASSWORD = 5;
-
-// ensure that all paths are relative to this file's actual location
-process.chdir(__dirname);
-
-var _ = require('lodash');
-var fs = require('fs');
-var url = require('url');
-var crypt = require('crypt3');
-var child_process = require('child_process');
-
-var body = require('../lib/js/body');
-
-function response(code, value) {
-  console.log("Status: " + code);
-  console.log("Content-Type: application/json")
-  console.log("\n");
-  
-  if (value) {
-    console.log(JSON.stringify(value));
-  }
-
-  return false;
-};
-
-function nullify(v) {
-  if (!v || !v.length) {
-    return null;
-  }
-
-  return v;
-};
-
-function etcPasswd() {
-  try {
-    return _.sortBy(require('../etc/passwd.json'), function (x) { return -1 * x.uid; });
-  } catch(e) {
-    return response(500, 'Unable to read password file');
-  }
-};
-
-function etcGroup() {
-  try {
-    return _.sortBy(require('../etc/group.json'), function (x) { return -1 * x.gid; });
-  } catch(e) {
-    return response(500, 'Unable to read group file');
-  }
-};
-
-function sanitize(qs) {
-  // quick validation
-  if (!qs.username || !qs.password) {
-    return response(500, 'Password and username are required');
-  }
-
-  if (qs.username.length > MAX_USERNAME) {
-    return response(500, 'Username is too long');
-  }
-  
-  if (qs.username.length < MIN_USERNAME) {
-    return response(500, 'Username is too short');
-  }
-
-  qs.username = qs.username.toLowerCase();
-
-  if (qs.password.length < MIN_PASSWORD) {
-    return response(500, 'Password is too short');
-  }
-
-  if (qs.info.length > MAX_INFO) {
-    return response(500, 'Notes are too long');
-  }
-
-  if (qs.uri) {
-    if (qs.uri.length > MAX_URI) {
-      return response(500, 'URI is too long');
-    }
-
-    var parsed = url.parse(qs.uri);
-
-    if (!parsed.host || -1 == ['http:', 'https:'].indexOf(parsed.protocol)) {
-      return response(500, 'Invalid URI');
-    }
-
-    qs.uri = url.format(parsed);
-  }
-
-  if (qs.service && !qs.uri) {
-    return response(500, 'Services must include a URI');
-  }
-
-  return true;
-};
-
-// this is included for convenience
-if (!/post/i.test(process.env.REQUEST_METHOD)) {
-  var html="";
-  
-  html += '<html>';
-  html += '<body>';
-  html += '<h1>Add User</h1>';
-  html += '<hr />';
-  html += '<form method="post">';
-  html += '  <label for="username">Username:</label> <input type="text" name="username" /> <br />';
-  html += '  <label for="password">Password:</label> <input type="password" name="password" /> <br />';
-  html += '  <label for="info">Note:</label> <input type="text" name="info" /> <br />';
-  html += '  <label for="service">Is Service:</label> <input type="checkbox" name="service" /> <br />';
-  html += '  <label for="uri">URI (optional):</label> <input type="text" name="uri" /> <br />';
-  html += '  <input type="submit" value="Create User" />';
-  html += '</form>';
-  html += '</body>';
-  html += '</html>';
- 
-  return console.log("Status: 200\nContent-Type: text/html\n\n" + html);
-}
-
-body.parse(process.stdin, function(err, qs) {
-  var uid;
-  var gid;
-  var hash;
-  var users;
-  var groups;
-
-  if (err) {
-    return response(500, err);
-  }
-  
-  if (!sanitize(qs)) return;
-  if (!(users = etcPasswd())) return;
-  if (!(groups = etcGroup())) return;
-
-  if (_.findWhere(users, { 'username': qs.username })) {
-    return response(500, 'Username already in use');
-  }
-
-  if (_.findWhere(groups, { 'group': qs.username })) {
-    return response(500, 'Username already in use (group)');
-  }
-  
-  // select next sequential uid and gid
-  uid = parseInt(users[0].uid) + 1 + "";
-  gid = parseInt(groups[0].gid) + 1 + "";
-  
-  try {
-    fs.writeFileSync('../etc/group.json', JSON.stringify(groups.concat({
-      'group': qs.username,
-      'gid': gid,
-      'users': []
-    })));
-  
-    fs.writeFileSync('../etc/passwd.json', JSON.stringify(users.concat({
-      'username': qs.username,
-      'password': crypt(qs.password),
-      'uid': uid,
-      'gid': gid,
-      'info': qs.info || '',
-      'service': !!qs.service,
-      'uri': qs.uri || ''
-    })));
-    
-    var sync = child_process.spawn('../sbin/sync', [], {
-      'cwd': process.cwd(),
-      'uid': 0,
-      'gid': 0
-    });
-    
-    sync.on('close', function (code) {
-      if (code) {
-        return response(500, 'Sync error (' + code + ')');
-      }
-  
-      return response(200);
-    });
-
-  } catch (e) {
-    return response(401, "Permission denied");
-  }
-});
+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
+28yWRuws4yDms+9PQk3cTPsj0Di+9Q==
+=UAv7
+-----END PGP MESSAGE-----
