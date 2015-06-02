@@ -119,11 +119,11 @@ group::rwx
 other::r-x
 
 # file: /srv/cgi-bin/adduser
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rwx
-group::rwx
-other::r-x
+group::r-x
+other::---
 
 # file: /srv/usr
 # owner: 500
@@ -692,7 +692,14 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/etc/rc/0ses
+# file: /srv/etc/rc/1ses
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/etc/rc/0js
 # owner: root
 # group: root
 user::rwx
@@ -1581,6 +1588,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/var/www/events/js/ouical.min.js
+# owner: 500
+# group: 497
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/var/www/events/js/app.js
 # owner: 500
 # group: 497
@@ -1757,6 +1771,13 @@ other::r-x
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/home/server/admin
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/home/server/.bashrc
 # owner: server
@@ -1969,6 +1990,13 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/guest/event_calendar.md
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/guest/index.md
 # owner: guest
 # group: guest
@@ -1991,8 +2019,8 @@ group::r-x
 other::r-x
 
 # file: /srv/home/guest/apply/data
-# owner: root
-# group: root
+# owner: server
+# group: server
 user::rw-
 group::r--
 other::r--
@@ -2034,13 +2062,6 @@ group::r--
 other::r--
 
 # file: /srv/home/guest/our_mission.md
-# owner: guest
-# group: guest
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/guest/upcoming_events.md
 # owner: guest
 # group: guest
 user::rw-

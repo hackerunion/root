@@ -1,6 +1,10 @@
 #!/bin/bash
 # http://oinkzwurgl.org/bash_cgi
 
+# hack: occasionally, spaces are encoded as "%20" instead of "+", causing a CONTENT_LENGTH mismatch
+# we simply ignore content length to avoid running into mangled or shortened data
+IGNORE_CONTENT_LENGTH=true
+
 # (internal) routine to store POST data
 function cgi_get_POST_vars()
 {
@@ -9,10 +13,15 @@ function cgi_get_POST_vars()
     [ "${CONTENT_TYPE}" != "application/x-www-form-urlencoded" ] && \
     echo "bash.cgi warning: you should probably use MIME type "\
          "application/x-www-form-urlencoded!" 1>&2
+    
+    # hack: see above for background
+    [ -z "$IGNORE_CONTENT_LENGTH" ] && ARGS="-n $CONTENT_LENGTH"
+
     # save POST variables (only first time this is called)
     [ -z "$QUERY_STRING_POST" \
       -a "$REQUEST_METHOD" = "POST" -a ! -z "$CONTENT_LENGTH" ] && \
-        read -n $CONTENT_LENGTH QUERY_STRING_POST
+        read $ARGS QUERY_STRING_POST
+
     # prevent shell execution
     local t
     t=${QUERY_STRING_POST//%60//} # %60 = `

@@ -1,3 +1,4 @@
-= This is the server's personal home on the web
+# This is the server's personal home on the web
 
-AIN'T IT GRAND!?
+_Sophie was here_
+
