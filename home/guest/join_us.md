@@ -1,6 +1,19 @@
 # Join Hacker Union
 
-Membership must be approved by an admin. Create a request below and join us for an [event][1]!
+Membership must be approved by an admin. Create a request below **and** join us for an [event][1].
+
+----
+
+## Why Join?
+
+ - It's free and nifty
+ - Support your peers
+ - Access to members-only events
+ - Access to internal resources
+ - SSH access to this server
+ - Build apps for the community
+ - Help lead the Hacker Union
+ - Why not?
 
 ----
 

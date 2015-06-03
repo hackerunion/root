@@ -1772,13 +1772,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/admin
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
 # file: /srv/home/server/.bashrc
 # owner: server
 # group: server
@@ -2064,6 +2057,76 @@ other::r--
 # file: /srv/home/guest/our_mission.md
 # owner: guest
 # group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/brandon
+# owner: brandon
+# group: brandon
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/brandon/.bashrc
+# owner: brandon
+# group: brandon
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/brandon/README
+# owner: brandon
+# group: brandon
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/brandon/sandbox
+# owner: brandon
+# group: brandon
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/brandon/sandbox/README
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/brandon/.bash_logout
+# owner: brandon
+# group: brandon
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/brandon/index.cgi
+# owner: brandon
+# group: brandon
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/brandon/.ssh
+# owner: brandon
+# group: brandon
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/brandon/.ssh/authorized_keys
+# owner: brandon
+# group: brandon
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/brandon/.profile
+# owner: brandon
+# group: brandon
 user::rw-
 group::r--
 other::r--

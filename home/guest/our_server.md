@@ -1,29 +1,33 @@
-# What's the deal with this server?
+# About the Hacker Union Server
 
-In a nutshell: I've taken the best parts of the 90s web (cgi-bin, green text on black backgrounds, massive security holes), mashed it up with docker and AWS and node -- and, well, here we are.
+We've taken the best parts of the 90s web (cgi-bin, green text on black backgrounds, massive security holes), mashed it up with docker and AWS and node -- and, well, here we are.
 
-Said less dramatically: I've built an API around a version of linux running in a container. Its filesystem is sync'd to github -- and private files are encrypted before pushing.
+More precisely, we've built an API around a version of Linux running in a container. Its filesystem is periodically synchronized with [GitHub][2] -- and private files are encrypted before pushing.
 
-It also implements oauth allowing third party apps to "sudo" to your Hacker Union account and access shared data via a trivial API. Neat, right?
+The system also implements oauth allowing third party apps to "sudo" to your Hacker Union account and access shared data via a simple REST API. Neat, right?
 
-What you're using right now is actually a cgi script called the "shell" that lives in `/var/www/shell`. It uses a few scripts in `/cgi-bin/` to `ls` directories and `cat` files. The rest is javascript tomfoolery.
+What you're using right now is actually a CGI script called the _Hacker Union shell_ that lives at `/var/www/shell`. This script uses a few simpler scripts in `/cgi-bin/` to `ls` directories and `cat` files. The rest is javascript tomfoolery.
 
-## What's the point?
+## The Purpose
 
-I wanted something that would be extremely easy to hack, that would be a great place to gather shared resources and data, and that would inspire creativity and shenanigans. What resulted is this server -- a cross between a wiki and an operating system. Does it make sense? I have no idea. Was it fun to build? Yup.
+We wanted to create a collaborative environment that would be extremely easy to hack: a system that would be a great place to gather shared resources and data.
 
-## This is your server!
+More than that, we wanted a system htat would inspire creativity and encourage experimentation. What resulted is this server -- a cross between a wiki and an operating system.
 
-I wrote a bunch of code. But this is a community-driven project... and, really, it's your community-driven project. Check out the code, mess with some stuff, hax0r teh gibs0n, and submit a pull request or fourteen.
+## The Community
 
-[View source! Fork me! Hack me!][1]
+This is a community-driven project... and you're the community. Check out the code, fix some bugs, submit a pull request. Regardless of what you do: have fun!
 
-## Proper documentation
+[View source][1]
 
-I know, I know. This is awful. I'm writing the real documentation now(ish).
+## Get Help
 
-## To pwn or not to pwn
+We're in the process of putting together some real documentation. If you're interested in tinkering, feel free to [email us][3] for help and pointers.
 
-It's not hard to poke holes in this bad boy. Should you use that to pwn our megabytes? Probably not: if you find a bug or a security hole or an embarassing n00b mistake, please submit a pull request. We'll reward you with our gratitude (and ice cream).
+## Security Concerns
+
+It's not too hard to poke holes in our server. If you discover something particularly broken, please help out by submitting a pull request. You will be recognized by your peers and offered lots of free ice cream.
 
 [1]: http://github.com/hackerunion/
+[2]: http://github.com/hackerunion/root/
+[3]: mailto:theevilgeek@gmail.com
