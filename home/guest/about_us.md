@@ -36,6 +36,6 @@ You'll get a username, a member ID, and a contact. And no recruiting, please.
 
 Join us for an [event][1] or [create an account][3].
 
-[1]: #/home/guest/events_calendar.md
+[1]: #/home/guest/event_calendar.md
 [2]: #/home/guest/start_chapter.md
 [3]: #/home/guest/join_us.md

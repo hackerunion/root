@@ -20,4 +20,4 @@ We're a group of experienced, novice, and soon-to-be hackers. We encourage mento
 
 Don't believe us? [Come to an event][1].
 
-[1]: #/home/guest/events_calendar.md
+[1]: #/home/guest/event_calendar.md
