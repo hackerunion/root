@@ -1,4 +1,7 @@
 # About the Hacker Union Server
+_What is this strange place?_
+
+---
 
 We've taken the best parts of the 90s web (cgi-bin, green text on black backgrounds, massive security holes), mashed it up with docker and AWS and node -- and, well, here we are.
 
@@ -12,7 +15,7 @@ What you're using right now is actually a CGI script called the _Hacker Union sh
 
 We wanted to create a collaborative environment that would be extremely easy to hack: a system that would be a great place to gather shared resources and data.
 
-More than that, we wanted a system htat would inspire creativity and encourage experimentation. What resulted is this server -- a cross between a wiki and an operating system.
+More than that, we wanted a system that would inspire creativity and encourage experimentation. What resulted is this server -- a cross between a wiki and an operating system.
 
 ## The Community
 

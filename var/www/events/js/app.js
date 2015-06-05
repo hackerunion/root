@@ -7,6 +7,7 @@
     $(".show-summary").click(function() {
       $("#details h3").text(this.getAttribute("data-name"));
       $("#details pre").html(this.getAttribute("data-details"));
+      $("#details address").text(this.getAttribute("data-address"));
       return false;
     });
 

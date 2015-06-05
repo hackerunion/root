@@ -2,7 +2,7 @@
 
 *Our goal is to help you plug into the tech community.*
 
-----
+---
 
 ## Our Members
 

@@ -1,6 +1,6 @@
 # Upcoming Events
 
-We have events just about every week. Most are open to the public -- we hope you'll join!
+_We have events just about every week. Most are open to the public -- we hope you'll join!_
 
 ----
 

@@ -39,6 +39,13 @@ aside {
 
 aside pre {
   font-size: 12px;
+  white-space: pre-wrap;
+}
+
+aside address {
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .event {
@@ -93,6 +100,10 @@ aside pre {
   margin: 0px;
   margin-top: 10px;
   color: #888;
+}
+
+.summary {
+  font-size: 12px;
 }
 
 @media (max-width: 400px) {

@@ -1,8 +1,8 @@
 # Join Hacker Union
 
-Membership must be approved by an admin. Create a request below **and** join us for an [event][1].
+_Membership must be approved by an admin. Create a request below **and** join us for an [event][1]._
 
-----
+---
 
 ## Why Join?
 
@@ -14,8 +14,6 @@ Membership must be approved by an admin. Create a request below **and** join us 
  - Build apps for the community
  - Help lead the Hacker Union
  - Why not?
-
-----
 
 <iframe src="/home/guest/apply/index.cgi" width="100%" height="500px" style="border: 0px;"></iframe>
 

@@ -19,9 +19,10 @@ html(lang='en')
 
   body
     aside#details
-      h3 Details
+      h3 Summary
       pre.
         All about the event
+      address
     main
       table
         thead
@@ -50,16 +51,15 @@ html(lang='en')
                     if hours
                       span &nbsp;
                     while hours--
-                      span &#8986;
+                      span &#8987;
               td
-                a(href="#", class="show-summary", data-details=event.details, data-name=event.name)
+                a(href="#", class="show-summary", data-address=event.address, data-details=event.details, data-name=event.name)
                   | #{event.name}
                 unless event.public
                   | &nbsp;
                   abbr(title="Members-only") &#128274;
-              td
-                em.
-                  #{event.summary}
+              td(class="summary").
+                #{event.summary}
               td.
                 #{event.rsvp.length} / #{event.capacity}
               td
