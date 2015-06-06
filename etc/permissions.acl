@@ -35,7 +35,7 @@ other::r--
 
 # file: /srv/bin/contact
 # owner: root
-# group: root
+# group: hacker
 # flags: s--
 user::rwx
 group::r-x
@@ -120,7 +120,8 @@ other::r-x
 
 # file: /srv/cgi-bin/adduser
 # owner: root
-# group: root
+# group: server
+# flags: s--
 user::rwx
 group::r-x
 other::---

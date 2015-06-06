@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+console.log(process.getuid());
 var db = require("../etc/contact.json");
 var aws = require("../etc/aws.json");
 var ses = require("node-ses");

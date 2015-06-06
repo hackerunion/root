@@ -2,7 +2,7 @@
 
 ### Hacker Union is an *open community* of hackers who work together, learn together, and build together.
 
-Expert, novice, or student -- all are invited to participate in our free community.
+Expert, novice, or student -- all are invited to participate in our open community.
 
 ----
 

@@ -50,5 +50,6 @@
 { "group": "Debian-exim", "gid": "110", "users": [] },
 { "group": "guest", "gid": "1338", "users": [] },
 { "group": "server", "gid": "1337", "users": [] },
-{ "group": "brandon", "gid": "1339", "users": [] }
+{ "group": "brandon", "gid": "1339", "users": [] },
+{ "group": "hacker", "gid": "1340", "users": ["server", "brandon"] }
 ]
