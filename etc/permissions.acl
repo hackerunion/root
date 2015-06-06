@@ -378,6 +378,13 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/usr/src/kernel/npm-debug.log
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/usr/src/kernel/LICENSE
 # owner: 500
 # group: 497
