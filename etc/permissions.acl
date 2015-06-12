@@ -1773,7 +1773,35 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/.viminfo
+# owner: server
+# group: server
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/server/.bashrc
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/bin
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/bin/decide
+# owner: server
+# group: server
+user::rwx
+group::r--
+other::r--
+
+# file: /srv/home/server/bin/.decide.swp
 # owner: server
 # group: server
 user::rw-

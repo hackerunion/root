@@ -1,0 +1,72 @@
+#!/bin/bash
+
+DATA=~guest/apply/data
+NEXT=""
+
+
+confirm_or_continue() {
+        read -p "[36mAre you sure? (y/N)[0m" CONFIRM
+        if echo "$CONFIRM" | grep -qvi '^y'; then
+            continue
+        fi
+}
+
+exec 3< "$DATA"
+
+while read -u 3 LINE; do
+    V=`echo $LINE | cut -d\| -f1`
+    
+    if [[ "$V" != "0" ]]; then
+        echo "Unsupported version ($V), skipping..."
+        continue
+    fi
+    
+    FULLNAME=`echo $LINE | cut -d\| -f2`
+    EMAIL=`echo $LINE | cut -d\| -f3`
+    USERNAME=`echo $LINE | cut -d\| -f4`
+    TIMESTAMP=`echo $LINE | cut -d\| -f5`
+    COMMENT=`echo $LINE | cut -d\| -f6`
+
+    cat <<EOF
+    [32m
+    ==============================
+    [0m[41mApplicant:[0m    $FULLNAME
+    [41mEmail:[0m        $EMAIL
+    [41mDate:[0m         $TIMESTAMP
+    [41mComment:[0m
+
+    ${COMMENT:-(None)}
+    [32m
+    ==============================
+
+EOF
+    
+    while true; do 
+        read -p "[35m(a)ccept, (r)eject, (e)mail, (S)kip?[0m " ACTION
+
+        case "$ACTION" in
+            a|A)
+                confirm_or_continue
+                ;;
+            
+            r|R)
+                confirm_or_continue
+                ;;
+
+            e|E)
+                NEXT="$NEXT\n$LINE"
+                ;;
+
+            s|S)
+                NEXT="$NEXT\n$LINE"
+                ;;
+            *)
+                echo "Invalid choice: $ACTION"
+                continue
+                ;;
+        esac
+        break
+    done
+done
+
+echo "$NEXT"
