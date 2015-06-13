@@ -2,4 +2,4 @@
 
 SBIN="$SERVER_ROOT/sbin"
 
-$SBIN/creategroups && $SBIN/createusers && $SBIN/modusers
+$SBIN/creategroups && $SBIN/createusers && $SBIN/modusers && $SBIN/savegroups && $SBIN/saveusers

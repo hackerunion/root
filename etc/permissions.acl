@@ -656,7 +656,7 @@ other::r--
 # group: root
 user::rw-
 group::r--
-other::r--
+other::---
 
 # file: /srv/etc/USAGE.txt
 # owner: 500
@@ -1170,9 +1170,9 @@ group::rw-
 other::r--
 
 # file: /srv/sbin/sync
-# owner: 500
-# group: 497
-user::rw-
+# owner: root
+# group: root
+user::rwx
 group::rw-
 other::r--
 
@@ -1780,6 +1780,20 @@ user::rw-
 group::---
 other::---
 
+# file: /srv/home/server/log
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/log/decide
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/.bashrc
 # owner: server
 # group: server
@@ -1793,6 +1807,27 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: /srv/home/server/bin/tmp
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/bin/tmp/contact.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/bin/tmp/data
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::---
 
 # file: /srv/home/server/bin/decide
 # owner: server
@@ -2291,13 +2326,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/.npm/_locks
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
 # file: /srv/home/server/sandbox
 # owner: server
 # group: server
@@ -2424,6 +2452,13 @@ other::r--
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/home/server/.rnd
+# owner: root
+# group: root
+user::rw-
+group::---
+other::---
 
 # file: /srv/home/server/.node-gyp
 # owner: server
@@ -3103,13 +3138,6 @@ other::r--
 user::rw-
 group::rw-
 other::r--
-
-# file: /srv/home/server/.node-gyp/0.12.2/deps/npm
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::r-x
 
 # file: /srv/home/server/.node-gyp/0.12.2/deps/openssl
 # owner: server

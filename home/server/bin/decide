@@ -1,11 +1,22 @@
 #!/bin/bash
 
+HOMEDIR=/srv/home
+SKELDIR=/srv/etc/skel
+
 DATA=~guest/apply/data
+LOG=~/log/decide
+
+CONTACTS=/srv/etc/contact.json
 CONTACT=/srv/bin/contact
-CONTACT=/bin/echo
+
 TOTAL=`wc -l $DATA | cut -d' ' -f1`
 NEXT=""
-HR="==============================================================="  
+
+HR="---------------------------------------------------------------"  
+FF=
+XX=
+
+touch "$LOG"
 
 EMAIL_TEMPLATE=`cat <<\EOF
 Subject:
@@ -77,7 +88,6 @@ hr_title() {
     for ((s=0; s<${#HR} / 2 - ${#1} / 2; s++)); do
         echo -n " "
     done
-    
     echo -n "$1"
 }
 
@@ -88,7 +98,7 @@ eval_template() {
     rm $TMP
 }
 
-compose_email_or_continue() {
+compose_email_or_retry() {
     local TMP=`mktemp /tmp/$$XXXXX`
     local OLD=`mktemp /tmp/$$XXXXX`
 
@@ -113,13 +123,47 @@ compose_email_or_continue() {
     continue
 }
 
-confirm_or_continue() {
+confirm_or_retry() {
         read -n 1 -p "[36mAre you sure? (y/N)[0m " CONFIRM
         echo
         echo
         if echo "$CONFIRM" | grep -qvi '^y'; then
             continue
         fi
+}
+
+get_password_and_crypt() {
+    local PASS=`openssl rand -base64 8 | tr -cd '[:alpha:]'`
+    local HASH=`echo $PASS | openssl passwd -1 -stdin`
+
+    echo "$PASS $HASH"
+}
+
+create_user_or_retry() {
+    useradd --create-home \
+            --home-dir          "$HOMEDIR/$1" \
+            --skel              "$SKELDIR" \
+            --password          "$2" \
+            $1
+    
+    if (( $? )); then
+        echo "User creation failed!"
+        continue
+    fi
+
+    chown -R "$1:$1" "$HOMEDIR/$1"
+    chmod -R u+rw,g+r,o+r "$HOMEDIR/$1" 
+    
+    add_email_to_contacts "$1" "$4"
+
+    echo "User created!"
+}
+
+add_email_to_contacts() {
+    local TMP=`mktemp /tmp/$$XXXXX`
+    jq "[] |= . + [{\"username\": \"$1\", \"preferred\": \"email\", \"email\": [\"$2\"]}]" $CONTACTS > $TMP
+    cat < $TMP > $CONTACTS
+    rm $TMP
 }
 
 exec 3< "$DATA"
@@ -134,15 +178,20 @@ while read -u 3 LINE; do
         continue
     fi
     
+    SECRETS=`get_password_and_crypt`
+    USERPASS=`echo $SECRETS | cut -d' ' -f1`
+    USERHASH=`echo $SECRETS | cut -d' ' -f2`
+    
     FULLNAME=`echo $LINE | cut -d\| -f2`
     EMAIL=`echo $LINE | cut -d\| -f3`
     USERLOGIN=`echo $LINE | cut -d\| -f4`
     TIMESTAMP=`echo $LINE | cut -d\| -f5`
     COMMENT=`echo $LINE | cut -d\| -f6`
-    cat <<EOF
+    test -z "$FF" && cat <<EOF
 [32m$HR
 `hr_title "$i of $TOTAL"`
 $HR
+
     [0m[41mApplicant:[0m    $FULLNAME ($USERLOGIN)
     [41mEmail:[0m        $EMAIL
     [41mDate:[0m         $TIMESTAMP
@@ -151,29 +200,39 @@ $HR
     ${COMMENT:-(None)}
     [32m
 $HR
+
 EOF
     
-    while true; do 
-        read -n 1 -p "[0m$USERLOGIN> [35m(a)ccept, (r)eject, (d)elete, (e)mail, (u)sername, (s)kip, (q)uit?[0m " ACTION
-        echo
+    while true; do
+        if test -z "$FF"; then
+            read -n 1 -p "[0m$USERLOGIN> [35m(a)ccept, (r)eject, (d)elete, (e)mail, (u)sername, (s)kip, (q)uit?[0m " ACTION
+            echo
+        else
+            ACTION='s'
+        fi
 
         case "$ACTION" in
             a|A)
-                confirm_or_continue
-                compose_email_or_continue $EMAIL "$ACCEPT_TEMPLATE" force
+                confirm_or_retry
+                compose_email_or_retry $EMAIL "$ACCEPT_TEMPLATE" force
+                create_user_or_retry "$USERLOGIN" "$USERHASH" "$FULLNAME" "$EMAIL"
+                XX=true
+                echo "a|`date`|$LINE" >> $LOG
                 ;;
             
             r|R)
-                confirm_or_continue
-                compose_email_or_continue $EMAIL "$REJECT_TEMPLATE" force
+                confirm_or_retry
+                compose_email_or_retry $EMAIL "$REJECT_TEMPLATE" force
+                echo "r|`date`|$LINE" >> $LOG
                 ;;
 
             d|D)
-                confirm_or_continue
+                confirm_or_retry
+                echo "d|`date`|$LINE" >> $LOG
                 ;;
 
             e|E)
-                compose_email_or_continue $EMAIL "$EMAIL_TEMPLATE"
+                compose_email_or_retry $EMAIL "$EMAIL_TEMPLATE"
                 NEXT="$NEXT\n$LINE"
                 ;;
             
@@ -184,13 +243,14 @@ EOF
                 ;;
 
             s|S)
-                confirm_or_continue
+                test -z "$FF" && confirm_or_retry
                 NEXT="$NEXT\n$LINE"
                 ;;
 
             q|Q)
-                confirm_or_continue
-                exit
+                confirm_or_retry
+                NEXT="$NEXT\n$LINE"
+                FF=true
                 ;;
             *)
                 echo "Invalid choice: $ACTION"
@@ -201,4 +261,5 @@ EOF
     done
 done
 
-echo "$NEXT"
+echo -e "[0m"
+echo -e "$NEXT" > $DATA
