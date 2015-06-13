@@ -1815,12 +1815,110 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/home/server/.npm/nan
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/nan/1.8.4
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/nan/1.8.4/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/nan/1.8.4/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/nan/1.8.4/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/xml2json
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/xml2json/0.5.1
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/xml2json/0.5.1/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/xml2json/0.5.1/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/xml2json/0.5.1/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/.npm/registry.npmjs.org
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/nan
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/nan/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/registry.npmjs.org/xml2json
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/xml2json/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/server/.npm/registry.npmjs.org/node-ses
 # owner: server
@@ -1830,6 +1928,90 @@ group::r-x
 other::r-x
 
 # file: /srv/home/server/.npm/registry.npmjs.org/node-ses/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/registry.npmjs.org/request
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/request/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/registry.npmjs.org/ms
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/ms/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/registry.npmjs.org/bindings
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/bindings/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/registry.npmjs.org/iconv
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/iconv/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/registry.npmjs.org/debug
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/debug/.cache.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/registry.npmjs.org/node-expat
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/registry.npmjs.org/node-expat/.cache.json
 # owner: server
 # group: server
 user::rw-
@@ -1870,6 +2052,251 @@ other::r-x
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/home/server/.npm/request
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/request/2.9.153
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/request/2.9.153/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/request/2.9.153/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/request/2.9.153/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/ms
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/ms/0.7.1
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/ms/0.7.1/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/ms/0.7.1/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/ms/0.7.1/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/bindings
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/bindings/1.2.1
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/bindings/1.2.1/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/bindings/1.2.1/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/bindings/1.2.1/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/iconv
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/iconv/2.1.8
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/iconv/2.1.8/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/iconv/2.1.8/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/iconv/2.1.8/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/debug
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/debug/2.2.0
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/debug/2.2.0/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/debug/2.2.0/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/debug/2.2.0/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/debug/0.5.0
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/debug/0.5.0/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/debug/0.5.0/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/debug/0.5.0/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/node-expat
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/node-expat/2.3.8
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/node-expat/2.3.8/package.tgz
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/node-expat/2.3.8/package
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.npm/node-expat/2.3.8/package/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.npm/_locks
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/home/server/sandbox
 # owner: server
@@ -1989,6 +2416,7636 @@ other::r-x
 # group: server
 user::rw-
 group::r--
+other::r--
+
+# file: /srv/home/server/.vimrc
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.node-gyp
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/src
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/util-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_crypto_bio.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/async-wrap-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/handle_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/udp_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/string_bytes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/spawn_sync.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_i18n.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_version.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/tls_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_crypto.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/base-object-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_win32_perfctr_provider.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_counters.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_stat_watcher.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/util.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_object_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_watchdog.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/async-wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_win32_etw_provider.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/base-object.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_buffer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/pipe_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/v8abbr.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/tree.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/stream_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_dtrace.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_http_parser.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_constants.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/queue.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/req_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/tcp_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/env.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_root_certs.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_file.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_crypto_clienthello.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_internals.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_win32_etw_provider-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/smalloc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_javascript.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_crypto_clienthello-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/node_crypto_groups.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/tty_wrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/src/env-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/installVersion
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/common.gypi
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/linux
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/linux/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/sunos
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/sunos/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/win32
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/win32/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/darwin
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/darwin/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/openbsd
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/openbsd/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/netbsd
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/netbsd/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/freebsd
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/freebsd/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/android
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/android/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/cygwin
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/config/cygwin/ares_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_strcasecmp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_platform.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_writev.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_getopt.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_nowarn.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_getenv.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_strdup.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_inet_net_pton.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/setup_once.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/bitncmp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_ipv6.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_private.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_dns.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_llist.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_library_init.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_setup.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_data.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_iphlpapi.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/src/ares_rules.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/common.gypi
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/include
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/include/ares.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/include/ares_version.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/cares/include/nameser.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/npm
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/config
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/config/opensslconf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/e_os.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/e_os2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ms
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ms/tlhelp32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ms/uplink.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/ssl23.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/ssl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/ssl2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/kssl_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/tls1.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/ssl_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/srtp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/ssl3.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/dtls1.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/ssl/kssl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/tunala
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/tunala/tunala.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/easy_tls
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/easy_tls/easy-tls.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/easy_tls/test.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/ibmca
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/ibmca/hw_ibmca_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/ibmca/ica_openssl_api.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/zencod
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/zencod/hw_zencod_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/zencod/hw_zencod.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/cluster_labs
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/cluster_labs/cluster_labs.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/cluster_labs/hw_cluster_labs_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/rsaref
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/demos/engines/rsaref/rsaref_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/MacOS
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/MacOS/Randomizer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/MacOS/opensslconf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/MacOS/_MWERKS_GUSI_prefix.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/MacOS/_MWERKS_prefix.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/MacOS/buildinf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/MacOS/GetHTTPS.src
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/MacOS/GetHTTPS.src/MacSocket.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/test
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/test/testutil.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/store
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/store/store.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/store/str_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/dsa
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/dsa/dsa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/dsa/dsa_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rand
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rand/rand.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rand/rand_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/evp
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/evp/evp_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/evp/evp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cms
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cms/cms_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cms/cms.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ts
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ts/ts.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/o_dir.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/conf
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/conf/conf_def.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/conf/conf_api.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/conf/conf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bf
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bf/blowfish.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bf/bf_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bf/bf_pi.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bio
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bio/bio_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bio/bio.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/asn1
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/asn1/asn1t.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/asn1/charmap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/asn1/asn1_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/asn1/asn1_mac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/asn1/asn1.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ebcdic.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/des
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/des/spr.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/des/des_old.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/des/des_ver.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/des/rpc_des.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/des/des.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/des/des_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pem
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pem/pem.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pem/pem2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pkcs7
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pkcs7/pkcs7.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/seed
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/seed/seed_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/seed/seed.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/camellia
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/camellia/camellia.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/camellia/cmll_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/mdc2
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/mdc2/mdc2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/stack
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/stack/stack.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/stack/safestack.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/srp
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/srp/srp_grps.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/srp/srp_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/srp/srp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/objects
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/objects/obj_dat.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/objects/objects.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/objects/obj_xref.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/objects/obj_mac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/symhacks.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/idea
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/idea/idea.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/idea/idea_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md5
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md5/md5_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md5/md5.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ecdsa
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ecdsa/ecdsa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ecdsa/ecs_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pkcs12
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pkcs12/pkcs12.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cmac
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cmac/cmac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ui
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ui/ui_compat.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ui/ui.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ui/ui_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/fips_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/txt_db
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/txt_db/txt_db.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/krb5
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/krb5/krb5_asn.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bn
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bn/bn_prime.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bn/bn.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/bn/bn_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/modes
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/modes/modes_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/modes/modes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/buffer
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/buffer/buffer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/constant_time_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/opensslconf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/sha
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/sha/sha_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/sha/sha.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cast
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cast/cast_s.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cast/cast.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cast/cast_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/err
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/err/err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ripemd
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ripemd/ripemd.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ripemd/rmd_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ripemd/rmdconst.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rsa
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rsa/rsa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rsa/rsa_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/x509v3
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/x509v3/x509v3.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/x509v3/ext_dat.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/x509v3/pcy_int.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/opensslv.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ecdh
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ecdh/ech_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ecdh/ecdh.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md4
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md4/md4_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md4/md4.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/jpake
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/jpake/jpake.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/engine
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/engine/eng_int.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/engine/engine.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/comp
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/comp/comp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc4
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc4/rc4_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc4/rc4.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/hmac
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/hmac/hmac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ocsp
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ocsp/ocsp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/dh
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/dh/dh.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/dso
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/dso/dso.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/crypto.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/cryptlib.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/lhash
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/lhash/lhash.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md32_common.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ec
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ec/ec.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ec/ec_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc5
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc5/rc5.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc5/rc5_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/o_time.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pqueue
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/pqueue/pqueue.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/arm_arch.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc2
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc2/rc2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/rc2/rc2_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/aes
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/aes/aes_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/aes/aes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/ossl_typ.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/vms_rms.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md2
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/md2/md2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/x509
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/x509/x509.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/x509/x509_vfy.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/whrlpool
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/whrlpool/whrlpool.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/whrlpool/wp_locl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/crypto/o_str.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_nuron_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_ubsec_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_gmp_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/vendor_defns
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/vendor_defns/hw_4758_cca.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/vendor_defns/hw_ubsec.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/vendor_defns/hwcryptohook.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/vendor_defns/sureware.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/vendor_defns/cswift.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/vendor_defns/atalla.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/vendor_defns/aep.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_aep_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_cswift_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_sureware_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/ccgost
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/ccgost/gost89.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/ccgost/gost2001_keyx.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/ccgost/e_gost_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/ccgost/gost_params.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/ccgost/gost_lcl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/ccgost/gosthash.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/ccgost/gost_keywrap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_4758cca_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_chil_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_atalla_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/engines/e_capi_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/lhash.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ui_compat.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/bn.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/md4.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ripemd.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ec.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/x509v3.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/rsa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/whrlpool.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/asn1t.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ebcdic.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/mdc2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ssl23.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ecdsa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/rc2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ssl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ts.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/pkcs12.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/stack.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/e_os2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/dso.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ssl2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/safestack.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/x509.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ocsp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/cmac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/symhacks.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/sha.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ui.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/camellia.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/blowfish.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/conf_api.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/aes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/pem.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/conf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/tls1.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/evp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/x509_vfy.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/pkcs7.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/txt_db.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/opensslconf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/objects.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/des_old.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/srtp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/asn1_mac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/dsa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/idea.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/rand.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/rc4.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/opensslv.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/cast.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/krb5_asn.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/srp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/pem2.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/comp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ssl3.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/dh.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/bio.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/asn1.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/md5.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/obj_mac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/crypto.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/hmac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/des.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/dtls1.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/cms.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/buffer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/pqueue.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ecdh.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/ossl_typ.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/seed.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/engine.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/modes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/include/openssl/kssl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/apps
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/apps/apps.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/apps/s_apps.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/apps/timeouts.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/apps/testrsa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/apps/testdsa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/openssl/apps/progs.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/openssl/buildinf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/heap-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/uv-common.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/unix
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/unix/atomic-ops.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/unix/internal.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/unix/spinlock.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/unix/linux-syscalls.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/queue.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/win
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/win/req-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/win/atomicops-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/win/internal.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/win/handle-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/win/winapi.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/win/stream-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/src/win/winsock.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/common.gypi
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/test
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/test/runner-unix.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/test/runner-win.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/test/runner.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/test/task.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/test/test-list.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/test/benchmark-list.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/samples
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/samples/socks5-proxy
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/samples/socks5-proxy/defs.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/samples/socks5-proxy/s5.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/pthread-fixes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-bsd.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-darwin.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/android-ifaddrs.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-win.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-sunos.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/stdint-msvc2008.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/tree.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-threadpool.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-version.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-linux.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-aix.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-unix.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/uv/include/uv-errno.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/debugger-agent
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/debugger-agent/src
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/debugger-agent/src/agent.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/debugger-agent/include
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/debugger-agent/include/debugger-agent.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/trees.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/examples
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/examples/gzlog.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/inffast.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/crc32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/inffixed.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/zlib.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/deflate.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/gzguts.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/inftrees.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/iostream3
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/iostream3/zfstream.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/infback9
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/infback9/inflate9.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/infback9/infback9.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/infback9/inftree9.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/infback9/inffix9.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/blast
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/blast/blast.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/iostream
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/iostream/zfstream.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/iostream2
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/iostream2/zstream.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/puff
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/puff/puff.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/minizip
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/minizip/ioapi.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/minizip/iowin32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/minizip/zip.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/minizip/mztools.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/minizip/unzip.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/contrib/minizip/crypt.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/inflate.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/zconf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/zlib/zutil.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/http_parser
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/http_parser/http_parser.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/third_party
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/third_party/fdlibm
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/third_party/fdlibm/fdlibm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/full-codegen.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/string-search.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/lookup-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/lookup.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/lithium-allocator-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/kernel
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/kernel/tools
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/kernel/tools/perf
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/kernel/tools/perf/util
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/kernel/tools/perf/util/jitdump.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/vtune
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/vtune/ittnotify_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/vtune/ittnotify_types.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/vtune/v8-vtune.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/vtune/jitprofiling.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/vtune/vtune-jit.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/valgrind
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/third_party/valgrind/valgrind.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/v8memory.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/property.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-canonicalize.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/lithium-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/regexp-macro-assembler-irregexp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/regexp-macro-assembler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/codegen.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-bch.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/scanner-character-streams.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/zone-allocator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/elements-kind.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/types.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/type-info.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/token.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/global-handles.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/lithium-allocator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/lithium-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/lithium-codegen-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/code-stubs-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/lithium-gap-resolver-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/regexp-macro-assembler-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/assembler-arm-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/frames-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/constants-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/simulator-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/codegen-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/macro-assembler-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm/assembler-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/field-index-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/vm-state-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/optimizing-compiler-thread.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/flags.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-alias-analysis.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/regexp-stack.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/jsregexp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/constants-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/codegen-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/code-stubs-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/lithium-gap-resolver-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/frames-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/lithium-codegen-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/simulator-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/regexp-macro-assembler-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/macro-assembler-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/lithium-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/assembler-mips64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips64/assembler-mips64-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/stub-cache.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/variables.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap-profiler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/execution.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-mark-deoptimize.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ast-value-factory.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/splay-tree.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/version.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-dehoist.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/d8.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/debug.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/dtoa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/bytecodes-irregexp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/i18n.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/unique.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/scanner.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/allocation-tracker.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/assembler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/bignum-dtoa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/runtime.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/parser.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-bce.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-range-analysis.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/zone-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ostreams.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/elements.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/zone.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/assert-scope.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/circular-queue.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/cached-powers.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/lithium-codegen.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler-intrinsics.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/circular-queue-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-mark-unreachable.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/gdb-jit.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/vm-state.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/disassembler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/preparse-data-format.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/types-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/property-details-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/prototype.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/accessors.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/transitions.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/data-flow.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/allocation-site-scopes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/dateparser-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/field-index.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/regexp-macro-assembler-irregexp-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/codegen-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/decoder-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/lithium-gap-resolver-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/macro-assembler-arm64-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/assembler-arm64-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/instructions-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/code-stubs-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/instrument-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/utils-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/delayed-masm-arm64-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/assembler-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/decoder-arm64-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/macro-assembler-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/disasm-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/lithium-codegen-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/constants-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/simulator-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/delayed-masm-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/lithium-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/frames-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arm64/regexp-macro-assembler-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/date.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/func-name-inferrer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/jsregexp-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/libplatform
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/libplatform/worker-thread.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/libplatform/task-queue.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/libplatform/default-platform.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/macro-assembler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/list-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-load-elimination.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hashmap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/profile-generator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/json-parser.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-types.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/deoptimizer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/log-utils.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/handles-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/runtime-profiler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/counters.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/disasm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/cpu-profiler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/snapshot-source-sink.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-infer-representation.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/splay-tree-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/objects-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/arguments.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-infer-types.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/small-pointer-list.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/unicode-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/isolate-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/natives.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/utils-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/typing.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/scopeinfo.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/d8-debug.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/double.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/objects.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/char-predicates-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/profile-generator-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/scopes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/liveedit.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-osr.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/regexp-macro-assembler-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/assembler-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/codegen-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/lithium-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/macro-assembler-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/constants-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/simulator-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/assembler-mips-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/frames-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/lithium-gap-resolver-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/lithium-codegen-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/mips/code-stubs-mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/msan.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/cpu-profiler-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/api.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/interface.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/prettyprinter.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/list.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/preparse-data.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/zone-containers.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-instructions.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compilation-cache.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/unbound-queue-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/incremental-marking.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/heap-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/mark-compact-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/mark-compact.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/objects-visiting.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/incremental-marking-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/sweeper-thread.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/gc-tracer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/objects-visiting-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/spaces.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/heap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/spaces-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/store-buffer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap/store-buffer-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/json-stringifier.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/frames-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap-snapshot-generator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ic.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/handles.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/simulator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/assembler-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/code-stubs-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/regexp-macro-assembler-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/lithium-gap-resolver-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/lithium-codegen-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/assembler-ia32-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/lithium-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/macro-assembler-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/simulator-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/codegen-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ia32/frames-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/heap-snapshot-generator-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/isolate.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/misc-intrinsics.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/bootstrapper.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/transitions-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/simulator-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/regexp-macro-assembler-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/lithium-gap-resolver-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/code-stubs-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/assembler-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/frames-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/assembler-x64-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/macro-assembler-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/codegen-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/lithium-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x64/lithium-codegen-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/safe_conversions_impl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/build_config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_mips_gcc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/safe_conversions.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/once.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_x86_gcc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/safe_math.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/win32-math.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/utils
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/utils/random-number-generator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_arm64_gcc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/lazy-instance.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/win32-headers.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_atomicword_compat.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/cpu.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/safe_math_impl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_mips64_gcc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_tsan.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_x86_msvc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_arm_gcc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/macros.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops_internals_mac.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/platform
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/platform/time.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/platform/mutex.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/platform/platform.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/platform/elapsed-timer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/platform/semaphore.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/platform/condition-variable.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/atomicops.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/qnx-math.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/base/logging.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/extensions
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/extensions/gc-extension.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/extensions/free-buffer-extension.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/extensions/statistics-extension.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/extensions/trigger-failure-extension.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/extensions/externalize-string-extension.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/strtod.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/builtins.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/snapshot.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/bignum.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/lithium.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/conversions-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/v8.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/icu_util.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/v8threads.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/regexp-macro-assembler-tracer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/unicode.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-removable-simulates.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/rewriter.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-redundant-phi.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/checks.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/diy-fp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/fast-dtoa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/allocation.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/log-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ic-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/fixed-dtoa.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-sce.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/effects.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/simplified-operator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/control-builders.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/verifier.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/change-lowering.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/pipeline.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/operator-properties.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/code-generator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/arm
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/arm/instruction-codes-arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/graph-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/node-aux-data.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/instruction.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/generic-node-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/linkage-impl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/generic-node.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/common-node-cache.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/simplified-node-factory.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/machine-node-factory.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/simplified-lowering.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/graph.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/node-matchers.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/machine-operator-reducer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/arm64
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/arm64/instruction-codes-arm64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/node-properties.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/machine-operator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/generic-algorithm-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/operator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/js-context-specialization.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/node.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/js-graph.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/graph-reducer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/node-cache.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/node-properties-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/schedule.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/linkage.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/structured-machine-assembler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/instruction-codes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/code-generator-impl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/js-typed-lowering.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/instruction-selector-impl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/frame.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/ia32
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/ia32/instruction-codes-ia32.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/graph-visualizer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/x64
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/x64/instruction-codes-x64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/generic-algorithm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/opcodes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/representation-change.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/source-position.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/lowering-builder.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/phi-reducer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/machine-type.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/instruction-selector.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/js-operator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/node-aux-data-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/typer.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/common-operator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/gap-resolver.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/graph-builder.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/graph-replay.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/generic-graph.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/raw-machine-assembler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/operator-properties-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/ast-graph-builder.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/js-generic-lowering.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/register-allocator.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/compiler/scheduler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/frames.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/dateparser.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/char-predicates.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-representation-changes.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-check-elimination.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/unbound-queue.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/uri.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/smart-pointers.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-escape-analysis.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-flow-engine.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/sampler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/globals.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-gvn.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/safepoint-table.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/preparser.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-dce.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/flag-definitions.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/serialize.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/lithium-codegen-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/code-stubs-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/frames-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/lithium-gap-resolver-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/macro-assembler-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/assembler-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/assembler-x87-inl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/lithium-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/simulator-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/codegen-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/x87/regexp-macro-assembler-x87.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/conversions.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/utils.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-store-elimination.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/vector.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/code.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/contexts.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/messages.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-environment-liveness.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/code-stubs.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/log.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen-uint32-analysis.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/ast.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/factory.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/property-details.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/interpreter-irregexp.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/hydrogen.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/feedback-slots.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/perf-jit.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/src/string-stream.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/testing
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/testing/gtest-type-names.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/tools
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/tools/shell-utils.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/build
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/build/android.gypi
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/build/toolchain.gypi
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/build/standalone.gypi
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/build/shim_headers.gypi
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/build/features.gypi
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/v8-debug.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/libplatform
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/libplatform/libplatform.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/v8-util.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/v8stdint.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/v8-platform.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/v8config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/v8-profiler.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/v8.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/v8/include/v8-testing.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/mdb_v8
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/mdb_v8/v8dbg.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/deps/mdb_v8/v8cfg.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/http_parser.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/main.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/script.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/ssl.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/wrk.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/units.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/zmalloc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/aprintf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/config.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/ae.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/net.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/tinymt64.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/src/stats.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/host
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/host/buildvm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_char.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_jit.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_ctype.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_arch.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_debug.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_emit_ppc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_udata.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_record.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_snap.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_asm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_ccallback.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_state.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_carith.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_bcdump.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_gc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_emit_mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_asm_arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_mcode.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_tab.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_obj.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_err.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_crecord.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_target_ppc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lauxlib.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_alloc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_asm_ppc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_vmevent.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_dispatch.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_target.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_target_x86.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_asm_x86.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_trace.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_traceerr.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_ccall.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_cconv.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_gdbjit.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_ircall.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/luaconf.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lualib.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_ff.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_cparse.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_cdata.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_str.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_iropt.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_target_mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lua.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_parse.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_errmsg.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_target_arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_bc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_lib.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_ffrecord.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_lex.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_def.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_ir.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_vm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_asm_mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_strscan.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_clib.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_meta.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_func.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_emit_x86.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_frame.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/luajit.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/src/lj_emit_arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/dynasm
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/dynasm/dasm_mips.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/dynasm/dasm_x86.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/dynasm/dasm_ppc.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/dynasm/dasm_arm.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/wrk/deps/luajit/dynasm/dasm_proto.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/msvs
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/msvs/genfiles
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/msvs/genfiles/node_perfctr_provider.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/.node-gyp/0.12.2/tools/msvs/genfiles/node_etw_provider.h
+# owner: server
+# group: server
+user::rw-
+group::rw-
 other::r--
 
 # file: /srv/home/USAGE.txt

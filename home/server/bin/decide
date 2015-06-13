@@ -1,21 +1,134 @@
 #!/bin/bash
 
 DATA=~guest/apply/data
+CONTACT=/srv/bin/contact
+CONTACT=/bin/echo
+TOTAL=`wc -l $DATA | cut -d' ' -f1`
 NEXT=""
+HR="==============================================================="  
 
+EMAIL_TEMPLATE=`cat <<\EOF
+Subject:
+
+<pre>
+</pre>
+
+EOF`
+
+ACCEPT_TEMPLATE=`cat <<\EOF
+Subject: Welcome to the Hacker Union!
+
+<pre>
+Congratulations! Your Hacker Union membership has been approved.
+
+Username: \$USERLOGIN
+Password: \$USERPASS
+
+----------
+NEXT STEPS
+==========
+
+1. Login and change your password
+2. Set up SSH access
+3. Set up your sandbox
+
+---------
+IMPORTANT
+=========
+
+You are currently a recruit.
+
+To become a full member (and receive your membership card), you must either:
+
+ I.    Come to 3+ events
+ II.   Commit code to the Hacker Union server
+ III.  Host a Hack Night
+ IV.   Launch a project on the server
+
+If you have any questions, don't hestiate to get in touch!
+
+Happy Hacking,
+root
+</pre>
+EOF`
+
+REJECT_TEMPLATE=`cat <<\EOF
+Subject: RE: Hacker Union Application
+
+<pre>
+Thank you for applying to the Hacker Union.
+
+Before moving forward, we'd like you to join us for an event:
+http://h9n.org/var/www/events/
+
+Let the host know that you're interested in membership. They'll help identify next steps.
+
+Happy Hacking,
+root
+</pre>
+EOF`
+
+if (( $UID != 0 )); then
+    echo "This script must be run as root (try sudo -E $0)"
+    exit 1
+fi
+
+hr_title() {
+    for ((s=0; s<${#HR} / 2 - ${#1} / 2; s++)); do
+        echo -n " "
+    done
+    
+    echo -n "$1"
+}
+
+eval_template() {
+    local TMP=`mktemp /tmp/$$XXXXX`
+    echo -e "$@" > $TMP
+    echo -e "$(eval "echo -e \"$(cat $TMP)\"")"
+    rm $TMP
+}
+
+compose_email_or_continue() {
+    local TMP=`mktemp /tmp/$$XXXXX`
+    local OLD=`mktemp /tmp/$$XXXXX`
+
+    echo -e "`eval_template "$2"`" | tee $OLD > $TMP
+    ${EDITOR:-nano} "$TMP"
+    
+    if [[ "$3" == "force" ]]; then
+        # force diff to fail
+        echo > $OLD
+    fi
+
+    if ! diff -q $TMP $OLD > /dev/null &> /dev/null; then
+        if $CONTACT email $1 < $TMP; then
+            rm $TMP $OLD
+            echo "Email sent!"
+            return 0
+        fi
+    fi
+
+    rm $TMP $OLD
+    echo "Couldn't send email..."
+    continue
+}
 
 confirm_or_continue() {
-        read -p "[36mAre you sure? (y/N)[0m" CONFIRM
+        read -n 1 -p "[36mAre you sure? (y/N)[0m " CONFIRM
+        echo
+        echo
         if echo "$CONFIRM" | grep -qvi '^y'; then
             continue
         fi
 }
 
 exec 3< "$DATA"
+echo
+i=0
 
 while read -u 3 LINE; do
     V=`echo $LINE | cut -d\| -f1`
-    
+    let i=i+1
     if [[ "$V" != "0" ]]; then
         echo "Unsupported version ($V), skipping..."
         continue
@@ -23,42 +136,61 @@ while read -u 3 LINE; do
     
     FULLNAME=`echo $LINE | cut -d\| -f2`
     EMAIL=`echo $LINE | cut -d\| -f3`
-    USERNAME=`echo $LINE | cut -d\| -f4`
+    USERLOGIN=`echo $LINE | cut -d\| -f4`
     TIMESTAMP=`echo $LINE | cut -d\| -f5`
     COMMENT=`echo $LINE | cut -d\| -f6`
-
     cat <<EOF
-    [32m
-    ==============================
-    [0m[41mApplicant:[0m    $FULLNAME
+[32m$HR
+`hr_title "$i of $TOTAL"`
+$HR
+    [0m[41mApplicant:[0m    $FULLNAME ($USERLOGIN)
     [41mEmail:[0m        $EMAIL
     [41mDate:[0m         $TIMESTAMP
     [41mComment:[0m
 
     ${COMMENT:-(None)}
     [32m
-    ==============================
-
+$HR
 EOF
     
     while true; do 
-        read -p "[35m(a)ccept, (r)eject, (e)mail, (S)kip?[0m " ACTION
+        read -n 1 -p "[0m$USERLOGIN> [35m(a)ccept, (r)eject, (d)elete, (e)mail, (u)sername, (s)kip, (q)uit?[0m " ACTION
+        echo
 
         case "$ACTION" in
             a|A)
                 confirm_or_continue
+                compose_email_or_continue $EMAIL "$ACCEPT_TEMPLATE" force
                 ;;
             
             r|R)
                 confirm_or_continue
+                compose_email_or_continue $EMAIL "$REJECT_TEMPLATE" force
+                ;;
+
+            d|D)
+                confirm_or_continue
                 ;;
 
             e|E)
+                compose_email_or_continue $EMAIL "$EMAIL_TEMPLATE"
                 NEXT="$NEXT\n$LINE"
+                ;;
+            
+            u|U)
+                read -p "New Username: " USERLOGIN
+                echo "Updated username."
+                continue
                 ;;
 
             s|S)
+                confirm_or_continue
                 NEXT="$NEXT\n$LINE"
+                ;;
+
+            q|Q)
+                confirm_or_continue
+                exit
                 ;;
             *)
                 echo "Invalid choice: $ACTION"
