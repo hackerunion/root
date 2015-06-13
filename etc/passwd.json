@@ -1,4 +1,5 @@
 [
 { "username": "guest", "password": "$1$tz0tjdjk$IGYoEs78J1soZnki58gCT.", "uid": "1338", "gid": "1338", "info": "managed user", "shell": "/sbin/nologin", "service": false, "uri": null },
-{ "username": "server", "password": "$1$9gK/TYmg$RIfKHNX873DgKG0XB14jR1", "uid": "1337", "gid": "1337", "info": "managed user", "shell": "/bin/bash", "service": false, "uri": null }
+{ "username": "server", "password": "$1$9gK/TYmg$RIfKHNX873DgKG0XB14jR1", "uid": "1337", "gid": "1337", "info": "managed user", "shell": "/bin/bash", "service": false, "uri": null },
+{ "username": "brandon", "password": "$6$yCCWfua1$b4GHlUcyY30lX3rlElIxakuw0QZ7BZ1a1pTCyFejAbTBzOy1u4wyPaF2J67ZCwn4dHEFvorKX9wHRJpqCeIpT1", "uid": "1339", "gid": "1339", "info": "", "shell": "/bin/bash", "service": false, "uri": null }
 ]

@@ -1,19 +1,25 @@
 # What is Hacker Union?
 
-We are an:
+*Our goal is to help you get the most out of the tech community.*
 
- - Independent
+---
+
+Hacker Union is an:
+
+ - Awesome
  - Non-profit
  - Inclusive
- - Transparent
- - Light-hearted
+ - Community organized
+ - Kinda silly
 
-... organization of hackers, builders, designers, and others who use technology creatively.
+... organization of "hackers" who write code and build stuff -- for fun, for profit, or both.
 
 ## Who is Welcome?
 
-**Everyone!** As long as you're looking to contribute -- not to take advantage.
+**Everyone!** You don't need to use a particular OS or work at a startup or write everything in C to join Hacker Union.
 
-You don't need to use a particular OS or work at a startup or write everything in C to join. We're a group of experienced, novice, and soon-to-be hackers. We encourage mentorship, collaboration, and learning.
+We're a group of experienced, novice, and soon-to-be hackers. We encourage mentorship, collaboration, and learning.
 
-*Our goal is to provide the connection, friendship, guidance, and resources to make being a technologist even more awesome.*
+Don't believe us? [Come to an event][1].
+
+[1]: #/home/guest/event_calendar.md

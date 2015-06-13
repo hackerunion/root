@@ -1,6 +1,6 @@
 # Upcoming Events
 
-Please join us for one of our regular events.
+_We have events just about every week. Most are open to the public -- we hope you'll join!_
 
 ----
 
