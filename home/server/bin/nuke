@@ -1,0 +1,5 @@
+#!/bin/bash
+
+userdel -r $1
+
+echo "Don't forget to remove from contacts file, too."

@@ -9,8 +9,9 @@ SSH Guide
 =========
 
 > You are logged in as "$USER"
+> To switch accounts, click the "(sudo)" link in the upper right
 
-Username:	$USER 		(guest = not logged in)
+Username:	$USER
 SSH server:	$SERVER_NAME
 SSH port:	$HOST_SSH_PORT
 
