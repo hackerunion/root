@@ -2425,6 +2425,13 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/server/env.cgi
+# owner: server
+# group: server
+user::rwx
+group::r--
+other::r-x
+
 # file: /srv/home/server/index.cgi
 # owner: server
 # group: server
@@ -10090,6 +10097,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/home/guest/.viminfo
+# owner: guest
+# group: guest
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/guest/.index
 # owner: guest
 # group: guest
@@ -10140,6 +10154,41 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/home/guest/docs
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/docs/.ssh_guide.cgi.swp
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/docs/hack_me_now.txt
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/docs/ssh_guide.cgi
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/docs/.hack_me_now.txt.swp
+# owner: guest
+# group: guest
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/guest/about_us.md
 # owner: guest
 # group: guest
@@ -10181,6 +10230,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: /srv/home/brandon/.bash_history
+# owner: brandon
+# group: brandon
+user::rw-
+group::---
+other::---
 
 # file: /srv/home/brandon/.bashrc
 # owner: brandon
