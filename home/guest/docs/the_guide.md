@@ -1,3 +1,5 @@
+<div class="wrap">
+
 # The Guide
 
 ![](http://www.ted.me/wp-content/uploads/2009/11/14641.png)
@@ -110,7 +112,7 @@ is empty (i.e., corresponds to "/"), the following steps are taken:
  - The `/srv/index.cgi` script forwards to URL "/home/username"
    - The URL "/home/username" maps to the path `/srv/home/username`
  - This is a directory: run `/srv/home/username/index.cgi`
- - The default `/home/username/index.cgi` script runs the shell (see below)
+ - The default `/srv/home/username/index.cgi` script runs the **shell** (see below)
 
 In most cases, it's sufficient to remember that logging in will redirect you to
 the shell program automatically.
@@ -118,9 +120,9 @@ the shell program automatically.
 
 ###	Permissions
 
-Upon authenticating, the kernel associates your browser session with a user
-of the underlying OS. This user is referenced when determining how and what data you
-may access on the server.
+Upon authenticating, the kernel associates your browser session with the corresponding
+user of the underlying OS. This user is referenced when determining how and what data you
+may access via the server.
 
 In general, all programs will run under your user account (as if you ran the
 program via the underlying OS). Thus, all files created will be "owned" by you
@@ -138,7 +140,7 @@ database such as a list of top scores or event details.
 
 ###	Booting
 
-The server runs a number of scripts on boot. See [`/etc/init.json`][1] within the root
+The server runs a number of scripts on boot. See [`/etc/init.json`][2] within the root
 repository to learn more.
 
 ---
