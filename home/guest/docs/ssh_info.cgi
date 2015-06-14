@@ -24,8 +24,8 @@ Instructions
 	ssh -p $HOST_SSH_PORT $USER@$SERVER_NAME
 
 3. Answer yes to any reasonable prompts
-4. Type your password
-5. You're in!
+4. Enter your password
+5. You're all done
 
 
 Via Web
@@ -34,12 +34,15 @@ Via Web
 1. Go to $SERVER_NAME
 2. Click the "+term" link in the top right corner
 3. Enter "$USER" as your username
-4. Type your password
-5. You're in!
+4. Enter your password
+5. You're all done
 
 
 What Next?
 ==========
 
-This directory contains a number of documents designed to help you get the most out of your Hacker Union membership. Read on, brave hacker!
+We highly suggest that you skim The Guide:
+
+http://h9n.org/#/home/guest/docs/the_guide.md
+
 EOF

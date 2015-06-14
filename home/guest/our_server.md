@@ -23,9 +23,9 @@ This is a community-driven project... and you're the community. Check out the co
 
 [View source][1]
 
-## Get Help
+## The Manual
 
-We're in the process of putting together some real documentation. If you're interested in tinkering, feel free to [email us][3] for help and pointers.
+You can find our documentation by clicking [here][3]. If you're interested in tinkering, feel free to [email us][4] for help and pointers.
 
 ## Security Concerns
 
@@ -33,4 +33,5 @@ It's not too hard to poke holes in our server. If you discover something particu
 
 [1]: http://github.com/hackerunion/
 [2]: http://github.com/hackerunion/root/
-[3]: mailto:theevilgeek@gmail.com
+[3]: #/home/guest/docs/the_guide.md
+[4]: mailto:theevilgeek@gmail.com

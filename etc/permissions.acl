@@ -1449,6 +1449,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/var/www/shell/js/handlers/text.js
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/shell/js/handlers/markdown.js
 # owner: 500
 # group: 497
@@ -1833,13 +1840,6 @@ other::---
 # owner: server
 # group: server
 user::rwx
-group::r--
-other::r--
-
-# file: /srv/home/server/bin/.decide.swp
-# owner: server
-# group: server
-user::rw-
 group::r--
 other::r--
 
@@ -10097,6 +10097,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/home/guest/.bash_history
+# owner: guest
+# group: guest
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/guest/.viminfo
 # owner: guest
 # group: guest
@@ -10105,6 +10112,20 @@ group::---
 other::---
 
 # file: /srv/home/guest/.index
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.vim
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.vim/.netrwhist
 # owner: guest
 # group: guest
 user::rw-
@@ -10161,33 +10182,26 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/guest/docs/.ssh_guide.cgi.swp
+# file: /srv/home/guest/docs/.index
 # owner: guest
 # group: guest
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/guest/docs/hack_me_now.txt
-# owner: guest
-# group: guest
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/guest/docs/ssh_guide.cgi
+# file: /srv/home/guest/docs/ssh_info.cgi
 # owner: guest
 # group: guest
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/guest/docs/.hack_me_now.txt.swp
+# file: /srv/home/guest/docs/the_guide.md
 # owner: guest
 # group: guest
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/home/guest/about_us.md
 # owner: guest

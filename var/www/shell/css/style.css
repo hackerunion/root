@@ -247,6 +247,7 @@ body .container main .content-wrapper .content {
 
 body .container main .content-wrapper .content ul {
   list-style-type: square;
+  margin-top: 5px !important;
 }
 
 body .container main .content-wrapper .content ol {
@@ -254,7 +255,7 @@ body .container main .content-wrapper .content ol {
 }
 
 body .container main .content-wrapper .content li {
-  margin-bottom: 5px;
+  margin-bottom: 10px !important;
 }
 
 body .container main .content-wrapper .content p {

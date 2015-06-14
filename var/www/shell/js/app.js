@@ -209,7 +209,8 @@ function boot(root, home) {
     });
     
     $kernel.bind_handlers({
-      'md': '/srv/var/www/shell/js/handlers/markdown.js'
+      'md': '/srv/var/www/shell/js/handlers/markdown.js',
+      'txt': '/srv/var/www/shell/js/handlers/text.js'
     });
   
     var ui = function(err, ctx, uri, opts) {
