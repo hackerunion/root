@@ -10,6 +10,17 @@ STATUS=200
 MESSAGE=
 SAVE=
 
+NOTE=`cat<<EOF
+1. What is your technical background?
+
+2. How can Hacker Union help you?
+
+3. How can you help Hacker Union?
+
+4. Any links we should check out?
+
+EOF`
+
 if test -n "$submit"; then
   if echo "$name" | grep -qviE '\S{3,50}'; then
     STATUS=500
@@ -68,7 +79,7 @@ cat <<EOF
   </p>
 
   <p>
-    <label>Application notes:<br /><textarea rows="6" cols="40" name="note">$note</textarea></label>
+    <label>Application notes:<br /><textarea rows="10" cols="60" name="note">${note:-$NOTE}</textarea></label>
   </p>
 
   <p>
@@ -78,5 +89,6 @@ cat <<EOF
 EOF
 
 if test -n "$SAVE"; then
+  note="`echo $note | sed -e 's/[[:space:]]/ /g'`"
   echo "$VERSION|$name|$email|$username|`date`|$note" >> "`dirname $0`/data"
 fi

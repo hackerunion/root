@@ -186,7 +186,7 @@ while read -u 3 LINE; do
     
     FULLNAME=`echo $LINE | cut -d\| -f2`
     EMAIL=`echo $LINE | cut -d\| -f3`
-    USERLOGIN=`echo $LINE | cut -d\| -f4`
+    USERLOGIN=`echo $LINE | cut -d\| -f4 | tr 'A-Z' 'a-z'`
     TIMESTAMP=`echo $LINE | cut -d\| -f5`
     COMMENT=`echo $LINE | cut -d\| -f6`
     test -z "$FF" && cat <<EOF

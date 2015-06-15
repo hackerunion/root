@@ -462,3 +462,12 @@ body .container main .content-wrapper .content p + ol,
 body .container main .content-wrapper .content p + ul {
     margin-top: -10px !important;
 }
+
+body .container main .content-wrapper .content#content pre:only-child {
+    border: 0px;
+    line-height: 1.25em;
+    overflow: auto;
+    padding: 6px 10px;
+    background: transparent;
+    color: #000;
+}

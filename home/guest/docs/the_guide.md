@@ -406,8 +406,8 @@ Files are only decrypted once permissions have been restored.
 
 ###	Open Data
 
-In general, we encourage as much openness as possible. Source code, information,
-metadata: we want to keep as much public as we can.
+We encourage all members to embrace openness and transparency. It is always preferable
+to share what we can, rather than imposing unnecessary restriction.
 
 
 ###	Disclaimer and Warning
