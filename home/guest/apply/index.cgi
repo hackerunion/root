@@ -27,7 +27,7 @@ if test -n "$submit"; then
     MESSAGE="$MESSAGE<p>Your name is invalid</p>"
   fi
 
-  if echo "$note" | grep -qiE '.{300,}'; then
+  if echo "$note" | grep -qiE '.{5000,}'; then
     STATUS=500
     MESSAGE="$MESSAGE<p>Your note is invalid</p>"
   fi

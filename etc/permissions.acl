@@ -10790,6 +10790,62 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/pav
+# owner: pav
+# group: pav
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/pav/.viminfo
+# owner: pav
+# group: pav
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/pav/README
+# owner: pav
+# group: pav
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/pav/sandbox
+# owner: pav
+# group: pav
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pav/sandbox/README
+# owner: pav
+# group: pav
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/pav/index.cgi
+# owner: pav
+# group: pav
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pav/.ssh
+# owner: pav
+# group: pav
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pav/.ssh/authorized_keys
+# owner: pav
+# group: pav
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/ahrobe
 # owner: ahrobe
 # group: ahrobe
@@ -11095,6 +11151,13 @@ other::r-x
 # file: /srv/home/guest/docs/the_guide.md
 # owner: guest
 # group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/docs/.the_guide.md.swp
+# owner: root
+# group: root
 user::rw-
 group::r--
 other::r--

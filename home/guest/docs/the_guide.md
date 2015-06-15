@@ -42,7 +42,9 @@ Need to set up SSH access? [Click here][1] for help.
 
 ###	Core Concepts
 
-The following sections discuss a number of concepts. First among these is the **server**: a node application running on Linux that has full access to the underlying operating system. We sometimes use the word "server" to refer to the operating system as well. When we're specifically referring to the node application, we'll identify it as the **kernel**. When we're specifically referring to the operating system, we'll identify it as the **OS**.
+The first and most significant concept is the **server**: a node application running on Linux that has full access to the underlying operating system.
+
+We sometimes use the word "server" to refer to the operating system as well as the node application. When we're specifically referring to the node application, we'll identify it as the **kernel**. When we're specifically referring to the operating system, we'll identify it as the **OS**.
 
 We'll also discuss **paths**. These correspond to directories and files within the server's file system.
 
@@ -59,8 +61,8 @@ The server follows a simple set of rules to dispatch an HTTP request. These are:
    - http://h9n.org/some/path &rarr; `/srv/some/path`
    - http://h9n.org/this/is/another/path &rarr; `/srv/this/is/another/path`
    - http://h9n.org/special/files/.././work/../too &rarr; `/srv/special/too`
- 0. If that path corresponds is...
-   - **A Directory**: run the index program at that path (`/srv/some/path/index.cgi`)
+ 0. If that path is...
+   - **A Directory**: redirect to the index file at that path (`/srv/some/path/index.cgi`)
    - **Executable**: run the program at that path
    - **Readable**: return the data at that path
    - **Something Else**: return an appropriate HTTP error
@@ -153,7 +155,7 @@ The shell is a simple JavaScript application that is hosted by the server.
 
 It is entirely independent from the server's own code and exists as a [set of
 ordinary files][3] on the filesystem. It is executed exactly as described above and
-is no different from any other CGI application the server.
+is no different from any other CGI application on the server.
 
 
 ###	Directory Listing
