@@ -10804,13 +10804,6 @@ user::rw-
 group::---
 other::---
 
-# file: /srv/home/pav/README
-# owner: pav
-# group: pav
-user::rw-
-group::rw-
-other::r--
-
 # file: /srv/home/pav/sandbox
 # owner: pav
 # group: pav
@@ -10823,6 +10816,13 @@ other::r-x
 # group: pav
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/home/pav/README.md
+# owner: pav
+# group: pav
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/home/pav/index.cgi
@@ -11659,11 +11659,53 @@ user::rw-
 group::---
 other::---
 
-# file: /srv/home/rmd6502/npm-debug.log
-# owner: rmd6502
-# group: rmd6502
+# file: /srv/home/jsonp
+# owner: jsonp
+# group: jsonp
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/jsonp/README
+# owner: jsonp
+# group: jsonp
 user::rw-
-group::r--
+group::rw-
+other::r--
+
+# file: /srv/home/jsonp/sandbox
+# owner: jsonp
+# group: jsonp
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsonp/sandbox/README
+# owner: jsonp
+# group: jsonp
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jsonp/index.cgi
+# owner: jsonp
+# group: jsonp
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsonp/.ssh
+# owner: jsonp
+# group: jsonp
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsonp/.ssh/authorized_keys
+# owner: jsonp
+# group: jsonp
+user::rw-
+group::rw-
 other::r--
 
 # file: /srv/home/codemike
