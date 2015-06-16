@@ -2191,7 +2191,14 @@ other::r-x
 # group: server
 user::rw-
 group::r--
-other::r--
+other::---
+
+# file: /srv/home/server/log/apply-data
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::---
 
 # file: /srv/home/server/.bashrc
 # owner: server
@@ -11653,6 +11660,13 @@ group::---
 other::---
 
 # file: /srv/home/rmd6502/.ssh/authorized_keys
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/rmd6502/.Xauthority
 # owner: rmd6502
 # group: rmd6502
 user::rw-

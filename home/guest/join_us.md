@@ -15,6 +15,8 @@ _Membership must be approved by an admin. Create a request below **and** join us
  - Help lead the Hacker Union
  - [Learn more][2]
 
+---
+
 <iframe src="/home/guest/apply/index.cgi" width="100%" height="500px" style="border: 0px;"></iframe>
 
 [1]: #/home/guest/event_calendar.md
