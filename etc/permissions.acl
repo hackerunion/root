@@ -73,14 +73,28 @@ other::r--
 # owner: server
 # group: server
 user::rwx
-group::rwx
+group::r-x
 other::r-x
 
 # file: /srv/srv/events/events.json
 # owner: server
 # group: server
 user::rw-
-group::rw-
+group::r--
+other::r--
+
+# file: /srv/srv/announce
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/srv/announce/database.json
+# owner: server
+# group: server
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/README.md
@@ -2739,78 +2753,98 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/.index
-# owner: server
-# group: server
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/home/server/sandbox/index.md
-# owner: server
-# group: server
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/home/server/sandbox/start_chapter.md
-# owner: server
-# group: server
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/home/server/sandbox/apply
+# file: /srv/home/server/sandbox/announce
 # owner: server
 # group: server
 user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/apply/data
-# owner: root
-# group: root
+# file: /srv/home/server/sandbox/announce/templates
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/announce/templates/.index.jade.swp
+# owner: server
+# group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/apply/index.cgi
+# file: /srv/home/server/sandbox/announce/templates/index.jade
 # owner: server
 # group: server
-# flags: s--
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/announce/js
+# owner: server
+# group: server
 user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/about_us.md
+# file: /srv/home/server/sandbox/announce/js/app.js
 # owner: server
 # group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/sandbox/our_server.md
+# file: /srv/home/server/sandbox/announce/.index.cgi.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/announce/css
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/announce/css/style.css
 # owner: server
 # group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/sandbox/join_us.md
+# file: /srv/home/server/sandbox/announce/css/normalize.css
 # owner: server
 # group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/sandbox/our_mission.md
+# file: /srv/home/server/sandbox/announce/css/typebase.css
 # owner: server
 # group: server
 user::rw-
 group::rw-
 other::r--
 
-# file: /srv/home/server/sandbox/upcoming_events.md
+# file: /srv/home/server/sandbox/announce/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/server/sandbox/announce/package.json
 # owner: server
 # group: server
 user::rw-

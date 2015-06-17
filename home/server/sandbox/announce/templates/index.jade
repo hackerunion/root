@@ -1,0 +1,124 @@
+doctype html
+html(lang='en')
+  head
+    title Announce
+    script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
+    script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='#{path}/js/app.js')
+
+    link(rel='stylesheet', type='text/css', href='${path}/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='${path}/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+  body
+    if authorized
+      h1 Announce
+      h2 A karma-based community announcement tool
+      pre.
+        - Subscribe to #topics here
+        - You will receive announcements with these topics
+        - (-) bad announcements, (+) good announcements, (?) meh anouncements
+        - Karma &rarr; the % of the community you can reach
+        - Sent to more people after 60 minutes if message gets (+)
+
+      hr
+
+      h3 Functions
+
+      ol
+        li
+          a(href="#karma") Your Karma
+        li
+          a(href="#email") Set Email
+        li
+          a(href="#topics") Choose Topics
+        li
+          a(href="#announce") Compose Message 
+
+      hr
+
+      a(name="karma")
+        h3 Your Karma
+
+        table(border="4px")
+          thead
+            tr
+              th Good (+)
+              th Meh (?)
+              th Bad (-)
+              th Total
+              th Karma
+              th Maximum #
+
+          tbody
+            tr
+              td 8 
+              td 23
+              td 4
+              td 35
+              td 45 / 100
+              td 25
+
+      hr
+    
+      a(name="email")
+        h3 Set Email
+      
+      form
+        input(type="hidden", name="function", value="setemail")
+        p
+          input(type="text", value=user)
+        p
+          input(type="submit")
+      
+      hr 
+
+      a(name="topics")
+        h3 Choose Topics
+
+      table(border="4px")
+        thead
+          tr
+            th List Topics (One Per Line)
+            th Official Topics
+        tbody
+          tr
+            td
+              form
+                input(type="hidden", name="function", value="settopics")
+                p
+                  textarea(name="topics", rows=20, cols=100)
+                p
+                  input(type="submit")
+
+            td(align="center")
+              pre.
+                #programming
+                #design
+                #culture
+                #community
+                #hackathons
+                #freefood
+
+      hr
+      
+      a(name="announce")
+        h3 Compose Message
+      
+      form
+        input(type="hidden", name="function", value="announce")
+        p
+          label Topics:
+          input(type="text", name="topics")
+        
+        p
+          label Message:
+          textarea(name="message", rows=20, cols=100)
+        
+        p
+          input(type="submit")
+
+    else
+      pre.
+        This tool allows community members to make announcements and to start discussions.
+        A simple karma system is used to avoid spam.
