@@ -10635,6 +10635,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/fwuppermann
+# owner: fwuppermann
+# group: fwuppermann
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/fwuppermann/README
+# owner: fwuppermann
+# group: fwuppermann
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/fwuppermann/sandbox
+# owner: fwuppermann
+# group: fwuppermann
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fwuppermann/sandbox/README
+# owner: fwuppermann
+# group: fwuppermann
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/fwuppermann/index.cgi
+# owner: fwuppermann
+# group: fwuppermann
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fwuppermann/.ssh
+# owner: fwuppermann
+# group: fwuppermann
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fwuppermann/.ssh/authorized_keys
+# owner: fwuppermann
+# group: fwuppermann
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/belimawr
 # owner: belimawr
 # group: belimawr

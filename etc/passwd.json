@@ -32,5 +32,6 @@
 { "username": "faigy", "password": "$1$KwlnBZds$e9yf/oHbFCKMC7xCoy6fX.", "uid": "1367", "gid": "1369", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "sahar", "password": "$1$jSUie6pI$KMQBefmioKJm3bPZxDDhE1", "uid": "1368", "gid": "1370", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "pav", "password": "$1$n.iVCMuH$bOhKNOehpP92LKHvplMQA1", "uid": "1369", "gid": "1371", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
-{ "username": "jsonp", "password": "$1$XO.eHnpU$Y/bHgP5jUqDRDF2EhlnKP1", "uid": "1370", "gid": "1372", "info": "", "shell": "/bin/sh", "service": false, "uri": null }
+{ "username": "jsonp", "password": "$1$XO.eHnpU$Y/bHgP5jUqDRDF2EhlnKP1", "uid": "1370", "gid": "1372", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "fwuppermann", "password": "$1$CgZoDvel$Rx9qa3lZRWQ9d9YfG7ltu.", "uid": "1371", "gid": "1373", "info": "", "shell": "/bin/sh", "service": false, "uri": null }
 ]
