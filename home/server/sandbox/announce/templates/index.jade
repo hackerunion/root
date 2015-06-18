@@ -6,20 +6,32 @@ html(lang='en')
     script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
     script(type='text/javascript', src='#{path}/js/app.js')
 
-    link(rel='stylesheet', type='text/css', href='${path}/css/normalize.css')
-    link(rel='stylesheet', type='text/css', href='${path}/css/style.css')
+    link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 
   body
     if authorized
       h1 Announce
-      h2 A karma-based community announcement tool
-      pre.
-        - Subscribe to #topics here
-        - You will receive announcements with these topics
-        - (-) bad announcements, (+) good announcements, (?) meh anouncements
-        - Karma &rarr; the % of the community you can reach
-        - Sent to more people after 60 minutes if message gets (+)
+      h2 A Reputation-Based Community Megaphone
+      hr
+      em
+        | Moderating access to 
+        strong #{total} 
+        | Hacker Union members
+      hr
+      
+      table
+        tr
+          td
+            pre.
+              README
+      
+              - Subscribe to #topics that interest you
+              - Receive on-topic announcements
+              - Downvote bad posts, upvote good posts
+              - Reputation &rarr; # of people you can reach
+              - Good posts will be re-broadcast to more people
 
       hr
 
@@ -27,7 +39,7 @@ html(lang='en')
 
       ol
         li
-          a(href="#karma") Your Karma
+          a(href="#reputation") Your Reputation
         li
           a(href="#email") Set Email
         li
@@ -37,27 +49,25 @@ html(lang='en')
 
       hr
 
-      a(name="karma")
-        h3 Your Karma
+      a(name="reputation")
+        h3 Your Reputation
 
-        table(border="4px")
+        table
           thead
             tr
-              th Good (+)
-              th Meh (?)
-              th Bad (-)
+              th Good
+              th Bad
+              th Meh
               th Total
-              th Karma
-              th Maximum #
+              th Reputation (Grade)
 
           tbody
             tr
-              td 8 
-              td 23
-              td 4
-              td 35
-              td 45 / 100
-              td 25
+              td #{stats.good} 
+              td #{stats.bad}
+              td #{stats.meh}
+              td #{stats.good + stats.bad + stats.meh}
+              td #{grade}
 
       hr
     
@@ -66,17 +76,20 @@ html(lang='en')
       
       form
         input(type="hidden", name="function", value="setemail")
-        p
-          input(type="text", value=user)
-        p
-          input(type="submit")
+        table
+          tbody
+            tr
+              td
+                input(type="text", value=user)
+              td
+                input(type="submit")
       
       hr 
 
       a(name="topics")
         h3 Choose Topics
 
-      table(border="4px")
+      table
         thead
           tr
             th List Topics (One Per Line)
@@ -86,10 +99,14 @@ html(lang='en')
             td
               form
                 input(type="hidden", name="function", value="settopics")
-                p
-                  textarea(name="topics", rows=20, cols=100)
-                p
-                  input(type="submit")
+                table
+                  tbody
+                    tr
+                      td
+                        textarea(name="topics", rows=20, cols=40)
+                    tr
+                      td
+                        input(type="submit")
 
             td(align="center")
               pre.
@@ -99,6 +116,7 @@ html(lang='en')
                 #community
                 #hackathons
                 #freefood
+                #random
 
       hr
       
@@ -107,18 +125,26 @@ html(lang='en')
       
       form
         input(type="hidden", name="function", value="announce")
-        p
-          label Topics:
-          input(type="text", name="topics")
+        table
+          tbody
+            tr
+              th(scope="row")
+                label Topics
+              td 
+                input(type="text", name="topics")
+            
+            tr
+              th(scope="row")
+                label Message
+              td
+                textarea(name="message", rows=20, cols=100)
         
-        p
-          label Message:
-          textarea(name="message", rows=20, cols=100)
-        
-        p
-          input(type="submit")
+            tr
+              th
+              td
+                input(type="submit")
 
     else
       pre.
         This tool allows community members to make announcements and to start discussions.
-        A simple karma system is used to avoid spam.
+        A simple reputation system is used to avoid spam.

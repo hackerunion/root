@@ -2767,13 +2767,6 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/announce/templates/.index.jade.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/sandbox/announce/templates/index.jade
 # owner: server
 # group: server
