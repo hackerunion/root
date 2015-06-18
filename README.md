@@ -61,8 +61,8 @@ The server follows a simple set of rules to dispatch an HTTP request. These are:
    - http://h9n.org/some/path &rarr; `/srv/some/path`
    - http://h9n.org/this/is/another/path &rarr; `/srv/this/is/another/path`
    - http://h9n.org/special/files/.././work/../too &rarr; `/srv/special/too`
- 0. If that path corresponds is...
-   - **A Directory**: run the index program at that path (`/srv/some/path/index.cgi`)
+ 0. If that path is...
+   - **A Directory**: redirect to the index file at that path (`/srv/some/path/index.cgi`)
    - **Executable**: run the program at that path
    - **Readable**: return the data at that path
    - **Something Else**: return an appropriate HTTP error
@@ -155,7 +155,7 @@ The shell is a simple JavaScript application that is hosted by the server.
 
 It is entirely independent from the server's own code and exists as a [set of
 ordinary files][3] on the filesystem. It is executed exactly as described above and
-is no different from any other CGI application the server.
+is no different from any other CGI application on the server.
 
 
 ###	Directory Listing

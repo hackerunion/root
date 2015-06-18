@@ -11174,6 +11174,76 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/guest/.npm
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/registry.npmjs.org
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/registry.npmjs.org/nodemon
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/registry.npmjs.org/nodemon/.cache.json
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/nodemon
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/nodemon/1.3.7
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/nodemon/1.3.7/package.tgz
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/nodemon/1.3.7/package
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/nodemon/1.3.7/package/package.json
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/_locks
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
 # file: /srv/home/guest/index.md
 # owner: guest
 # group: guest
@@ -11335,6 +11405,20 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: /srv/home/dberg/.bash_history
+# owner: dberg
+# group: dberg
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/dberg/.viminfo
+# owner: dberg
+# group: dberg
+user::rw-
+group::---
+other::---
 
 # file: /srv/home/dberg/README
 # owner: dberg
