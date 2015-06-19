@@ -52,7 +52,7 @@
 { "group": "server", "gid": "1337", "users": [] },
 { "group": "brandon", "gid": "1339", "users": [] },
 { "group": "hacker", "gid": "1340", "users": ["server", "brandon"] },
-{ "group": "member", "gid": "1341", "users": ["brandon", "server", "geminiimatt", "amitk", "dreamchipper", "sballan", "belimawr", "pocket", "suztomo", "kfuchs", "tsyuk01", "toby", "davidykay", "codemike", "sarvagnan", "irvingfb", "ricka", "zamansky", "joeymejias", "annanican", "arjuns", "viola", "darkseidvengeance", "nastassia", "emanuele", "danielrak", "dberg", "ahrobe", "rmd6502", "faigy", "sahar", "pav", "jsonp", "fwuppermann", "mindlessjibber", "burlivo", "jsstein", "reah"] },
+{ "group": "member", "gid": "1341", "users": ["brandon", "server", "geminiimatt", "amitk", "dreamchipper", "sballan", "belimawr", "pocket", "suztomo", "kfuchs", "tsyuk01", "toby", "davidykay", "codemike", "sarvagnan", "irvingfb", "ricka", "zamansky", "joeymejias", "annanican", "arjuns", "viola", "darkseidvengeance", "nastassia", "emanuele", "danielrak", "dberg", "ahrobe", "rmd6502", "faigy", "sahar", "pav", "jsonp", "fwuppermann", "mindlessjibber", "burlivo", "jsstein", "reah", "arun", "tsax"] },
 { "group": "geminiimatt", "gid": "1342", "users": [] },
 { "group": "amitk", "gid": "1343", "users": [] },
 { "group": "dreamchipper", "gid": "1344", "users": [] },
@@ -88,5 +88,7 @@
 { "group": "mindlessjibber", "gid": "1374", "users": [] },
 { "group": "burlivo", "gid": "1375", "users": [] },
 { "group": "jsstein", "gid": "1376", "users": [] },
-{ "group": "reah", "gid": "1377", "users": [] }
+{ "group": "reah", "gid": "1377", "users": [] },
+{ "group": "arun", "gid": "1378", "users": [] },
+{ "group": "tsax", "gid": "1379", "users": [] }
 ]

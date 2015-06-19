@@ -11202,6 +11202,69 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/arun
+# owner: arun
+# group: arun
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/arun/.bash_history
+# owner: arun
+# group: arun
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/arun/.viminfo
+# owner: arun
+# group: arun
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/arun/README
+# owner: arun
+# group: arun
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/arun/sandbox
+# owner: arun
+# group: arun
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arun/sandbox/README
+# owner: arun
+# group: arun
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/arun/index.cgi
+# owner: arun
+# group: arun
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arun/.ssh
+# owner: arun
+# group: arun
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arun/.ssh/authorized_keys
+# owner: arun
+# group: arun
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/irvingfb
 # owner: irvingfb
 # group: irvingfb
@@ -12249,6 +12312,55 @@ other::r-x
 # file: /srv/home/codemike/.ssh/authorized_keys
 # owner: codemike
 # group: codemike
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/tsax
+# owner: tsax
+# group: tsax
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/tsax/README
+# owner: tsax
+# group: tsax
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/tsax/sandbox
+# owner: tsax
+# group: tsax
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsax/sandbox/README
+# owner: tsax
+# group: tsax
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/tsax/index.cgi
+# owner: tsax
+# group: tsax
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsax/.ssh
+# owner: tsax
+# group: tsax
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsax/.ssh/authorized_keys
+# owner: tsax
+# group: tsax
 user::rw-
 group::rw-
 other::r--
