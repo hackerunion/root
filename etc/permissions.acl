@@ -959,6 +959,13 @@ user::rwx
 group::rw-
 other::r--
 
+# file: /srv/boot/host/bin/pause.TODO
+# owner: 500
+# group: 500
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/boot/host/Dockerfile
 # owner: 500
 # group: 497
