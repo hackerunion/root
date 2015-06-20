@@ -39,9 +39,9 @@ Password: \$USERPASS
 NEXT STEPS
 ==========
 
-1. Login and change your password
-2. Set up SSH access
-3. Set up your sandbox
+1. <a href="http://h9n.org/#/home/guest/docs/ssh_info.cgi">Set up SSH access and change your password</a>
+2. <a href="http://h9n.org/#/home/guest/docs/the_guide.md">Skim The Guide</a>
+3. <a href="http://h9n.org">Explore the server and create a home page</a>
 
 ---------
 IMPORTANT
@@ -49,7 +49,7 @@ IMPORTANT
 
 You are currently a recruit.
 
-To become a full member (and receive your membership card), you must either:
+To become a full member (and receive a membership card), you must either:
 
  I.    Come to 3+ events
  II.   Commit code to the Hacker Union server
@@ -70,9 +70,10 @@ Subject: RE: Hacker Union Application
 Thank you for applying to the Hacker Union.
 
 Before moving forward, we'd like you to join us for an event:
-http://h9n.org/var/www/events/
 
-Let the host know that you're interested in membership. They'll help identify next steps.
+<a href="http://h9n.org/var/www/events/">http://h9n.org/var/www/events/</a>
+
+Let the host know that you're interested in membership, and they'll point you in the right direction.
 
 Happy Hacking,
 root
@@ -144,6 +145,7 @@ create_user_or_retry() {
             --home-dir          "$HOMEDIR/$1" \
             --skel              "$SKELDIR" \
             --password          "$2" \
+            --groups            "member" \
             $1
     
     if (( $? )); then
@@ -184,7 +186,7 @@ while read -u 3 LINE; do
     
     FULLNAME=`echo $LINE | cut -d\| -f2`
     EMAIL=`echo $LINE | cut -d\| -f3`
-    USERLOGIN=`echo $LINE | cut -d\| -f4`
+    USERLOGIN=`echo $LINE | cut -d\| -f4 | tr 'A-Z' 'a-z'`
     TIMESTAMP=`echo $LINE | cut -d\| -f5`
     COMMENT=`echo $LINE | cut -d\| -f6`
     test -z "$FF" && cat <<EOF

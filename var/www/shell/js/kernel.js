@@ -218,7 +218,7 @@
 
                 // check for an explicit handler
                 var data = obj.value;
-                var shebang = data.match(/#!\s*([^\n\r]*)([\s\S]*)/);
+                var shebang = data.match(/^#!\s*([^\n\r]*)([\s\S]*)/);
                 var meta = {};
 
                 if (shebang) {

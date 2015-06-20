@@ -1,0 +1,10 @@
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+jA0ECQMCigyG4E3zCKdg0roB3ScFfSiGMjIwoUFjnb6a6YbmIFI1IQUPsg/nAayo
+LGvz1ztlP6wZTkIadk0EXfj4IlBHpvTEdNpKlwhfjoP1Zq8EKoyn8/48ZgcYbi+I
+w65QoWo8j4AUBpz2DjnBxZ7H7QeW95BnaA9/Am/ANU4j63n8NaQtlZ3Rcxzncigt
+O1ltVNAYOyyw0N2fXc2WTx+Pf1B0A0wcv6X/23EVAtttYSoKNnRYsTym07L+eWmy
+2/fFIq+0Gk2shWs=
+=oCdB
+-----END PGP MESSAGE-----

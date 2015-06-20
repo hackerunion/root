@@ -1,0 +1,134 @@
+doctype html
+html(lang='en')
+  head
+    title Announce
+    script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
+    script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='#{path}/js/app.js')
+
+    link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+  body
+    if authorized
+      h1 Announce
+      h2 A Reputation-Based Community Megaphone
+      hr
+      em
+        | Moderating access to 
+        strong #{total} 
+        | Hacker Union members
+      hr
+      
+      table
+        tr
+          td
+            pre.
+              README
+      
+              - Subscribe to #topics that interest you
+              - Receive on-topic announcements
+              - Downvote bad posts, upvote good posts
+              - Reputation &rarr; # of people you can reach
+              - Good posts will be re-broadcast to more people
+
+      hr
+
+      h3 Functions
+
+      ol
+        li
+          a(href="#reputation") Your Reputation
+        li
+          a(href="#topics") Choose Topics
+        li
+          a(href="#announce") Compose Message 
+
+      hr
+
+      a(name="reputation")
+        h3 Your Reputation
+
+        table
+          thead
+            tr
+              th Good
+              th Bad
+              th Meh
+              th Total
+              th Reputation (Grade)
+
+          tbody
+            tr
+              td #{profile.reputation.good} 
+              td #{profile.reputation.bad}
+              td #{profile.reputation.ignore}
+              td #{profile.reputation.good + profile.reputation.bad + profile.reputation.ignore}
+              td
+                strong #{grade}
+
+      hr
+    
+      a(name="topics")
+        h3 Choose Topics
+
+      table
+        thead
+          tr
+            th List Topics (One Per Line)
+            th Official Topics
+        tbody
+          tr
+            td
+              form
+                input(type="hidden", name="function", value="settopics")
+                table
+                  tbody
+                    tr
+                      td
+                        textarea(name="topics", rows=20, cols=40) !{topics}
+                    tr
+                      td
+                        input(type="submit")
+
+            td(align="center")
+              pre.
+                #programming
+                #design
+                #culture
+                #community
+                #hackathons
+                #freefood
+                #random
+
+      hr
+      
+      a(name="announce")
+        h3 Compose Message
+      
+      form
+        input(type="hidden", name="function", value="announce")
+        table
+          tbody
+            tr
+              th(scope="row")
+                label Topics
+              td 
+                input(type="text", name="topics")
+            
+            tr
+              th(scope="row")
+                label Message
+              td
+                textarea(name="message", rows=20, cols=100)
+        
+            tr
+              th
+              td
+                input(type="submit")
+
+    else
+      pre.
+        This tool allows community members to make announcements and to start discussions.
+        A simple reputation system is used to avoid spam.

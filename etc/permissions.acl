@@ -73,14 +73,42 @@ other::r--
 # owner: server
 # group: server
 user::rwx
-group::rwx
+group::r-x
 other::r-x
 
 # file: /srv/srv/events/events.json
 # owner: server
 # group: server
 user::rw-
-group::rw-
+group::r--
+other::r--
+
+# file: /srv/srv/announce
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/srv/announce/.database.json.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/srv/announce/database.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/srv/announce/spool.json
+# owner: server
+# group: server
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/README.md
@@ -1449,6 +1477,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/var/www/shell/js/handlers/text.js
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/shell/js/handlers/markdown.js
 # owner: 500
 # group: 497
@@ -1710,6 +1745,13 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/lib/js/lodash.js
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/lib/js/body.js
 # owner: 500
 # group: 497
@@ -1759,6 +1801,398 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/home/tsyuk01
+# owner: tsyuk01
+# group: tsyuk01
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/tsyuk01/README
+# owner: tsyuk01
+# group: tsyuk01
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/tsyuk01/sandbox
+# owner: tsyuk01
+# group: tsyuk01
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsyuk01/sandbox/README
+# owner: tsyuk01
+# group: tsyuk01
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/tsyuk01/index.cgi
+# owner: tsyuk01
+# group: tsyuk01
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsyuk01/.ssh
+# owner: tsyuk01
+# group: tsyuk01
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsyuk01/.ssh/authorized_keys
+# owner: tsyuk01
+# group: tsyuk01
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/ricka
+# owner: ricka
+# group: ricka
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/ricka/README
+# owner: ricka
+# group: ricka
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/ricka/sandbox
+# owner: ricka
+# group: ricka
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/ricka/sandbox/README
+# owner: ricka
+# group: ricka
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/ricka/index.cgi
+# owner: ricka
+# group: ricka
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/ricka/.ssh
+# owner: ricka
+# group: ricka
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/ricka/.ssh/authorized_keys
+# owner: ricka
+# group: ricka
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/geminiimatt
+# owner: geminiimatt
+# group: geminiimatt
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/geminiimatt/README
+# owner: geminiimatt
+# group: geminiimatt
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/geminiimatt/sandbox
+# owner: geminiimatt
+# group: geminiimatt
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/geminiimatt/sandbox/README
+# owner: geminiimatt
+# group: geminiimatt
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/geminiimatt/index.cgi
+# owner: geminiimatt
+# group: geminiimatt
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/geminiimatt/.ssh
+# owner: geminiimatt
+# group: geminiimatt
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/geminiimatt/.ssh/authorized_keys
+# owner: geminiimatt
+# group: geminiimatt
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dreamchipper
+# owner: dreamchipper
+# group: dreamchipper
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/dreamchipper/README
+# owner: dreamchipper
+# group: dreamchipper
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dreamchipper/sandbox
+# owner: dreamchipper
+# group: dreamchipper
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dreamchipper/sandbox/README
+# owner: dreamchipper
+# group: dreamchipper
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dreamchipper/index.cgi
+# owner: dreamchipper
+# group: dreamchipper
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dreamchipper/.ssh
+# owner: dreamchipper
+# group: dreamchipper
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dreamchipper/.ssh/authorized_keys
+# owner: dreamchipper
+# group: dreamchipper
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sballan
+# owner: sballan
+# group: sballan
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/sballan/README
+# owner: sballan
+# group: sballan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sballan/sandbox
+# owner: sballan
+# group: sballan
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sballan/sandbox/README
+# owner: sballan
+# group: sballan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sballan/index.cgi
+# owner: sballan
+# group: sballan
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sballan/.ssh
+# owner: sballan
+# group: sballan
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sballan/.ssh/authorized_keys
+# owner: sballan
+# group: sballan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/suztomo
+# owner: suztomo
+# group: suztomo
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/suztomo/README
+# owner: suztomo
+# group: suztomo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/suztomo/sandbox
+# owner: suztomo
+# group: suztomo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/suztomo/sandbox/README
+# owner: suztomo
+# group: suztomo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/suztomo/index.cgi
+# owner: suztomo
+# group: suztomo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/suztomo/.ssh
+# owner: suztomo
+# group: suztomo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/suztomo/.ssh/authorized_keys
+# owner: suztomo
+# group: suztomo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/toby
+# owner: toby
+# group: toby
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/toby/README
+# owner: toby
+# group: toby
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/toby/sandbox
+# owner: toby
+# group: toby
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/toby/sandbox/README
+# owner: toby
+# group: toby
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/toby/index.cgi
+# owner: toby
+# group: toby
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/toby/.ssh
+# owner: toby
+# group: toby
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/toby/.ssh/authorized_keys
+# owner: toby
+# group: toby
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/emanuele
+# owner: emanuele
+# group: emanuele
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/emanuele/README
+# owner: emanuele
+# group: emanuele
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/emanuele/sandbox
+# owner: emanuele
+# group: emanuele
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/emanuele/sandbox/README
+# owner: emanuele
+# group: emanuele
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/emanuele/index.cgi
+# owner: emanuele
+# group: emanuele
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/emanuele/.ssh
+# owner: emanuele
+# group: emanuele
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/emanuele/.ssh/authorized_keys
+# owner: emanuele
+# group: emanuele
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/server
 # owner: server
 # group: server
@@ -1792,7 +2226,14 @@ other::r-x
 # group: server
 user::rw-
 group::r--
-other::r--
+other::---
+
+# file: /srv/home/server/log/apply-data
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::---
 
 # file: /srv/home/server/.bashrc
 # owner: server
@@ -1815,14 +2256,14 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/bin/tmp/contact.json
+# file: /srv/home/server/bin/tmp/data
 # owner: server
 # group: server
 user::rw-
 group::r--
-other::r--
+other::---
 
-# file: /srv/home/server/bin/tmp/data
+# file: /srv/home/server/bin/tmp/data2
 # owner: server
 # group: server
 user::rw-
@@ -1836,7 +2277,112 @@ user::rwx
 group::r--
 other::r--
 
-# file: /srv/home/server/bin/.decide.swp
+# file: /srv/home/server/bin/nuke
+# owner: server
+# group: server
+user::rwx
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox2/announce
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox2/announce/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox2/announce/templates/.index.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2/announce/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2/announce/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox2/announce/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2/announce/.index.cgi.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2/announce/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox2/announce/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox2/announce/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2/announce/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2/announce/css/typebase.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2/announce/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox2/announce/package.json
 # owner: server
 # group: server
 user::rw-
@@ -2333,82 +2879,95 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/.index
-# owner: server
-# group: server
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/home/server/sandbox/index.md
-# owner: server
-# group: server
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/home/server/sandbox/start_chapter.md
-# owner: server
-# group: server
-user::rw-
-group::rw-
-other::r--
-
-# file: /srv/home/server/sandbox/apply
+# file: /srv/home/server/sandbox/announce
 # owner: server
 # group: server
 user::rwx
-group::rwx
+group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/apply/data
-# owner: root
-# group: root
+# file: /srv/home/server/sandbox/announce/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/announce/templates/.index.jade.swp
+# owner: server
+# group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/apply/index.cgi
+# file: /srv/home/server/sandbox/announce/templates/index.jade
 # owner: server
 # group: server
-# flags: s--
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/js
+# owner: server
+# group: server
 user::rwx
-group::rwx
+group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/about_us.md
+# file: /srv/home/server/sandbox/announce/js/app.js
 # owner: server
 # group: server
 user::rw-
-group::rw-
+group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/our_server.md
+# file: /srv/home/server/sandbox/announce/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/announce/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/announce/css/style.css
 # owner: server
 # group: server
 user::rw-
-group::rw-
+group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/join_us.md
+# file: /srv/home/server/sandbox/announce/css/normalize.css
 # owner: server
 # group: server
 user::rw-
-group::rw-
+group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/our_mission.md
+# file: /srv/home/server/sandbox/announce/css/typebase.css
 # owner: server
 # group: server
 user::rw-
-group::rw-
+group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/upcoming_events.md
+# file: /srv/home/server/sandbox/announce/favicon.ico
 # owner: server
 # group: server
 user::rw-
-group::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/package.json
+# owner: server
+# group: server
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/home/server/.bash_profile
@@ -10083,9 +10642,772 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/burlivo
+# owner: burlivo
+# group: burlivo
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/burlivo/README
+# owner: burlivo
+# group: burlivo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/burlivo/sandbox
+# owner: burlivo
+# group: burlivo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/burlivo/sandbox/README
+# owner: burlivo
+# group: burlivo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/burlivo/index.cgi
+# owner: burlivo
+# group: burlivo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/burlivo/.ssh
+# owner: burlivo
+# group: burlivo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/burlivo/.ssh/authorized_keys
+# owner: burlivo
+# group: burlivo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/joeymejias
+# owner: joeymejias
+# group: joeymejias
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/joeymejias/README
+# owner: joeymejias
+# group: joeymejias
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/joeymejias/sandbox
+# owner: joeymejias
+# group: joeymejias
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/joeymejias/sandbox/README
+# owner: joeymejias
+# group: joeymejias
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/joeymejias/index.cgi
+# owner: joeymejias
+# group: joeymejias
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/joeymejias/.ssh
+# owner: joeymejias
+# group: joeymejias
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/joeymejias/.ssh/authorized_keys
+# owner: joeymejias
+# group: joeymejias
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zamansky
+# owner: zamansky
+# group: zamansky
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/zamansky/.bash_history
+# owner: zamansky
+# group: zamansky
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/zamansky/README
+# owner: zamansky
+# group: zamansky
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zamansky/sandbox
+# owner: zamansky
+# group: zamansky
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zamansky/sandbox/README
+# owner: zamansky
+# group: zamansky
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zamansky/index.cgi
+# owner: zamansky
+# group: zamansky
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zamansky/.ssh
+# owner: zamansky
+# group: zamansky
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zamansky/.ssh/authorized_keys
+# owner: zamansky
+# group: zamansky
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/USAGE.txt
 # owner: 500
 # group: 497
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/mindlessjibber
+# owner: mindlessjibber
+# group: mindlessjibber
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/mindlessjibber/README
+# owner: mindlessjibber
+# group: mindlessjibber
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/mindlessjibber/sandbox
+# owner: mindlessjibber
+# group: mindlessjibber
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mindlessjibber/sandbox/README
+# owner: mindlessjibber
+# group: mindlessjibber
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/mindlessjibber/index.cgi
+# owner: mindlessjibber
+# group: mindlessjibber
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mindlessjibber/.ssh
+# owner: mindlessjibber
+# group: mindlessjibber
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mindlessjibber/.ssh/authorized_keys
+# owner: mindlessjibber
+# group: mindlessjibber
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/fwuppermann
+# owner: fwuppermann
+# group: fwuppermann
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/fwuppermann/README
+# owner: fwuppermann
+# group: fwuppermann
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/fwuppermann/sandbox
+# owner: fwuppermann
+# group: fwuppermann
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fwuppermann/sandbox/README
+# owner: fwuppermann
+# group: fwuppermann
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/fwuppermann/index.cgi
+# owner: fwuppermann
+# group: fwuppermann
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fwuppermann/.ssh
+# owner: fwuppermann
+# group: fwuppermann
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fwuppermann/.ssh/authorized_keys
+# owner: fwuppermann
+# group: fwuppermann
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/belimawr
+# owner: belimawr
+# group: belimawr
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/belimawr/README
+# owner: belimawr
+# group: belimawr
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/belimawr/sandbox
+# owner: belimawr
+# group: belimawr
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/belimawr/sandbox/README
+# owner: belimawr
+# group: belimawr
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/belimawr/index.cgi
+# owner: belimawr
+# group: belimawr
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/belimawr/.ssh
+# owner: belimawr
+# group: belimawr
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/belimawr/.ssh/authorized_keys
+# owner: belimawr
+# group: belimawr
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/danielrak
+# owner: danielrak
+# group: danielrak
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/danielrak/README
+# owner: danielrak
+# group: danielrak
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/danielrak/sandbox
+# owner: danielrak
+# group: danielrak
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/danielrak/sandbox/README
+# owner: danielrak
+# group: danielrak
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/danielrak/index.cgi
+# owner: danielrak
+# group: danielrak
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/danielrak/.ssh
+# owner: danielrak
+# group: danielrak
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/danielrak/.ssh/authorized_keys
+# owner: danielrak
+# group: danielrak
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/davidykay
+# owner: davidykay
+# group: davidykay
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/davidykay/README
+# owner: davidykay
+# group: davidykay
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/davidykay/sandbox
+# owner: davidykay
+# group: davidykay
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/davidykay/sandbox/README
+# owner: davidykay
+# group: davidykay
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/davidykay/index.cgi
+# owner: davidykay
+# group: davidykay
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/davidykay/.ssh
+# owner: davidykay
+# group: davidykay
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/davidykay/.ssh/authorized_keys
+# owner: davidykay
+# group: davidykay
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/kfuchs
+# owner: kfuchs
+# group: kfuchs
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/kfuchs/README
+# owner: kfuchs
+# group: kfuchs
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/kfuchs/sandbox
+# owner: kfuchs
+# group: kfuchs
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/kfuchs/sandbox/README
+# owner: kfuchs
+# group: kfuchs
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/kfuchs/index.cgi
+# owner: kfuchs
+# group: kfuchs
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/kfuchs/.ssh
+# owner: kfuchs
+# group: kfuchs
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/kfuchs/.ssh/authorized_keys
+# owner: kfuchs
+# group: kfuchs
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/pav
+# owner: pav
+# group: pav
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/pav/.viminfo
+# owner: pav
+# group: pav
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/pav/sandbox
+# owner: pav
+# group: pav
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pav/sandbox/README
+# owner: pav
+# group: pav
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/pav/README.md
+# owner: pav
+# group: pav
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/pav/index.cgi
+# owner: pav
+# group: pav
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pav/.ssh
+# owner: pav
+# group: pav
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pav/.ssh/authorized_keys
+# owner: pav
+# group: pav
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/ahrobe
+# owner: ahrobe
+# group: ahrobe
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/ahrobe/README
+# owner: ahrobe
+# group: ahrobe
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/ahrobe/sandbox
+# owner: ahrobe
+# group: ahrobe
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/ahrobe/sandbox/README
+# owner: ahrobe
+# group: ahrobe
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/ahrobe/index.cgi
+# owner: ahrobe
+# group: ahrobe
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/ahrobe/.ssh
+# owner: ahrobe
+# group: ahrobe
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/ahrobe/.ssh/authorized_keys
+# owner: ahrobe
+# group: ahrobe
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/arun
+# owner: arun
+# group: arun
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/arun/.bash_history
+# owner: arun
+# group: arun
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/arun/.viminfo
+# owner: arun
+# group: arun
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/arun/README
+# owner: arun
+# group: arun
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/arun/sandbox
+# owner: arun
+# group: arun
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arun/sandbox/README
+# owner: arun
+# group: arun
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/arun/index.cgi
+# owner: arun
+# group: arun
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arun/.ssh
+# owner: arun
+# group: arun
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arun/.ssh/authorized_keys
+# owner: arun
+# group: arun
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/irvingfb
+# owner: irvingfb
+# group: irvingfb
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/irvingfb/README
+# owner: irvingfb
+# group: irvingfb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/irvingfb/sandbox
+# owner: irvingfb
+# group: irvingfb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/irvingfb/sandbox/README
+# owner: irvingfb
+# group: irvingfb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/irvingfb/index.cgi
+# owner: irvingfb
+# group: irvingfb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/irvingfb/.ssh
+# owner: irvingfb
+# group: irvingfb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/irvingfb/.ssh/authorized_keys
+# owner: irvingfb
+# group: irvingfb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sahar
+# owner: sahar
+# group: sahar
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/sahar/README
+# owner: sahar
+# group: sahar
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sahar/sandbox
+# owner: sahar
+# group: sahar
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sahar/sandbox/README
+# owner: sahar
+# group: sahar
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sahar/index.cgi
+# owner: sahar
+# group: sahar
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sahar/.ssh
+# owner: sahar
+# group: sahar
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sahar/.ssh/authorized_keys
+# owner: sahar
+# group: sahar
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/viola
+# owner: viola
+# group: viola
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/viola/README
+# owner: viola
+# group: viola
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/viola/sandbox
+# owner: viola
+# group: viola
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/viola/sandbox/README
+# owner: viola
+# group: viola
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/viola/index.cgi
+# owner: viola
+# group: viola
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/viola/.ssh
+# owner: viola
+# group: viola
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/viola/.ssh/authorized_keys
+# owner: viola
+# group: viola
 user::rw-
 group::rw-
 other::r--
@@ -10096,6 +11418,13 @@ other::r--
 user::rwx
 group::rwx
 other::r-x
+
+# file: /srv/home/guest/.bash_history
+# owner: guest
+# group: guest
+user::rw-
+group::---
+other::---
 
 # file: /srv/home/guest/.viminfo
 # owner: guest
@@ -10111,12 +11440,96 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/guest/.vim
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.vim/.netrwhist
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/guest/event_calendar.md
 # owner: guest
 # group: guest
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/home/guest/.npm
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/registry.npmjs.org
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/registry.npmjs.org/nodemon
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/registry.npmjs.org/nodemon/.cache.json
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/nodemon
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/nodemon/1.3.7
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/nodemon/1.3.7/package.tgz
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/nodemon/1.3.7/package
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/nodemon/1.3.7/package/package.json
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/_locks
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/home/guest/index.md
 # owner: guest
@@ -10161,33 +11574,33 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/guest/docs/.ssh_guide.cgi.swp
+# file: /srv/home/guest/docs/.index
 # owner: guest
 # group: guest
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/guest/docs/hack_me_now.txt
-# owner: guest
-# group: guest
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/guest/docs/ssh_guide.cgi
+# file: /srv/home/guest/docs/ssh_info.cgi
 # owner: guest
 # group: guest
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/guest/docs/.hack_me_now.txt.swp
+# file: /srv/home/guest/docs/the_guide.md
 # owner: guest
 # group: guest
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
+
+# file: /srv/home/guest/docs/.the_guide.md.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/guest/about_us.md
 # owner: guest
@@ -10224,6 +11637,314 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/reah
+# owner: reah
+# group: reah
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/reah/README
+# owner: reah
+# group: reah
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/reah/sandbox
+# owner: reah
+# group: reah
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/reah/sandbox/README
+# owner: reah
+# group: reah
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/reah/index.cgi
+# owner: reah
+# group: reah
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/reah/.ssh
+# owner: reah
+# group: reah
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/reah/.ssh/authorized_keys
+# owner: reah
+# group: reah
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sarvagnan
+# owner: sarvagnan
+# group: sarvagnan
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/sarvagnan/README
+# owner: sarvagnan
+# group: sarvagnan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sarvagnan/sandbox
+# owner: sarvagnan
+# group: sarvagnan
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sarvagnan/sandbox/README
+# owner: sarvagnan
+# group: sarvagnan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sarvagnan/index.cgi
+# owner: sarvagnan
+# group: sarvagnan
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sarvagnan/.ssh
+# owner: sarvagnan
+# group: sarvagnan
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sarvagnan/.ssh/authorized_keys
+# owner: sarvagnan
+# group: sarvagnan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dberg
+# owner: dberg
+# group: dberg
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/dberg/.bash_history
+# owner: dberg
+# group: dberg
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/dberg/.viminfo
+# owner: dberg
+# group: dberg
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/dberg/README
+# owner: dberg
+# group: dberg
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dberg/sandbox
+# owner: dberg
+# group: dberg
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dberg/sandbox/README
+# owner: dberg
+# group: dberg
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dberg/index.cgi
+# owner: dberg
+# group: dberg
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dberg/.ssh
+# owner: dberg
+# group: dberg
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dberg/.ssh/authorized_keys
+# owner: dberg
+# group: dberg
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/faigy
+# owner: faigy
+# group: faigy
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/faigy/README
+# owner: faigy
+# group: faigy
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/faigy/sandbox
+# owner: faigy
+# group: faigy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/faigy/sandbox/README
+# owner: faigy
+# group: faigy
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/faigy/index.cgi
+# owner: faigy
+# group: faigy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/faigy/.ssh
+# owner: faigy
+# group: faigy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/faigy/.ssh/authorized_keys
+# owner: faigy
+# group: faigy
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/darkseidvengeance
+# owner: darkseidvengeance
+# group: darkseidvengeance
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/darkseidvengeance/README
+# owner: darkseidvengeance
+# group: darkseidvengeance
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/darkseidvengeance/sandbox
+# owner: darkseidvengeance
+# group: darkseidvengeance
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/darkseidvengeance/sandbox/README
+# owner: darkseidvengeance
+# group: darkseidvengeance
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/darkseidvengeance/index.cgi
+# owner: darkseidvengeance
+# group: darkseidvengeance
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/darkseidvengeance/.ssh
+# owner: darkseidvengeance
+# group: darkseidvengeance
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/darkseidvengeance/.ssh/authorized_keys
+# owner: darkseidvengeance
+# group: darkseidvengeance
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/annanican
+# owner: annanican
+# group: annanican
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/annanican/README
+# owner: annanican
+# group: annanican
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/annanican/sandbox
+# owner: annanican
+# group: annanican
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/annanican/sandbox/README
+# owner: annanican
+# group: annanican
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/annanican/index.cgi
+# owner: annanican
+# group: annanican
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/annanican/.ssh
+# owner: annanican
+# group: annanican
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/annanican/.ssh/authorized_keys
+# owner: annanican
+# group: annanican
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/brandon
 # owner: brandon
 # group: brandon
@@ -10238,14 +11959,14 @@ user::rw-
 group::---
 other::---
 
-# file: /srv/home/brandon/.bashrc
+# file: /srv/home/brandon/.viminfo
 # owner: brandon
 # group: brandon
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
-# file: /srv/home/brandon/README
+# file: /srv/home/brandon/.bashrc
 # owner: brandon
 # group: brandon
 user::rw-
@@ -10262,6 +11983,13 @@ other::r-x
 # file: /srv/home/brandon/sandbox/README
 # owner: root
 # group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/brandon/README.md
+# owner: brandon
+# group: brandon
 user::rw-
 group::r--
 other::r--
@@ -10299,6 +12027,538 @@ other::r--
 # group: brandon
 user::rw-
 group::r--
+other::r--
+
+# file: /srv/home/rmd6502
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rmd6502/.bash_history
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/rmd6502/.viminfo
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/rmd6502/README
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/rmd6502/.npm
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rmd6502/.npm/registry.npmjs.org
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rmd6502/.npm/registry.npmjs.org/learnyounode
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rmd6502/.npm/registry.npmjs.org/learnyounode/.cache.json
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/rmd6502/.npm/learnyounode
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rmd6502/.npm/learnyounode/2.5.2
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rmd6502/.npm/learnyounode/2.5.2/package.tgz
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/rmd6502/.npm/learnyounode/2.5.2/package
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rmd6502/.npm/learnyounode/2.5.2/package/package.json
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/rmd6502/.npm/_locks
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rmd6502/sandbox
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/rmd6502/sandbox/README
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/rmd6502/index.cgi
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/rmd6502/.ssh
+# owner: rmd6502
+# group: rmd6502
+user::rwx
+group::---
+other::---
+
+# file: /srv/home/rmd6502/.ssh/authorized_keys
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/rmd6502/.Xauthority
+# owner: rmd6502
+# group: rmd6502
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/jsonp
+# owner: jsonp
+# group: jsonp
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/jsonp/README
+# owner: jsonp
+# group: jsonp
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jsonp/sandbox
+# owner: jsonp
+# group: jsonp
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsonp/sandbox/README
+# owner: jsonp
+# group: jsonp
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jsonp/index.cgi
+# owner: jsonp
+# group: jsonp
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsonp/.ssh
+# owner: jsonp
+# group: jsonp
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsonp/.ssh/authorized_keys
+# owner: jsonp
+# group: jsonp
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jsstein
+# owner: jsstein
+# group: jsstein
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/jsstein/README
+# owner: jsstein
+# group: jsstein
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jsstein/sandbox
+# owner: jsstein
+# group: jsstein
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsstein/sandbox/README
+# owner: jsstein
+# group: jsstein
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jsstein/index.cgi
+# owner: jsstein
+# group: jsstein
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsstein/.ssh
+# owner: jsstein
+# group: jsstein
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jsstein/.ssh/authorized_keys
+# owner: jsstein
+# group: jsstein
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/codemike
+# owner: codemike
+# group: codemike
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/codemike/README
+# owner: codemike
+# group: codemike
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/codemike/sandbox
+# owner: codemike
+# group: codemike
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/codemike/sandbox/README
+# owner: codemike
+# group: codemike
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/codemike/index.cgi
+# owner: codemike
+# group: codemike
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/codemike/.ssh
+# owner: codemike
+# group: codemike
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/codemike/.ssh/authorized_keys
+# owner: codemike
+# group: codemike
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/tsax
+# owner: tsax
+# group: tsax
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/tsax/README
+# owner: tsax
+# group: tsax
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/tsax/sandbox
+# owner: tsax
+# group: tsax
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsax/sandbox/README
+# owner: tsax
+# group: tsax
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/tsax/index.cgi
+# owner: tsax
+# group: tsax
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsax/.ssh
+# owner: tsax
+# group: tsax
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/tsax/.ssh/authorized_keys
+# owner: tsax
+# group: tsax
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/nastassia
+# owner: nastassia
+# group: nastassia
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/nastassia/README
+# owner: nastassia
+# group: nastassia
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/nastassia/sandbox
+# owner: nastassia
+# group: nastassia
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/nastassia/sandbox/README
+# owner: nastassia
+# group: nastassia
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/nastassia/index.cgi
+# owner: nastassia
+# group: nastassia
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/nastassia/.ssh
+# owner: nastassia
+# group: nastassia
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/nastassia/.ssh/authorized_keys
+# owner: nastassia
+# group: nastassia
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/arjuns
+# owner: arjuns
+# group: arjuns
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/arjuns/README
+# owner: arjuns
+# group: arjuns
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/arjuns/sandbox
+# owner: arjuns
+# group: arjuns
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arjuns/sandbox/README
+# owner: arjuns
+# group: arjuns
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/arjuns/index.cgi
+# owner: arjuns
+# group: arjuns
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arjuns/.ssh
+# owner: arjuns
+# group: arjuns
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/arjuns/.ssh/authorized_keys
+# owner: arjuns
+# group: arjuns
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/amitk
+# owner: amitk
+# group: amitk
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/amitk/README
+# owner: amitk
+# group: amitk
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/amitk/sandbox
+# owner: amitk
+# group: amitk
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/amitk/sandbox/README
+# owner: amitk
+# group: amitk
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/amitk/index.cgi
+# owner: amitk
+# group: amitk
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/amitk/.ssh
+# owner: amitk
+# group: amitk
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/amitk/.ssh/authorized_keys
+# owner: amitk
+# group: amitk
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/pocket
+# owner: pocket
+# group: pocket
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/pocket/README
+# owner: pocket
+# group: pocket
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/pocket/sandbox
+# owner: pocket
+# group: pocket
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pocket/sandbox/README
+# owner: pocket
+# group: pocket
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/pocket/index.cgi
+# owner: pocket
+# group: pocket
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pocket/.ssh
+# owner: pocket
+# group: pocket
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/pocket/.ssh/authorized_keys
+# owner: pocket
+# group: pocket
+user::rw-
+group::rw-
 other::r--
 
 # file: /srv/LICENSE

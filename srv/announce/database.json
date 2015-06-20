@@ -1,0 +1,30 @@
+{
+    "announcements": [{ 
+        "topics": ["#programming", "#freefood"],
+        "text": "Hello there!", 
+        "timestamp": "2015-06-04T22:30:00.000Z",
+        "reputation": {
+            "good": 5,
+            "bad": 7,
+            "ignore": 10,
+            "score": 0.2
+        },
+        "users": ["brandon", "guest"]
+    }],
+
+    "users": {
+        "brandon": {
+            "reputation": {
+                "good": 5,
+                "bad": 7,
+                "ignore": 10,
+                "score": 0.2
+            },
+            "topics": ["#programming", "#general"]
+        }
+    },
+
+    "tokens": {
+        "7g799h7fhfhoue": { "action": "pos", "user": "brandon" }
+    }
+}

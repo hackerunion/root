@@ -123,6 +123,7 @@ body {
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased;
   margin: 0;
+  font-family: Helvetica, Arial, Freesans, clean, sans-serif;
 }
 
 body .container {
@@ -247,6 +248,7 @@ body .container main .content-wrapper .content {
 
 body .container main .content-wrapper .content ul {
   list-style-type: square;
+  margin-top: 5px !important;
 }
 
 body .container main .content-wrapper .content ol {
@@ -254,7 +256,7 @@ body .container main .content-wrapper .content ol {
 }
 
 body .container main .content-wrapper .content li {
-  margin-bottom: 5px;
+  margin-bottom: 10px !important;
 }
 
 body .container main .content-wrapper .content p {
@@ -389,4 +391,83 @@ body .container main .content-wrapper .content a {
   header .right:after {
     content: "mini";
   }
+}
+
+body .container main .content-wrapper .content code,
+body .container main .content-wrapper .content pre {
+    border-radius: 3px;
+    background-color: #F8F8F8;
+    color: inherit;
+}
+
+body .container main .content-wrapper .content code {
+    border: 1px solid #EAEAEA;
+    margin: 0 2px;
+    padding: 0 5px;
+    color: #1b1c1b;
+    background: #fff;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+body .container main .content-wrapper .content pre {
+    border: 1px solid #29ff82;
+    line-height: 1.25em;
+    overflow: auto;
+    padding: 6px 10px;
+    background: #000;
+    color: #8fffbe;
+}
+
+body .container main .content-wrapper .content pre > code {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+}
+
+body .container main .content-wrapper .content p {
+    margin: 0px 0px 20px 10px;
+    line-height: 1.3em;
+    max-width: 725px;
+}
+
+body .container main .content-wrapper .content h1,
+body .container main .content-wrapper .content h2,
+body .container main .content-wrapper .content h3,
+body .container main .content-wrapper .content h4,
+body .container main .content-wrapper .content h5,
+body .container main .content-wrapper .content h6 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+body .container main .content-wrapper .content ol,
+body .container main .content-wrapper .content ul {
+    margin: 10px 0px 10px 30px;
+    padding: 1px;
+}
+
+body .container main .content-wrapper .content li {
+    padding: 1px;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+body .container main .content-wrapper .content hr {
+    margin: 20px 0px;
+}
+
+body .container main .content-wrapper .content p + ol,
+body .container main .content-wrapper .content p + ul {
+    margin-top: -10px !important;
+}
+
+body .container main .content-wrapper .content#content pre:only-child {
+    border: 0px;
+    line-height: 1.25em;
+    overflow: auto;
+    padding: 6px 10px;
+    background: transparent;
+    color: #000;
 }

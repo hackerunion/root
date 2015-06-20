@@ -1,0 +1,4 @@
+[
+        { "path": "the_guide.md", "order": 1, "special": true },
+        { "path": "ssh_info.cgi", "order": 2 }
+]

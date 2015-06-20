@@ -23,3 +23,7 @@ main,
   background: transparent !important;
   border: 0px !important;
 }
+
+.github-fork-ribbon-wrapper {
+  display: none;
+}
