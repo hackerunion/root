@@ -16,7 +16,7 @@
 { "username": "codemike", "password": "$1$Av.mU5XK$/k4jiIZiDXC7bbRiEHuqx.", "uid": "1351", "gid": "1353", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "sarvagnan", "password": "$1$LbTd51yh$mVGgNzjaB8nxj1/jjqDSe.", "uid": "1352", "gid": "1354", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "irvingfb", "password": "$1$caS.D4WQ$E4NwaS6Xvlg34rqlavj/k0", "uid": "1353", "gid": "1355", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
-{ "username": "ricka", "password": "$1$tJxqyfzO$8XekV2bUDHSsjKqcebaIP1", "uid": "1354", "gid": "1356", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "ricka", "password": "$6$ZEV7FFnH$.iUbiHs681Lxbd4ANnq7d6cSxv5ydbY8rVKAWSP7A9IJDgpNmapGxLgC7R9M.IWqx.1XnS5NQnD2Ho7oMkwT1/", "uid": "1354", "gid": "1356", "info": "", "shell": "/bin/bash", "service": false, "uri": null },
 { "username": "zamansky", "password": "$6$DDMfKE4c$4GFSk2IXcnv.XfqZDWoOnUHaAfkU23J2SX8gHgKTHqjO.hgOyWbWjUokLwh6/KCtKhZ3qyNZQUGhwIBI5H31W/", "uid": "1355", "gid": "1357", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "joeymejias", "password": "$1$qBejYhgE$Cht574yUyE6PWcs9b7T1I/", "uid": "1356", "gid": "1358", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "annanican", "password": "$1$xP8M9IV2$c6ejQXxzryEaRBpGnzGgR/", "uid": "1357", "gid": "1359", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
