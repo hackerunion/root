@@ -1857,6 +1857,20 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/home/ricka/.bash_history
+# owner: ricka
+# group: ricka
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/ricka/.viminfo
+# owner: ricka
+# group: ricka
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/ricka/README
 # owner: ricka
 # group: ricka
