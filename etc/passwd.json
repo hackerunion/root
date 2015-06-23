@@ -1,6 +1,6 @@
 [
 { "username": "guest", "password": "$1$tz0tjdjk$IGYoEs78J1soZnki58gCT.", "uid": "1338", "gid": "1338", "info": "managed user", "shell": "/sbin/nologin", "service": false, "uri": null },
-{ "username": "server", "password": "$1$9gK/TYmg$RIfKHNX873DgKG0XB14jR1", "uid": "1337", "gid": "1337", "info": "managed user", "shell": "/bin/bash", "service": false, "uri": null },
+{ "username": "server", "password": "$6$OKhcC8rb$YcMhce8TShpjnaJqTIapovnLRxy7PGSV6KgwYF55F9SksLN9Y8g9xln3xNVrl7IuzJ9cOqtv.kf610zxbrR6w0", "uid": "1337", "gid": "1337", "info": "managed user", "shell": "/bin/bash", "service": false, "uri": null },
 { "username": "brandon", "password": "$6$yCCWfua1$b4GHlUcyY30lX3rlElIxakuw0QZ7BZ1a1pTCyFejAbTBzOy1u4wyPaF2J67ZCwn4dHEFvorKX9wHRJpqCeIpT1", "uid": "1339", "gid": "1339", "info": "", "shell": "/bin/bash", "service": false, "uri": null },
 { "username": "geminiimatt", "password": "$1$wa8xenHC$IKiIXBkrDlVyfrKNnJWyT.", "uid": "1340", "gid": "1342", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "amitk", "password": "$1$BDE4NTka$rrL6nP2ULNSLhRaM5S7Bo/", "uid": "1341", "gid": "1343", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
