@@ -2298,91 +2298,14 @@ user::rwx
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox2
+# file: /srv/home/server/.vim
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox2/announce
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/templates
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/templates/index.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/js
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/js/app.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/index.cgi
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/css
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/css/style.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/css/normalize.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/css/typebase.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/favicon.ico
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/package.json
+# file: /srv/home/server/.vim/.netrwhist
 # owner: server
 # group: server
 user::rw-

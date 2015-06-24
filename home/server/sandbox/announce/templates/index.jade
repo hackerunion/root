@@ -12,8 +12,11 @@ html(lang='en')
 
   body
     if authorized
+      if message
+        aside #{message}
+
       h1 Announce
-      h2 A Reputation-Based Community Megaphone
+      h2 A Reputation-Based Community Listserv
       hr
       em
         | Moderating access to 
@@ -81,8 +84,8 @@ html(lang='en')
         tbody
           tr
             td
-              form
-                input(type="hidden", name="function", value="settopics")
+              form(method="post")
+                input(type="hidden", name="task", value="save_topics")
                 table
                   tbody
                     tr
@@ -107,8 +110,8 @@ html(lang='en')
       a(name="announce")
         h3 Compose Message
       
-      form
-        input(type="hidden", name="function", value="announce")
+      form(method="post")
+        input(type="hidden", name="task", value="announce")
         table
           tbody
             tr
@@ -126,7 +129,7 @@ html(lang='en')
             tr
               th
               td
-                input(type="submit")
+                input(type="submit", value="Send Email")
 
     else
       pre.

@@ -13,7 +13,7 @@
     }],
 
     "users": {
-        "brandon": {
+        "server": {
             "reputation": {
                 "good": 5,
                 "bad": 7,
@@ -25,6 +25,6 @@
     },
 
     "tokens": {
-        "7g799h7fhfhoue": { "action": "pos", "user": "brandon" }
+        "7g799h7fhfhoue": { "action": "good", "user": "brandon" }
     }
 }
