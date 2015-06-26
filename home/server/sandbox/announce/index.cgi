@@ -17,7 +17,6 @@ var lockPath = "/srv/var/lock/announce.lock";
 var db = require(dbPath);
 var qs = querystring.parse(process.env.QUERY_STRING);
 var user = process.env.USER;
-var msg = "";
 var dirty = false;
 
 var confidence = function(pos, neg) {
@@ -43,6 +42,10 @@ var getGrade = function(score) {
   return grades[Math.round((grades.length - 1) * score)];
 };
 
+var setProfile = function(db, user, profile) {
+  db.users[user] = profile;
+};
+
 var getProfile = function(db, user) {
     return _.defaults(db.users[user] || {}, {
         "reputation": {
@@ -56,29 +59,27 @@ var getProfile = function(db, user) {
 };
 
 var popToken = function(db, token) {
-    return db.tokens[token];
+    var result = db.tokens[token];
 };
 
-var handlePost = function() {
+var handlePost = function(scope, cb) {
   body.parse(process.stdin, function(err, qs) {
     if (err || !qs) {
-      msg = err || "ERROR";
-      return;
+      scope.msg = err;
+      return cb(scope);
     }
     
     switch(qs.task) {
       case "save_topics":
-        msg = "SAVE TOPICS";
-      break;
+        scope.msg = "SAVE TOPICS";
+        break;
 
       case "announce":
-        msg = "ANNOUNCEMENT";
-      break;
-
-      default:
-        msg = "WHAaaat????";
-      break;
+        scope.msg = "ANNOUNCEMENT";
+        break;
     }
+
+    cb(scope);
   });
 
   return true;
@@ -94,7 +95,7 @@ var lockDatabase = function() {
 };
 
 var unlockDatabase = function(save) {
-  if (save) {
+  if (false && save) {
     try {
       fs.writeFileSync(dbPath, JSON.stringify(db));
     } catch (e) {
@@ -106,18 +107,19 @@ var unlockDatabase = function(save) {
   lockFile.unlockSync(lockPath);
 };
 
-var handleToken = function() {
+var handleToken = function(scope, cb) {
     var token = popToken(db, qs.token);
 
     if (!token || !token.user || !token.action) {
-        msg = "This link is no longer valid.";
-        return true;
+        scope.msg = "This link is no longer valid.";
+    } else {
+      scope.ok = false;
     }
 
-    return false;
+    return cb(scope);
 };
 
-var renderPage = function() {
+var renderPage = function(scope) {
     var fn = jade.compileFile('templates/index.jade');
 
     console.log("Status: 200");
@@ -132,7 +134,7 @@ var renderPage = function() {
     
     console.log(fn({
       'path': '/home/server/sandbox/announce',
-      'message': msg,
+      'message': scope.msg,
       'user': user,
       'total': total,
       'profile': profile,
@@ -145,21 +147,28 @@ var renderPage = function() {
 };
 
 var main = function() {
-    var ok = true;
+    var scope = {
+      'ok': true,
+      'msg': ''
+    };
     
+    var finish = function(scope) {
+      if (scope.ok) {
+        renderPage(scope);
+      }
+    
+      unlockDatabase(dirty);
+    };
+
     lockDatabase();
 
     if (process.env.REQUEST_METHOD == "POST") {
-        ok = handlePost();
+        handlePost(scope, finish);
     } else if (qs.token) {
-        ok = handleToken();
+        handleToken(scope, finish);
+    } else {
+      finish(scope);
     }
-    
-    if (ok) {
-        renderPage();
-    }
-    
-    unlockDatabase(dirty);
 };
 
 main();

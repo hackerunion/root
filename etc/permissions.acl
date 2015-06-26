@@ -90,6 +90,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/srv/announce/.database.json.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/srv/announce/database.json
 # owner: server
 # group: server
@@ -2823,6 +2830,13 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/sandbox/announce/.index.cgi.swo
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/sandbox/announce/js
 # owner: server
 # group: server
@@ -2831,6 +2845,13 @@ group::r-x
 other::r-x
 
 # file: /srv/home/server/sandbox/announce/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/.index.cgi.swp
 # owner: server
 # group: server
 user::rw-
@@ -10764,6 +10785,55 @@ other::r-x
 # file: /srv/home/mindlessjibber/.ssh/authorized_keys
 # owner: mindlessjibber
 # group: mindlessjibber
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/lehmann314159
+# owner: lehmann314159
+# group: lehmann314159
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/lehmann314159/README
+# owner: lehmann314159
+# group: lehmann314159
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/lehmann314159/sandbox
+# owner: lehmann314159
+# group: lehmann314159
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/lehmann314159/sandbox/README
+# owner: lehmann314159
+# group: lehmann314159
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/lehmann314159/index.cgi
+# owner: lehmann314159
+# group: lehmann314159
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/lehmann314159/.ssh
+# owner: lehmann314159
+# group: lehmann314159
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/lehmann314159/.ssh/authorized_keys
+# owner: lehmann314159
+# group: lehmann314159
 user::rw-
 group::rw-
 other::r--
