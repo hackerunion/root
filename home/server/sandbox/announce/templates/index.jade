@@ -118,13 +118,13 @@ html(lang='en')
               th(scope="row")
                 label Topics
               td 
-                input(type="text", name="topics")
+                input(type="text", name="topics", value=compose.topics)
             
             tr
               th(scope="row")
                 label Message
               td
-                textarea(name="message", rows=20, cols=100)
+                textarea(name="message", rows=20, cols=100) #{compose.message}
         
             tr
               th
