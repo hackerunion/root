@@ -118,6 +118,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/cgi-bin/tree
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
 # file: /srv/cgi-bin/cat
 # owner: 500
 # group: 497
