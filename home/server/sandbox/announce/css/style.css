@@ -32,3 +32,8 @@ th {
 td {
   border: 1px solid rgba(0, 0, 0, 0.05);;
 }
+
+aside {
+    font-weight: bold;
+    background: #ffa;
+}

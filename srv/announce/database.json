@@ -1,30 +1,109 @@
 {
-    "announcements": [{ 
-        "topics": ["#programming", "#freefood"],
-        "text": "Hello there!", 
-        "timestamp": "2015-06-04T22:30:00.000Z",
-        "reputation": {
-            "good": 5,
-            "bad": 7,
-            "ignore": 10,
-            "score": 0.2
-        },
-        "users": ["brandon", "guest"]
-    }],
-
-    "users": {
-        "brandon": {
-            "reputation": {
-                "good": 5,
-                "bad": 7,
-                "ignore": 10,
-                "score": 0.2
-            },
-            "topics": ["#programming", "#general"]
-        }
+  "spool": [
+    {
+      "id": 0,
+      "ttl": 3,
+      "timestamp": "2015-06-04T22:30:00.000Z",
+      "score": 0.4,
+      "users": [
+        "brandon"
+      ]
     },
-
-    "tokens": {
-        "7g799h7fhfhoue": { "action": "pos", "user": "brandon" }
+    {
+      "id": 1,
+      "ttl": 3,
+      "timestamp": null,
+      "score": 0.2,
+      "users": []
+    },
+    {
+      "id": 2,
+      "ttl": 3,
+      "timestamp": null,
+      "score": 0.2,
+      "users": []
+    },
+    {
+      "id": 3,
+      "ttl": 3,
+      "timestamp": null,
+      "score": 0.2,
+      "users": []
+    },
+    {
+      "id": 4,
+      "ttl": 3,
+      "timestamp": null,
+      "score": 0.2,
+      "users": []
     }
+  ],
+  "announcements": [
+    {
+      "id": 0,
+      "topics": [
+        "programming",
+        "freefood"
+      ],
+      "text": "Hello there!",
+      "timestamp": "2015-06-04T22:30:00.000Z",
+      "user": "server"
+    },
+    {
+      "id": 1,
+      "topics": [
+        "asdfasdf"
+      ],
+      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
+      "timestamp": "2015-06-26T04:28:48.064Z",
+      "user": "server"
+    },
+    {
+      "id": 2,
+      "topics": [
+        "asdfasdf"
+      ],
+      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
+      "timestamp": "2015-06-26T04:33:40.153Z",
+      "user": "server"
+    },
+    {
+      "id": 3,
+      "topics": [
+        "asdfasdf"
+      ],
+      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
+      "timestamp": "2015-06-26T04:34:42.607Z",
+      "user": "server"
+    },
+    {
+      "id": 4,
+      "topics": [
+        "asdfasdf"
+      ],
+      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
+      "timestamp": "2015-06-26T04:34:44.843Z",
+      "user": "server"
+    }
+  ],
+  "users": {
+    "server": {
+      "reputation": {
+        "good": 5,
+        "bad": 7,
+        "ignore": 10,
+        "score": 0.2
+      },
+      "topics": [
+        "programming",
+        "general"
+      ]
+    }
+  },
+  "tokens": {
+    "7g799h7fhfhoue": {
+      "action": "good",
+      "user": "brandon"
+    }
+  }
 }

@@ -97,13 +97,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/srv/announce/spool.json
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/README.md
 # owner: 500
 # group: 497
@@ -123,6 +116,13 @@ other::r-x
 # group: 497
 user::rwx
 group::rwx
+other::r-x
+
+# file: /srv/cgi-bin/tree
+# owner: server
+# group: server
+user::rwx
+group::r-x
 other::r-x
 
 # file: /srv/cgi-bin/cat
@@ -2298,91 +2298,14 @@ user::rwx
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox2
+# file: /srv/home/server/.vim
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox2/announce
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/templates
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/templates/index.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/js
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/js/app.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/index.cgi
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/css
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox2/announce/css/style.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/css/normalize.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/css/typebase.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/favicon.ico
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox2/announce/package.json
+# file: /srv/home/server/.vim/.netrwhist
 # owner: server
 # group: server
 user::rw-
@@ -10841,6 +10764,55 @@ other::r-x
 # file: /srv/home/mindlessjibber/.ssh/authorized_keys
 # owner: mindlessjibber
 # group: mindlessjibber
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/lehmann314159
+# owner: lehmann314159
+# group: lehmann314159
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/lehmann314159/README
+# owner: lehmann314159
+# group: lehmann314159
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/lehmann314159/sandbox
+# owner: lehmann314159
+# group: lehmann314159
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/lehmann314159/sandbox/README
+# owner: lehmann314159
+# group: lehmann314159
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/lehmann314159/index.cgi
+# owner: lehmann314159
+# group: lehmann314159
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/lehmann314159/.ssh
+# owner: lehmann314159
+# group: lehmann314159
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/lehmann314159/.ssh/authorized_keys
+# owner: lehmann314159
+# group: lehmann314159
 user::rw-
 group::rw-
 other::r--
