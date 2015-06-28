@@ -11,6 +11,7 @@ var lib = {
 
     'dbPath': '/srv/srv/announce/database.json',
     'lockPath': '/srv/var/lock/announce.lock',
+    'coolDown': 300,
     'ttl': 3,
 
     //

@@ -3,10 +3,12 @@
 // ensure that all paths are relative to this file's actual location
 process.chdir(__dirname);
 
-var _ = require('/srv/lib/js/lodash');
 var jade = require('jade');
 var querystring = require('querystring');
+
+var _ = require('/srv/lib/js/lodash');
 var body = require('/srv/lib/js/body');
+var passwd = require('/srv/etc/passwd.json');
 
 var lib = require('./lib')
 
@@ -56,13 +58,20 @@ var handleAnnounce = function(scope, qs, cb) {
     scope.msg = "Message too short or too long.";
     return cb(scope);
   }
+    
+  var prior = lib.lastAnnounce(scope, scope.user);
+  var delta = lib.secondsElapsed(Date.parse(prior.timestamp), new Date());
 
-  // TODO: ensure user isn't spamming...
+  if (prior && delta < lib.coolDown) {
+    scope.msg = "Please wait " + Math.round(lib.coolDown - delta) + " second(s) before posting this announcement.";
+    return cb(scope);
+  }
+
   var announce = lib.setAnnounce(scope, scope.user, topics, message);
 
   lib.queueAnnounce(scope, announce, profile.reputation.score);
 
-  scope.msg = "Message sent!";
+  scope.msg = "Message queued!";
   cb(scope);
 };
 
@@ -118,7 +127,6 @@ var renderPage = function(scope) {
 
     profile = lib.getProfile(scope, scope.user);
     
-    var total = 100;
     var score = profile.reputation.score;
     var grade = lib.getGrade(score); 
     
@@ -127,7 +135,7 @@ var renderPage = function(scope) {
       'message': scope.msg,
       'compose': scope.compose,
       'user': scope.user,
-      'total': total,
+      'total': passwd.length,
       'profile': profile,
       'topics': _.map(profile.topics, function(s) { return "#" + s; }).join("\n"),
       'grade': grade,

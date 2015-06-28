@@ -1,5 +1,5 @@
 set nu
 set ai
 set et
-set ts=4
+set ts=2
 syntax on
