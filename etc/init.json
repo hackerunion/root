@@ -6,10 +6,18 @@
     "info": "sanity check",
     "process": "/sbin/fsck"
   },
+  
+  {
+    "id": "launch",
+    "priority": 1,
+    "context": "boot",
+    "info": "start services",
+    "process": "/sbin/launch"
+  },
 
   {
     "id": "lockfs",
-    "priority": 1,
+    "priority": 2,
     "context": "boot",
     "info": "claim the filesystem",
     "process": "/sbin/lockfs"
@@ -17,7 +25,7 @@
 
   { 
     "id": "creategroups",
-    "priority": 2,
+    "priority": 3,
     "context": "boot",
     "info": "create all groups",
     "process": "/sbin/creategroups"
@@ -25,7 +33,7 @@
 
   { 
     "id": "createusers",
-    "priority": 3,
+    "priority": 4,
     "context": "boot",
     "info": "create all users",
     "process": "/sbin/createusers"
@@ -33,7 +41,7 @@
 
   {
     "id": "modusers",
-    "priority": 4,
+    "priority": 5,
     "context": "boot",
     "info": "add users to groups",
     "process": "/sbin/modusers"
@@ -41,7 +49,7 @@
 
   { 
     "id": "loadmeta",
-    "priority": 5,
+    "priority": 6,
     "context": "boot",
     "info": "restore filesystem metadata",
     "process": "/sbin/loadmeta"
@@ -49,7 +57,7 @@
 
   {
     "id": "decryptfs",
-    "priority": 6,
+    "priority": 7,
     "context": "boot",
     "info": "decrypt protected files",
     "process": "/sbin/decryptfs"
@@ -57,7 +65,7 @@
 
   {
     "id": "securefs",
-    "priority": 7,
+    "priority": 8,
     "context": "boot",
     "info": "apply reasonable permissions",
     "process": "/sbin/securefs"
@@ -65,7 +73,7 @@
 
   {
     "id": "startcron",
-    "priority": 8,
+    "priority": 9,
     "context": "boot",
     "info": "start the cron daemon",
     "process": "/sbin/startcron"
@@ -73,7 +81,7 @@
 
   {
     "id": "rc",
-    "priority": 9,
+    "priority": 10,
     "context": "boot",
     "info": "run arbitrary user commands",
     "async": true,
