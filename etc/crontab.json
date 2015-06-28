@@ -1,6 +1,6 @@
 [ 
   {
     "pattern": "* * * * *",
-    "command": "/bin/true"
+    "command": "/bin/touch /tmp/cron-alive"
   }
 ]
