@@ -7,7 +7,7 @@ fi
 
 source "$SERVER_ROOT/lib/bash/common.bash"
 
-service rsyslog restart
-service cron restart
+service rsyslog start
+service cron start
 
 exit 0
