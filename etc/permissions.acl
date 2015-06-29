@@ -1204,6 +1204,13 @@ user::rwx
 group::rw-
 other::r--
 
+# file: /srv/sbin/launch
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
 # file: /srv/sbin/startcron
 # owner: 500
 # group: 497
@@ -2820,6 +2827,13 @@ other::r-x
 # owner: server
 # group: server
 user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/dispatch
+# owner: server
+# group: server
+user::rwx
 group::r--
 other::r--
 

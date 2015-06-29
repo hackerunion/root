@@ -5,6 +5,7 @@ var fs = require('fs');
 var lockFile = require('/srv/lib/js/lockfile');
 
 var lib = {
+
     //
     // Constants
     //
@@ -17,7 +18,7 @@ var lib = {
     //
     // Utility
     //
-
+    
     'confidence': function(pos, neg) {
       var n = pos + neg;
       var z = 1.6;
@@ -31,6 +32,10 @@ var lib = {
     
       return Math.sqrt(phat+z*z/(2*n)-z*((phat*(1-phat)+z*z/(4*n))/n))/(1+z*z/n);
     },
+  
+    'getTimestamp': function() {
+      return (new Date()).toISOString();
+    },
 
     'getScore': function(profile) {
       return lib.confidence(profile.reputation.good, profile.reputation.bad);
@@ -41,6 +46,34 @@ var lib = {
       return grades[Math.round((grades.length - 1) * score)];
     },
     
+    'getReachByScore': function(score) {
+      switch(lib.getGrade(score)) {
+        case 'A':
+          return 0.75;
+
+        case 'B':
+          return 0.45;
+
+        case 'C':
+          return 0.20;
+
+        case 'D':
+          return 0.10;
+
+        case 'F':
+          return 0.05;
+      }
+    },
+
+    'chooseByScore': function(score, inc, exc) {
+      var args = exc || [];
+
+      args.unshift(inc);
+      inc = _.without.apply(_, args);
+      
+      return _.sample(inc, Math.round(inc.length * lib.getReachByScore(score)));
+    },
+
     'getTopics': function(topics) {
       if (!topics.trim() || /[^\s\w#,]/.test(topics) || topics.length > 2000) {
         return null;
@@ -111,6 +144,14 @@ var lib = {
         });
     },
 
+    'getAnnounceMap': function(scope) {
+      return _.groupBy(scope.db.announcements, 'id');
+    },
+
+    'getAnnounce': function(scope, id) {
+      return lib.getAnnounceMap(scope)[id];
+    },
+
     'lastAnnounce': function(scope, user) {
         return _.max(_.filter(scope.db.announcements, 'user', user), function(a) {
             return Date.parse(a.timestamp);
@@ -123,7 +164,7 @@ var lib = {
         'id': id,
         'topics': topics,
         'text': message,
-        'timestamp': (new Date()).toISOString(),
+        'timestamp': lib.getTimestamp(),
         'user': user
       };
     
@@ -142,6 +183,21 @@ var lib = {
       });
     
       scope.dirty = true;
+    },
+
+    'processQueue': function(scope, cb) {
+      var map = lib.getAnnounceMap(scope);
+      
+      scope.dirty = true;
+
+      scope.db.spool.forEach(function (task, i) {
+        if (!task.ttl) {
+          scope.db.spool.splice(i, 1);
+          return;
+        }
+
+        cb(task, map[task.id]);
+      });
     },
     
     'popToken': function(scope, token) {

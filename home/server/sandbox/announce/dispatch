@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+// ensure that all paths are relative to this file's actual location
+process.chdir(__dirname);
+
+var jade = require('jade');
+var querystring = require('querystring');
+
+var _ = require('/srv/lib/js/lodash');
+var passwd = require('/srv/etc/passwd.json');
+
+var lib = require('./lib')
+
+var handleDispatch = function(scope, cb) {
+  var users = _.pluck(passwd, 'username');
+
+  lib.processQueue(scope, function(task, announce) {
+    var rcpt = lib.chooseByScore(task.score, users, task.users || []);
+    
+    // Only broadcast if first time or score has increased
+    if (task.ttl == lib.ttl || announce.score >= task.score) {
+      console.log("CONTACT", rcpt);
+      // TODO: generate +/- links
+      // TODO: figure out how to do meh...
+    }
+
+    task.ttl--;
+    task.score = announce.score;
+    task.users = task.users.concat(rcpt);
+    task.timestamp = lib.getTimestamp();
+  });
+};
+
+var main = function() {
+    var db = require(lib.dbPath);
+    var scope = lib.getScope(db);
+
+    var finish = function(scope) {
+      scope.dirty = false;
+      lib.unlockDatabase(scope);
+    };
+
+    handleDispatch(scope, finish);
+
+    lib.lockDatabase(scope);
+    finish(scope);
+};
+
+main();
