@@ -1920,6 +1920,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/seanislavski
+# owner: seanislavski
+# group: seanislavski
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/seanislavski/README
+# owner: seanislavski
+# group: seanislavski
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/seanislavski/sandbox
+# owner: seanislavski
+# group: seanislavski
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/seanislavski/sandbox/README
+# owner: seanislavski
+# group: seanislavski
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/seanislavski/index.cgi
+# owner: seanislavski
+# group: seanislavski
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/seanislavski/.ssh
+# owner: seanislavski
+# group: seanislavski
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/seanislavski/.ssh/authorized_keys
+# owner: seanislavski
+# group: seanislavski
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/geminiimatt
 # owner: geminiimatt
 # group: geminiimatt
@@ -10943,6 +10992,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/dionysios
+# owner: dionysios
+# group: dionysios
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/dionysios/README
+# owner: dionysios
+# group: dionysios
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dionysios/sandbox
+# owner: dionysios
+# group: dionysios
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dionysios/sandbox/README
+# owner: dionysios
+# group: dionysios
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dionysios/index.cgi
+# owner: dionysios
+# group: dionysios
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dionysios/.ssh
+# owner: dionysios
+# group: dionysios
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dionysios/.ssh/authorized_keys
+# owner: dionysios
+# group: dionysios
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/danielrak
 # owner: danielrak
 # group: danielrak
@@ -10988,6 +11086,55 @@ other::r-x
 # file: /srv/home/danielrak/.ssh/authorized_keys
 # owner: danielrak
 # group: danielrak
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/drenerdo
+# owner: drenerdo
+# group: drenerdo
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/drenerdo/README
+# owner: drenerdo
+# group: drenerdo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/drenerdo/sandbox
+# owner: drenerdo
+# group: drenerdo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/drenerdo/sandbox/README
+# owner: drenerdo
+# group: drenerdo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/drenerdo/index.cgi
+# owner: drenerdo
+# group: drenerdo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/drenerdo/.ssh
+# owner: drenerdo
+# group: drenerdo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/drenerdo/.ssh/authorized_keys
+# owner: drenerdo
+# group: drenerdo
 user::rw-
 group::rw-
 other::r--
@@ -11710,6 +11857,55 @@ other::r-x
 # file: /srv/home/sarvagnan/.ssh/authorized_keys
 # owner: sarvagnan
 # group: sarvagnan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sanket107
+# owner: sanket107
+# group: sanket107
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/sanket107/README
+# owner: sanket107
+# group: sanket107
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sanket107/sandbox
+# owner: sanket107
+# group: sanket107
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sanket107/sandbox/README
+# owner: sanket107
+# group: sanket107
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sanket107/index.cgi
+# owner: sanket107
+# group: sanket107
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sanket107/.ssh
+# owner: sanket107
+# group: sanket107
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sanket107/.ssh/authorized_keys
+# owner: sanket107
+# group: sanket107
 user::rw-
 group::rw-
 other::r--
