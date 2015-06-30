@@ -658,6 +658,111 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/usr/share
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/share/misc
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/share/man
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/share/www
+# owner: 500
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/share/www/node-blank
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/usr/share/www/node-blank/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/usr/share/www/node-blank/img
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/usr/share/www/node-blank/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/usr/share/www/node-blank/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/etc
 # owner: 500
 # group: 497
@@ -2857,6 +2962,83 @@ other::r--
 user::rwx
 group::rwx
 other::r-x
+
+# file: /srv/home/server/sandbox/tui
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/img
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/server/sandbox/announce
 # owner: server
