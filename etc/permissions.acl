@@ -35,11 +35,18 @@ other::r--
 
 # file: /srv/bin/contact
 # owner: root
-# group: hacker
+# group: member
 # flags: s--
 user::rwx
 group::r-x
 other::r--
+
+# file: /srv/bin/sign
+# owner: root
+# group: member
+user::rwx
+group::r-x
+other::---
 
 # file: /srv/tmp
 # owner: 500
@@ -1890,6 +1897,41 @@ other::r--
 # group: 497
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/lib/c
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/lib/c/setuid
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/lib/c/setuid/setuid.c
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/lib/c/uid
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/lib/c/uid/main.c
+# owner: root
+# group: root
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/mnt
