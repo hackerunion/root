@@ -1,17 +1,17 @@
 // ensure that all paths are relative to this file's actual location
 
-var _ = require('/srv/lib/js/lodash');
 var fs = require('fs');
+var crypto = require('crypto');
+
+var _ = require('/srv/lib/js/lodash');
 var lockFile = require('/srv/lib/js/lockfile');
 
 var lib = {
-
     //
     // Constants
     //
-
+    
     'dbPath': '/srv/srv/announce/database.json',
-    'tokenPath': '/srv/srv/announce/tokens/',
     'lockPath': '/srv/var/lock/announce.lock',
     'coolDown': 300,
     'ttl': 3,
@@ -85,6 +85,10 @@ var lib = {
     
     'getToken': function() {
       return Math.random().toString(36).replace(/^.|\W/g, '');
+    },
+
+    'hashToken': function(token) {
+      return crypto.createHash('sha1').update(token).digest('hex');
     },
 
     'getScope': function(db, user) {
@@ -202,18 +206,20 @@ var lib = {
     },
     
     'popToken': function(scope, token) {
-        var result = scope.db.tokens[token];
+        var hashed = lib.hashToken(token);
+        var result = scope.db.tokens[hashed];
         
-        delete scope.db.tokens[token];
+        delete scope.db.tokens[hashed];
         scope.dirty = true;
     
         return result;
     },
     
     'setToken': function(scope, user, action, token) {
-        var token = getToken();
-    
-        scope.db.tokens[token] = { 'user': user, 'action': action };
+        var token = token || getToken();
+        var hashed = lib.hashToken(token);
+
+        scope.db.tokens[hashed] = { 'user': user, 'action': action };
         scope.dirty = true;
     
         return token;

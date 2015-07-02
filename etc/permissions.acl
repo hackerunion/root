@@ -84,6 +84,20 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/srv/sign
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/srv/sign/token
+# owner: server
+# group: server
+user::rw-
+group::---
+other::---
+
 # file: /srv/srv/events
 # owner: server
 # group: server
