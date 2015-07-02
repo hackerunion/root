@@ -119,6 +119,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/srv/announce/.database.json.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/srv/announce/database.json
 # owner: server
 # group: server
@@ -3111,6 +3118,20 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/sandbox/announce/templates/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/templates/.email.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/server/sandbox/announce/dispatch
 # owner: server
 # group: server
@@ -3126,6 +3147,20 @@ group::r-x
 other::r-x
 
 # file: /srv/home/server/sandbox/announce/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/.index.cgi.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/.dispatch.swp
 # owner: server
 # group: server
 user::rw-
@@ -3168,6 +3203,13 @@ group::r--
 other::r--
 
 # file: /srv/home/server/sandbox/announce/css/typebase.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/.lib.js.swp
 # owner: server
 # group: server
 user::rw-
@@ -11073,6 +11115,55 @@ other::r-x
 # file: /srv/home/mindlessjibber/.ssh/authorized_keys
 # owner: mindlessjibber
 # group: mindlessjibber
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/smitha
+# owner: smitha
+# group: smitha
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/smitha/README
+# owner: smitha
+# group: smitha
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/smitha/sandbox
+# owner: smitha
+# group: smitha
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/smitha/sandbox/README
+# owner: smitha
+# group: smitha
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/smitha/index.cgi
+# owner: smitha
+# group: smitha
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/smitha/.ssh
+# owner: smitha
+# group: smitha
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/smitha/.ssh/authorized_keys
+# owner: smitha
+# group: smitha
 user::rw-
 group::rw-
 other::r--

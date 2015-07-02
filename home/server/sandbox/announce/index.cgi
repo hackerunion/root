@@ -131,7 +131,7 @@ var renderPage = function(scope) {
     var grade = lib.getGrade(score); 
     
     console.log(fn({
-      'path': '/home/server/sandbox/announce',
+      'uri': lib.appBaseURI,
       'message': scope.msg,
       'compose': scope.compose,
       'user': scope.user,

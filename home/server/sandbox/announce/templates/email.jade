@@ -1,0 +1,17 @@
+h1 Announcement from #{announce.user} at #{announce.timestamp}
+h2 Topics:
+  each topic in announce.topics
+    strong #{topic}
+hr
+
+p #{announcement.text}
+
+hr
+
+p Help us keep announcements useful!
+
+ul
+  li
+    a(href="http://h9n.org#{uri}/index.cgi?token=#{good}") This email was OK
+  li
+    a(href="http://h9n.org#{uri}/index.cgi?token=#{bad}") This email was annoying

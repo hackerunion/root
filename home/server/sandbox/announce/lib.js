@@ -13,6 +13,7 @@ var lib = {
     
     'dbPath': '/srv/srv/announce/database.json',
     'lockPath': '/srv/var/lock/announce.lock',
+    'appBaseURI': '/home/server/sandbox/announce',
     'coolDown': 300,
     'ttl': 3,
 
@@ -154,7 +155,7 @@ var lib = {
     },
 
     'getAnnounce': function(scope, id) {
-      return lib.getAnnounceMap(scope)[id];
+      return lib.getAnnounceMap(scope)[id][0];
     },
 
     'lastAnnounce': function(scope, user) {
@@ -201,7 +202,7 @@ var lib = {
           return;
         }
 
-        cb(task, map[task.id]);
+        cb(task, map[task.id][0]);
       });
     },
     
@@ -216,7 +217,7 @@ var lib = {
     },
     
     'setToken': function(scope, user, action, token) {
-        var token = token || getToken();
+        var token = token || lib.getToken();
         var hashed = lib.hashToken(token);
 
         scope.db.tokens[hashed] = { 'user': user, 'action': action };

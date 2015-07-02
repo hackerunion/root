@@ -13,15 +13,26 @@ var lib = require('./lib')
 
 var handleDispatch = function(scope, cb) {
   var users = _.pluck(passwd, 'username');
+  var template = jade.compileFile('templates/email.jade');
 
   lib.processQueue(scope, function(task, announce) {
     var rcpt = lib.chooseByScore(task.score, users, task.users || []);
-    
     // Only broadcast if first time or score has increased
     if (task.ttl == lib.ttl || announce.score >= task.score) {
-      console.log("CONTACT", rcpt);
+      rcpt.forEach(function(user) {
+        var email = template({
+          'user': user,
+          'announce': announce,
+          'good': lib.setToken(scope, user, 'good'),
+          'bad': lib.setToken(scope, user, 'bad'),
+          'uri': lib.appBaseURI
+        });
+      
+        console.log(email);
+      //console.log("CONTACT", rcpt);
       // TODO: generate +/- links
       // TODO: figure out how to do meh...
+      });
     }
 
     task.ttl--;
