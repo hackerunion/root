@@ -4,6 +4,7 @@ body {
 .chooser {
   display: none;
   position: fixed;
+  white-space: pre;
   top: 0px;
   bottom: 0px;
   right: 0px;
@@ -24,11 +25,10 @@ body {
   position: relative;
   top: 0px;
   display: inline-block;
-  background: #aaa;
+  background: #888;
 }
 
 .palette .color.root {
-  background: #000;
 }
 
 .palette .color.active {

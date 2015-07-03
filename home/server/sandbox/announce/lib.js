@@ -151,11 +151,11 @@ var lib = {
     },
 
     'getAnnounceMap': function(scope) {
-      return _.groupBy(scope.db.announcements, 'id');
+      return _.mapValues(_.groupBy(scope.db.announcements, 'id'), _.first);
     },
 
     'getAnnounce': function(scope, id) {
-      return lib.getAnnounceMap(scope)[id][0];
+      return lib.getAnnounceMap(scope)[id];
     },
 
     'lastAnnounce': function(scope, user) {
@@ -201,8 +201,7 @@ var lib = {
           scope.db.spool.splice(i, 1);
           return;
         }
-
-        cb(task, map[task.id][0]);
+        cb(task, map[task.id]);
       });
     },
     

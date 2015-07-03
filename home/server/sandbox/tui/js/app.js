@@ -2,7 +2,7 @@ $(function() {
   var scale = 20;
   
   var addColor = function() {
-    var $color = $("<div />").addClass("color").width(scale / 2.0).height(scale / 2.0);
+    var $color = $("<div />").addClass("color").width(scale).height(scale);
     var $root = $(".color.root").after($color.dblclick(function() { showChooser($color); }));
 
     if (!$root.length) {
@@ -11,21 +11,47 @@ $(function() {
   };
 
   var showChooser = function($color) {
-    $chooser.attr("contentEditable", true).show().keydown(function() {
-      var txt = $chooser.text();
-      var clr = txt.match(/^\s*(#[a-zA-Z0-9]{6}|#[a-zA-Z0-9]{3})/);
-      
-      if (clr && clr.length >= 2) {
-        clr = clr[1];
-      } else {
-        clr = "#f00";
+    var defaults = {
+      'code': 'function($pixel, $pixels, action) { return $pixel; }',
+      'hex': '#888'
+    };
+
+    $chooser.attr("contentEditable", true).show().keyup(function() {
+      var match = $chooser.text().match(/^\s*(#[a-zA-Z0-9]{6}|#[a-zA-Z0-9]{3})\s*([\s\S]*)/);
+      var hex = "#f55";
+      var code = defaults.code;
+
+      if (match) {
+        hex = match[1];
+        code = match[2];
       }
 
-      $chooser.css("background-color", clr);
+      $chooser.css("background-color", hex);
+
+      if (!match) {
+        return true;
+      }
+
+      try {
+        eval("(" + code + ")");
+        $chooser.css("color", "inherit");
+      } catch(e) {
+        $chooser.css("color", "#f55");
+      }
+
+      $color.css("background-color", hex);
+      $color.data("hex", hex);
+      $color.data("code", code);
 
     }).dblclick(function() {
       $chooser.attr("contentEditable", false).empty().hide();
-    });
+
+    }).each(function() {
+      $chooser.text(
+        ($color.data("hex") || defaults.hex) + "\n\n" + 
+        ($color.data("code") || defaults.code)
+      );
+    }).keyup();
   };
 
   var $cursor = $("<div />").addClass("cursor").width(scale).height(scale).appendTo("body");

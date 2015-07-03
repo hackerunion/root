@@ -3055,6 +3055,13 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/sandbox/tui/js/.app.js.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/sandbox/tui/img
 # owner: server
 # group: server
@@ -3075,6 +3082,13 @@ other::r-x
 user::rwx
 group::r-x
 other::r-x
+
+# file: /srv/home/server/sandbox/tui/css/.style.css.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/server/sandbox/tui/css/style.css
 # owner: server
@@ -3129,8 +3143,8 @@ other::r--
 # owner: server
 # group: server
 user::rw-
-group::---
-other::---
+group::r--
+other::r--
 
 # file: /srv/home/server/sandbox/announce/dispatch
 # owner: server
@@ -3147,13 +3161,6 @@ group::r-x
 other::r-x
 
 # file: /srv/home/server/sandbox/announce/js/app.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/.index.cgi.swp
 # owner: server
 # group: server
 user::rw-
@@ -11126,6 +11133,27 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/home/smitha/.viminfo
+# owner: smitha
+# group: smitha
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/smitha/.vim
+# owner: smitha
+# group: smitha
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/smitha/.vim/.netrwhist
+# owner: smitha
+# group: smitha
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/smitha/README
 # owner: smitha
 # group: smitha
@@ -11773,6 +11801,55 @@ other::r-x
 # file: /srv/home/irvingfb/.ssh/authorized_keys
 # owner: irvingfb
 # group: irvingfb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/alikafridi
+# owner: alikafridi
+# group: alikafridi
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/alikafridi/README
+# owner: alikafridi
+# group: alikafridi
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/alikafridi/sandbox
+# owner: alikafridi
+# group: alikafridi
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/alikafridi/sandbox/README
+# owner: alikafridi
+# group: alikafridi
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/alikafridi/index.cgi
+# owner: alikafridi
+# group: alikafridi
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/alikafridi/.ssh
+# owner: alikafridi
+# group: alikafridi
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/alikafridi/.ssh/authorized_keys
+# owner: alikafridi
+# group: alikafridi
 user::rw-
 group::rw-
 other::r--
@@ -12754,6 +12831,62 @@ other::r-x
 # file: /srv/home/jsstein/.ssh/authorized_keys
 # owner: jsstein
 # group: jsstein
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/capac
+# owner: capac
+# group: capac
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/capac/.viminfo
+# owner: capac
+# group: capac
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/capac/README
+# owner: capac
+# group: capac
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/capac/sandbox
+# owner: capac
+# group: capac
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/capac/sandbox/README
+# owner: capac
+# group: capac
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/capac/index.cgi
+# owner: capac
+# group: capac
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/capac/.ssh
+# owner: capac
+# group: capac
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/capac/.ssh/authorized_keys
+# owner: capac
+# group: capac
 user::rw-
 group::rw-
 other::r--
