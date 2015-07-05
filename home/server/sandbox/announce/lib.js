@@ -115,7 +115,6 @@ var lib = {
       try {
         lockFile.lockSync(lib.lockPath);
       } catch (e) {
-        console.log("Status: 500\n");
         return false;
       }
     },
@@ -125,7 +124,6 @@ var lib = {
         try {
           fs.writeFileSync(lib.dbPath, JSON.stringify(scope.db, null, 2));
         } catch (e) {
-          console.log("Status: 500\n");
           return false;
         }
       }
@@ -143,7 +141,7 @@ var lib = {
             "reputation": {
                 "good": 0,
                 "bad": 0,
-                "ignore": 0,
+                "total": 0,
                 "score": 0
             },
             "topics": ["#general"]
@@ -164,11 +162,12 @@ var lib = {
         });
     },
     
-    'setAnnounce': function(scope, user, topics, message) {
+    'setAnnounce': function(scope, user, topics, subject, message) {
       var id = scope.db.announcements.length;
       var announce = scope.db.announcements[id] = {
         'id': id,
         'topics': topics,
+        'subject': subject,
         'text': message,
         'timestamp': lib.getTimestamp(),
         'user': user

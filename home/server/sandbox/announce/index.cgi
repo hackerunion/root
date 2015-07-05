@@ -14,12 +14,12 @@ var lib = require('./lib')
 
 // Controller
 
-var handleVote = function(scope, good, cb) {
-  var profile = lib.getProfile(scope, scope.user);
+var handleVote = function(scope, user, good, cb) {
+  var profile = lib.getProfile(scope, user);
 
   profile.reputation.good += (good && 1);
   profile.reputation.bad += (good || 1);
-  profile.reputation.score = getScore(profile);
+  profile.reputation.score = lib.getScore(profile);
 
   scope.msg = (good ? "Upvote" : "Downvote") + " saved!";
 
@@ -45,12 +45,18 @@ var handleSaveTopics = function(scope, qs, cb) {
 var handleAnnounce = function(scope, qs, cb) {
   var topics = lib.getTopics(qs.topics);
   var profile = lib.getProfile(scope, scope.user);
-  var message = qs.message;
+  var subject = qs.subject.trim();
+  var message = qs.message.trim();
 
-  scope.compose = { 'topics': _.map(topics, function(s) { return "#" + s; }).join(", "), 'message': message };
+  scope.compose = { 'topics': _.map(topics, function(s) { return "#" + s; }).join(", "), 'message': message, 'subject': subject };
   
   if (topics === null || !topics.length) {
     scope.msg = "Invalid topics.";
+    return cb(scope);
+  }
+
+  if (subject.length < 5 || subject.length > 50) {
+    scope.msg = "Subject too short or too long.";
     return cb(scope);
   }
 
@@ -67,7 +73,7 @@ var handleAnnounce = function(scope, qs, cb) {
     return cb(scope);
   }
 
-  var announce = lib.setAnnounce(scope, scope.user, topics, message);
+  var announce = lib.setAnnounce(scope, scope.user, topics, subject, message);
 
   lib.queueAnnounce(scope, announce, profile.reputation.score);
 
@@ -96,8 +102,8 @@ var handlePost = function(scope, cb) {
   return true;
 };
 
-var handleToken = function(scope, cb) {
-    var token = lib.popToken(scope, qs.token);
+var handleToken = function(scope, token, cb) {
+    var token = lib.popToken(scope, token);
 
     if (!token || !token.user || !token.action) {
       scope.msg = "This link is no longer valid.";
@@ -150,10 +156,6 @@ var main = function() {
     var user = process.env.USER;
     var scope = lib.getScope(db, user);
     
-    if (user == "guest") {
-      return renderPage(scope);
-    }
-
     var finish = function(scope) {
       if (scope.ok) {
         renderPage(scope);
@@ -163,11 +165,11 @@ var main = function() {
     };
 
     lib.lockDatabase(scope);
-
-    if (process.env.REQUEST_METHOD == "POST") {
-        handlePost(scope, finish);
-    } else if (qs.token) {
-        handleToken(scope, finish);
+    
+    if (qs.token) {
+      handleToken(scope, qs.token, finish);
+    } else if (user != "guest" && process.env.REQUEST_METHOD == "POST") {
+      handlePost(scope, finish);
     } else {
       finish(scope);
     }

@@ -5,6 +5,7 @@ process.chdir(__dirname);
 
 var jade = require('jade');
 var querystring = require('querystring');
+var child_process = require('child_process');
 
 var _ = require('/srv/lib/js/lodash');
 var passwd = require('/srv/etc/passwd.json');
@@ -13,12 +14,15 @@ var lib = require('./lib')
 
 var handleDispatch = function(scope, cb) {
   var users = _.pluck(passwd, 'username');
-  var template = jade.compileFile('templates/email.jade');
+  var template = jade.compileFile('templates/email.jade', { 'pretty': true });
 
   lib.processQueue(scope, function(task, announce) {
     var rcpt = lib.chooseByScore(task.score, users, task.users || []);
-    // Only broadcast if first time or score has increased
-    if (task.ttl == lib.ttl || announce.score >= task.score) {
+    var profile = lib.getProfile(scope, announce.user);
+    
+    // Only broadcast if first time or user's score has increased
+    if (task.ttl == lib.ttl || profile.reputation.score >= task.score) {
+      console.log("Broadcasting <" + announce.subject + "> to " + rcpt.join(", "));
       rcpt.forEach(function(user) {
         var email = template({
           'user': user,
@@ -27,16 +31,22 @@ var handleDispatch = function(scope, cb) {
           'bad': lib.setToken(scope, user, 'bad'),
           'uri': lib.appBaseURI
         });
-      
-        console.log(email);
-      //console.log("CONTACT", rcpt);
-      // TODO: generate +/- links
-      // TODO: figure out how to do meh...
+        
+        user="brandon";
+        console.log(child_process.execSync("/srv/bin/contact " + user, {
+          'input': email
+        }).toString());
       });
+
+    } else {
+      console.log("Skipping <" + announce.subject + "> for bad performance (" + task.score + " -> " + profile.reputation.score + ")");
     }
 
+    profile.reputation.total += rcpt.length;
+    lib.setProfile(scope, announce.user, profile);
+
     task.ttl--;
-    task.score = announce.score;
+    task.score = profile.reputation.score;
     task.users = task.users.concat(rcpt);
     task.timestamp = lib.getTimestamp();
   });
@@ -47,7 +57,6 @@ var main = function() {
     var scope = lib.getScope(db);
 
     var finish = function(scope) {
-      scope.dirty = false;
       lib.unlockDatabase(scope);
     };
 

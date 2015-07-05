@@ -2,135 +2,80 @@
   "spool": [
     {
       "id": 0,
-      "ttl": 3,
-      "timestamp": "2015-06-04T22:30:00.000Z",
-      "score": 0.4,
+      "ttl": 2,
+      "timestamp": "2015-07-05T21:35:53.673Z",
+      "score": 0.2,
       "users": [
-        "brandon"
+        [
+          "guest",
+          "server",
+          "brandon",
+          "geminiimatt",
+          "amitk",
+          "dreamchipper",
+          "sballan",
+          "belimawr",
+          "pocket",
+          "suztomo",
+          "kfuchs",
+          "tsyuk01",
+          "toby",
+          "davidykay",
+          "codemike",
+          "sarvagnan",
+          "irvingfb",
+          "ricka",
+          "zamansky",
+          "joeymejias",
+          "annanican",
+          "arjuns",
+          "viola",
+          "darkseidvengeance",
+          "nastassia",
+          "emanuele",
+          "danielrak",
+          "dberg",
+          "ahrobe",
+          "rmd6502",
+          "faigy",
+          "sahar",
+          "pav",
+          "jsonp",
+          "fwuppermann",
+          "mindlessjibber",
+          "burlivo",
+          "jsstein",
+          "reah",
+          "arun",
+          "tsax",
+          "lehmann314159",
+          "seanislavski",
+          "sanket107",
+          "dionysios",
+          "drenerdo",
+          "smitha",
+          "alikafridi",
+          "capac"
+        ],
+        "rmd6502",
+        "pocket",
+        "pav",
+        "seanislavski",
+        "server"
       ]
-    },
-    {
-      "id": 1,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 2,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 3,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 4,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 5,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 6,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 7,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
     }
   ],
   "announcements": [
     {
       "id": 0,
       "topics": [
-        "programming",
-        "freefood"
+        "freefood",
+        "random",
+        "things"
       ],
-      "text": "Hello there!",
-      "timestamp": "2015-06-04T22:30:00.000Z",
-      "user": "server"
-    },
-    {
-      "id": 1,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-26T04:28:48.064Z",
-      "user": "server"
-    },
-    {
-      "id": 2,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-26T04:33:40.153Z",
-      "user": "server"
-    },
-    {
-      "id": 3,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-26T04:34:42.607Z",
-      "user": "server"
-    },
-    {
-      "id": 4,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-26T04:34:44.843Z",
-      "user": "server"
-    },
-    {
-      "id": 5,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-27T17:20:55.836Z",
-      "user": "server"
-    },
-    {
-      "id": 6,
-      "topics": [
-        "random"
-      ],
-      "text": "hello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friend",
-      "timestamp": "2015-06-28T17:18:00.956Z",
-      "user": "server"
-    },
-    {
-      "id": 7,
-      "topics": [
-        "random"
-      ],
-      "text": "hello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendBTD",
-      "timestamp": "2015-06-28T17:23:38.033Z",
+      "subject": "This is a test",
+      "text": "This is a test of the email announcement system!\r\n\r\n<h1>Test</h1>\r\n<hr />\r\n<h2>Just a Test</h2>\r\n<hr />\r\n<h3>Still Testing</h3>\r\n<pre>\r\n\r\n    THIS\r\n                 is\r\n           a\r\n\r\n\r\n                      TEST\r\n</pre>",
+      "timestamp": "2015-07-05T21:25:02.643Z",
       "user": "server"
     }
   ],
@@ -139,7 +84,7 @@
       "reputation": {
         "good": 5,
         "bad": 7,
-        "ignore": 10,
+        "total": 15,
         "score": 0.2
       },
       "topics": [
@@ -150,9 +95,45 @@
     }
   },
   "tokens": {
-    "7g799h7fhfhoue": {
-      "action": "good",
-      "user": "brandon"
+    "db16a129e4a0152f9935d0e78509662652cd1e6c": {
+      "user": "rmd6502",
+      "action": "good"
+    },
+    "4ff81dbe2016b2520e58c02c663ae9fe919f1a9c": {
+      "user": "rmd6502",
+      "action": "bad"
+    },
+    "8a27ee92c44cf909543a1c9d196545a8dd8d600b": {
+      "user": "pocket",
+      "action": "good"
+    },
+    "166039450cc89010bb0882f3281cad7de2eb6170": {
+      "user": "pocket",
+      "action": "bad"
+    },
+    "0e073d4bca33808e4d0e9acf7af39f806265970b": {
+      "user": "pav",
+      "action": "good"
+    },
+    "d0db84bf021fd6852c5363d14c642c87a73355e0": {
+      "user": "pav",
+      "action": "bad"
+    },
+    "c2f019f115808db56bf3d0d779ef4d42ed58cafc": {
+      "user": "seanislavski",
+      "action": "good"
+    },
+    "3412b65d78f6398c76ed2ed31e8772ce3d34af1b": {
+      "user": "seanislavski",
+      "action": "bad"
+    },
+    "56429fb32681cb148d53f79e51b2e77acc666252": {
+      "user": "server",
+      "action": "good"
+    },
+    "78eb32b87ad62cb463931c060ef6159c9f2262da": {
+      "user": "server",
+      "action": "bad"
     }
   }
 }
