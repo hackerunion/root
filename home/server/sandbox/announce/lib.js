@@ -68,7 +68,7 @@ var lib = {
     },
 
     'chooseByScore': function(score, inc, exc) {
-      var args = exc || [];
+      var args = exc.slice() || [];
 
       args.unshift(inc);
       inc = _.without.apply(_, args);
@@ -184,7 +184,7 @@ var lib = {
         'ttl': lib.ttl,
         'timestamp': null,
         'score': score || 0,
-        'users': []
+        'users': [announce.user]
       });
     
       scope.dirty = true;

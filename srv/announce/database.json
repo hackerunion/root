@@ -1,70 +1,5 @@
 {
-  "spool": [
-    {
-      "id": 0,
-      "ttl": 2,
-      "timestamp": "2015-07-05T21:35:53.673Z",
-      "score": 0.2,
-      "users": [
-        [
-          "guest",
-          "server",
-          "brandon",
-          "geminiimatt",
-          "amitk",
-          "dreamchipper",
-          "sballan",
-          "belimawr",
-          "pocket",
-          "suztomo",
-          "kfuchs",
-          "tsyuk01",
-          "toby",
-          "davidykay",
-          "codemike",
-          "sarvagnan",
-          "irvingfb",
-          "ricka",
-          "zamansky",
-          "joeymejias",
-          "annanican",
-          "arjuns",
-          "viola",
-          "darkseidvengeance",
-          "nastassia",
-          "emanuele",
-          "danielrak",
-          "dberg",
-          "ahrobe",
-          "rmd6502",
-          "faigy",
-          "sahar",
-          "pav",
-          "jsonp",
-          "fwuppermann",
-          "mindlessjibber",
-          "burlivo",
-          "jsstein",
-          "reah",
-          "arun",
-          "tsax",
-          "lehmann314159",
-          "seanislavski",
-          "sanket107",
-          "dionysios",
-          "drenerdo",
-          "smitha",
-          "alikafridi",
-          "capac"
-        ],
-        "rmd6502",
-        "pocket",
-        "pav",
-        "seanislavski",
-        "server"
-      ]
-    }
-  ],
+  "spool": [],
   "announcements": [
     {
       "id": 0,
@@ -84,7 +19,7 @@
       "reputation": {
         "good": 5,
         "bad": 7,
-        "total": 15,
+        "total": 24,
         "score": 0.2
       },
       "topics": [
@@ -133,6 +68,78 @@
     },
     "78eb32b87ad62cb463931c060ef6159c9f2262da": {
       "user": "server",
+      "action": "bad"
+    },
+    "6f1af49560f0ba8e2baadd311e10b9598fd7fb78": {
+      "user": "arjuns",
+      "action": "good"
+    },
+    "2f76f0fab7bae15cc35a5cd6c70a1ed2405c5ba4": {
+      "user": "arjuns",
+      "action": "bad"
+    },
+    "b921eb549daaf485085f01d0d1302dbf0dfebe7e": {
+      "user": "reah",
+      "action": "good"
+    },
+    "a1dad5a679644f3d61762cee74c2ee6a6053ec97": {
+      "user": "reah",
+      "action": "bad"
+    },
+    "30fd5c6c5971bc224334ad71f1ec1482134befcd": {
+      "user": "dreamchipper",
+      "action": "good"
+    },
+    "286b760d41a7ad24036a145a00958c7caea1b433": {
+      "user": "dreamchipper",
+      "action": "bad"
+    },
+    "1d53d4a5578d8fb32b058e06b090f9e11d27e037": {
+      "user": "tsyuk01",
+      "action": "good"
+    },
+    "1f4c0a164ec5f7bb2f9a1ed7e6e977dfba8466f9": {
+      "user": "tsyuk01",
+      "action": "bad"
+    },
+    "ea29b0a8a745550a4f65441e4145df6314e7abaa": {
+      "user": "danielrak",
+      "action": "good"
+    },
+    "f95efd3ededcd9b5510a280694cc260565ecd219": {
+      "user": "danielrak",
+      "action": "bad"
+    },
+    "0bedb1707cc8913d00db44fc2694fb046fb58d70": {
+      "user": "kfuchs",
+      "action": "good"
+    },
+    "ac8fcd6bd0c4449d4e64878498c176af82011ef9": {
+      "user": "kfuchs",
+      "action": "bad"
+    },
+    "2b8cc6007464876a072f299436d04472280a4bb6": {
+      "user": "lehmann314159",
+      "action": "good"
+    },
+    "cf12c9e2a3859f8d3c0195da6044bea0708b6303": {
+      "user": "lehmann314159",
+      "action": "bad"
+    },
+    "a4e80ddcbe29db1e78a093696971eeb0ede435b5": {
+      "user": "tsax",
+      "action": "good"
+    },
+    "ab014d91cb0cceae81f4ee91f10cbbb6bb447c76": {
+      "user": "tsax",
+      "action": "bad"
+    },
+    "b614f54f66183024319769de2db90b9b5758aaf8": {
+      "user": "zamansky",
+      "action": "good"
+    },
+    "5eb7c3e5f949540e05c6d06bad2171967e88fcba": {
+      "user": "zamansky",
       "action": "bad"
     }
   }

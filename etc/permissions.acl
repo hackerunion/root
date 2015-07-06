@@ -119,13 +119,6 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/srv/announce/.database.json.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/srv/announce/database.json
 # owner: server
 # group: server
@@ -3167,20 +3160,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/announce/.index.cgi.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/.dispatch.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/sandbox/announce/old.cgi
 # owner: server
 # group: server
@@ -3217,13 +3196,6 @@ group::r--
 other::r--
 
 # file: /srv/home/server/sandbox/announce/css/typebase.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/.lib.js.swp
 # owner: server
 # group: server
 user::rw-
