@@ -2418,6 +2418,76 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/zck
+# owner: zck
+# group: zck
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/zck/.viminfo
+# owner: zck
+# group: zck
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/zck/README
+# owner: zck
+# group: zck
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zck/sandbox
+# owner: zck
+# group: zck
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zck/sandbox/README
+# owner: zck
+# group: zck
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zck/hello.cgi
+# owner: zck
+# group: zck
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/zck/index.cgi
+# owner: zck
+# group: zck
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zck/.ssh
+# owner: zck
+# group: zck
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zck/.ssh/authorized_keys
+# owner: zck
+# group: zck
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zck/hello.cgi~
+# owner: zck
+# group: zck
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server
 # owner: server
 # group: server
@@ -11049,6 +11119,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/elderlord
+# owner: elderlord
+# group: elderlord
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/elderlord/README
+# owner: elderlord
+# group: elderlord
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/elderlord/sandbox
+# owner: elderlord
+# group: elderlord
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/elderlord/sandbox/README
+# owner: elderlord
+# group: elderlord
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/elderlord/index.cgi
+# owner: elderlord
+# group: elderlord
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/elderlord/.ssh
+# owner: elderlord
+# group: elderlord
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/elderlord/.ssh/authorized_keys
+# owner: elderlord
+# group: elderlord
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/USAGE.txt
 # owner: 500
 # group: 497
@@ -11780,6 +11899,55 @@ other::r-x
 # file: /srv/home/irvingfb/.ssh/authorized_keys
 # owner: irvingfb
 # group: irvingfb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/clamb
+# owner: clamb
+# group: clamb
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/clamb/README
+# owner: clamb
+# group: clamb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/clamb/sandbox
+# owner: clamb
+# group: clamb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/clamb/sandbox/README
+# owner: clamb
+# group: clamb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/clamb/index.cgi
+# owner: clamb
+# group: clamb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/clamb/.ssh
+# owner: clamb
+# group: clamb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/clamb/.ssh/authorized_keys
+# owner: clamb
+# group: clamb
 user::rw-
 group::rw-
 other::r--
