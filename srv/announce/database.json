@@ -1,5 +1,25 @@
 {
-  "spool": [],
+  "spool": [
+    {
+      "id": 1,
+      "ttl": 1,
+      "timestamp": "2015-07-07T01:20:10.500Z",
+      "score": 0.2,
+      "users": [
+        "server",
+        "sarvagnan",
+        "capac",
+        "suztomo",
+        "burlivo",
+        "dreamchipper",
+        "rmd6502",
+        "pav",
+        "darkseidvengeance",
+        "faigy",
+        "sanket107"
+      ]
+    }
+  ],
   "announcements": [
     {
       "id": 0,
@@ -12,6 +32,16 @@
       "text": "This is a test of the email announcement system!\r\n\r\n<h1>Test</h1>\r\n<hr />\r\n<h2>Just a Test</h2>\r\n<hr />\r\n<h3>Still Testing</h3>\r\n<pre>\r\n\r\n    THIS\r\n                 is\r\n           a\r\n\r\n\r\n                      TEST\r\n</pre>",
       "timestamp": "2015-07-05T21:25:02.643Z",
       "user": "server"
+    },
+    {
+      "id": 1,
+      "topics": [
+        "general"
+      ],
+      "subject": "this is a subject",
+      "text": "<ol>\r\n<li> Count </li>\r\n\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n<li> Count </li>\r\n</ol>",
+      "timestamp": "2015-07-07T01:15:28.196Z",
+      "user": "server"
     }
   ],
   "users": {
@@ -19,7 +49,7 @@
       "reputation": {
         "good": 5,
         "bad": 7,
-        "total": 24,
+        "total": 34,
         "score": 0.2
       },
       "topics": [
@@ -140,6 +170,86 @@
     },
     "5eb7c3e5f949540e05c6d06bad2171967e88fcba": {
       "user": "zamansky",
+      "action": "bad"
+    },
+    "159029d6b7607da2ddc6b8b7c4e00ed427318bb3": {
+      "user": "sarvagnan",
+      "action": "good"
+    },
+    "861a58ec202d461bedbd4666149b0886bf794ab6": {
+      "user": "sarvagnan",
+      "action": "bad"
+    },
+    "3dabf84bfeda500d861814846df4f1ea9563cdd4": {
+      "user": "capac",
+      "action": "good"
+    },
+    "8b5abddb0d05ba19e72340317e652207c81b1616": {
+      "user": "capac",
+      "action": "bad"
+    },
+    "86e3858dbee2e96abf5432d0694d0b319706767f": {
+      "user": "suztomo",
+      "action": "good"
+    },
+    "9c9eeab187f35483ea4c42939f42582acea99689": {
+      "user": "suztomo",
+      "action": "bad"
+    },
+    "043b7b7d1630d11dff61a81d720021c91e170c11": {
+      "user": "burlivo",
+      "action": "good"
+    },
+    "8aba3c18f60eb1047ddb5d4d5baeab9ebc8e7276": {
+      "user": "burlivo",
+      "action": "bad"
+    },
+    "1ce3d85e8781408c23389c198a3c524fd8ab2c08": {
+      "user": "dreamchipper",
+      "action": "good"
+    },
+    "048c13d9e09b9f7a55c47f2527a69ed217b91acf": {
+      "user": "dreamchipper",
+      "action": "bad"
+    },
+    "9b4a882cf48fe514ef621447417d901dae1c2bbe": {
+      "user": "rmd6502",
+      "action": "good"
+    },
+    "93185e47a9d575166e8b21e7a6c8ead86cbffcbe": {
+      "user": "rmd6502",
+      "action": "bad"
+    },
+    "96855e2bab2d00597f58ddc1b15941495fa6d4ec": {
+      "user": "pav",
+      "action": "good"
+    },
+    "283034a6aa5ae9f6665f7d1c057b8432833228ad": {
+      "user": "pav",
+      "action": "bad"
+    },
+    "ac531bd750f1389f597db8a16f44b3d48b359370": {
+      "user": "darkseidvengeance",
+      "action": "good"
+    },
+    "d271eb23193c89db119df51dbb4f3b1e9fb09d63": {
+      "user": "darkseidvengeance",
+      "action": "bad"
+    },
+    "898e2c7f14488ff05e64638e89e0a16a98b6740f": {
+      "user": "faigy",
+      "action": "good"
+    },
+    "96d9e727954708c0b7f9a9c51a869a80525db7d1": {
+      "user": "faigy",
+      "action": "bad"
+    },
+    "1a3803445770f3f5ea20e2462ac9cfee57bfedef": {
+      "user": "sanket107",
+      "action": "good"
+    },
+    "c6a5087d799960d5426b38d798730717286ea634": {
+      "user": "sanket107",
       "action": "bad"
     }
   }
