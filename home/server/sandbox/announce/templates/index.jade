@@ -124,7 +124,7 @@ html(lang='en')
             tr
               th Good
               th Bad
-              th Meh
+              th Ignore
               th Total
               th Reputation (Grade)
 
@@ -132,8 +132,8 @@ html(lang='en')
             tr
               td #{profile.reputation.good} 
               td #{profile.reputation.bad}
-              td #{profile.reputation.ignore}
-              td #{profile.reputation.good + profile.reputation.bad + profile.reputation.ignore}
+              td #{profile.reputation.total - profile.reputation.good - profile.reputation.bad}
+              td #{profile.reputation.total}
               td
                 strong #{grade}
 

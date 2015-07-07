@@ -23,9 +23,9 @@ table(border="1px", cellpadding="8px")
     td
       ul(style="padding: 0px;")
         li
-          a(href="http://h9n.org#{uri}/index.cgi?token=#{good}") Email was okay
+          a(href="http://h9n.org/sbin/login/?next=" + encodeURIComponent(uri + "/index.cgi?token=" + good)) Email was okay
         li
-          a(href="http://h9n.org#{uri}/index.cgi?token=#{bad}") Email was annoying
+          a(href="http://h9n.org/sbin/login/?next=" + encodeURIComponent(uri + "/index.cgi?token=" + bad)) Email was annoying
 
 h3 Hacker Union User Announcement:
 
@@ -36,4 +36,4 @@ br
 hr
 
 em Sent using the 
-  a(href="http://h9n.org#{uri}") Announce Tool
+  a(href="http://h9n.org/#/#{uri}") Announce Tool
