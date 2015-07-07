@@ -1,23 +1,26 @@
 // ensure that all paths are relative to this file's actual location
 
-var _ = require('/srv/lib/js/lodash');
 var fs = require('fs');
+var crypto = require('crypto');
+
+var _ = require('/srv/lib/js/lodash');
 var lockFile = require('/srv/lib/js/lockfile');
 
 var lib = {
     //
     // Constants
     //
-
+    
     'dbPath': '/srv/srv/announce/database.json',
     'lockPath': '/srv/var/lock/announce.lock',
+    'appBaseURI': '/home/server/sandbox/announce',
     'coolDown': 300,
     'ttl': 3,
 
     //
     // Utility
     //
-
+    
     'confidence': function(pos, neg) {
       var n = pos + neg;
       var z = 1.6;
@@ -31,6 +34,10 @@ var lib = {
     
       return Math.sqrt(phat+z*z/(2*n)-z*((phat*(1-phat)+z*z/(4*n))/n))/(1+z*z/n);
     },
+  
+    'getTimestamp': function() {
+      return (new Date()).toISOString();
+    },
 
     'getScore': function(profile) {
       return lib.confidence(profile.reputation.good, profile.reputation.bad);
@@ -41,6 +48,34 @@ var lib = {
       return grades[Math.round((grades.length - 1) * score)];
     },
     
+    'getReachByScore': function(score) {
+      switch(lib.getGrade(score)) {
+        case 'A':
+          return 0.75;
+
+        case 'B':
+          return 0.45;
+
+        case 'C':
+          return 0.20;
+
+        case 'D':
+          return 0.10;
+
+        case 'F':
+          return 0.05;
+      }
+    },
+
+    'chooseByScore': function(score, inc, exc) {
+      var args = exc.slice() || [];
+
+      args.unshift(inc);
+      inc = _.without.apply(_, args);
+      
+      return _.sample(inc, Math.round(inc.length * lib.getReachByScore(score)));
+    },
+
     'getTopics': function(topics) {
       if (!topics.trim() || /[^\s\w#,]/.test(topics) || topics.length > 2000) {
         return null;
@@ -51,6 +86,10 @@ var lib = {
     
     'getToken': function() {
       return Math.random().toString(36).replace(/^.|\W/g, '');
+    },
+
+    'hashToken': function(token) {
+      return crypto.createHash('sha1').update(token).digest('hex');
     },
 
     'getScope': function(db, user) {
@@ -76,7 +115,6 @@ var lib = {
       try {
         lockFile.lockSync(lib.lockPath);
       } catch (e) {
-        console.log("Status: 500\n");
         return false;
       }
     },
@@ -86,7 +124,6 @@ var lib = {
         try {
           fs.writeFileSync(lib.dbPath, JSON.stringify(scope.db, null, 2));
         } catch (e) {
-          console.log("Status: 500\n");
           return false;
         }
       }
@@ -104,11 +141,19 @@ var lib = {
             "reputation": {
                 "good": 0,
                 "bad": 0,
-                "ignore": 0,
+                "total": 0,
                 "score": 0
             },
             "topics": ["#general"]
         });
+    },
+
+    'getAnnounceMap': function(scope) {
+      return _.mapValues(_.groupBy(scope.db.announcements, 'id'), _.first);
+    },
+
+    'getAnnounce': function(scope, id) {
+      return lib.getAnnounceMap(scope)[id];
     },
 
     'lastAnnounce': function(scope, user) {
@@ -117,13 +162,14 @@ var lib = {
         });
     },
     
-    'setAnnounce': function(scope, user, topics, message) {
+    'setAnnounce': function(scope, user, topics, subject, message) {
       var id = scope.db.announcements.length;
       var announce = scope.db.announcements[id] = {
         'id': id,
         'topics': topics,
+        'subject': subject,
         'text': message,
-        'timestamp': (new Date()).toISOString(),
+        'timestamp': lib.getTimestamp(),
         'user': user
       };
     
@@ -138,25 +184,41 @@ var lib = {
         'ttl': lib.ttl,
         'timestamp': null,
         'score': score || 0,
-        'users': []
+        'users': [announce.user]
       });
     
       scope.dirty = true;
     },
+
+    'processQueue': function(scope, cb) {
+      var map = lib.getAnnounceMap(scope);
+      
+      scope.dirty = true;
+
+      scope.db.spool.forEach(function (task, i) {
+        if (!task.ttl) {
+          scope.db.spool.splice(i, 1);
+          return;
+        }
+        cb(task, map[task.id]);
+      });
+    },
     
     'popToken': function(scope, token) {
-        var result = scope.db.tokens[token];
+        var hashed = lib.hashToken(token);
+        var result = scope.db.tokens[hashed];
         
-        delete scope.db.tokens[token];
+        delete scope.db.tokens[hashed];
         scope.dirty = true;
     
         return result;
     },
     
     'setToken': function(scope, user, action, token) {
-        var token = getToken();
-    
-        scope.db.tokens[token] = { 'user': user, 'action': action };
+        var token = token || lib.getToken();
+        var hashed = lib.hashToken(token);
+
+        scope.db.tokens[hashed] = { 'user': user, 'action': action };
         scope.dirty = true;
     
         return token;

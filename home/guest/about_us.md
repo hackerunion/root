@@ -1,6 +1,6 @@
 # What is Hacker Union?
 
-*Our goal is to help you plug into the tech community.*
+*Our goal is to help you get the most out of the tech community.*
 
 ---
 

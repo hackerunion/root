@@ -35,7 +35,22 @@ other::r--
 
 # file: /srv/bin/contact
 # owner: root
-# group: hacker
+# group: member
+# flags: s--
+user::rwx
+group::r-x
+other::r--
+
+# file: /srv/bin/sign
+# owner: root
+# group: member
+user::rwx
+group::r-x
+other::---
+
+# file: /srv/bin/super
+# owner: root
+# group: member
 # flags: s--
 user::rwx
 group::r-x
@@ -68,6 +83,20 @@ other::r-x
 user::rw-
 group::rw-
 other::r--
+
+# file: /srv/srv/sign
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/srv/sign/token
+# owner: server
+# group: server
+user::rw-
+group::---
+other::---
 
 # file: /srv/srv/events
 # owner: server
@@ -658,6 +687,111 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/usr/share
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/share/misc
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/share/man
+# owner: 500
+# group: 497
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/share/www
+# owner: 500
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/usr/share/www/node-blank
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/usr/share/www/node-blank/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/usr/share/www/node-blank/img
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/usr/share/www/node-blank/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/usr/share/www/node-blank/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/usr/share/www/node-blank/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/etc
 # owner: 500
 # group: 497
@@ -1200,6 +1334,13 @@ other::r--
 # file: /srv/sbin/sync
 # owner: root
 # group: root
+user::rwx
+group::rw-
+other::r--
+
+# file: /srv/sbin/launch
+# owner: 500
+# group: 497
 user::rwx
 group::rw-
 other::r--
@@ -1780,6 +1921,27 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/lib/c
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/lib/c/super
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/lib/c/super/super.c
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/mnt
 # owner: 500
 # group: 497
@@ -1909,6 +2071,55 @@ other::r-x
 # file: /srv/home/ricka/.ssh/authorized_keys
 # owner: ricka
 # group: ricka
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/seanislavski
+# owner: seanislavski
+# group: seanislavski
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/seanislavski/README
+# owner: seanislavski
+# group: seanislavski
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/seanislavski/sandbox
+# owner: seanislavski
+# group: seanislavski
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/seanislavski/sandbox/README
+# owner: seanislavski
+# group: seanislavski
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/seanislavski/index.cgi
+# owner: seanislavski
+# group: seanislavski
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/seanislavski/.ssh
+# owner: seanislavski
+# group: seanislavski
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/seanislavski/.ssh/authorized_keys
+# owner: seanislavski
+# group: seanislavski
 user::rw-
 group::rw-
 other::r--
@@ -2205,6 +2416,76 @@ other::r-x
 # group: emanuele
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/home/zck
+# owner: zck
+# group: zck
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/zck/.viminfo
+# owner: zck
+# group: zck
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/zck/README
+# owner: zck
+# group: zck
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zck/sandbox
+# owner: zck
+# group: zck
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zck/sandbox/README
+# owner: zck
+# group: zck
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zck/hello.cgi
+# owner: zck
+# group: zck
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/zck/index.cgi
+# owner: zck
+# group: zck
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zck/.ssh
+# owner: zck
+# group: zck
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/zck/.ssh/authorized_keys
+# owner: zck
+# group: zck
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/zck/hello.cgi~
+# owner: zck
+# group: zck
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/home/server
@@ -2802,6 +3083,97 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/home/server/sandbox/tui
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/js/.app.js.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/img
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sandbox/tui/css/.style.css.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/tui/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/sandbox/announce
 # owner: server
 # group: server
@@ -2816,10 +3188,31 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/home/server/sandbox/announce/templates/.index.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/sandbox/announce/templates/index.jade
 # owner: server
 # group: server
 user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/templates/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/announce/dispatch
+# owner: server
+# group: server
+user::rwx
 group::r--
 other::r--
 
@@ -10726,6 +11119,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/elderlord
+# owner: elderlord
+# group: elderlord
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/elderlord/README
+# owner: elderlord
+# group: elderlord
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/elderlord/sandbox
+# owner: elderlord
+# group: elderlord
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/elderlord/sandbox/README
+# owner: elderlord
+# group: elderlord
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/elderlord/index.cgi
+# owner: elderlord
+# group: elderlord
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/elderlord/.ssh
+# owner: elderlord
+# group: elderlord
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/elderlord/.ssh/authorized_keys
+# owner: elderlord
+# group: elderlord
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/USAGE.txt
 # owner: 500
 # group: 497
@@ -10778,6 +11220,76 @@ other::r-x
 # file: /srv/home/mindlessjibber/.ssh/authorized_keys
 # owner: mindlessjibber
 # group: mindlessjibber
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/smitha
+# owner: smitha
+# group: smitha
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/smitha/.viminfo
+# owner: smitha
+# group: smitha
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/smitha/.vim
+# owner: smitha
+# group: smitha
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/smitha/.vim/.netrwhist
+# owner: smitha
+# group: smitha
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/smitha/README
+# owner: smitha
+# group: smitha
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/smitha/sandbox
+# owner: smitha
+# group: smitha
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/smitha/sandbox/README
+# owner: smitha
+# group: smitha
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/smitha/index.cgi
+# owner: smitha
+# group: smitha
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/smitha/.ssh
+# owner: smitha
+# group: smitha
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/smitha/.ssh/authorized_keys
+# owner: smitha
+# group: smitha
 user::rw-
 group::rw-
 other::r--
@@ -10929,6 +11441,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/dionysios
+# owner: dionysios
+# group: dionysios
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/dionysios/README
+# owner: dionysios
+# group: dionysios
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dionysios/sandbox
+# owner: dionysios
+# group: dionysios
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dionysios/sandbox/README
+# owner: dionysios
+# group: dionysios
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/dionysios/index.cgi
+# owner: dionysios
+# group: dionysios
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dionysios/.ssh
+# owner: dionysios
+# group: dionysios
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/dionysios/.ssh/authorized_keys
+# owner: dionysios
+# group: dionysios
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/danielrak
 # owner: danielrak
 # group: danielrak
@@ -10974,6 +11535,55 @@ other::r-x
 # file: /srv/home/danielrak/.ssh/authorized_keys
 # owner: danielrak
 # group: danielrak
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/drenerdo
+# owner: drenerdo
+# group: drenerdo
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/drenerdo/README
+# owner: drenerdo
+# group: drenerdo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/drenerdo/sandbox
+# owner: drenerdo
+# group: drenerdo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/drenerdo/sandbox/README
+# owner: drenerdo
+# group: drenerdo
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/drenerdo/index.cgi
+# owner: drenerdo
+# group: drenerdo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/drenerdo/.ssh
+# owner: drenerdo
+# group: drenerdo
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/drenerdo/.ssh/authorized_keys
+# owner: drenerdo
+# group: drenerdo
 user::rw-
 group::rw-
 other::r--
@@ -11289,6 +11899,104 @@ other::r-x
 # file: /srv/home/irvingfb/.ssh/authorized_keys
 # owner: irvingfb
 # group: irvingfb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/clamb
+# owner: clamb
+# group: clamb
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/clamb/README
+# owner: clamb
+# group: clamb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/clamb/sandbox
+# owner: clamb
+# group: clamb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/clamb/sandbox/README
+# owner: clamb
+# group: clamb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/clamb/index.cgi
+# owner: clamb
+# group: clamb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/clamb/.ssh
+# owner: clamb
+# group: clamb
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/clamb/.ssh/authorized_keys
+# owner: clamb
+# group: clamb
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/alikafridi
+# owner: alikafridi
+# group: alikafridi
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/alikafridi/README
+# owner: alikafridi
+# group: alikafridi
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/alikafridi/sandbox
+# owner: alikafridi
+# group: alikafridi
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/alikafridi/sandbox/README
+# owner: alikafridi
+# group: alikafridi
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/alikafridi/index.cgi
+# owner: alikafridi
+# group: alikafridi
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/alikafridi/.ssh
+# owner: alikafridi
+# group: alikafridi
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/alikafridi/.ssh/authorized_keys
+# owner: alikafridi
+# group: alikafridi
 user::rw-
 group::rw-
 other::r--
@@ -11696,6 +12404,55 @@ other::r-x
 # file: /srv/home/sarvagnan/.ssh/authorized_keys
 # owner: sarvagnan
 # group: sarvagnan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sanket107
+# owner: sanket107
+# group: sanket107
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/sanket107/README
+# owner: sanket107
+# group: sanket107
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sanket107/sandbox
+# owner: sanket107
+# group: sanket107
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sanket107/sandbox/README
+# owner: sanket107
+# group: sanket107
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/sanket107/index.cgi
+# owner: sanket107
+# group: sanket107
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sanket107/.ssh
+# owner: sanket107
+# group: sanket107
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/sanket107/.ssh/authorized_keys
+# owner: sanket107
+# group: sanket107
 user::rw-
 group::rw-
 other::r--
@@ -12221,6 +12978,62 @@ other::r-x
 # file: /srv/home/jsstein/.ssh/authorized_keys
 # owner: jsstein
 # group: jsstein
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/capac
+# owner: capac
+# group: capac
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/capac/.viminfo
+# owner: capac
+# group: capac
+user::rw-
+group::---
+other::---
+
+# file: /srv/home/capac/README
+# owner: capac
+# group: capac
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/capac/sandbox
+# owner: capac
+# group: capac
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/capac/sandbox/README
+# owner: capac
+# group: capac
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/capac/index.cgi
+# owner: capac
+# group: capac
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/capac/.ssh
+# owner: capac
+# group: capac
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/capac/.ssh/authorized_keys
+# owner: capac
+# group: capac
 user::rw-
 group::rw-
 other::r--

@@ -1,0 +1,50 @@
+body {
+}
+
+.chooser {
+  display: none;
+  position: fixed;
+  white-space: pre;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background: #030;
+  color: #000;
+  z-index: 4;
+}
+
+.palette {
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  left: 0px;
+}
+
+.palette .color {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  background: #888;
+}
+
+.palette .color.root {
+}
+
+.palette .color.active {
+  
+}
+
+.cursor {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  background: #0f0;
+  cursor: none;
+  z-index: 1;
+}
+
+.cursor.active {
+  background: #ff0;
+  z-index: 2;
+}

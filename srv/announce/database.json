@@ -1,136 +1,16 @@
 {
-  "spool": [
-    {
-      "id": 0,
-      "ttl": 3,
-      "timestamp": "2015-06-04T22:30:00.000Z",
-      "score": 0.4,
-      "users": [
-        "brandon"
-      ]
-    },
-    {
-      "id": 1,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 2,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 3,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 4,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 5,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 6,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    },
-    {
-      "id": 7,
-      "ttl": 3,
-      "timestamp": null,
-      "score": 0.2,
-      "users": []
-    }
-  ],
+  "spool": [],
   "announcements": [
     {
       "id": 0,
       "topics": [
-        "programming",
-        "freefood"
+        "freefood",
+        "random",
+        "things"
       ],
-      "text": "Hello there!",
-      "timestamp": "2015-06-04T22:30:00.000Z",
-      "user": "server"
-    },
-    {
-      "id": 1,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-26T04:28:48.064Z",
-      "user": "server"
-    },
-    {
-      "id": 2,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-26T04:33:40.153Z",
-      "user": "server"
-    },
-    {
-      "id": 3,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-26T04:34:42.607Z",
-      "user": "server"
-    },
-    {
-      "id": 4,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-26T04:34:44.843Z",
-      "user": "server"
-    },
-    {
-      "id": 5,
-      "topics": [
-        "asdfasdf"
-      ],
-      "text": "asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf",
-      "timestamp": "2015-06-27T17:20:55.836Z",
-      "user": "server"
-    },
-    {
-      "id": 6,
-      "topics": [
-        "random"
-      ],
-      "text": "hello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friend",
-      "timestamp": "2015-06-28T17:18:00.956Z",
-      "user": "server"
-    },
-    {
-      "id": 7,
-      "topics": [
-        "random"
-      ],
-      "text": "hello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendhello there my friendBTD",
-      "timestamp": "2015-06-28T17:23:38.033Z",
+      "subject": "This is a test",
+      "text": "This is a test of the email announcement system!\r\n\r\n<h1>Test</h1>\r\n<hr />\r\n<h2>Just a Test</h2>\r\n<hr />\r\n<h3>Still Testing</h3>\r\n<pre>\r\n\r\n    THIS\r\n                 is\r\n           a\r\n\r\n\r\n                      TEST\r\n</pre>",
+      "timestamp": "2015-07-05T21:25:02.643Z",
       "user": "server"
     }
   ],
@@ -139,7 +19,7 @@
       "reputation": {
         "good": 5,
         "bad": 7,
-        "ignore": 10,
+        "total": 24,
         "score": 0.2
       },
       "topics": [
@@ -150,9 +30,117 @@
     }
   },
   "tokens": {
-    "7g799h7fhfhoue": {
-      "action": "good",
-      "user": "brandon"
+    "db16a129e4a0152f9935d0e78509662652cd1e6c": {
+      "user": "rmd6502",
+      "action": "good"
+    },
+    "4ff81dbe2016b2520e58c02c663ae9fe919f1a9c": {
+      "user": "rmd6502",
+      "action": "bad"
+    },
+    "8a27ee92c44cf909543a1c9d196545a8dd8d600b": {
+      "user": "pocket",
+      "action": "good"
+    },
+    "166039450cc89010bb0882f3281cad7de2eb6170": {
+      "user": "pocket",
+      "action": "bad"
+    },
+    "0e073d4bca33808e4d0e9acf7af39f806265970b": {
+      "user": "pav",
+      "action": "good"
+    },
+    "d0db84bf021fd6852c5363d14c642c87a73355e0": {
+      "user": "pav",
+      "action": "bad"
+    },
+    "c2f019f115808db56bf3d0d779ef4d42ed58cafc": {
+      "user": "seanislavski",
+      "action": "good"
+    },
+    "3412b65d78f6398c76ed2ed31e8772ce3d34af1b": {
+      "user": "seanislavski",
+      "action": "bad"
+    },
+    "56429fb32681cb148d53f79e51b2e77acc666252": {
+      "user": "server",
+      "action": "good"
+    },
+    "78eb32b87ad62cb463931c060ef6159c9f2262da": {
+      "user": "server",
+      "action": "bad"
+    },
+    "6f1af49560f0ba8e2baadd311e10b9598fd7fb78": {
+      "user": "arjuns",
+      "action": "good"
+    },
+    "2f76f0fab7bae15cc35a5cd6c70a1ed2405c5ba4": {
+      "user": "arjuns",
+      "action": "bad"
+    },
+    "b921eb549daaf485085f01d0d1302dbf0dfebe7e": {
+      "user": "reah",
+      "action": "good"
+    },
+    "a1dad5a679644f3d61762cee74c2ee6a6053ec97": {
+      "user": "reah",
+      "action": "bad"
+    },
+    "30fd5c6c5971bc224334ad71f1ec1482134befcd": {
+      "user": "dreamchipper",
+      "action": "good"
+    },
+    "286b760d41a7ad24036a145a00958c7caea1b433": {
+      "user": "dreamchipper",
+      "action": "bad"
+    },
+    "1d53d4a5578d8fb32b058e06b090f9e11d27e037": {
+      "user": "tsyuk01",
+      "action": "good"
+    },
+    "1f4c0a164ec5f7bb2f9a1ed7e6e977dfba8466f9": {
+      "user": "tsyuk01",
+      "action": "bad"
+    },
+    "ea29b0a8a745550a4f65441e4145df6314e7abaa": {
+      "user": "danielrak",
+      "action": "good"
+    },
+    "f95efd3ededcd9b5510a280694cc260565ecd219": {
+      "user": "danielrak",
+      "action": "bad"
+    },
+    "0bedb1707cc8913d00db44fc2694fb046fb58d70": {
+      "user": "kfuchs",
+      "action": "good"
+    },
+    "ac8fcd6bd0c4449d4e64878498c176af82011ef9": {
+      "user": "kfuchs",
+      "action": "bad"
+    },
+    "2b8cc6007464876a072f299436d04472280a4bb6": {
+      "user": "lehmann314159",
+      "action": "good"
+    },
+    "cf12c9e2a3859f8d3c0195da6044bea0708b6303": {
+      "user": "lehmann314159",
+      "action": "bad"
+    },
+    "a4e80ddcbe29db1e78a093696971eeb0ede435b5": {
+      "user": "tsax",
+      "action": "good"
+    },
+    "ab014d91cb0cceae81f4ee91f10cbbb6bb447c76": {
+      "user": "tsax",
+      "action": "bad"
+    },
+    "b614f54f66183024319769de2db90b9b5758aaf8": {
+      "user": "zamansky",
+      "action": "good"
+    },
+    "5eb7c3e5f949540e05c6d06bad2171967e88fcba": {
+      "user": "zamansky",
+      "action": "bad"
     }
   }
 }

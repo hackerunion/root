@@ -4,17 +4,17 @@ html(lang='en')
     title Announce
     script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
     script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
-    script(type='text/javascript', src='#{path}/js/app.js')
+    script(type='text/javascript', src='#{uri}/js/app.js')
 
-    link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
-    link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
+    link(rel='stylesheet', type='text/css', href='#{uri}/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='#{uri}/css/style.css')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 
   body
-    if authorized
-      if message
-        aside #{message}
+    if message
+      aside #{message}
 
+    if authorized
       h1 Announce
       h2 A Reputation-Based Email Megaphone
       hr
@@ -38,43 +38,52 @@ html(lang='en')
 
       hr
 
-      h3 Functions
+      h3 Menu
 
       ol
         li
+          a(href="#announce") Send Announcement 
+        li
+          a(href="#topics") Your Subscriptions
+        li
           a(href="#reputation") Your Reputation
-        li
-          a(href="#topics") Choose Topics
-        li
-          a(href="#announce") Compose Message 
 
       hr
 
-      a(name="reputation")
-        h3 Your Reputation
-
+      a(name="announce")
+        h3 Send Announcement
+      
+      form(method="post")
+        input(type="hidden", name="task", value="announce")
         table
-          thead
-            tr
-              th Good
-              th Bad
-              th Meh
-              th Total
-              th Reputation (Grade)
-
           tbody
             tr
-              td #{profile.reputation.good} 
-              td #{profile.reputation.bad}
-              td #{profile.reputation.ignore}
-              td #{profile.reputation.good + profile.reputation.bad + profile.reputation.ignore}
+              th(scope="row")
+                label Topics
+              td 
+                input(type="text", name="topics", value=compose.topics)
+            
+            tr
+              th(scope="row")
+                label Subject
+              td 
+                input(type="text", name="subject", value=compose.subject)
+            
+            tr
+              th(scope="row")
+                label Message
               td
-                strong #{grade}
+                textarea(name="message", rows=20, cols=100) #{compose.message}
+        
+            tr
+              th
+              td
+                input(type="submit", id="send-email", value="Send Email")
 
       hr
     
       a(name="topics")
-        h3 Choose Topics
+        h3 Your Subscriptions
 
       table
         thead
@@ -107,29 +116,26 @@ html(lang='en')
 
       hr
       
-      a(name="announce")
-        h3 Compose Message
-      
-      form(method="post")
-        input(type="hidden", name="task", value="announce")
+      a(name="reputation")
+        h3 Your Reputation
+
         table
+          thead
+            tr
+              th Good
+              th Bad
+              th Meh
+              th Total
+              th Reputation (Grade)
+
           tbody
             tr
-              th(scope="row")
-                label Topics
-              td 
-                input(type="text", name="topics", value=compose.topics)
-            
-            tr
-              th(scope="row")
-                label Message
+              td #{profile.reputation.good} 
+              td #{profile.reputation.bad}
+              td #{profile.reputation.ignore}
+              td #{profile.reputation.good + profile.reputation.bad + profile.reputation.ignore}
               td
-                textarea(name="message", rows=20, cols=100) #{compose.message}
-        
-            tr
-              th
-              td
-                input(type="submit", id="send-email", value="Send Email")
+                strong #{grade}
 
     else
       pre.
