@@ -5,6 +5,10 @@ source "$SERVER_ROOT/usr/lib/bash/json/escape.bash"
 
 cgi_getvars GET path
 
+json_escape() {
+  echo "$@"
+}
+
 MAP="{}"
 STATUS=500
 

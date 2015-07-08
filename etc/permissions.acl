@@ -1808,6 +1808,112 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/var/www/announce
+# owner: server
+# group: member
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/announce/templates
+# owner: server
+# group: member
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/announce/templates/index.jade
+# owner: server
+# group: member
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/announce/templates/email.jade
+# owner: server
+# group: member
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/announce/dispatch
+# owner: server
+# group: member
+user::rwx
+group::r--
+other::r--
+
+# file: /srv/var/www/announce/js
+# owner: server
+# group: member
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/announce/js/app.js
+# owner: server
+# group: member
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/announce/index.cgi
+# owner: server
+# group: member
+# flags: s--
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/announce/css
+# owner: server
+# group: member
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/announce/css/style.css
+# owner: server
+# group: member
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/announce/css/normalize.css
+# owner: server
+# group: member
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/announce/css/typebase.css
+# owner: server
+# group: member
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/announce/lib.js
+# owner: server
+# group: member
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/announce/favicon.ico
+# owner: server
+# group: member
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/announce/package.json
+# owner: server
+# group: member
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/lock
 # owner: 500
 # group: 497

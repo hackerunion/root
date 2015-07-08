@@ -13,7 +13,7 @@ var lib = {
     
     'dbPath': '/srv/srv/announce/database.json',
     'lockPath': '/srv/var/lock/announce.lock',
-    'appBaseURI': '/srv/var/www/announce',
+    'appBaseURI': '/var/www/announce',
     'coolDown': 300,
     'ttl': 3,
 
@@ -137,14 +137,18 @@ var lib = {
     },
     
     'getProfile': function(scope, user) {
-        return _.defaults(scope.db.users[user] || {}, {
+	    if (!(user in scope.db.users)) {
+	        scope.db.users[user] = {};
+	    }
+
+        return _.defaults(scope.db.users[user], {
             "reputation": {
                 "good": 0,
                 "bad": 0,
                 "total": 0,
                 "score": 0
             },
-            "topics": ["#general"]
+            "topics": ["general"]
         });
     },
 
