@@ -48,6 +48,13 @@ user::rwx
 group::r-x
 other::---
 
+# file: /srv/bin/tree
+# owner: root
+# group: member
+user::rwx
+group::r-x
+other::r-x
+
 # file: /srv/bin/super
 # owner: root
 # group: member
@@ -1485,6 +1492,27 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/var/cache
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/cache/tree
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/cache/tree/data
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/opt
 # owner: 500
 # group: 497
@@ -1562,6 +1590,13 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/var/www/shell/templates/.index.jade.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/shell/templates/index.jade
 # owner: 500
 # group: 497
@@ -1590,6 +1625,13 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/var/www/shell/js/.app.js.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/shell/js/handlers
 # owner: 500
 # group: 497
@@ -1609,6 +1651,13 @@ other::r--
 # group: 497
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/var/www/shell/.index.cgi.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/var/www/shell/img
@@ -3405,6 +3454,13 @@ other::r--
 user::rw-
 group::---
 other::---
+
+# file: /srv/home/server/walk
+# owner: server
+# group: server
+user::rwx
+group::r--
+other::r--
 
 # file: /srv/home/server/.node-gyp
 # owner: server

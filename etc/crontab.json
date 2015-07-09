@@ -2,5 +2,9 @@
   {
     "pattern": "* * * * *",
     "command": "/bin/touch /tmp/cron-alive"
+  },
+  {
+    "pattern": "0,15,30,45 * * * *",
+    "command": "/srv/bin/tree /srv > /srv/var/cache/tree/data"
   }
 ]

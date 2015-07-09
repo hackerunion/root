@@ -1,0 +1,74 @@
+#!/usr/bin/env node
+
+var _ = require('/srv/lib/js/lodash');
+var fs = require('fs');
+var nodePath = require('path');
+
+var walk = function(dir, done) {
+  var results = [];
+  fs.readdir(dir, function(err, list) {
+    if (err) return done(err);
+    var i = 0;
+    (function next() {
+      var file = list[i++];
+      if (!file) return done(null, results);
+      var path = nodePath.join(dir, file);
+      fs.stat(path, function(err, stat) {
+        results.push({ 'file': file, 'dir': dir, 'path': path, 'stat': stat });
+        if (stat && stat.isDirectory()) {
+          walk(path, function(err, res) {
+            results = results.concat(res || []);
+            next();
+          });
+        } else {
+          next();
+        }
+      });
+    })();
+  });
+};
+
+var classify = function(stat) {
+  if (stat) {
+    if (stat.isDirectory()) {
+      return "/";
+    }
+    
+    var ox = stat.mode & 1;
+    var gx = stat.mode & 1<<3;
+    var ux = stat.mode & 1<<6;
+    
+    if ((ux && (process.getuid() == stat.uid)) || (gx && (process.getgid() == stat.gid)) || ox) {
+      return "*";
+    }
+  }
+
+  return "-";
+};
+
+if (process.argv.length != 3) {
+  console.error("Usage: path");
+  process.exit(1);
+}
+
+walk(nodePath.resolve(process.argv[2]), function(err, res) {
+  var paths = {};
+
+  (res || []).forEach(function(item) {
+    var value = [{ 'path': '.', 'type': '/' }, { 'path': '..', 'type': '/' }];
+    var dir = item['dir'];
+
+    if (dir in paths) {
+      value = paths[dir].value;
+    } else {
+      paths[dir] = {
+        'path': dir,
+        'value': value
+      };
+    }
+
+    value.push({ 'path': item['file'], 'type': classify(item['stat']) });
+  });
+
+  console.log(JSON.stringify(paths, null, 4));
+});

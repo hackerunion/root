@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var fs = require('fs');
 var jade = require('jade');
 var path = require('path');
 
@@ -11,9 +12,15 @@ console.log("");
 process.chdir(__dirname);
 
 var fn = jade.compileFile('templates/index.jade');
+var cache = '{}';
+
+try {
+  cache = fs.readFileSync('/srv/var/cache/tree/data');
+} catch (e) {} 
 
 console.log(fn({
   'username': process.env.USER || 'guest',
+  'cache': cache,
   'home': (process.env.HOME || '/home/guest').replace('/srv', ''),
   'shell': process.env.SHELL_URI,
   'ssh': process.env.SERVER_NAME + ':' + process.env.SERVER_SSH_PORT,

@@ -1,4 +1,4 @@
-function boot(root, home) {
+function boot(root, home, cache) {
   $(function() {
     var MSG_MAX = 25;
     var S_ISDIR = function(m) { return m & 0x4000 };
