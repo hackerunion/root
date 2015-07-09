@@ -3210,6 +3210,13 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/.selected_editor
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/sandbox
 # owner: server
 # group: server

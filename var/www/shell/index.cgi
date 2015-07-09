@@ -12,10 +12,10 @@ console.log("");
 process.chdir(__dirname);
 
 var fn = jade.compileFile('templates/index.jade');
-var cache = '{}';
+var cache = "{}";
 
 try {
-  cache = fs.readFileSync('/srv/var/cache/tree/data');
+  cache = fs.readFileSync('/srv/var/cache/tree/data').toString();
 } catch (e) {} 
 
 console.log(fn({

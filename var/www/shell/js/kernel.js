@@ -3,7 +3,8 @@
         this.env = _.extend({
             cwd: [],
             root: [],
-            handlers: {}
+            handlers: {},
+			cache: {}
         }, env);
 
         this.cb = cb || function(err, ctx, uri, opts) { console.log(err ? "Fail: " + err : "[" + ctx + "] " + uri); next(err); };
@@ -99,6 +100,10 @@
         bind_handlers: function(handlers) {
             this.env.handlers = _.extend(this.env.handlers, handlers);
         },
+
+		use_cache: function(endpoint, cache) {
+			this.env.cache[endpoint] = cache;
+		},
 
         dirname: function(uri) {
             return this.path(uri).slice(0, -1);
@@ -286,10 +291,20 @@
         },
 
         _fetch: function(endpoint, path, cb) {
+			var uri = this.uri(path);
+
+			if (endpoint in this.env.cache) {
+				var hit = this.env.cache[endpoint][uri];
+				
+				if (hit) {
+					return cb(null, hit);
+				}
+			}
+
             $.ajax({
                 'type': 'GET',
                 'url': this.uri(endpoint),
-                'data': { 'path': this.uri(path) },
+                'data': { 'path': uri },
                 'success': function(data) { cb(null, data); },
                 'error': function(x, e, msg) { cb(msg); }
             });

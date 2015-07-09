@@ -59,7 +59,7 @@ function boot(root, home, cache) {
 
       var $nav = $("nav");
       var path = root;
-      
+
       $msg.empty();
 
       if (!s.indexOf(cnt)) {
@@ -233,10 +233,15 @@ function boot(root, home, cache) {
       autopilot($kernel.filename(root + dest).full);
       $kernel.cd($kernel.dirname(root + dest), null, true);
     };
-
+    
+    $kernel.use_cache(Kernel.LS_ENDPOINT, cache);
     $kernel.bind_listener(ui);
     $kernel.chroot(root);
     
+    $("nav").on('dblclick', function() {
+      alert(1);
+    });
+   
     $(window).on('hashchange', function(e) {
       navigate(e.newURL.split('#').slice(-1)[0]);
       return false;
