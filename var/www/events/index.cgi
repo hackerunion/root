@@ -52,7 +52,7 @@ if (process.env.REQUEST_METHOD == 'POST') {
     }
     
     try {
-      fs.writeFileSync(eventsPath, JSON.stringify(events));
+      fs.writeFileSync(eventsPath, JSON.stringify(events, null, 4));
     } catch (e) {
       return console.log("Status: 500\n");
     }

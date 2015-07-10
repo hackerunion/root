@@ -112,6 +112,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/srv/events/.events.json.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/srv/events/events.json
 # owner: server
 # group: server
@@ -1590,13 +1597,6 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/var/www/shell/templates/.index.jade.swp
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/var/www/shell/templates/index.jade
 # owner: 500
 # group: 497
@@ -1616,6 +1616,13 @@ other::r-x
 # group: 497
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/var/www/shell/js/.kernel.js.swp
+# owner: root
+# group: root
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/var/www/shell/js/app.js
@@ -1651,13 +1658,6 @@ other::r--
 # group: 497
 user::rw-
 group::rw-
-other::r--
-
-# file: /srv/var/www/shell/.index.cgi.swp
-# owner: root
-# group: root
-user::rw-
-group::r--
 other::r--
 
 # file: /srv/var/www/shell/img
@@ -11911,6 +11911,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/saladin
+# owner: saladin
+# group: saladin
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/saladin/README
+# owner: saladin
+# group: saladin
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/saladin/sandbox
+# owner: saladin
+# group: saladin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/saladin/sandbox/README
+# owner: saladin
+# group: saladin
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/saladin/index.cgi
+# owner: saladin
+# group: saladin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/saladin/.ssh
+# owner: saladin
+# group: saladin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/saladin/.ssh/authorized_keys
+# owner: saladin
+# group: saladin
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/arun
 # owner: arun
 # group: arun
@@ -12428,6 +12477,55 @@ other::r--
 # group: guest
 user::rw-
 group::r--
+other::r--
+
+# file: /srv/home/jeremy
+# owner: jeremy
+# group: jeremy
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/jeremy/README
+# owner: jeremy
+# group: jeremy
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jeremy/sandbox
+# owner: jeremy
+# group: jeremy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jeremy/sandbox/README
+# owner: jeremy
+# group: jeremy
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jeremy/index.cgi
+# owner: jeremy
+# group: jeremy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jeremy/.ssh
+# owner: jeremy
+# group: jeremy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jeremy/.ssh/authorized_keys
+# owner: jeremy
+# group: jeremy
+user::rw-
+group::rw-
 other::r--
 
 # file: /srv/home/reah

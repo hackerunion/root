@@ -82,7 +82,7 @@ function boot(root, home, cache) {
     };
 
     var cd = function(uri, opts) {
-      var $dir = $('#dir').hide().empty();
+      var $dir = $('#dir').empty();
       var $nav = $('nav');
       var $message = $("#message");
       var $index = null;
@@ -131,7 +131,7 @@ function boot(root, home, cache) {
 
           return false;
         });
-        
+
         if (ap == f.path) {
           autopilot(null);
           $index = $a;
@@ -144,7 +144,7 @@ function boot(root, home, cache) {
       if ($index) {
         $index.click();
       }
-      
+
       $nav.removeClass('loading');
       $dir.show();
       contentShow();
@@ -238,8 +238,18 @@ function boot(root, home, cache) {
     $kernel.bind_listener(ui);
     $kernel.chroot(root);
     
+    var cache_toggle = true;
+
     $("nav").on('dblclick', function() {
-      alert(1);
+      if (cache_toggle) {
+        msg("Cache disabled");
+        $kernel.use_cache(Kernel.LS_ENDPOINT, {});
+      } else {
+        msg("Cache enabled");
+        $kernel.use_cache(Kernel.LS_ENDPOINT, cache);
+      }
+
+      cache_toggle = !cache_toggle;
     });
    
     $(window).on('hashchange', function(e) {

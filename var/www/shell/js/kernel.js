@@ -101,9 +101,9 @@
             this.env.handlers = _.extend(this.env.handlers, handlers);
         },
 
-		use_cache: function(endpoint, cache) {
-			this.env.cache[endpoint] = cache;
-		},
+		    use_cache: function(endpoint, cache) {
+	    		this.env.cache[endpoint] = cache;
+		    },
 
         dirname: function(uri) {
             return this.path(uri).slice(0, -1);
@@ -291,15 +291,14 @@
         },
 
         _fetch: function(endpoint, path, cb) {
-			var uri = this.uri(path);
-
-			if (endpoint in this.env.cache) {
-				var hit = this.env.cache[endpoint][uri];
-				
-				if (hit) {
-					return cb(null, hit);
-				}
-			}
+      			var uri = this.uri(path);
+      
+      			if (endpoint in this.env.cache) {
+      				var hit = this.env.cache[endpoint][uri];
+      				if (hit) {
+      					return cb(null, hit);
+      				}
+      			}
 
             $.ajax({
                 'type': 'GET',

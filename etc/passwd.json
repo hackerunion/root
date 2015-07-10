@@ -50,5 +50,7 @@
 { "username": "capac", "password": "$1$.4qcB2Kk$QLzLihzmFiYBsT0CAL0vD1", "uid": "1385", "gid": "1387", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "zck", "password": "$6$4gEiC.2J$L1vQV8H0gfEOpH1wzw.R/R3CDjzlHyC6o0jDTDn.DhbQ9DdSJEL172F1eP4CP5bzEXFxizqsXm5Qtyv5vnarz1", "uid": "1386", "gid": "1388", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "clamb", "password": "$1$L7KhTaL1$eTqJjabCIvcDF3UAPlTAy1", "uid": "1387", "gid": "1389", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
-{ "username": "elderlord", "password": "$1$GmxIo3L1$s6tStyQ28wOEQF7x7N33O0", "uid": "1388", "gid": "1390", "info": "", "shell": "/bin/sh", "service": false, "uri": null }
+{ "username": "elderlord", "password": "$1$GmxIo3L1$s6tStyQ28wOEQF7x7N33O0", "uid": "1388", "gid": "1390", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "saladin", "password": "$1$bF9Zxq2O$JEfGZlvfum8eE28QFYfMH/", "uid": "1389", "gid": "1391", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "jeremy", "password": "$1$Q5Tjp19l$Es8fSmJuEPJuyd6g/8SZo0", "uid": "1390", "gid": "1392", "info": "", "shell": "/bin/sh", "service": false, "uri": null }
 ]
