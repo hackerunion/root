@@ -349,7 +349,7 @@ body .container main .content-wrapper .content a {
   color: #8fffbe !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .github-fork-ribbon-wrapper {
     display: none;
   }

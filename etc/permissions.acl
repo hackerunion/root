@@ -13200,6 +13200,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/cyrus
+# owner: cyrus
+# group: cyrus
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/cyrus/README
+# owner: cyrus
+# group: cyrus
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/cyrus/sandbox
+# owner: cyrus
+# group: cyrus
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/cyrus/sandbox/README
+# owner: cyrus
+# group: cyrus
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/cyrus/index.cgi
+# owner: cyrus
+# group: cyrus
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/cyrus/.ssh
+# owner: cyrus
+# group: cyrus
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/cyrus/.ssh/authorized_keys
+# owner: cyrus
+# group: cyrus
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/capac
 # owner: capac
 # group: capac
