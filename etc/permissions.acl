@@ -112,13 +112,6 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/srv/events/.events.json.swp
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/srv/events/events.json
 # owner: server
 # group: server
@@ -1016,6 +1009,13 @@ user::rwx
 group::rw-
 other::r--
 
+# file: /srv/boot/host/bin/canary
+# owner: 500
+# group: 497
+user::rwx
+group::rw-
+other::r--
+
 # file: /srv/boot/host/bin/opt
 # owner: 500
 # group: 497
@@ -1541,6 +1541,20 @@ user::rwx
 group::---
 other::---
 
+# file: /srv/var/run/boot
+# owner: 500
+# group: 497
+user::rwx
+group::---
+other::---
+
+# file: /srv/var/run/boot/canary
+# owner: root
+# group: root
+user::---
+group::---
+other::---
+
 # file: /srv/var/run/kernel
 # owner: 500
 # group: 497
@@ -1618,25 +1632,11 @@ user::rw-
 group::rw-
 other::r--
 
-# file: /srv/var/www/shell/js/.kernel.js.swp
-# owner: root
-# group: root
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/var/www/shell/js/app.js
 # owner: 500
 # group: 497
 user::rw-
 group::rw-
-other::r--
-
-# file: /srv/var/www/shell/js/.app.js.swp
-# owner: root
-# group: root
-user::rw-
-group::r--
 other::r--
 
 # file: /srv/var/www/shell/js/handlers
