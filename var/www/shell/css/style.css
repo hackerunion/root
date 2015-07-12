@@ -303,6 +303,28 @@ body .container header {
   padding: 0 10px;
   border-bottom: 1px solid #888;
   font-family: "Andale Mono", AndaleMono, monospace;
+  cursor: zoom-in;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+
+body.maximize .content-wrapper {
+  left: 0px !important;
+}
+
+body.maximize .content-wrapper header {
+  cursor: zoom-out;
+  background: #fff;
+}
+
+body.maximize .content-wrapper #content {
+  margin: 0px;
+}
+
+body.maximize .github-fork-ribbon-wrapper {
+  display: none;
 }
 
 body .container header .left {
@@ -470,8 +492,6 @@ body .container main .content-wrapper .content#content pre:only-child {
     background: transparent;
     color: #000;
 }
-
-
 
 /*
  * FANCY STUFF

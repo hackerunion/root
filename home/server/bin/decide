@@ -11,6 +11,7 @@ CONTACT=/srv/bin/contact
 
 TOTAL=`grep -v ^$ $DATA | wc -l | cut -d' ' -f1`
 NEXT=""
+SEEN=""
 
 HR="---------------------------------------------------------------"  
 FF=
@@ -176,7 +177,7 @@ while read -u 3 LINE; do
     echo "$LINE" | grep -q '^$'&& continue
     V=`echo $LINE | cut -d\| -f1`
     let i=i+1
-    if [[ "$V" != "0" ]]; then
+    if [[ "$V" != "1" ]]; then
         echo "Unsupported version ($V), skipping..."
         continue
     fi
@@ -185,11 +186,13 @@ while read -u 3 LINE; do
     USERPASS=`echo $SECRETS | cut -d' ' -f1`
     USERHASH=`echo $SECRETS | cut -d' ' -f2`
     
-    FULLNAME=`echo $LINE | cut -d\| -f2`
-    EMAIL=`echo $LINE | cut -d\| -f3`
-    USERLOGIN=`echo $LINE | cut -d\| -f4 | tr 'A-Z' 'a-z'`
-    TIMESTAMP=`echo $LINE | cut -d\| -f5`
-    COMMENT=`echo $LINE | cut -d\| -f6`
+    IP=`echo $LINE | cut -d\| -f2`
+    FULLNAME=`echo $LINE | cut -d\| -f3`
+    EMAIL=`echo $LINE | cut -d\| -f4`
+    USERLOGIN=`echo $LINE | cut -d\| -f5 | tr 'A-Z' 'a-z'`
+    TIMESTAMP=`echo $LINE | cut -d\| -f6`
+    COMMENT=`echo $LINE | cut -d\| -f7`
+
     test -z "$FF" && cat <<EOF
 [32m$HR
 `hr_title "$i of $TOTAL"`
@@ -208,8 +211,18 @@ EOF
     
     while true; do
         if test -z "$FF"; then
-            read -n 1 -p "[0m$USERLOGIN> [35m(a)ccept, (r)eject, (d)elete, (e)mail, (u)sername, (s)kip, (q)uit?[0m " ACTION
-            echo
+            if echo "$SEEN" | grep -q "$IP"; then
+              echo "[36mDuplicate entry from $IP. Assuming deletion."
+              ACTION='d'
+            else
+              SEEN="$IP|$SEEN"
+              ACTION=
+            fi
+            
+            if test -z "$ACTION"; then
+              read -n 1 -p "[0m$USERLOGIN> [35m(a)ccept, (r)eject, (d)elete, (e)mail, (u)sername, (s)kip, (q)uit?[0m " ACTION
+              echo
+            fi
         else
             ACTION='s'
         fi

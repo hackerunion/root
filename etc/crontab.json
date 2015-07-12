@@ -6,5 +6,9 @@
   {
     "pattern": "0,15,30,45 * * * *",
     "command": "/srv/bin/tree /srv > /srv/var/cache/tree/data"
+  },
+  {
+    "pattern": "0,30 * * * *",
+    "command": ". /srv/etc/cron/env.sh; /srv/opt/announce/dispatch >> /srv/var/log/announce 2>&1"
   }
 ]

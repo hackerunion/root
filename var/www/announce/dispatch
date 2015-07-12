@@ -37,17 +37,18 @@ var handleDispatch = function(scope, cb) {
           'input': email
         }).toString());
       });
+    
+      profile.reputation.total += rcpt.length;
+      lib.setProfile(scope, announce.user, profile);
+      
+      task.users = task.users.concat(rcpt);
 
     } else {
       console.log("Skipping <" + announce.subject + "> for bad performance (" + task.score + " -> " + profile.reputation.score + ")");
     }
 
-    profile.reputation.total += rcpt.length;
-    lib.setProfile(scope, announce.user, profile);
-
     task.ttl--;
     task.score = profile.reputation.score;
-    task.users = task.users.concat(rcpt);
     task.timestamp = lib.getTimestamp();
   });
 };

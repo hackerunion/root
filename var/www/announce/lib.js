@@ -209,7 +209,10 @@ var lib = {
     },
 
     'targetUsers': function(scope, users, topics) {
-      return users;
+      return _.filter(users, function(user) {
+        var profile = lib.getProfile(scope, user);
+        return !profile.topics || "general" in profile.topics || _.intersection(profile.topics, topics);
+      });
     },
     
     'popToken': function(scope, token) {

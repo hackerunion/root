@@ -5,7 +5,7 @@ source "$SERVER_ROOT/usr/lib/bash/json/escape.bash"
 
 cgi_getvars POST name email username note submit 2> /dev/null
 
-VERSION=0
+VERSION=1
 STATUS=200
 MESSAGE=
 SAVE=
@@ -61,11 +61,12 @@ cat <<EOF
 EOF
 
 if test -n "$MESSAGE"; then
-  echo "<div style='background: rgba(0, 0, 0, 0.1);'>$MESSAGE</div>"
+  echo "<div style='font-weight: bold; background: rgb(255, 255, 0);'>$MESSAGE</div>"
 fi
 
 cat <<EOF
 <form method="POST">
+  <input type="hidden" name="ip" value="$REMOTE_ADDR" />
   <p>
     <label>Your name:<br /><input type="text" name="name" value="$name" /></label>
   </p>
@@ -90,5 +91,9 @@ EOF
 
 if test -n "$SAVE"; then
   note="`echo $note | sed -e 's/[[:space:]]/ /g'`"
-  echo "$VERSION|$name|$email|$username|`date`|$note" >> "`dirname $0`/data"
+
+  # Remove duplicates
+  # cat "`dirname $0`/data" | grep -v "$VERSION|$REMOTE_ADDR|" > "`dirname $0`/data"
+
+  echo "$VERSION|$REMOTE_ADDR|$name|$email|$username|`date`|$note" >> "`dirname $0`/data"
 fi

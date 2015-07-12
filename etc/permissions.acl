@@ -855,6 +855,20 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/etc/cron
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/etc/cron/env.sh
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/etc/skel
 # owner: 500
 # group: 497
@@ -932,6 +946,20 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/opt/announce
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/opt/announce/dispatch
+# owner: server
+# group: member
+user::rwx
+group::r--
+other::r--
+
 # file: /srv/opt/helloworld
 # owner: 500
 # group: 497
@@ -950,7 +978,7 @@ other::r-x
 # owner: 500
 # group: 497
 user::rwx
-group::rwx
+group::r-x
 other::r-x
 
 # file: /srv/boot
@@ -1492,6 +1520,13 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/var/log/announce
+# owner: root
+# group: root
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/USAGE.txt
 # owner: 500
 # group: 497
@@ -1962,6 +1997,20 @@ other::r--
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/var/www/helloworld
+# owner: root
+# group: root
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/helloworld/index.cgi
+# owner: 500
+# group: 497
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/var/lock
 # owner: 500
@@ -3288,118 +3337,6 @@ group::r--
 other::r--
 
 # file: /srv/home/server/sandbox/tui/favicon.ico
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/announce/templates
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/announce/templates/index.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/templates/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/dispatch
-# owner: server
-# group: server
-user::rwx
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/js
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/announce/js/app.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/old.cgi
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/announce/index.cgi
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/announce/css
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/announce/css/style.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/css/normalize.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/css/typebase.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/lib.js
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/announce/favicon.ico
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/announce/package.json
 # owner: server
 # group: server
 user::rw-
@@ -13151,6 +13088,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/b3linda
+# owner: b3linda
+# group: b3linda
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/b3linda/README
+# owner: b3linda
+# group: b3linda
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/b3linda/sandbox
+# owner: b3linda
+# group: b3linda
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/b3linda/sandbox/README
+# owner: b3linda
+# group: b3linda
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/b3linda/index.cgi
+# owner: b3linda
+# group: b3linda
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/b3linda/.ssh
+# owner: b3linda
+# group: b3linda
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/b3linda/.ssh/authorized_keys
+# owner: b3linda
+# group: b3linda
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/jsstein
 # owner: jsstein
 # group: jsstein
@@ -13448,6 +13434,55 @@ other::r-x
 # file: /srv/home/nastassia/.ssh/authorized_keys
 # owner: nastassia
 # group: nastassia
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/iamrphy
+# owner: iamrphy
+# group: iamrphy
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/iamrphy/README
+# owner: iamrphy
+# group: iamrphy
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/iamrphy/sandbox
+# owner: iamrphy
+# group: iamrphy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/iamrphy/sandbox/README
+# owner: iamrphy
+# group: iamrphy
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/iamrphy/index.cgi
+# owner: iamrphy
+# group: iamrphy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/iamrphy/.ssh
+# owner: iamrphy
+# group: iamrphy
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/iamrphy/.ssh/authorized_keys
+# owner: iamrphy
+# group: iamrphy
 user::rw-
 group::rw-
 other::r--

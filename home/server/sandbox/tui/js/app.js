@@ -1,5 +1,6 @@
 $(function() {
   var scale = 20;
+  var $pixels = {};
   
   var addColor = function() {
     var $color = $("<div />").addClass("color").width(scale).height(scale);
@@ -57,15 +58,45 @@ $(function() {
   var $cursor = $("<div />").addClass("cursor").width(scale).height(scale).appendTo("body");
   var $chooser = $("<div />").addClass("chooser").appendTo("body");
   var $palette = addColor();
+  
+  var getCoords = function(x, y) {
+    return [ Math.floor(x / scale) * scale, Math.floor(y / scale) * scale ];
+  };
+  
+  $(document).on('mousemove', function(e) {
+    var coords = getCoords(e.clientX, e.clientY);
+    var $pixel = $pixels[coords];
 
-  $(document).mousemove(function(e) {
-    var x = Math.floor(e.clientX / scale) * scale;
-    var y = Math.floor(e.clientY / scale) * scale;
+    $cursor.offset({ 'left': coords[0], 'top': coords[1] });
     
-    $cursor.offset({ 'left': x, 'top': y });
+    if (e.buttons) {
+      if (e.shiftKey) {
+        window.dribble = true;
+        if ($pixel) {
+          $cursor.click();
+        }
+      } else if (!$pixel) {
+        $cursor.click();
+      }
+    }
   });
 
-  $cursor.click(function() {
-    $cursor.clone().appendTo("body").addClass("active").dblclick(function() { $(this).remove(); });
+  $cursor.click(function(e) {
+    var offset = $cursor.offset();
+    var coords = getCoords(offset.left, offset.top);
+    var $pixel = $pixels[coords];
+
+    if ($pixel) {
+      $pixel.remove();
+      delete $pixels[coords];
+      return;
+    }
+
+    if (window.dribble && e.clientX && e.clientY) {
+      window.dribble = false;
+      return;
+    }
+
+    $pixels[coords] = $cursor.clone().appendTo("body").addClass("active");
   });
 });

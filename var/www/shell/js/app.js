@@ -239,7 +239,6 @@ function boot(root, home, cache) {
     $kernel.chroot(root);
     
     var cache_toggle = true;
-
     $("nav").on('dblclick', function() {
       if (cache_toggle) {
         msg("Cache disabled");
@@ -250,6 +249,10 @@ function boot(root, home, cache) {
       }
 
       cache_toggle = !cache_toggle;
+    });
+    
+    $(".container header").on('click', function() {
+      var $content = $("body").toggleClass("maximize").parent();
     });
    
     $(window).on('hashchange', function(e) {
