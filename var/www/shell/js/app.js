@@ -251,6 +251,10 @@ function boot(root, home, cache) {
       cache_toggle = !cache_toggle;
     });
     
+    $(".container header a").on('click', function(e) {
+      e.stopPropagation();
+    });
+
     $(".container header").on('click', function() {
       var $content = $("body").toggleClass("maximize").parent();
     });

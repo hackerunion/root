@@ -233,6 +233,7 @@ body .container main .content-wrapper {
   overflow: auto;
   color: #000;
   background: #aaa !important;
+  background: #fff !important;
   border-left: 1px solid #ccc;
 }
 
@@ -240,9 +241,10 @@ body .container main .content-wrapper .content {
   display: none;
   margin: 25px;
   padding: 10px 80px 10px 40px;
-  background: #eee;
+  background: #fff;
   border: 1px solid #666;
   border-width: 0px 1px 1px 0px;
+  border-width: 0px;
 }
 
 body .container main .content-wrapper .content ul {
@@ -316,7 +318,6 @@ body.maximize .content-wrapper {
 
 body.maximize .content-wrapper header {
   cursor: zoom-out;
-  background: #fff;
 }
 
 body.maximize .content-wrapper #content {
