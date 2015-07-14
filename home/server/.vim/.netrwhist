@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/srv/home/server/sandbox'
 let g:netrw_dirhist_2='/srv/home/server/sandbox/announce'
 let g:netrw_dirhist_3='/srv/home/server/sandbox/tui/templates'
+let g:netrw_dirhist_4='/srv/var/www/announce'

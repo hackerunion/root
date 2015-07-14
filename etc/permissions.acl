@@ -3308,6 +3308,13 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/sandbox/tui/js/.app.js.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/sandbox/tui/index.cgi
 # owner: server
 # group: server
@@ -3321,6 +3328,13 @@ other::r-x
 user::rwx
 group::r-x
 other::r-x
+
+# file: /srv/home/server/sandbox/tui/css/.style.css.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/server/sandbox/tui/css/style.css
 # owner: server

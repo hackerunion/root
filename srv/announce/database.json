@@ -1,13 +1,25 @@
 {
   "spool": [],
-  "announcements": [],
+  "announcements": [
+    {
+      "id": 0,
+      "topics": [
+        "general",
+        "meta"
+      ],
+      "subject": "Announcing... \"announce\" for Hacker Union",
+      "text": "<p>\r\nMaking (useful) communication easy is one of the most important things a community can do.\r\n</p>\r\n\r\n<p>\r\nThat's why I'm pleased to share our new \"ANNOUNCE\" tool: a simple way for Hacker Union members to send announcement emails to other Hacker Union messages.\r\n</p>\r\n\r\n<p>\r\nEvery member can use it. <strong>However</strong>, there's a catch: each email you send has a \"I appreciate this\" and a \"this is lame\" link. These'll affect your email karma.\r\n</p>\r\n\r\n<p>\r\nIf you send constructive stuff, your emails will reach a large number of members. If you send bad stuff... you might just reach one or two people.\r\n</p>\r\n\r\n<p>\r\nIf you've got anything you'd like to announce, please check out the tool here:\r\n<br />\r\n<a href=\"http://h9n.org/var/www/announce/\">ANNOUNCE</a>\r\n</p>\r\n\r\n<p>\r\n<small>Also, if things are totally broken, please forgive me (and drop me an email at: <a href=\"mailto:theevilgeek@gmail.com\">theevilgeek@gmail.com</a>. I'll fix things super quick.</small>\r\n</p>\r\n\r\n<p>\r\n<small><em>P.S. Feel free to ignore the topics stuff. These let you tag your email to create lightweight interest groups. If you want to unsubscribe from all announcements, you can remove the \"general\" tag from your list of subscriptions (see the announce tool page). If you're especially interested in a topic, you can add those topics to your subscriptions.</em></small>\r\n</p>",
+      "timestamp": "2015-07-13T17:33:18.502Z",
+      "user": "brandon"
+    }
+  ],
   "users": {
     "brandon": {
       "reputation": {
-        "good": 101,
+        "good": 102,
         "bad": 0,
-        "total": 0,
-        "score": 0.9813919217238327
+        "total": 55,
+        "score": 0.9815705444748299
       },
       "topics": [
         "general",
@@ -608,6 +620,28 @@
       "topics": [
         "general"
       ]
+    },
+    "iamrphy": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "b3linda": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
     }
   },
   "tokens": {
@@ -912,6 +946,442 @@
       "action": "bad"
     },
     "8ac29b2c31a427034cd751b37a05b4d1ff790e85": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "35d59c8d8693123e2be81333ac3e511e7099f28d": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "446dbfd964e2c04bd382985997b088fba92717fc": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "cd9040525f5237d24f18c5170bc7e227341b04a0": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "105057a64c4c2b0a24c70adca9ce3069e07e7a5b": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "afbf7114d3076ea01fe77ca17a246a76a6b82f53": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "0fe5a6119f795f7f55afd4e13849dd9eb26a5d83": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "8aff198920651bce61d9312c3ffb45809c1a2a8a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "dba3793687f4392dc09efa794988642c0882896b": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "6e5a6a4df6b6a06d7449fe16541cd7d4728090cb": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "b977c48b43cb1f6f528ae4cf5e1d1d9ba3f05887": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "140b9b8d31fe47838a154a1299f71079ffe0b244": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "118294f98b7f5908455f199d2a485af5686d7826": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "8148e83a4528d8f608b0ecf3fbdc432769f9307c": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "48591dbca4a46158ef124bb8b96ce492b1b0cb7a": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "2a3c9ea11f4319cc4736b9bca44d2339eaaaa3bf": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "a0fafe4b02e85166db571968a7cdf6952b9f3275": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "1cb0aceb5782da3338eb7ae45ecc7c2673637e67": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "b9dc61a6b1feaede3cca33e82f1966429de74a03": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "4df7f84515d5166ed57a42be5aac6c61966589d5": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "045d33bc43ae1eebe519570b45fcf9fb3ff06814": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "0aff2ee0082d69f12e1db76a98282fa7c391fc4d": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "c74f9cde0a7d640b7c76c3546f6372a41510c1d1": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "66010b5b777a06ec1f3c952258aaee0f8f787d6c": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "e587bed687414e52a309412b48ce2c02f7351a63": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "4182f01dde6d862085ae85363e84cf0d12e40562": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "9aafa493804e888251677ec53bca76af49a21ece": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "5d3ead0e653a008c325e87b3ae4a16098addc8e8": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "bfc1f7efd49b5ee394af140e809699bf82f777c6": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "e15228e390f914067989c83304312ab14b9d4c4b": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "0219becded9875bec608bd81c19332e55b5982aa": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "7b1b8cb9c021fdad8bf2196d280c78a869ae1dea": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "53d515099f22a5ec44484577e765db51c7009318": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "c67ddff927a71edcb8f9916ce45f243c6f43018e": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "86dd76e19fea50047ec2572510931f162344a227": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "fcc222c499b14d314bdd38e0ddc05f031c7363d3": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "c1fdfd3ab0e42ed718631cb593a016d57841ea6b": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "f4865f5a7791230b0b9e0fa00ddf76c79d8393d8": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "3366212cfdbcacf2ae7d9e8ec2aca0c8ec9031c8": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "38aa9e3ad45c531971de1606acde592ee0e03250": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "831b4ae1501be0aa6f61d3fa5e7f1f7789334feb": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "f9d5e4d30e63acdedf5092263decbf8d1c594527": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "2334d299b521db59e4a93c60a99cc334028db07a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "430f72101fdd96da44ebbd29887f057f385b3221": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "170f905d8b3e55e7ab4a9102ad997c9a806a3a4a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "ec72bbd26bf31491d989e3b074bc5595c1d8dea9": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "6a9257010a60bb837c7531713f3d9bb3424eb1f5": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "85a2bfcc2a2df378c7ebc9196dd42e9f69859dec": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "6dbeced01e2c9cef14f09314d565b292aab4f0f7": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "ca650f4aa90ea96861f238efc4ae595ad35fb308": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "3235ad5b34fcfa5a6da5cadd8f6f8c4a9c21d2d1": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "cc5940eba130a83248070e4095f41fe2d7285d85": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "543a3dd53d78675023c5e5124ff92b0fb79a0d3a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "38d863cc19c00515bf31c87982078efab34fc12a": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "39041b06e3069808be3783297b7d31bf66831c01": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "41bba7cb673f0ba191915aed78e2d6f80782c45f": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "3ad27e117c2bf641170be013c74a1a03c90394a9": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "275d78067245f7def45c3d5a5b707dbcb278854c": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "12f0d3b23b52b5d316e87f004e2f2008849ff679": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "7d10dea9296046e539c56d17f4d92f24d86763e5": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "54b4f0fb0d4be11a491fe3de03c6a5d168cd76be": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "27607cf17f973628650e9605df14ef55a76cacfc": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "17d84e1de7fbde8aff7e46ee5dfddd4c33322208": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "e0021fcd1f0e1391b2b63d0ffc0afd7438c3115c": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "b1b2719942bf9b4b67042c33d4f23067ebeaa8d2": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "15833abecc9e636ecec47e922c2fcfd5f78bb54a": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "5e110771a2edc2aa0f3beabb85c843685954b99a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "1efcddedb8ab3f16f0006d18a5b8afccef1773e3": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "be22070f658127077be583f65ef353c62961a087": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "902179f297fedc3af9c9e267088929288ed77fcc": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "e2aa548ce7369efc028f93ad8ba5092411210d0a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "09b6d3a2a091b05d55b334c5ee068b575d7e5b7e": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "4def615c6a8b2e59b39aa0342f416a436790bdfa": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "ce3d5d2d072168393181c71a42d4de695ab2bd31": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "a65d2f2b28fee6ee80a940ef2b3f80175e35c552": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "e9f2afd2c53486338ae5bdd9745115ee698df0da": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "22ab7ee1083605303165d8bc9358d443c9f75dda": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "fb9f213e307a328df75169e891d2c849565e037b": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "0f8c6d23e8cadab583860de3cdc9f04296505f39": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "6b8989314020d77bdf2cd0c3f9993fbb37a33ec3": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "bf09a67a3854786a3e8fe6449c7da4a6e98d5d0e": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "e2a5f0b5fa43a1eb40cc0c72d9fb4cc5f0117539": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "05c27d87b35f974635db18980c808709d7ac34df": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "8ff902e57077c8255a08d2efe5276e2b0859d917": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "c9c34601221f76e0f73ccfd661e73d32b38975dd": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "d5608ff91648b145800836972beba3645f1316e3": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "9e12e0299d6afe1f86a4da6459a8466fbde1f02f": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "fc3bc0d2d3e0e473c74dbfdc23cf7f5f2b95d3d8": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "b88f190c827259511b9a87b22537ac177dcda9c3": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "25e0578597767b133fe1be5dfb576ed91b57ffe1": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "c1de521dd3b2839c805bf271fc38e00e313b70b1": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "a71d25b1056970f79240c31772084e0fbf4a02a0": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "9cba17997a0684432f70d46a66597fee726411c8": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "090e768f07d285708b65345ad036dd7ca9690473": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "c445bf2a879a075e9850e0bcdc078befc5dabe14": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "b2e855a6a0923d27ad73099eda3ca51ede4ffe26": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "bd2f4992e01a6e8195aea49558802c4f4e4c336e": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "726afb82ee1364e1f39b86f2f0f47add2e4694e9": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "67fadc758ea2d30c003b24c0ab8a2081621d7cd8": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "51a4eefa2dde7f2138283de8190b891bcf26860b": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "e58b3ed5b93f1f6c74912cb59c7f279216322aca": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "aa7acd4dd61e0cba0b4662b6171926158814099a": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "1aa4d516f34cf19558ace92a7cf38fd77263180c": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "8e07ea687c74daeda769965b0d6c7f79b66dc19c": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "0852a032356f0cdf3415e86b403ec70a41daaacb": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "bea0efc5b8daf914f2dc08c92dee2d5076f7a270": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "8608b4aab7bc697b7dd4cd66b4ecc7da55253ee0": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "b16404c3b092f72af7ec3a3114db6588932c6370": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "de67f114d74fa6e714d0b5c4ba3e8dd52d54a960": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "178498ce3a12f0b12cbe82066407c79e8206950f": {
       "user": "brandon",
       "action": "bad"
     }

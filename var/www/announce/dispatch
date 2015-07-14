@@ -32,10 +32,13 @@ var handleDispatch = function(scope, cb) {
           'uri': lib.appBaseURI
         });
         
-        user="brandon";
-        console.log(child_process.execSync("/srv/bin/contact " + user, {
-          'input': email
-        }).toString());
+        try {
+          console.log(child_process.execSync("/srv/bin/contact " + user, {
+            'input': email
+          }).toString());
+        } catch (e) {
+          console.log("Exception (" + user + "): " + e);
+        }
       });
     
       profile.reputation.total += rcpt.length;

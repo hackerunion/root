@@ -190,8 +190,8 @@ using the appropriate handler (see below).
 ###	Main Menu
 
 At the top of the file viewer is a white bar. This bar allows you to switch
-users (using the "sudo" link), show and hide a terminal (using the "+term"
-link), and quickly navigate to the server's "home page" (using the "go home"
+users (using the "switch" link), show and hide a terminal (using the "+term"
+link), and quickly navigate to the server's "home page" (using the "home"
 link).
 
 
