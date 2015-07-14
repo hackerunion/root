@@ -56,7 +56,7 @@ $(function() {
       .addClass("layer")
       .appendTo($stack)
       .css({
-        "transform": "translateZ(" + i + "em)",
+        "transform": "translateZ(" + 3*i + "em)",
         "z-index": i
       });
 
@@ -108,7 +108,7 @@ $(function() {
   };
 
   var $stack = $("<div />").addClass("stack").width(scale).height(scale).appendTo("body");
-  var $cursor = $("<div />").addClass("cursor").width(scale).height(scale).appendTo("body");
+  var $cursor = $("<div />").addClass("cursor").width(scale).height(scale);
   var $chooser = $("<div />").addClass("chooser").appendTo("body");
   var $palette = addColor();
   
@@ -125,6 +125,7 @@ $(function() {
     var $pixel = $tool.pixels[coords];
 
     $cursor
+      .remove()
       .appendTo($tool.layer)
       .offset({ 'left': coords[0], 'top': coords[1] })
       .css("background", $tool.brush.data("hex"));

@@ -7,7 +7,7 @@ body {
 
 .layer {
     transform-style: preserve-3d;
-    transform: rotateX(-20deg);
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg) rotateZ;
 }
 
 .layer {
