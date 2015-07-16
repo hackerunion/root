@@ -11596,6 +11596,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/rfaroul
+# owner: rfaroul
+# group: rfaroul
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/rfaroul/README
+# owner: rfaroul
+# group: rfaroul
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/rfaroul/sandbox
+# owner: rfaroul
+# group: rfaroul
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/rfaroul/sandbox/README
+# owner: rfaroul
+# group: rfaroul
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/rfaroul/index.cgi
+# owner: rfaroul
+# group: rfaroul
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/rfaroul/.ssh
+# owner: rfaroul
+# group: rfaroul
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/rfaroul/.ssh/authorized_keys
+# owner: rfaroul
+# group: rfaroul
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/dionysios
 # owner: dionysios
 # group: dionysios
@@ -12054,6 +12103,55 @@ other::r-x
 # file: /srv/home/arun/.ssh/authorized_keys
 # owner: arun
 # group: arun
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/shreyaskulkarni
+# owner: shreyaskulkarni
+# group: shreyaskulkarni
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/shreyaskulkarni/README
+# owner: shreyaskulkarni
+# group: shreyaskulkarni
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/shreyaskulkarni/sandbox
+# owner: shreyaskulkarni
+# group: shreyaskulkarni
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/shreyaskulkarni/sandbox/README
+# owner: shreyaskulkarni
+# group: shreyaskulkarni
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/shreyaskulkarni/index.cgi
+# owner: shreyaskulkarni
+# group: shreyaskulkarni
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/shreyaskulkarni/.ssh
+# owner: shreyaskulkarni
+# group: shreyaskulkarni
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/shreyaskulkarni/.ssh/authorized_keys
+# owner: shreyaskulkarni
+# group: shreyaskulkarni
 user::rw-
 group::rw-
 other::r--
@@ -12657,6 +12755,55 @@ other::r-x
 # file: /srv/home/sarvagnan/.ssh/authorized_keys
 # owner: sarvagnan
 # group: sarvagnan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/popcat
+# owner: popcat
+# group: popcat
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/popcat/README
+# owner: popcat
+# group: popcat
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/popcat/sandbox
+# owner: popcat
+# group: popcat
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/popcat/sandbox/README
+# owner: popcat
+# group: popcat
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/popcat/index.cgi
+# owner: popcat
+# group: popcat
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/popcat/.ssh
+# owner: popcat
+# group: popcat
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/popcat/.ssh/authorized_keys
+# owner: popcat
+# group: popcat
 user::rw-
 group::rw-
 other::r--

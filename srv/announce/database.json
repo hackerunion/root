@@ -1,5 +1,57 @@
 {
-  "spool": [],
+  "spool": [
+    {
+      "id": 1,
+      "ttl": 2,
+      "timestamp": "2015-07-16T15:30:40.868Z",
+      "score": 0.9815705444748299,
+      "users": [
+        "brandon",
+        "viola",
+        "zck",
+        "nastassia",
+        "amitk",
+        "suztomo",
+        "jsstein",
+        "pocket",
+        "emanuele",
+        "elderlord",
+        "arjuns",
+        "tsyuk01",
+        "burlivo",
+        "belimawr",
+        "danielrak",
+        "guest",
+        "dionysios",
+        "b3linda",
+        "zamansky",
+        "sahar",
+        "ahrobe",
+        "dreamchipper",
+        "irvingfb",
+        "faigy",
+        "seanislavski",
+        "server",
+        "pav",
+        "arun",
+        "codemike",
+        "jsonp",
+        "fwuppermann",
+        "rmd6502",
+        "clamb",
+        "saladin",
+        "davidykay",
+        "capac",
+        "kfuchs",
+        "iamrphy",
+        "sballan",
+        "ricka",
+        "smitha",
+        "toby",
+        "dberg"
+      ]
+    }
+  ],
   "announcements": [
     {
       "id": 0,
@@ -11,6 +63,17 @@
       "text": "<p>\r\nMaking (useful) communication easy is one of the most important things a community can do.\r\n</p>\r\n\r\n<p>\r\nThat's why I'm pleased to share our new \"ANNOUNCE\" tool: a simple way for Hacker Union members to send announcement emails to other Hacker Union messages.\r\n</p>\r\n\r\n<p>\r\nEvery member can use it. <strong>However</strong>, there's a catch: each email you send has a \"I appreciate this\" and a \"this is lame\" link. These'll affect your email karma.\r\n</p>\r\n\r\n<p>\r\nIf you send constructive stuff, your emails will reach a large number of members. If you send bad stuff... you might just reach one or two people.\r\n</p>\r\n\r\n<p>\r\nIf you've got anything you'd like to announce, please check out the tool here:\r\n<br />\r\n<a href=\"http://h9n.org/var/www/announce/\">ANNOUNCE</a>\r\n</p>\r\n\r\n<p>\r\n<small>Also, if things are totally broken, please forgive me (and drop me an email at: <a href=\"mailto:theevilgeek@gmail.com\">theevilgeek@gmail.com</a>. I'll fix things super quick.</small>\r\n</p>\r\n\r\n<p>\r\n<small><em>P.S. Feel free to ignore the topics stuff. These let you tag your email to create lightweight interest groups. If you want to unsubscribe from all announcements, you can remove the \"general\" tag from your list of subscriptions (see the announce tool page). If you're especially interested in a topic, you can add those topics to your subscriptions.</em></small>\r\n</p>",
       "timestamp": "2015-07-13T17:33:18.502Z",
       "user": "brandon"
+    },
+    {
+      "id": 1,
+      "topics": [
+        "general",
+        "hacknight"
+      ],
+      "subject": "Hack Night: Tonight at Facebook!",
+      "text": "<pre>\r\nHey all,\r\n\r\nWe're having our weekly hack night TONIGHT (Thursday, July 16) at 6:30 PM - 8:30 PM at Facebook NY:\r\n\r\n2nd Floor\r\n770 Broadway (9th street and Broadway)\r\n\r\nThe official meetup thingie:\r\nhttp://www.meetup.com/nyhacker/events/222805276/\r\n\r\nHope to see you there,\r\n - Brandon\r\n</pre>",
+      "timestamp": "2015-07-16T15:02:36.101Z",
+      "user": "brandon"
     }
   ],
   "users": {
@@ -18,7 +81,7 @@
       "reputation": {
         "good": 102,
         "bad": 0,
-        "total": 55,
+        "total": 97,
         "score": 0.9815705444748299
       },
       "topics": [
@@ -1382,6 +1445,342 @@
       "action": "good"
     },
     "178498ce3a12f0b12cbe82066407c79e8206950f": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "c7ea4289d8472459aa5924de7a8daab1d3779fd1": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "802400e4800f9bb5722837ba071a0bd8ae182c9f": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "b37dda0f53b95339c4d0aa2e72410055c0a1449a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "d512ec2b59e908f656414dbf2ee7d5782a6d189b": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "90ec5afee4daf4439fca730ee99539fbf1f644c4": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "7b074f145538190a15bf2e520c2c2f3a9fa77067": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "87a1549cbfa8ba8ab6c3dacbca3ea120e910926a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "149c0258b7e3826b80ce68c9d13aade8a1e0cacc": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "1ff36cef866cd24bfa2e117716580403c436e055": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "676ddb380102bdd25cbc03cb24d1c49d063b4745": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "4d5eb6cc33cc158cf2f552feb6206c5c0803c444": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "10adec62c27bf529dff79e2493226d8022d76b5e": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "3c1027058bfe5b1a565441431846ead4dd8b6bf0": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "2178c4ddce95b6f971db3c5079cdbd86e7e03a06": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "a19117a94c3a1799292666bf459908b82c8cabba": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "8e7d82f842cc8373710f077a28f0b40019555cb9": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "ec6d700eef7ac1f0ad78d391eac9a078f11b5a03": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "f763dd4be7def5fc8ce35ef8cb9e8e4f804489d5": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "7393ffd47966d3b094f869babc56fdc10b560290": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "67971bc80805dbbea200ab53410d53ce9f1be331": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "af0dff55f19ba1d45a61ae95f09d87e7b588e0c9": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "4f65669307676793132a7a551de34252886c184b": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "0c1f1caa5b2855bafcd9e1a16fdd4dd1a068f417": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "1d9e1ca83e908b3e059be04df2daa9ae3e8fac21": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "07b7eb9201d92e7886c9d6a2291566f5c3217cf0": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "712891a745e1317461bfa1bbc8f6c74d9f13809f": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "1daa25b31753828b30eca52b721a111369ed6b72": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "d02d5894c25b2c60bcf834723925c16233bb8e7a": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "f206ed53b5aab51a3e96f613e4c0128da7b99d7f": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "c97e4950333021d412976d259188c42f8f5650da": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "0d4e46280b02d09505deb3ae79d616536ad64f48": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "928d5151396bcf15b6b790226ad384def16d32a7": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "72e18bd47a7af408eb95fefc5fbbc78aedfcde05": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "09f5375607b41732a89da33d1e7360eb7c44b1d8": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "fe3b5b9739cefbd7a0816a98666bd9c86232a373": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "3273bb8c4c78fd271199b6ccbc2fb341cc1fae33": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "012ea30cd5aae00bca662e798725b556233323c8": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "0eeccb55d690647a0be735b157ada0039f223247": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "affa6ed73dcb23276fe0d5ac58c1c0826b918656": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "f1599019427ae5ff13c67c0765be040c5473fdd6": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "1d36112debf489dfa47d24306e0557abf4b878bd": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "4d570ee932cd664da1ac8fd8bf88e4fa506d78ff": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "f9cba37fbc0c79bb4436ca8b79fdeb97ad2650fd": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "e2a6966a61864f97252df7f1f0ee6c34cdf5cb54": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "0252e81258f8d54ae5a702362d87d375fa4e01ca": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "37340b3d1d81ad01ec77eb314cc1ba826309785c": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "21ded1be83e0a19cabcc91638a42325049e897c8": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "cd271135289708b48b262b38c90b91c9ec880d72": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "91b41a461131a66e91338dac3ce72880205c622d": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "0d6962356cc19b67b50400c6487928cd151b01a0": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "9916996592011b8b210ceed748022e9912b59dab": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "b5e1a276eb4526465f6a38c05e50d766309b2455": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "63b331a833955078ec67fd462c9d88eb08cf7abf": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "6e45b2d463caecfff8fb4d1547b06b04995854b2": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "dc4dfefbf505e6dc907a2316aa49e284cacf78f7": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "712abd7ef6c153fe63917c589e4ed831e4075f47": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "bb4fae7e6385df5b232ace5a83f8f2b9230d9091": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "e865c611a5f7567baa959154993b2acf7ce0a22a": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "038c84d00463e81bdc0405188f649b8af114748f": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "a1cf419d5efaafb1aa0694480dde6727de70f565": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "6c07fd16d30cf4635171cafcbaf1c640ad53dbae": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "06250d125557b583519b9a40629c9b49a95b53a3": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "b74cdfee4d982a035ceaca2c88ff339de654fa45": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "ef9af77188ba3d9da40a32141c9fa9ec26ee2bc1": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "3df0b20546d8d5ef28288ad6936c12a249f614ec": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "fcb883dc21bf8fd008a98c5fb713e31dfa6916f8": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "8bb9de6baf42ca20c2725e0c40dc5a722adf6da5": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "fc8e561dc8c06af4bb3d66b3cbedc51d7ad9fb35": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "c3ed4044afdbbac70a4175b1f49cfd9151cbc5bf": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "fe71358e394595eaad38d852f0810b5d990a1d7f": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "b701a9bd7c11dbee3607c189cda1de7972e3c6a7": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "30cfa266f73b63bce5e05dd0735cf17e00c51a6c": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "b91725ba79b798be09eaf740fb281c8dc0ee9411": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "f78a601fef9049b7c40752591245aba46d964b37": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "7f5aa1cbf88353ff6fd1964616eac8b5c243b29a": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "11f5cdd53d5625d052dbae17bdb46e0a642ca5f1": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "a3b4a0fb151f18be6632c3fc29fbc95962813aa3": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "1ac35ee3a45cb98ddabc51f13f121e15f5ff6c7d": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "bc27e05823cd7b49959e60a50305af6af8e7e5d7": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "553a12507e1f7c4d14d8d6211147f5cb6c247945": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "26a649152d7a38a56734754a484a6f57b983d4d6": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "5883b40e250a72cc88b7c042ae3804b85c5387e2": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "596b3e3fd3cfde5e8367f532296fc3c62f25fa70": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "a965374e92f071e1d5078ea2cca16ea7729f12c1": {
       "user": "brandon",
       "action": "bad"
     }
