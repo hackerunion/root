@@ -1,57 +1,5 @@
 {
-  "spool": [
-    {
-      "id": 1,
-      "ttl": 2,
-      "timestamp": "2015-07-16T15:30:40.868Z",
-      "score": 0.9815705444748299,
-      "users": [
-        "brandon",
-        "viola",
-        "zck",
-        "nastassia",
-        "amitk",
-        "suztomo",
-        "jsstein",
-        "pocket",
-        "emanuele",
-        "elderlord",
-        "arjuns",
-        "tsyuk01",
-        "burlivo",
-        "belimawr",
-        "danielrak",
-        "guest",
-        "dionysios",
-        "b3linda",
-        "zamansky",
-        "sahar",
-        "ahrobe",
-        "dreamchipper",
-        "irvingfb",
-        "faigy",
-        "seanislavski",
-        "server",
-        "pav",
-        "arun",
-        "codemike",
-        "jsonp",
-        "fwuppermann",
-        "rmd6502",
-        "clamb",
-        "saladin",
-        "davidykay",
-        "capac",
-        "kfuchs",
-        "iamrphy",
-        "sballan",
-        "ricka",
-        "smitha",
-        "toby",
-        "dberg"
-      ]
-    }
-  ],
+  "spool": [],
   "announcements": [
     {
       "id": 0,
@@ -79,10 +27,10 @@
   "users": {
     "brandon": {
       "reputation": {
-        "good": 102,
+        "good": 103,
         "bad": 0,
-        "total": 97,
-        "score": 0.9815705444748299
+        "total": 113,
+        "score": 0.9817457703738115
       },
       "topics": [
         "general",
@@ -696,6 +644,39 @@
       ]
     },
     "b3linda": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "popcat": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "rfaroul": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "shreyaskulkarni": {
       "reputation": {
         "good": 0,
         "bad": 0,
@@ -1781,6 +1762,130 @@
       "action": "good"
     },
     "a965374e92f071e1d5078ea2cca16ea7729f12c1": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "957dbb2266b678986a53b477bfad8162a25c09de": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "470ef91c50028e0d4e3910eca9343ff5bfa0e016": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "a69874352183f2abd27d3955c264d8a330edb1f4": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "032355847842dcd1f746e25d1d2baccc88bf3fdc": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "3f368fc36501bdd88086783e6afb24bb98338dbd": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "7091b43b340d79ed36ee08cd553efd0c474ad9c2": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "fe3ee1b9e74607029043a02158fff5af26420d41": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "4e3c420a49fdf6a03b9319db73bc839902c1f48c": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "dfbb0546faa57f2bec94feb9326c255a5ee04060": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "b5ba448c91f3be3679818208b184df1f09450dcf": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "f633933b27da05872461c0264c5c54f6f236d048": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "746586ee1c41651d846631cf4ff82fc024d53d5a": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "2228b0afd435b3c3d003bc658b2fe4d52fc94d39": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "818b98cc2ae4d5d05cbc586fc39b2ec867786baf": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "62b74c0f0b8614559524e89188c42b51b2bf1523": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "7ecb35efe37576c3a6e794a65fd7572e8a9edaec": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "5ccd9cec9d9786322640edcdf989dd71764681db": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "dc4a1a15e440a7815e2a85f2e5a9d4cd022174e7": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "8db95c87488aacfefa26f135cc7d083f1aa0c15b": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "5ec9f75ea44585496a071ea1a1383da2624f1946": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "37b8f44d3789453f1155d0ece254dfffb0ddbb7e": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "b05c81e1f219ce9b3cb232d5ae6be4ac449e9030": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "ea8de50b9dc3749020df807cd7dc8ed5178d917a": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "f505025c895a77541997b45e72491db43bf54199": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "5701b8fc2c27372917bcbabe0fd7038dc1b89a01": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "c2e8e15bd4e4cd37722ddfe3855ebb937271502e": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "cec01c621cf0f8ef45945a6754f6954229b60772": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "7ef9958b758886390fba97f9f841c01c403d2119": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "529bf12de58838a3ec97d75da68b0e1ec9a610c9": {
+      "user": "brandon",
+      "action": "bad"
+    },
+    "bfea816711eb0fd15491876eed5632b67dd3a286": {
+      "user": "brandon",
+      "action": "good"
+    },
+    "93a3ced0401c1416a09f29c7a0bc32aa40025d44": {
       "user": "brandon",
       "action": "bad"
     }
