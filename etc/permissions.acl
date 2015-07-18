@@ -11792,6 +11792,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/movarrin
+# owner: movarrin
+# group: movarrin
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/movarrin/README
+# owner: movarrin
+# group: movarrin
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/movarrin/sandbox
+# owner: movarrin
+# group: movarrin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/movarrin/sandbox/README
+# owner: movarrin
+# group: movarrin
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/movarrin/index.cgi
+# owner: movarrin
+# group: movarrin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/movarrin/.ssh
+# owner: movarrin
+# group: movarrin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/movarrin/.ssh/authorized_keys
+# owner: movarrin
+# group: movarrin
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/davidykay
 # owner: davidykay
 # group: davidykay
@@ -12610,6 +12659,55 @@ other::r--
 # group: guest
 user::rw-
 group::r--
+other::r--
+
+# file: /srv/home/kopiter
+# owner: kopiter
+# group: kopiter
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/kopiter/README
+# owner: kopiter
+# group: kopiter
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/kopiter/sandbox
+# owner: kopiter
+# group: kopiter
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/kopiter/sandbox/README
+# owner: kopiter
+# group: kopiter
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/kopiter/index.cgi
+# owner: kopiter
+# group: kopiter
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/kopiter/.ssh
+# owner: kopiter
+# group: kopiter
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/kopiter/.ssh/authorized_keys
+# owner: kopiter
+# group: kopiter
+user::rw-
+group::rw-
 other::r--
 
 # file: /srv/home/jeremy
