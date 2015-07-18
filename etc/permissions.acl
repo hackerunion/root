@@ -2146,6 +2146,55 @@ user::rwx
 group::rwx
 other::r-x
 
+# file: /srv/home/vasilyrud
+# owner: vasilyrud
+# group: vasilyrud
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/vasilyrud/README
+# owner: vasilyrud
+# group: vasilyrud
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/vasilyrud/sandbox
+# owner: vasilyrud
+# group: vasilyrud
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/vasilyrud/sandbox/README
+# owner: vasilyrud
+# group: vasilyrud
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/vasilyrud/index.cgi
+# owner: vasilyrud
+# group: vasilyrud
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/vasilyrud/.ssh
+# owner: vasilyrud
+# group: vasilyrud
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/vasilyrud/.ssh/authorized_keys
+# owner: vasilyrud
+# group: vasilyrud
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/tsyuk01
 # owner: tsyuk01
 # group: tsyuk01
@@ -11323,6 +11372,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/fbmore
+# owner: fbmore
+# group: fbmore
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/fbmore/README
+# owner: fbmore
+# group: fbmore
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/fbmore/sandbox
+# owner: fbmore
+# group: fbmore
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fbmore/sandbox/README
+# owner: fbmore
+# group: fbmore
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/fbmore/index.cgi
+# owner: fbmore
+# group: fbmore
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fbmore/.ssh
+# owner: fbmore
+# group: fbmore
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/fbmore/.ssh/authorized_keys
+# owner: fbmore
+# group: fbmore
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/USAGE.txt
 # owner: 500
 # group: 497
@@ -12755,6 +12853,55 @@ other::r-x
 # file: /srv/home/jeremy/.ssh/authorized_keys
 # owner: jeremy
 # group: jeremy
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/andywong
+# owner: andywong
+# group: andywong
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/andywong/README
+# owner: andywong
+# group: andywong
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/andywong/sandbox
+# owner: andywong
+# group: andywong
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/andywong/sandbox/README
+# owner: andywong
+# group: andywong
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/andywong/index.cgi
+# owner: andywong
+# group: andywong
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/andywong/.ssh
+# owner: andywong
+# group: andywong
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/andywong/.ssh/authorized_keys
+# owner: andywong
+# group: andywong
 user::rw-
 group::rw-
 other::r--
