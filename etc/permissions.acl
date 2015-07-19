@@ -3441,13 +3441,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/stack/.index.cgi.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/sandbox/stack/index.cgi
 # owner: server
 # group: server

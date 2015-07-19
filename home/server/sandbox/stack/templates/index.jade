@@ -12,7 +12,7 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
   body
-    #stack
+    #stack(tabindex="1")
     #tools
       ul
         li
@@ -21,3 +21,19 @@ html(lang='en')
           | 
           input(type="radio", name="mode", value="edit")
           |  Edit
+      ul
+        li
+          input(type="text", name="fg", value="#000")
+          input(type="submit", value="Set Foreground", id="setfg")
+        li
+          input(type="text", name="bg", value="#000")
+          input(type="submit", value="Set Background", id="setbg")
+        li
+          input(type="text", name="go", value="")
+          input(type="submit", value="Set Link", id="setgo")
+        li
+          input(type="submit", value="Shift...", id="shift")
+          input(type="text", name="x", value="0")
+          input(type="text", name="y", value="0")
+        li
+          input(type="submit", value="Clipboard...", id="clipboard")

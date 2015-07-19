@@ -3,10 +3,21 @@ body {
 
 #stack {
   font-family: monospace;
+  outline: 0;
+}
+
+#stack .cell {
+  white-space: pre;
+  min-width: 0.5em;
+}
+
+#stack .cell.go {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #stack.edit .cell {
-  cursor: cell;
+  cursor: cell !important;
 }
 
 #stack.edit .card {
@@ -27,4 +38,14 @@ body {
 #stack.edit .cell:hover {
   background: #000 !important;
   color: #fff !important;
+}
+
+#stack.edit .cell.cursor {
+  background: #0f0 !important;
+  color: #000 !important;
+}
+
+textarea.mirror {
+  white-space: pre;
+  font-family: monospace;
 }
