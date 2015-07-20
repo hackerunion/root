@@ -390,7 +390,7 @@ $(function() {
     });
     
     $('#savestack', $t).click(function() {
-      var url = $("[name=card]", $t).val().trim();
+      var url = $("[name=stack]", $t).val().trim();
 
       if (!confirm("Save your changes?")) {
         return false;
@@ -405,11 +405,11 @@ $(function() {
         error: function(xhr, type){
           alert("Couldn't save stack!")
         }
-      })
+      });
     });
 
     $('#loadstack', $t).click(function() {
-      var url = $("[name=card]", $t).val().trim();
+      var url = $("[name=stack]", $t).val().trim();
 
       if (!confirm("Load a new stack?")) {
         return false;
@@ -591,18 +591,21 @@ $(function() {
       return false;
     });
 
-    $('#clipboard', $t).click(function() {
+    $('#gettext', $t).click(function() {
       var $io = $('[name=io]', $t);
+      $io.val(getString($s, stack));
+    });
 
-      if (!$io.val().trim()) {
-        $io.val(getString($s, stack));
+    $('#settext', $t).click(function() {
+      var $io = $('[name=io]', $t);
+      var $active = getActive($s);
+
+      if (!$active.length) {
         return;
       }
-
-      if (!$('.cell.cursor', $s).length) {
-        $('.cell', $s).first().dblclick();
-      }
       
+      $active.first().dblclick();
+
       putString($s, $io.val());
     });
     
