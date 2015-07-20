@@ -14,26 +14,93 @@ html(lang='en')
   body
     #stack(tabindex="1")
     #tools
+
       ul
         li
-          input(type="radio", name="mode", value="view", checked) 
-          |  View
-          | 
-          input(type="radio", name="mode", value="edit")
-          |  Edit
-      ul
+          select(name="mode")
+            option(value="view", selected) View
+            option(value="edit") Edit
+        
         li
+          hr
+
+        li
+          strong Navigation
+
+        li
+          select(name="card")
+        
+        li.edit
+          input(type="submit", value="New Card", id="newcard")
+          input(type="submit", value="Delete Card", id="deletecard")
+
+        li
+          hr
+
+        li
+          strong File
+
+        li
+          input(type="text", name="stack", value="/home/server/stack1.json")
+          input(type="submit", value="Load Stack", id="loadstack")
+          input(type="submit", value="Save Stack", id="savestack")
+        
+        li.edit
+          hr
+
+        li.edit
+          strong Drawing
+
+        li.edit
           input(type="text", name="fg", value="#000")
           input(type="submit", value="Set Foreground", id="setfg")
-        li
+
+        li.edit
           input(type="text", name="bg", value="#000")
           input(type="submit", value="Set Background", id="setbg")
-        li
+
+        li.edit
           input(type="text", name="go", value="")
           input(type="submit", value="Set Link", id="setgo")
-        li
-          input(type="submit", value="Shift...", id="shift")
+
+        li.edit
           input(type="text", name="x", value="0")
           input(type="text", name="y", value="0")
-        li
-          input(type="submit", value="Clipboard...", id="clipboard")
+          input(type="submit", value="Shift", id="shift")
+
+        li.edit
+          textarea(name="io")
+          input(type="submit", value="I/O", id="clipboard")
+        
+        li.edit
+          hr
+        
+        li.edit
+          strong Metadata
+        
+        li.edit
+          select(name="metadata")
+            option(value="card", selected) Card
+            option(value="home") Home
+            option(value="stack") Stack
+
+        li.edit
+          input(type="text", name="name")
+          input(type="submit", value="Set Name", id="setname")
+
+        li.edit
+          hr
+        
+        li.edit
+          strong Code
+
+        li.edit
+          select(name="code")
+            option(value="cell", selected) Cell
+            option(value="card") Card
+            option(value="stack") Stack
+
+        li.edit
+          textarea(name="source")
+          input(type="submit", value="Set Code", id="setcode")
+          input(type="submit", value="Get Code", id="getcode")

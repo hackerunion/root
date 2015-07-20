@@ -92,7 +92,8 @@
         "summary": "Build Stuff and Learn Together",
         "details": "<strong>Join us for a Hack Night:</strong>\n1-2 hours of building cool stuff with cool people... and that's it.\n\nIt doesn't matter what you're building or what tech you're using <em>(or if you just want to kick back and discuss Bloodborne)</em> --\n\nif hanging out while working on a project sounds fun, we hope you'll join us.\n\n<small><strong>Be the NY Tech Meetup's Hack of the Month!</strong>\nPresent your project during the hack night to be considered for the NYTM Hack of the Month demo.</small>",
         "rsvp": [
-            "user:brandon"
+            "user:brandon",
+            "email:mterenzio@gmail.com"
         ],
         "capacity": 70,
         "duration": 10800,

@@ -1,4 +1,8 @@
 $(function() {
+  var dump = function(v) {
+    console.log(JSON.stringify(v, null, 4));
+  };
+
   var intersectPoint = function(X, Y, x, y, w, h) {
     return X >= x && X <= (x + w) && Y >= y && Y <= (y + h);
   };
@@ -50,26 +54,26 @@ $(function() {
     return elements;
   }
 
-  var navigate = function(stack, go) {
-    console.log("GO:", go);
+  var navigate = function($s, $t, stack, go) {
     if (go in stack.cards) {
-      // render card + push history
+      return navigateCard($s, $t, stack, go);
     }
 
     // redirect to web url
+    window.open(go, '_blank');
   };
   
   var is_color = function(s) {
     return /^#([a-f0-9]{3}|[a-f0-9]{6})$/i.test(s);
   };
 
-  var renderCard = function($s, stack, card){
+  var renderCard = function($s, $t, stack, card){
     var $tr;
     var $card = $("<table />").addClass("card");
     var handler = function(r, c, cell) {
       return function() {
         if (!isEditMode($s) && cell.go) {
-          navigate(stack, cell.go);
+          navigate($s, $t, stack, cell.go);
         }
       }
     };
@@ -105,8 +109,8 @@ $(function() {
     }
   };
 
-  var renderStack = function($s, stack) {
-    renderCard($s, stack, stack.cards[stack.card]);
+  var renderStack = function($s, $t, stack) {
+    renderCard($s, $t, stack, stack.cards[stack.card]);
 
     if (stack.f) {
       stack.f($s, stack);
@@ -114,11 +118,21 @@ $(function() {
   };
 
   var repaint = function($s, $t, stack) {
-    var is_edit = isEditMode($s);
+    toggleMode($s, $t, stack);
+    renderCard($s, $t, stack, stack.cards[stack.card]);
+    toggleMode($s, $t, stack);
+  };
 
-    toggleMode($s, $t, stack, is_edit);
-    renderCard($s, stack, stack.cards[stack.card]);
-    toggleMode($s, $t, stack, is_edit);
+  var navigateCard = function($s, $t, stack, card) {
+    stack.card = card;
+    repaint($s, $t, stack);
+    refreshTools($s, $t, stack);
+  };
+
+  var navigateStack = function($s, $t, stack) {
+    stack.card = stack.home;
+    repaint($s, $t, stack);
+    refreshTools($s, $t, stack);
   };
 
   var toggleMode = function($s, $t, stack, allow) {
@@ -161,6 +175,19 @@ $(function() {
     };
   };
 
+  var addCard = function(stack, card) {
+    stack.cards[card.name] = card;
+  };
+
+  var removeCard = function(stack, name) {
+    delete stack.cards[name];
+    
+    var next = _.first(_.values(stack.cards)).name;
+
+    stack.card = stack.card == name ? next : stack.card;
+    stack.home = stack.home == name ? next : stack.home;
+  };
+
   var saveStack = function(stack) {
     return JSON.stringify(stack, null, 2);
   };
@@ -175,7 +202,7 @@ $(function() {
       $('.active, .selected, .cursor, .mark', $s).removeClass('active selected cursor mark');
       $s.removeClass('selected cursor');
     };
-
+    
     // Avoid unsaved changes
     window.onbeforeunload = function(e) {
       e = e || window.event;
@@ -184,7 +211,7 @@ $(function() {
       e.returnValue = 'You have unsaved changes!';
     };
 
-    $s.addClass("edit");
+    $s.add($t).addClass('edit');
     
     $('.cell', $s).on('click', function(e) {
       clear();
@@ -196,8 +223,8 @@ $(function() {
     });
 
     $s.on('mousedown', function(e) {
-      sx = e.clientX;
-      sy = e.clientY;
+      sx = e.pageX;
+      sy = e.pageY;
       drag = true;
       clear(); 
     });
@@ -207,8 +234,8 @@ $(function() {
         return;
       }
 
-      ex = e.clientX;
-      ey = e.clientY;
+      ex = e.pageX;
+      ey = e.pageY;
       
       $('.cell', $s).removeClass('active');
 
@@ -218,8 +245,8 @@ $(function() {
     });
 
     $s.on('mouseup', function(e) {
-      ex = e.clientX;
-      ey = e.clientY;
+      ex = e.pageX;
+      ey = e.pageY;
       drag = false;
       
       $('.cell', $s).removeClass('active');
@@ -304,7 +331,7 @@ $(function() {
     var $active = getActive($s);
     var result = [];
 
-    if (!$active) {
+    if (!$active.length) {
       return result;
     }
 
@@ -324,11 +351,11 @@ $(function() {
         return $s.find('.cursor.cell');
       }
 
-      return null;
+      return $();
   };
 
   var enableView = function($s, $t, stack) {
-    $s.removeClass("edit");
+    $s.add($t).removeClass('edit');
     $s.off('mousedown mouseup mousemove click keydown keypress');
   };
 
@@ -336,16 +363,164 @@ $(function() {
     return $s.hasClass('edit');
   };
 
+  var refreshTools = function($s, $t, stack) {
+    var $cards = $('[name=card]', $t).empty();
+    
+    _.each(stack.cards, function(card, name) {
+      var $o = $('<option />').attr('value', name).text(name);
+      $cards.append(name == stack.card ? $o.attr('selected', 'selected') : $o);
+    });
+  };
+
   var enableTools = function($s, $t, stack) {
     $("[name=mode]", $t).change(function() {
       var edit = $(this).val() == "edit";
-      
+      refreshTools($s, $t, stack);
+
       if (edit) {
         enableEdit($s, $t, stack);
         return;
       }
       
       enableView($s, $t, stack);
+    });
+    
+    $('[name=card]', $t).change(function() {
+      navigateCard($s, $t, stack, $(this).val());
+    });
+    
+    $('#savestack', $t).click(function() {
+      var url = $("[name=card]", $t).val().trim();
+
+      if (!confirm("Save your changes?")) {
+        return false;
+      }
+    });
+
+    $('#loadstack', $t).click(function() {
+      var url = $("[name=card]", $t).val().trim();
+
+      if (!confirm("Load a new stack?")) {
+        return false;
+      }
+
+      $.getJSON(url, function(stack) {
+        navigateStack($s, $t, stack);
+      });
+    });
+
+    $('#newcard', $t).click(function() {
+      var name;
+      
+      for(var i=0;; i++) {
+        name = 'card' + i;
+
+        if (!(name in stack.cards)) {
+          break;
+        }
+      }
+
+      addCard(stack, createBlankCard(name));
+      navigateCard($s, $t, stack, name);
+    });
+
+    $('#deletecard', $t).click(function() {
+      if (!confirm("Delete \"" + stack.card + "\"?")) {
+        return false;
+      }
+
+      if (_.keys(stack.cards).length == 1) {
+        alert("Cannot delete last card!");
+        return false;
+      }
+
+      removeCard(stack, stack.card);
+      navigateCard($s, $t, stack, stack.home);
+    });
+
+    $('#setname', $t).click(function() {
+      var $active = getActive($s);
+      var mode = $("[name=metadata]", $t).val().trim();
+      var name = $("[name=name]", $t).val().trim();
+      
+      switch(mode) {
+        case 'card':
+          var card = stack.cards[stack.card];
+          var old = card.name;
+
+          if (name in stack.cards) {
+            alert("A card with that name already exists.");
+            break;
+          }
+          
+          card.name = name;
+          stack.card = name;
+          stack.home = stack.home == old ? name : stack.home;
+          stack.cards[name] = card
+
+          delete stack.cards[old];
+
+          refreshTools($s, $t, stack);
+          break;
+        
+        case 'home':
+          if (!(name in stack.cards)) {
+            alert("A card with that name doesn't exists.");
+            break;
+          }
+
+          stack.home = name;
+          break;
+
+        case 'stack':
+          stack.name = name;
+          break;
+      }
+
+      return false;
+    });
+    
+    var getCodeObjs = function($s, $t, stack) {
+      var $active = getActive($s);
+      var mode = $("[name=code]", $t).val().trim();
+
+      switch(mode) {
+        case 'cell':
+          return getActiveData($s, stack);
+
+        case 'card':
+          return [stack.cards[stack.card]];
+
+        case 'stack':
+          return [stack];
+      }
+    };
+
+    $('#setcode', $t).click(function() {
+      var source = $("[name=source]", $t).val().trim();
+      var objs = getCodeObjs($s, $t, stack);
+      
+      try {
+        objs.forEach(function(obj) {
+          obj.f = eval("(" + source + ")");
+        });
+      } catch(e) {
+        alert("Your code is broken: " + e.message);
+      }
+
+      return false;
+    });
+
+    $('#getcode', $t).click(function() {
+      var source = $("[name=source]", $t);
+      var objs = getCodeObjs($s, $t, stack);
+       
+      objs.forEach(function(obj) {
+        source.val(obj.f ? obj.f.toString() : "");
+        return false;
+      });
+
+      return false;
     });
 
     $('#setfg', $t).click(function() {
@@ -382,7 +557,7 @@ $(function() {
       var $active = getActive($s);
       var go = $("[name=go]", $t).val().trim();
       
-      if ($active) {
+      if ($active.length) {
         if (go) {
           $active.addClass("go");
         } else {
@@ -398,20 +573,25 @@ $(function() {
     });
 
     $('#clipboard', $t).click(function() {
-      var data = prompt("Copy/paste raw text here:", getString($s, stack));
+      var $io = $('[name=io]', $t);
+
+      if (!$io.val().trim()) {
+        $io.val(getString($s, stack));
+        return;
+      }
 
       if (!$('.cell.cursor', $s).length) {
         $('.cell', $s).first().dblclick();
       }
       
-      putString($s, data);
+      putString($s, $io.val());
     });
     
     $('#shift', $t).click(function() {
       var $active = getActive($s);
 
-      var co = parseInt($('[name=x]', $t).val());
-      var ro = parseInt($('[name=y]', $t).val());
+      var co = -parseInt($('[name=x]', $t).val());
+      var ro = -parseInt($('[name=y]', $t).val());
   
       var data = stack.cards[stack.card].data;
 
@@ -423,15 +603,52 @@ $(function() {
       var w = c2 - c1 + 1;
       var h = r2 - r1 + 1;
 
-      //  ensure that offset is positive
-      co = (w + (co % w)) % w;
-      ro = (h + (ro % h)) % h;
-      
+      var remap = function(c, r) {
+        return [(w + (c % w)) % w, (h + (r % h)) % h];
+      };
 
+      var cache = function(tmp, loc, obj) {
+        var r = loc[1], c = loc[0];
+
+        if (!tmp[r]) {
+          tmp[r] = [];
+        }
+
+        if (!tmp[r][c]) {
+          tmp[r][c] = obj;
+        }
+
+        return tmp[r][c];
+      };
+
+      var getloc = function(data, loc) {
+        return data[loc[1]][loc[0]];
+      };
+
+      var setloc = function(data, loc, val) {
+        data[loc[1]][loc[0]] = val;
+        return val;
+      };
+      
+      tmp = [];
+
+      for (var y=0; y<h; y++) {
+        for (var x=0; x<w; x++) {
+          var offset = remap(co + x, ro + y);
+          var pre = [c1 + x, r1 + y];
+          var post = [c1 + offset[0], r1 + offset[1]];
+
+          var cur = cache(tmp, pre, getloc(data, pre));
+          var nxt = cache(tmp, post, getloc(data, post));
+          
+          setloc(data, pre, nxt);
+        }
+      }
+      
       repaint($s, $t, stack);
     });
 
-    $("[name=mode][value=view]").change();
+    $("[name=mode]").change();
   };
 
   var getString = function($s, stack) {
@@ -488,7 +705,9 @@ $(function() {
     var data = [];
     var fg = fg || "#000";
     var bg = bg || "#eee";
-    
+    var rows = rows || 24;
+    var cols = cols || 80;
+
     for (var row=[], r=0; r<rows; row=[], r++) {
       for (var c=0; c<cols; c++) {
         row.push(createCell(fg, bg, " "));
@@ -518,7 +737,7 @@ $(function() {
       randomCard
     ]);
     
-    renderStack($stack, testStack);
+    renderStack($stack, $tools, testStack);
     enableTools($stack, $tools, testStack);
   };
   

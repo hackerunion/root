@@ -4,6 +4,7 @@ body {
 #stack {
   font-family: monospace;
   outline: 0;
+  float: left;
 }
 
 #stack .cell {
@@ -45,7 +46,35 @@ body {
   color: #000 !important;
 }
 
-textarea.mirror {
+#tools {
+  float: left;
+}
+
+#tools textarea,
+#tools input {
+  margin-right: 5px;
+}
+
+#tools textarea {
+  vertical-align: bottom;
   white-space: pre;
   font-family: monospace;
+}
+
+#tools li.edit {
+  display: none;
+}
+
+#tools.edit li.edit {
+  display: block;
+}
+
+#tools li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+#tools li hr {
+  width: 400px;
+  margin: 20px 0px 20px -10px;
 }
