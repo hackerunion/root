@@ -7,6 +7,11 @@ if [ -z "$SERVER_SECRET" ]; then
   exit 1
 fi
 
+if [ -n "$SERVER_SECRET_ROTATE" -a \( "$SERVER_SECRET" != "$SERVER_SECRET_ROTATE" \) ]; then
+  echo "Rotate: decrypt using old key, encrypt using new key."
+  SERVER_SECRET="$SERVER_SECRET_ROTATE"
+fi
+
 for FILE in `private "$SERVER_ROOT"`; do
   if file "$FILE" | grep -ivq 'PGP'; then
     continue
