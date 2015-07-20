@@ -3406,13 +3406,6 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/stack/templates/.index.jade.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/sandbox/stack/templates/index.jade
 # owner: server
 # group: server
@@ -3434,13 +3427,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/stack/js/.app.js.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/sandbox/stack/index.cgi
 # owner: server
 # group: server
@@ -3454,13 +3440,6 @@ other::r-x
 user::rwx
 group::r-x
 other::r-x
-
-# file: /srv/home/server/sandbox/stack/css/.style.css.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
 
 # file: /srv/home/server/sandbox/stack/css/style.css
 # owner: server

@@ -395,6 +395,17 @@ $(function() {
       if (!confirm("Save your changes?")) {
         return false;
       }
+
+      $.ajax({
+        type: 'POST',
+        data: { 'stack': saveStack(stack), 'url': url },
+        success: function(result){
+          alert("Changes saved!");
+        },
+        error: function(xhr, type){
+          alert("Couldn't save stack!")
+        }
+      })
     });
 
     $('#loadstack', $t).click(function() {
@@ -404,8 +415,16 @@ $(function() {
         return false;
       }
 
-      $.getJSON(url, function(stack) {
-        navigateStack($s, $t, stack);
+      $.ajax({
+        type: 'GET',
+        url: url,
+        dataType: 'json',
+        success: function(stack){
+          navigateStack($s, $t, stack);
+        },
+        error: function(xhr, type){
+          alert("Couldn't load stack!")
+        }
       });
     });
 
