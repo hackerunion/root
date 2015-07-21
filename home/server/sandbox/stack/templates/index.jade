@@ -31,6 +31,8 @@ html(lang='en')
           select(name="card")
         
         li.edit
+          input(type="text", name="rows", value="24").numeric
+          input(type="text", name="cols", value="80").numeric
           input(type="submit", value="New Card", id="newcard")
           input(type="submit", value="Delete Card", id="deletecard")
 
@@ -38,12 +40,23 @@ html(lang='en')
           hr
 
         li
-          strong File
+          strong Server
 
         li
           input(type="text", name="stack", value="/home/server/stack1.json")
-          input(type="submit", value="Load Stack", id="loadstack")
           input(type="submit", value="Save Stack", id="savestack")
+          input(type="submit", value="Load Stack", id="loadstack")
+        
+        li.edit
+          hr
+
+        li.edit
+          strong JSON
+
+        li.edit
+          textarea(name="json")
+          input(type="submit", value="Export Stack", id="exportstack")
+          input(type="submit", value="Import Stack", id="importstack")
         
         li.edit
           hr
@@ -64,13 +77,14 @@ html(lang='en')
           input(type="submit", value="Set Link", id="setgo")
 
         li.edit
-          input(type="text", name="x", value="0")
-          input(type="text", name="y", value="0")
+          input(type="text", name="x", value="0").numeric
+          input(type="text", name="y", value="0").numeric
           input(type="submit", value="Shift", id="shift")
 
         li.edit
           textarea(name="io")
-          input(type="submit", value="I/O", id="clipboard")
+          input(type="submit", value="Set Text", id="settext")
+          input(type="submit", value="Get Text", id="gettext")
         
         li.edit
           hr

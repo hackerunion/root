@@ -55,6 +55,10 @@ body {
   margin-right: 5px;
 }
 
+#tools input.numeric {
+  width: 30px;
+}
+
 #tools textarea {
   vertical-align: bottom;
   white-space: pre;
