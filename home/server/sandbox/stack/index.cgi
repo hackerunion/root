@@ -10,12 +10,18 @@ var _ = require('/srv/lib/js/lodash');
 var body = require('/srv/lib/js/body');
 
 var handlePostAPI = function() {
-  console.log("Status: 200");
-  console.log("Content-Type: application/json");
-  console.log("");
-  console.log(JSON.stringify({ 
-    'hello': 'world'
-  })); 
+  body.parse(process.stdin, function(err, qs) {
+
+    console.log("Status: 200");
+    console.log("Content-Type: application/json");
+    console.log("");
+    
+    console.log(JSON.stringify({ 
+      'hello': 'world',
+      'err': err,
+      'qs': !!qs
+    })); 
+  }, 1e7);
 };
 
 if (process.env.REQUEST_METHOD == "POST") {
