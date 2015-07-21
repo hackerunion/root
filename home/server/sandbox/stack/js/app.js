@@ -188,8 +188,8 @@ $(function() {
     stack.home = stack.home == name ? next : stack.home;
   };
 
-  var saveStack = function(stack) {
-    return JSON.stringify(stack, null, 2);
+  var saveStack = function(stack, pretty) {
+    return JSON.stringify(stack, null, pretty ? 2 : 0);
   };
 
   var loadStack = function(s) {
@@ -427,10 +427,30 @@ $(function() {
         }
       });
     });
+    
+    $('#importstack', $t).click(function() {
+      var json = $("[name=json]").val();
+
+      if (!confirm("Load a new stack?")) {
+        return false;
+      }
+
+      try {
+        navigateStack($s, $t, JSON.parse(json));
+      } catch (e) {
+        alert("Stack not imported: " + e.message);
+      }
+    });
+    
+    $('#exportstack', $t).click(function() {
+      $("[name=json]").val(saveStack(stack));
+    });
 
     $('#newcard', $t).click(function() {
       var name;
-      
+      var rows = parseInt($('[name=rows]', $t).val());
+      var cols = parseInt($('[name=cols]', $t).val());
+
       for(var i=0;; i++) {
         name = 'card' + i;
 
@@ -439,7 +459,7 @@ $(function() {
         }
       }
 
-      addCard(stack, createBlankCard(name));
+      addCard(stack, createBlankCard(name, rows, cols));
       navigateCard($s, $t, stack, name);
     });
 
