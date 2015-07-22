@@ -6,7 +6,17 @@ html(lang='en')
     script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
     script(type='text/javascript', src='#{path}/js/app.js')
     script(type='text/javascript').
-      // js here
+      $(function() {
+        var begin = function() {
+          if (!window._main) {
+            return setTimeout(100, begin);
+          }
+
+          window._main(!{stack});
+        };
+
+        begin();
+      });
 
     link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
     link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
@@ -43,7 +53,7 @@ html(lang='en')
           strong Server
 
         li
-          input(type="text", name="stack", value="/home/server/stack1.json")
+          input(type="text", name="stack", value=url)
           input(type="submit", value="Save Stack", id="savestack")
           input(type="submit", value="Load Stack", id="loadstack")
         

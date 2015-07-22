@@ -3,6 +3,15 @@ $(function() {
     console.log(JSON.stringify(v, null, 4));
   };
 
+  var getModifiedTime = function() {
+    return window.stackModifiedTime;
+  };
+
+  var bumpModifiedTime = function() {
+    window.stackModifiedTime = (new Date()).getTime();
+    return window.stackModifiedTime;
+  };
+
   var intersectPoint = function(X, Y, x, y, w, h) {
     return X >= x && X <= (x + w) && Y >= y && Y <= (y + h);
   };
@@ -117,11 +126,21 @@ $(function() {
     }
   };
 
-  var repaint = function($s, $t, stack) {
+  var repaint = function($s, $t, stack, init) {
     toggleMode($s, $t, stack);
-    renderCard($s, $t, stack, stack.cards[stack.card]);
+
+    if (init) {
+      renderStack($s, $t, stack);
+    } else {
+      renderCard($s, $t, stack, stack.cards[stack.card]);
+    }
+
     toggleMode($s, $t, stack);
   };
+
+  var paint = function($s, $t, stack) {
+    return repaint($s, $t, stack, true);
+  }
 
   var navigateCard = function($s, $t, stack, card) {
     stack.card = card;
@@ -130,9 +149,11 @@ $(function() {
   };
 
   var navigateStack = function($s, $t, stack) {
+    resetTools($s, $t, stack);
     stack.card = stack.home;
-    repaint($s, $t, stack);
-    refreshTools($s, $t, stack);
+    paint($s, $t, stack);
+    initTools($s, $t, stack);
+    bumpModifiedTime();
   };
 
   var toggleMode = function($s, $t, stack, allow) {
@@ -201,14 +222,6 @@ $(function() {
     var clear = function() { 
       $('.active, .selected, .cursor, .mark', $s).removeClass('active selected cursor mark');
       $s.removeClass('selected cursor');
-    };
-    
-    // Avoid unsaved changes
-    window.onbeforeunload = function(e) {
-      e = e || window.event;
-      e.preventDefault = true;
-      e.cancelBubble = true;
-      e.returnValue = 'You have unsaved changes!';
     };
 
     $s.add($t).addClass('edit');
@@ -372,13 +385,27 @@ $(function() {
     });
   };
 
-  var enableTools = function($s, $t, stack) {
+  var resetTools = function($s, $t, stack) {
+    $('[name=mode], [name=card]', $t).off('change');
+    $('#shift, #setgo, #gettext, #settext, #savestack, #loadstack, #importstack, #exportstack, #newcard, #deletecard, #setname, #setcode, #getcode, #setfg, #setbg', $t).off('click');
+  }
+
+  var initTools = function($s, $t, stack) {
     $("[name=mode]", $t).change(function() {
       var edit = $(this).val() == "edit";
       refreshTools($s, $t, stack);
 
       if (edit) {
         enableEdit($s, $t, stack);
+    
+        // Avoid unsaved changes
+        window.onbeforeunload = function(e) {
+          e = e || window.event;
+          e.preventDefault = true;
+          e.cancelBubble = true;
+          e.returnValue = 'You have unsaved changes!';
+        };
+
         return;
       }
       
@@ -398,8 +425,14 @@ $(function() {
 
       $.ajax({
         type: 'POST',
-        data: { 'stack': saveStack(stack), 'url': url },
+        data: { 'stack': saveStack(stack), 'url': url, 'timestamp': getModifiedTime() },
         success: function(result){
+          if (result.error) {
+            alert("Couldn't save stack: " + result.error);
+            return;
+          }
+          
+          bumpModifiedTime();
           alert("Changes saved!");
         },
         error: function(xhr, type){
@@ -421,6 +454,7 @@ $(function() {
         dataType: 'json',
         success: function(stack){
           navigateStack($s, $t, stack);
+          alert("Stack loaded!");
         },
         error: function(xhr, type){
           alert("Couldn't load stack!")
@@ -437,6 +471,7 @@ $(function() {
 
       try {
         navigateStack($s, $t, JSON.parse(json));
+        alert("Stack imported!");
       } catch (e) {
         alert("Stack not imported: " + e.message);
       }
@@ -761,27 +796,15 @@ $(function() {
     return createCard(name, data);
   };
 
-  var main = function() {
+  var main = function(stack) {
     var $stack = $("#stack");
     var $tools = $("#tools");
-
-    var testCard = createCard('card0', [
-      [ createCell('#fff', '#f00', '1', 'card1'), createCell('#000', '#0f0', '2', 'card2') ],
-      [ createCell('#000', '#ff0', '3', 'card3'), createCell('#fff', '#00f', '4', 'card4') ]
-    ]);
-
-    var randomCard = createRandomCard('card1', 24, 80);
-    var blankCard = createBlankCard('card2', 24, 80);
-
-    var testStack = createStack('stack', 'card2', [
-      blankCard,
-      testCard,
-      randomCard
-    ]);
     
-    renderStack($stack, $tools, testStack);
-    enableTools($stack, $tools, testStack);
+    var blankCard = createBlankCard('card0', 24, 80);
+    var stack = stack || createStack('stack', 'card0', [ blankCard ]);
+    
+    navigateStack($stack, $tools, stack);
   };
   
-  main();
+  window._main = main;
 });
