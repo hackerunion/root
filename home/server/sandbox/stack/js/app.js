@@ -3,6 +3,10 @@ $(function() {
     console.log(JSON.stringify(v, null, 4));
   };
 
+  var js = function(s) {
+    return eval('(' + s + ')');
+  };
+
   var getModifiedTime = function() {
     return window.stackModifiedTime;
   };
@@ -105,24 +109,28 @@ $(function() {
           .data('cell-row', r)
           .click(handler(r, c, cell));
 
-        if (cell.f) {
-          cell.f($cell, cell, $card, card);
+        if (getCallback(cell)) {
+          getCallback(cell)($s, $card, $cell, stack, card, cell);
         }
       }
     }
 
     $s.empty().append($card);
 
-    if (card.f) {
-      card.f($card, card);
+    if (getCallback(card)) {
+      getCallback(card)($s, $card, stack, card);
     }
+  };
+
+  var getCallback = function(obj) {
+    return obj.f ? obj.f : (obj.source ? (obj.f = js(obj.source)) : undefined);
   };
 
   var renderStack = function($s, $t, stack) {
     renderCard($s, $t, stack, stack.cards[stack.card]);
 
-    if (stack.f) {
-      stack.f($s, stack);
+    if (getCallback(stack)) {
+      getCallback(stack)($s, stack);
     }
   };
 
@@ -387,7 +395,7 @@ $(function() {
 
   var resetTools = function($s, $t, stack) {
     $('[name=mode], [name=card]', $t).off('change');
-    $('#shift, #setgo, #gettext, #settext, #savestack, #loadstack, #importstack, #exportstack, #newcard, #deletecard, #setname, #setcode, #getcode, #setfg, #setbg', $t).off('click');
+    $('#refresh, #shift, #setgo, #gettext, #settext, #savestack, #loadstack, #importstack, #exportstack, #newcard, #deletecard, #setname, #setcode, #getcode, #setfg, #setbg', $t).off('click');
   }
 
   var initTools = function($s, $t, stack) {
@@ -462,6 +470,10 @@ $(function() {
       });
     });
     
+    $('#refresh', $t).click(function() {
+      navigateStack($s, $t, stack);
+    });
+
     $('#importstack', $t).click(function() {
       var json = $("[name=json]").val();
 
@@ -576,7 +588,8 @@ $(function() {
       
       try {
         objs.forEach(function(obj) {
-          obj.f = eval("(" + source + ")");
+          obj.f = js(source); // this is mainly here to catch syntax errors
+          obj.source = source;
         });
       } catch(e) {
         alert("Your code is broken: " + e.message);
@@ -590,7 +603,7 @@ $(function() {
       var objs = getCodeObjs($s, $t, stack);
        
       objs.forEach(function(obj) {
-        source.val(obj.f ? obj.f.toString() : "");
+        source.val(obj.source || "");
         return false;
       });
 

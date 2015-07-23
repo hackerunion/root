@@ -39,7 +39,10 @@ html(lang='en')
 
         li
           select(name="card")
-        
+
+        li
+          input(type="submit", value="Refresh", id="refresh")
+
         li.edit
           input(type="text", name="rows", value="24").numeric
           input(type="text", name="cols", value="80").numeric
@@ -47,28 +50,6 @@ html(lang='en')
           input(type="submit", value="Delete Card", id="deletecard")
 
         li
-          hr
-
-        li
-          strong Server
-
-        li
-          input(type="text", name="stack", value=url)
-          input(type="submit", value="Save Stack", id="savestack")
-          input(type="submit", value="Load Stack", id="loadstack")
-        
-        li.edit
-          hr
-
-        li.edit
-          strong JSON
-
-        li.edit
-          textarea(name="json")
-          input(type="submit", value="Export Stack", id="exportstack")
-          input(type="submit", value="Import Stack", id="importstack")
-        
-        li.edit
           hr
 
         li.edit
@@ -99,6 +80,29 @@ html(lang='en')
         li.edit
           hr
         
+
+        li
+          strong Server
+
+        li
+          input(type="text", name="stack", value=url)
+          input(type="submit", value="Save Stack", id="savestack")
+          input(type="submit", value="Load Stack", id="loadstack")
+        
+        li.edit
+          hr
+
+        li.edit
+          strong JSON
+
+        li.edit
+          textarea(name="json")
+          input(type="submit", value="Export Stack", id="exportstack")
+          input(type="submit", value="Import Stack", id="importstack")
+        
+        li.edit
+          hr
+
         li.edit
           strong Metadata
         

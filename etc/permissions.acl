@@ -2825,6 +2825,20 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/dilbert.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/js.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/stack2.json
 # owner: server
 # group: server
@@ -3449,13 +3463,6 @@ group::r--
 other::r--
 
 # file: /srv/home/server/sandbox/stack/js/.app.js.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/stack/.index.cgi.swp
 # owner: server
 # group: server
 user::rw-
@@ -11184,6 +11191,13 @@ group::rw-
 other::r--
 
 # file: /srv/home/server/.stack1.json.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/monkey2.json
 # owner: server
 # group: server
 user::rw-
