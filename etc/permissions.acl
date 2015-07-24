@@ -12177,6 +12177,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/samyoung
+# owner: samyoung
+# group: samyoung
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/samyoung/README
+# owner: samyoung
+# group: samyoung
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/samyoung/sandbox
+# owner: samyoung
+# group: samyoung
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/samyoung/sandbox/README
+# owner: samyoung
+# group: samyoung
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/samyoung/index.cgi
+# owner: samyoung
+# group: samyoung
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/samyoung/.ssh
+# owner: samyoung
+# group: samyoung
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/samyoung/.ssh/authorized_keys
+# owner: samyoung
+# group: samyoung
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/saladin
 # owner: saladin
 # group: saladin
@@ -12579,6 +12628,55 @@ other::r-x
 # file: /srv/home/viola/.ssh/authorized_keys
 # owner: viola
 # group: viola
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/mterenzio
+# owner: mterenzio
+# group: mterenzio
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/mterenzio/README
+# owner: mterenzio
+# group: mterenzio
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/mterenzio/sandbox
+# owner: mterenzio
+# group: mterenzio
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mterenzio/sandbox/README
+# owner: mterenzio
+# group: mterenzio
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/mterenzio/index.cgi
+# owner: mterenzio
+# group: mterenzio
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mterenzio/.ssh
+# owner: mterenzio
+# group: mterenzio
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mterenzio/.ssh/authorized_keys
+# owner: mterenzio
+# group: mterenzio
 user::rw-
 group::rw-
 other::r--
