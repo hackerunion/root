@@ -410,9 +410,11 @@ body .container main .content-wrapper .content a {
     display: none;
   }
 
+/*
   header .right:after {
     content: "mini";
   }
+*/
 }
 
 body .container main .content-wrapper .content code,

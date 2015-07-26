@@ -91,6 +91,34 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/srv/stack
+# owner: server
+# group: member
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/srv/stack/wiki
+# owner: server
+# group: member
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/srv/stack/wiki/private.json
+# owner: server
+# group: member
+user::rw-
+group::rw-
+other::---
+
+# file: /srv/srv/stack/wiki/public.json
+# owner: server
+# group: member
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/srv/sign
 # owner: server
 # group: server
@@ -1798,6 +1826,83 @@ other::r--
 # group: 497
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/var/www/stack
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/stack/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/stack/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/stack/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/stack/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/stack/js/.app.js.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/stack/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/stack/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/stack/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/stack/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/stack/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/var/www/events

@@ -154,6 +154,7 @@ function boot(root, home, cache) {
       var $content = $('#content');
       
       shell(true);
+      wiki(true);
 
       if (opts.seamless) {
         $content.addClass('seamless');
@@ -169,45 +170,65 @@ function boot(root, home, cache) {
     var error = function(err, ctx) {
       msg("Error: " + err + (ctx ? (' (' + ctx + ')') : ''));
     };
-
-    var $shell_btn = $("#shell-btn");
-    var shell = function(hide) {
-      var visible = $shell_btn.text()[0] == '-';
-      var $shell = $("#shell");
-      var $content = $("#content");
-
-      if (hide) {
-        if (visible) $shell_btn.click();
-        return;
-      }
-      
-      if (visible) {
-        $shell.hide();
-        $content.show();
-      } else {
-        $content.hide();
-        $shell.show();
-
-        // hackishly force reload (due to limitations of web shell)
-        if (!$shell.hasClass("shell-iframe-hack")) {
-          var f = $shell.addClass("shell-iframe-hack").find('iframe')[0];
-	  f.src = f.src;
+        
+    var panelButton = function($btn, $panel, cb) {
+      var handler = function(hide) {
+        var visible = $btn.text()[0] == '-';
+        var $content = $("#content");
+            
+        if (hide) {
+          if (visible) $btn.click();
+          return;
         }
-      }
+        
+        if (visible) {
+          $btn.removeClass("active");
+
+          $content.show();
+          $panel.hide();
+
+          if (cb) {
+            cb($btn, $panel, false);
+          }
+        
+        } else {
+          $(".panel-btn.active").click();
+          $btn.addClass("active");
+
+          $panel.show();
+          $content.hide();
+          
+          if (cb) {
+            cb($btn, $panel, true);
+          }
+        }
+      };
+  
+      $btn.click(function() {
+        handler();
+  
+        if ($btn.text()[0] == '+') {
+          $btn.text('-' + $btn.text().slice(1))
+        } else {
+          $btn.text('+' + $btn.text().slice(1))
+        }
+  
+        return false;
+      });
+
+      return handler;
     };
 
-    $shell_btn.click(function() {
-      shell();
-
-      if ($shell_btn.text()[0] == '+') {
-        $shell_btn.text('-' + $shell_btn.text().slice(1))
-      } else {
-        $shell_btn.text('+' + $shell_btn.text().slice(1))
+    var shell = panelButton($("#shell-btn"), $("#shell"), function($btn, $panel, show) {
+      // hackishly force reload (due to limitations of web shell)
+      if (show && !$panel.hasClass("shell-iframe-hack")) {
+        var f = $panel.addClass("shell-iframe-hack").find('iframe')[0];
+	    f.src = f.src;
       }
-
-      return false;
     });
-    
+
+    var wiki = panelButton($("#wiki-btn"), $("#wiki"));
+
     $kernel.bind_handlers({
       'md': '/srv/var/www/shell/js/handlers/markdown.js',
       'txt': '/srv/var/www/shell/js/handlers/text.js'

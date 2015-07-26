@@ -23,6 +23,8 @@ console.log(fn({
   'cache': cache,
   'home': (process.env.HOME || '/home/guest').replace('/srv', ''),
   'shell': process.env.SHELL_URI,
+  'wiki': '/var/www/stack/index.cgi',
+  'stack': '/srv/stack/wiki/public.json',
   'ssh': process.env.SERVER_NAME + ':' + process.env.SERVER_SSH_PORT,
   'noui': process.env.QUERY_STRING.indexOf("noui") >= 0
 }));

@@ -1,0 +1,134 @@
+doctype html
+html(lang='en')
+  head
+    title Stack Tool
+    script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
+    script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='#{path}/js/app.js')
+    script(type='text/javascript').
+      $(function() {
+        var begin = function() {
+          if (!window._main) {
+            return setTimeout(100, begin);
+          }
+
+          window._main(!{stack});
+        };
+
+        begin();
+      });
+
+    link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  body
+    #stack(tabindex="1")
+    #tools
+
+      ul
+        li
+          select(name="mode")
+            option(value="view", selected) View
+            option(value="edit") Edit
+        
+        li
+          hr
+
+        li
+          strong Navigation
+
+        li
+          select(name="card")
+
+        li
+          input(type="submit", value="Refresh", id="refresh")
+
+        li.edit
+          input(type="text", name="rows", value="24").numeric
+          input(type="text", name="cols", value="80").numeric
+          input(type="submit", value="New Card", id="newcard")
+          input(type="submit", value="Delete Card", id="deletecard")
+
+        li
+          hr
+
+        li.edit
+          strong Drawing
+
+        li.edit
+          input(type="text", name="fg", value="#000")
+          input(type="submit", value="Set Foreground", id="setfg")
+
+        li.edit
+          input(type="text", name="bg", value="#000")
+          input(type="submit", value="Set Background", id="setbg")
+
+        li.edit
+          input(type="text", name="go", value="")
+          input(type="submit", value="Set Link", id="setgo")
+
+        li.edit
+          input(type="text", name="x", value="0").numeric
+          input(type="text", name="y", value="0").numeric
+          input(type="submit", value="Shift", id="shift")
+
+        li.edit
+          textarea(name="io")
+          input(type="submit", value="Set Text", id="settext")
+          input(type="submit", value="Get Text", id="gettext")
+        
+        li.edit
+          hr
+        
+
+        li
+          strong Server
+
+        li
+          input(type="text", name="stack", value=url)
+          input(type="submit", value="Save Stack", id="savestack")
+          input(type="submit", value="Load Stack", id="loadstack")
+        
+        li.edit
+          hr
+
+        li.edit
+          strong JSON
+
+        li.edit
+          textarea(name="json")
+          input(type="submit", value="Export Stack", id="exportstack")
+          input(type="submit", value="Import Stack", id="importstack")
+        
+        li.edit
+          hr
+
+        li.edit
+          strong Metadata
+        
+        li.edit
+          select(name="metadata")
+            option(value="card", selected) Card
+            option(value="home") Home
+            option(value="stack") Stack
+
+        li.edit
+          input(type="text", name="name")
+          input(type="submit", value="Set Name", id="setname")
+
+        li.edit
+          hr
+        
+        li.edit
+          strong Code
+
+        li.edit
+          select(name="code")
+            option(value="cell", selected) Cell
+            option(value="card") Card
+            option(value="stack") Stack
+
+        li.edit
+          textarea(name="source")
+          input(type="submit", value="Set Code", id="setcode")
+          input(type="submit", value="Get Code", id="getcode")

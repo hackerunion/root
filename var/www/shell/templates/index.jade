@@ -58,10 +58,16 @@ html(lang='en')
              | logged in as 
              b #{username} 
              | (#[a(href="/sbin/logout") switch]) | 
-             a(href="#")#shell-btn
+             a(href="#")#shell-btn.panel-btn
                | +term
+             |  | 
+             a(href="#")#wiki-btn.panel-btn
+               | +wiki
 
-          .content.seamless#shell
+          .content.seamless#wiki.panel
+              iframe.exec(src="#{wiki}?load=#{stack}")
+
+          .content.seamless#shell.panel
             if shell
               iframe.exec(src="#{shell}")
             else

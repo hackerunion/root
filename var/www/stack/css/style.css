@@ -1,0 +1,84 @@
+body {
+}
+
+#stack {
+  font-family: monospace;
+  outline: 0;
+  float: left;
+}
+
+#stack .cell {
+  white-space: pre;
+  min-width: 0.5em;
+}
+
+#stack .cell.go {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#stack.edit .cell {
+  cursor: cell !important;
+}
+
+#stack.edit .card {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#stack.edit .cell.selected {
+  background: #ff0 !important;
+  color: #000 !important;
+}
+
+#stack.edit .cell.active,
+#stack.edit .cell:hover {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+#stack.edit .cell.cursor {
+  background: #0f0 !important;
+  color: #000 !important;
+}
+
+#tools {
+  float: left;
+}
+
+#tools textarea,
+#tools input {
+  margin-right: 5px;
+}
+
+#tools input.numeric {
+  width: 30px;
+}
+
+#tools textarea {
+  vertical-align: bottom;
+  white-space: pre;
+  font-family: monospace;
+}
+
+#tools li.edit {
+  display: none;
+}
+
+#tools.edit li.edit {
+  display: block;
+}
+
+#tools li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+#tools li hr {
+  width: 400px;
+  margin: 20px 0px 20px -10px;
+}
