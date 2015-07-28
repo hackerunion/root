@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    title Diff Tool
+    script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
+    script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='#{path}/js/diff.js')
+    script(type='text/javascript', src='#{path}/js/app.js')
+    script(type='text/javascript').
+      $(function() {
+      });
+
+    link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+  body
+    if message
+      #message #{message}
+    #prompt
+      h1 
+        | Save changes to 
+        span.file #{pathname}
+        |  at 
+        time #{humanize} 
+        |  ?
+    
+    // Based on the example from: https://github.com/kpdecker/jsdiff
+    #settings
+      table
+        thead
+          tr
+            th Original
+            th Modified
+            th Result
+        
+        tbody
+          tr
+            td#a #{original}
+            td#b(contenteditable='true') #{modified}
+            td#c
+              pre#result
+        
+        tfoot
+          tr
+            td(colspan="3", align="right")
+              label
+                input(type='radio', name='diff_type', value='diffLines', checked='checked')
+                | Lines
+              label
+                input(type='radio', name='diff_type', value='diffWords')
+                | Words
+              label
+                input(type='radio', name='diff_type', value='diffChars')
+                | Chars
+  
+
+    h2 
+      form
+        input(type="hidden", name="timestamp", value=timestamp)
+        input(type="hidden", name="pathname", value=pathname)
+        input(type="hidden", name="original")
+        input(type="hidden", name="modified")
+        input(type="submit", name="action", value="Save")#save
+        input(type="reset", value="Cancel")#cancel

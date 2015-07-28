@@ -1,0 +1,123 @@
+body {
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  margin: 20px auto;
+}
+
+tr {
+  padding: 10px;
+}
+
+tfoot,
+thead {
+  background: #f3f3f3;
+  text-align: center;
+  color: #333;
+}
+
+thead td {
+  font-size: 14px;
+}
+
+tbody td {
+  width: 33%;
+  padding: 20px;
+  vertical-align: top;
+  font: 12px monospace;
+  text-align: left;
+  white-space: pre;
+  overflow: scroll;
+  border: 1px solid #000;
+}
+
+tbody td pre {
+  margin: 0px;
+}
+
+tfoot td,
+thead th {
+  line-height: 30px;
+}
+
+tfoot td {
+  text-align: center;
+}
+
+del {
+  text-decoration: none;
+  color: #b37770;
+  background: #fadad7;
+}
+
+ins {
+  background: #eaf2c2;
+  color: #406619;
+  text-decoration: none;
+}
+
+#settings {
+}
+
+#settings label {
+  margin-left: 1em;
+}
+
+.source {
+}
+
+#c,
+#a {
+  color: #888;
+  background: #fafafa;
+}
+
+#b {
+  white-space: pre-line;
+}
+
+#message {
+  background: #ffc;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#prompt {
+}
+
+.file,
+time {
+  background: #ffc;
+  padding: 5px 0px 1px 0px;
+}
+
+[type=radio] {
+  margin-right: 10px;
+}
+
+[type=reset],
+[type=submit] {
+  margin-right: 10px;
+}
+
+#save {
+  color: #0a0;
+}
+
+#cancel {
+  color: #a00;
+
+}
+
+h1 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1em;
+  text-align: center;
+}

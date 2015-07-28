@@ -82,3 +82,24 @@ body {
   width: 400px;
   margin: 20px 0px 20px -10px;
 }
+
+#hidetools {
+}
+
+#showtools {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  right: 10px;
+  top: 10px;
+  background: #999;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+#stack.maximize {
+  font-size: 1.75em;
+}

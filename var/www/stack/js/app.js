@@ -395,7 +395,7 @@ $(function() {
 
   var resetTools = function($s, $t, stack) {
     $('[name=mode], [name=card]', $t).off('change');
-    $('#refresh, #shift, #setgo, #gettext, #settext, #savestack, #loadstack, #importstack, #exportstack, #newcard, #deletecard, #setname, #setcode, #getcode, #setfg, #setbg', $t).off('click');
+    $('#hidetools, #showtools, #refresh, #shift, #setgo, #gettext, #settext, #savestack, #loadstack, #importstack, #exportstack, #newcard, #deletecard, #setname, #setcode, #getcode, #setfg, #setbg', $t).off('click');
   }
 
   var initTools = function($s, $t, stack) {
@@ -738,6 +738,16 @@ $(function() {
       repaint($s, $t, stack);
     });
 
+    $("#hidetools").click(function() {
+      $t.hide();
+      $("#showtools").show();
+    });
+
+    $("#showtools").click(function() {
+      $t.show();
+      $(this).hide();
+    });
+
     $("[name=mode]").change();
   };
 
@@ -810,8 +820,14 @@ $(function() {
   };
 
   var main = function(stack) {
-    var $stack = $("#stack");
     var $tools = $("#tools");
+    var $stack = $("#stack").dblclick(function() {
+      if(!isEditMode($stack)) {
+        $stack.toggleClass("maximize");
+      }
+
+      return false;
+    });
     
     var blankCard = createBlankCard('card0', 24, 80);
     var stack = stack || createStack('stack', 'card0', [ blankCard ]);
