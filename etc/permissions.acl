@@ -2000,6 +2000,83 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/var/www/diff
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/diff/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/diff/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/diff/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/diff/js/diff.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/diff/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/diff/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/diff/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/var/www/diff/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/diff/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/diff/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/announce
 # owner: server
 # group: member
@@ -2849,6 +2926,13 @@ user::rw-
 group::---
 other::---
 
+# file: /srv/home/server/junk2
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/log
 # owner: server
 # group: server
@@ -3697,6 +3781,13 @@ group::r--
 other::r-x
 
 # file: /srv/home/server/stack1.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/junk
 # owner: server
 # group: server
 user::rw-

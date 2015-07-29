@@ -409,7 +409,10 @@ body .container main .content-wrapper .content a {
   #shell-btn {
     display: none;
   }
-
+ 
+  .no-mini {
+    display: none;
+  }
 /*
   header .right:after {
     content: "mini";

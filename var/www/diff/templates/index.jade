@@ -20,9 +20,9 @@ html(lang='en')
     #prompt
       h1 
         | Save changes to 
-        span.file #{pathname}
+        span.file #{pathname || '(no file specified)'}
         |  at 
-        time #{timestamp} 
+        time #{humanize} 
         |  ?
 
     h2 
@@ -47,7 +47,8 @@ html(lang='en')
         tbody
           tr
             td#a #{original}
-            td#b(contenteditable='true') #{modified}
+            td#b
+              textarea#editor #{modified}
             td#c
               pre#result
         

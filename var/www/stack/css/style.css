@@ -48,6 +48,7 @@ body {
 
 #tools {
   float: left;
+  display: none;
 }
 
 #tools textarea,
@@ -87,7 +88,6 @@ body {
 }
 
 #showtools {
-  display: none;
   position: fixed;
   z-index: 10;
   right: 10px;

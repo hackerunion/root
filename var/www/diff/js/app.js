@@ -1,6 +1,6 @@
 $(function() {
   var a = document.getElementById('a');
-  var b = document.getElementById('b');
+  var b = document.getElementById('editor');
   var result = document.getElementById('result');
   
   $("[type=reset]").click(function() {
@@ -9,13 +9,13 @@ $(function() {
   });
 
   function changed() {
-    $('[name=modified]').val(b.textContent);
-    if ((a.textContent + b.textContent).length > 1e4) {
+    $('[name=modified]').val(b.value);
+    if ((a.textContent + b.value).length > 1e4) {
       result.textContent = 'Too much data to compare.';
       return;
     }
 
-    var diff = JsDiff[window.diffType](a.textContent, b.textContent);
+    var diff = JsDiff[window.diffType](a.textContent, b.value);
     var fragment = document.createDocumentFragment();
     for (var i=0; i < diff.length; i++) {
   

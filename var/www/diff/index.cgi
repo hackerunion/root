@@ -25,7 +25,7 @@ var getTimestamp = function() {
 };
 
 var humanizeTimestamp = function(ts) {
-  return (new Date(ts)).toISOString();
+  return (new Date(ts)).toUTCString();
 };
 
 var urlToPathname = function(u) {
@@ -45,7 +45,7 @@ var readWithMetadata = function(pathname, timestamp, original) {
       obj.timestamp = stat.mtime.getTime();
       obj.modified = obj.conflict = timestamp && stat.mtime.getTime() > timestamp;
 
-    } catch (e) { obj.error.push(e.message); };
+    } catch (e) { obj.errors.push(e.message); };
     
     try {
       var data = fs.readFileSync(pathname);
@@ -78,7 +78,7 @@ var handlePost = function() {
 
     try {
       if (err || !qs || !(qs.timestamp && qs.pathname)) {
-        throw new Error("An unexpected error has occurred.");
+        throw new Error("Required parameters missing.");
       }
       
       file = readWithMetadata(qs.pathname, parseInt(qs.timestamp), qs.original);
@@ -103,12 +103,27 @@ var handleGet = function() {
   var pathname = qs.url ? urlToPathname(qs.url) : qs.path;
   var timestamp = qs.timestamp ? parseInt(qs.timestamp) : null;
   var file = readWithMetadata(pathname, timestamp);
+	var data;
 
-  respond(file, qs.data, timestamp || getTimestamp(), qs.next, pathname ? null : "You must specify a path or a URL");
+  if (qs.datapath) {
+    var tmp = readWithMetadata(qs.datapath);
+
+    if (tmp.exists) {
+      data = tmp.data;
+    }
+  }
+
+  if (data === undefined) {
+    data = qs.data;
+  }
+
+  respond(file, data, timestamp || getTimestamp(), qs.next, pathname ? null : "You must specify a path or a URL.");
 };
 
-var respond = function(file, modified, timestamp, next, msg, result) {
-  if (result && next) {
+var respond = function(file, modified, timestamp, next, msg, saved) {
+  var file = file || { 'data': '', 'pathname': '' };
+
+  if (saved && next) {
     console.log("Status: 303");
     console.log("Location: " + next);
     console.log("");
@@ -128,7 +143,7 @@ var respond = function(file, modified, timestamp, next, msg, result) {
   console.log(fn({
     'path': __dirname.replace('/srv', ''),
     'modified': modified,
-    'original': file.data,
+    'original': saved ? modified : file.data,
     'pathname': file.pathname,
     'timestamp': timestamp,
     'next': next,
