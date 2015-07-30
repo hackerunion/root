@@ -69,44 +69,40 @@ var readWithMetadata = function(pathname, timestamp, original) {
     return obj;
 };
 
-var handlePost = function() {
-  body.parse(process.stdin, function(err, qs) {
-    var file;
+var doSave = function(qs, err) {
+  var msg = "File saved!";
+  var saved = true;
+  var file;
 
-    var msg = "File saved!";
-    var saved = true;
-
-    try {
-      if (err || !qs || !(qs.timestamp && qs.pathname)) {
-        throw new Error("Required parameters missing.");
-      }
-      
-      file = readWithMetadata(qs.pathname, parseInt(qs.timestamp), qs.original);
-      
-      if (file.conflict) {
-        throw new Error("File has been modified. Please review and try again.");
-      }
-
-      fs.writeFileSync(file.pathname, qs.modified);
-
-    } catch(e) { 
-      msg = e.message;
-      saved = false;
+  try {
+    if (err || !qs || !(qs.timestamp && qs.pathname)) {
+      throw new Error("Required parameters missing.");
+    }
+    
+    file = readWithMetadata(qs.pathname, parseInt(qs.timestamp), qs.original);
+    
+    if (file.conflict) {
+      throw new Error("File has been modified. Please review and hit save again.");
     }
 
-    respond(file, qs.modified, file && file.modified ? file.timestamp : getTimestamp(), qs.next, msg, saved);
-  });
+    fs.writeFileSync(file.pathname, qs.modified);
+
+  } catch(e) { 
+    msg = e.message;
+    saved = false;
+  }
+
+  respond(file, qs.modified, file && file.modified ? file.timestamp : getTimestamp(), qs.next, msg, saved);
 };
 
-var handleGet = function() {
-  var qs = querystring.parse(process.env.QUERY_STRING);
-  var pathname = qs.url ? urlToPathname(qs.url) : qs.path;
+var doDiff = function(qs, err) {
+  var pathname = qs.url ? urlToPathname(qs.url) : qs.pathname;
   var timestamp = qs.timestamp ? parseInt(qs.timestamp) : null;
   var file = readWithMetadata(pathname, timestamp);
 	var data;
 
-  if (qs.datapath) {
-    var tmp = readWithMetadata(qs.datapath);
+  if (qs.datapathname) {
+    var tmp = readWithMetadata(qs.datapathname);
 
     if (tmp.exists) {
       data = tmp.data;
@@ -117,7 +113,37 @@ var handleGet = function() {
     data = qs.data;
   }
 
+  try {
+    data = JSON.stringify(JSON.parse(data), null, 2);
+  } catch(e) {
+    data = data.toString(); 
+  }
+
   respond(file, data, timestamp || getTimestamp(), qs.next, pathname ? null : "You must specify a path or a URL.");
+};
+
+var handlePost = function() {
+  body.parse(process.stdin, function(err, qs) {
+    if (err || !qs) {
+      console.log("Status: 500");
+      console.log("Content-type: text/plain");
+      console.log("");
+      console.log("Something broke on the server.");
+      return;
+    }
+
+    if (qs.diff) {
+      doDiff(qs);
+      return;
+    }
+    
+    doSave(qs);
+  }, 1e7);
+};
+
+var handleGet = function() {
+  var qs = querystring.parse(process.env.QUERY_STRING);
+  doDiff(qs);
 };
 
 var respond = function(file, modified, timestamp, next, msg, saved) {
@@ -148,7 +174,8 @@ var respond = function(file, modified, timestamp, next, msg, saved) {
     'timestamp': timestamp,
     'next': next,
     'humanize': humanizeTimestamp(timestamp),
-    'message': msg || file.error
+    'message': msg || file.error,
+    'saved': saved
   }));
 }
 

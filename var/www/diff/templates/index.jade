@@ -32,8 +32,8 @@ html(lang='en')
         input(type="hidden", name="next", value=next)
         input(type="hidden", name="original", value=original)
         input(type="hidden", name="modified", value=modified)
-        input(type="submit", name="action", value="Save")#save
-        input(type="reset", value="Cancel")#cancel
+        input(type="submit", name="action", value=saved ? "Save Again" : "Save")#save
+        input(type="reset", value=saved ? "Done" : "Cancel")#cancel
     
     // Based on the example from: https://github.com/kpdecker/jsdiff
     #settings

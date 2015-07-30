@@ -4,7 +4,10 @@ $(function() {
   var result = document.getElementById('result');
   
   $("[type=reset]").click(function() {
-    window.location.href = $("[name=next]").val() || "/";
+    if (confirm("Close this window?")) {
+      window.close();
+    }
+
     return false;
   });
 

@@ -394,6 +394,7 @@ $(function() {
   };
 
   var resetTools = function($s, $t, stack) {
+    $('#diffstack', $t).off('submit');
     $('[name=mode], [name=card]', $t).off('change');
     $('#hidetools, #showtools, #refresh, #shift, #setgo, #gettext, #settext, #savestack, #loadstack, #importstack, #exportstack, #newcard, #deletecard, #setname, #setcode, #getcode, #setfg, #setbg', $t).off('click');
   }
@@ -424,7 +425,20 @@ $(function() {
       navigateCard($s, $t, stack, $(this).val());
     });
     
+    $('#diffstack', $t).submit(function() {
+      // post directly to diff endpoint
+      var $f = $(this);
+      var url = $("[name=stack]", $t).val().trim();
+
+      $('[name=data]', $f).val(saveStack(stack));
+      $('[name=timestamp]', $f).val(getModifiedTime());
+      $('[name=url]', $f).val(url);
+
+      return true;
+    });
+
     $('#savestack', $t).click(function() {
+      // deprecated: saves temporary file, then provides diff URL
       var url = $("[name=stack]", $t).val().trim();
 
       if (!confirm("Save your changes?")) {
@@ -440,8 +454,8 @@ $(function() {
             return;
           }
           
-          bumpModifiedTime();
-          alert("Changes saved!");
+          var win = window.open(result.commit, '_blank');
+          win.focus();
         },
         error: function(xhr, type){
           alert("Couldn't save stack!")

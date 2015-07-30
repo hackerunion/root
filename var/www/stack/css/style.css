@@ -92,7 +92,7 @@ body {
   z-index: 10;
   right: 10px;
   top: 10px;
-  background: #999;
+  background: #aaa;
   color: #fff;
   font-weight: bold;
   padding: 2px;
@@ -102,4 +102,12 @@ body {
 
 #stack.maximize {
   font-size: 1.75em;
+}
+
+#savestack {
+  display: none;
+}
+
+#diffstack {
+  display: inline !important;
 }

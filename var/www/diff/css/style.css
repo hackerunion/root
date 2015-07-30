@@ -4,6 +4,7 @@ body {
 table {
   table-layout: fixed;
   width: 100%;
+  min-height: 400px;
   margin: 20px auto;
 }
 
@@ -92,10 +93,13 @@ ins {
 }
 
 #message {
-  background: #cff;
-  padding: 5px;
+  background: #00f;
+  color: #fff;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
 }
 
 #prompt {

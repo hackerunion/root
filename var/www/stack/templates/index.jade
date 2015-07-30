@@ -86,9 +86,16 @@ html(lang='en')
 
         li
           input(type="text", name="stack", value=url)
+
+          form(action="/var/www/diff/index.cgi", method="post", target="_blank")#diffstack
+            input(type="submit", name="diff", value="Save Stack")
+            input(type="hidden", name="data", value="")
+            input(type="hidden", name="url", value="")
+            input(type="hidden", name="timestamp", value="")
+          
           input(type="submit", value="Save Stack", id="savestack")
           input(type="submit", value="Load Stack", id="loadstack")
-        
+            
         li.edit
           hr
 

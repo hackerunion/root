@@ -28,28 +28,25 @@ var urlToPathname = function(u) {
   return path.join('/srv', url.parse(u).pathname);
 };
 
+var confirmURL = function(original, modified, ts) {
+  return '/var/www/diff/index.cgi?pathname=' + encodeURIComponent(original) + '&datapathname=' + encodeURIComponent(modified) + '&timestamp=' + encodeURIComponent(ts);
+};
+
 var handlePostAPI = function() {
   body.parse(process.stdin, function(err, qs) {
-    var timestamp = getTimestamp();
-    var extra = {};
-    
+    var timestamp;
+    var pathname;
+    var tmp;
+
     try {
       if (err || !qs || !(qs.url && qs.timestamp && qs.stack)) {
         throw new Error("An unexpected error has occurred.");
       }
 
-      var pathname = urlToPathname(qs.url);
-      var stat;
-
-      try {
-        stat = fs.statSync(pathname);
-      } catch (e) { /* nop */ };
-      
-      if (stat && stat.mtime.getTime() >= parseInt(qs.timestamp)) {
-        throw new Error("The file was modified by someone else.");
-      }
-
-      fs.writeFileSync(pathname, qs.stack);
+      pathname = urlToPathname(qs.url);
+      tmp = '/tmp/' + pathname.replace(/[^\w]/g, '_') + '.' + process.pid + '.stack';
+      timestamp = parseInt(qs.timestamp);
+      fs.writeFileSync(tmp, qs.stack);
 
     } catch (e) {
       console.log("Status: 200");
@@ -67,8 +64,8 @@ var handlePostAPI = function() {
     console.log("");
     
     console.log(JSON.stringify({ 
-      'timestamp': timestamp,
-      'extra': extra
+      'pathname': tmp,
+      'commit': confirmURL(pathname, tmp, qs.timestamp)
     })); 
   }, 1e7);
 };
