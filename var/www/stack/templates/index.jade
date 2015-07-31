@@ -22,7 +22,7 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
   body
-    #stack(tabindex="1")
+    #stack(tabindex="1").maximize
     #tools
 
       ul
@@ -68,19 +68,24 @@ html(lang='en')
           input(type="submit", value="Set Link", id="setgo")
 
         li.edit
-          input(type="text", name="x", value="0").numeric
-          input(type="text", name="y", value="0").numeric
-          input(type="submit", value="Shift", id="shift")
+          hr
+        
+        li.edit
+          strong Text
 
         li.edit
           textarea(name="io")
           input(type="submit", value="Set Text", id="settext")
           input(type="submit", value="Get Text", id="gettext")
+
+        li.edit
+          input(type="text", name="x", value="0").numeric
+          input(type="text", name="y", value="0").numeric
+          input(type="submit", value="Shift", id="shift")
         
         li.edit
           hr
         
-
         li
           strong Server
 

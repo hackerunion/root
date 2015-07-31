@@ -55,13 +55,7 @@ var readWithMetadata = function(pathname, timestamp, original) {
         data.conflict = !fuzzyMatch(original, data);
       }
 
-      // special support for json
-      try {
-        obj.data = JSON.stringify(JSON.parse(data), null, 2);
-      } catch(e) {
-        obj.data = data.toString(); 
-      }
-
+      obj.data = (data || '').toString(); 
       obj.exists = true;
 
     } catch(e) { obj.errors.push(e.message); };
@@ -113,12 +107,7 @@ var doDiff = function(qs, err) {
     data = qs.data;
   }
 
-  try {
-    data = JSON.stringify(JSON.parse(data), null, 2);
-  } catch(e) {
-    data = data.toString(); 
-  }
-
+  data = (data || '').toString(); 
   respond(file, data, timestamp || getTimestamp(), qs.next, pathname ? null : "You must specify a path or a URL.");
 };
 
@@ -148,6 +137,8 @@ var handleGet = function() {
 
 var respond = function(file, modified, timestamp, next, msg, saved) {
   var file = file || { 'data': '', 'pathname': '' };
+  var json = true;
+  var original = saved ? modified : file.data;
 
   if (saved && next) {
     console.log("Status: 303");
@@ -166,16 +157,20 @@ var respond = function(file, modified, timestamp, next, msg, saved) {
   console.log("Content-Type: text/html");
   console.log("");
   
+  try { JSON.parse(original); } catch (e) { json = false; }
+  try { JSON.parse(modified); } catch (e) { json = false; }
+
   console.log(fn({
     'path': __dirname.replace('/srv', ''),
     'modified': modified,
-    'original': saved ? modified : file.data,
+    'original': original,
     'pathname': file.pathname,
     'timestamp': timestamp,
     'next': next,
     'humanize': humanizeTimestamp(timestamp),
     'message': msg || file.error,
-    'saved': saved
+    'saved': saved,
+    'json': json
   }));
 }
 

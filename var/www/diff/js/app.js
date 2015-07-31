@@ -2,7 +2,7 @@ $(function() {
   var a = document.getElementById('a');
   var b = document.getElementById('editor');
   var result = document.getElementById('result');
-  
+
   $("[type=reset]").click(function() {
     if (confirm("Close this window?")) {
       window.close();
@@ -13,6 +13,23 @@ $(function() {
 
   function changed() {
     $('[name=modified]').val(b.value);
+
+    if (window.diffType == "diffJSON") {
+      try {
+        var left = JSON.parse(a.textContent);
+        var right = JSON.parse(b.value);
+        var delta = jsondiffpatch.diff(left, right);
+        
+        result.innerHTML = jsondiffpatch.formatters.html.format(delta, left);     
+        jsondiffpatch.formatters.html.hideUnchanged();
+        return;
+
+      } catch(e) {
+        result.textContent = 'Could not parse JSON.';
+        return;
+      }
+    }
+    
     if ((a.textContent + b.value).length > 1e4) {
       result.textContent = 'Too much data to compare.';
       return;

@@ -7,9 +7,13 @@ body {
   float: left;
 }
 
+#stack table {
+  table-layout: fixed;
+}
+
 #stack .cell {
   white-space: pre;
-  min-width: 0.5em;
+  max-width: 0.75em;
 }
 
 #stack .cell.go {
@@ -31,24 +35,26 @@ body {
 }
 
 #stack.edit .cell.selected {
-  background: #ff0 !important;
-  color: #000 !important;
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
 }
 
 #stack.edit .cell.active,
 #stack.edit .cell:hover {
-  background: #000 !important;
-  color: #fff !important;
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+  opacity: 0.5;
 }
 
 #stack.edit .cell.cursor {
-  background: #0f0 !important;
-  color: #000 !important;
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
 }
 
 #tools {
   float: left;
   display: none;
+  font-size: 12px;
 }
 
 #tools textarea,
@@ -80,8 +86,8 @@ body {
 }
 
 #tools li hr {
-  width: 400px;
-  margin: 20px 0px 20px -10px;
+  max-width: 200px;
+  margin: 10px 0px 10px -10px;
 }
 
 #hidetools {
@@ -92,12 +98,12 @@ body {
   z-index: 10;
   right: 10px;
   top: 10px;
-  background: #aaa;
+  background: #00f;
   color: #fff;
   font-weight: bold;
   padding: 2px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 #stack.maximize {

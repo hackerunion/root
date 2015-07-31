@@ -2035,7 +2035,21 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/var/www/diff/js/jsondiff.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/var/www/diff/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/var/www/diff/js/jsondiff-formatters.js
 # owner: server
 # group: server
 user::rw-
@@ -2055,6 +2069,13 @@ other::r-x
 user::rwx
 group::r-x
 other::r-x
+
+# file: /srv/var/www/diff/css/jsondiff.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/var/www/diff/css/style.css
 # owner: server
@@ -3017,6 +3038,13 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/1.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/dilbert.json
 # owner: server
 # group: server
@@ -3025,6 +3053,13 @@ group::r--
 other::r--
 
 # file: /srv/home/server/js.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/2.json
 # owner: server
 # group: server
 user::rw-
@@ -3822,12 +3857,26 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/post.html
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/.rnd
 # owner: root
 # group: root
 user::rw-
 group::---
 other::---
+
+# file: /srv/home/server/webpage.html
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/server/walk
 # owner: server

@@ -22,15 +22,27 @@
       "text": "<pre>\r\nHey all,\r\n\r\nWe're having our weekly hack night TONIGHT (Thursday, July 16) at 6:30 PM - 8:30 PM at Facebook NY:\r\n\r\n2nd Floor\r\n770 Broadway (9th street and Broadway)\r\n\r\nThe official meetup thingie:\r\nhttp://www.meetup.com/nyhacker/events/222805276/\r\n\r\nHope to see you there,\r\n - Brandon\r\n</pre>",
       "timestamp": "2015-07-16T15:02:36.101Z",
       "user": "brandon"
+    },
+    {
+      "id": 2,
+      "topics": [
+        "programming",
+        "community",
+        "freefood"
+      ],
+      "subject": "Emacs Meetup this Monday",
+      "text": "In memory of the good programmers lost to the editor wars (https://en.wikipedia.org/wiki/Editor_war), the New York Emacs Meetup is bringing the two sides together. On Monday, August 3, we're holding our monthly NYC Emacs meetup and having a talk about Spacemacs, which is Emacs customized to be like Vi.\r\n\r\nYou can RSVP here: http://www.meetup.com/New-York-Emacs-Meetup/events/219624636/\r\n\r\nAnd if that's not interesting, there's free pizza.",
+      "timestamp": "2015-07-31T05:24:42.252Z",
+      "user": "zck"
     }
   ],
   "users": {
     "brandon": {
       "reputation": {
-        "good": 103,
+        "good": 104,
         "bad": 0,
         "total": 113,
-        "score": 0.9817457703738115
+        "score": 0.9819176954097307
       },
       "topics": [
         "general",
@@ -570,7 +582,7 @@
       "reputation": {
         "good": 0,
         "bad": 0,
-        "total": 0,
+        "total": 9,
         "score": 0
       },
       "topics": [
@@ -677,6 +689,83 @@
       ]
     },
     "shreyaskulkarni": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "kopiter": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "movarrin": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "fbmore": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "vasilyrud": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "andywong": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "mterenzio": {
+      "reputation": {
+        "good": 0,
+        "bad": 0,
+        "total": 0,
+        "score": 0
+      },
+      "topics": [
+        "general"
+      ]
+    },
+    "samyoung": {
       "reputation": {
         "good": 0,
         "bad": 0,
@@ -1397,10 +1486,6 @@
       "user": "brandon",
       "action": "bad"
     },
-    "1aa4d516f34cf19558ace92a7cf38fd77263180c": {
-      "user": "brandon",
-      "action": "good"
-    },
     "8e07ea687c74daeda769965b0d6c7f79b66dc19c": {
       "user": "brandon",
       "action": "bad"
@@ -1887,6 +1972,78 @@
     },
     "93a3ced0401c1416a09f29c7a0bc32aa40025d44": {
       "user": "brandon",
+      "action": "bad"
+    },
+    "d846e5194e2fb507242b4093c6b8811fd1b0e249": {
+      "user": "zck",
+      "action": "good"
+    },
+    "608cc80716b347ac8eea95b841fd921f7f6c6736": {
+      "user": "zck",
+      "action": "bad"
+    },
+    "ddf476c73212b0555839037b87c539fca1cfc8a6": {
+      "user": "zck",
+      "action": "good"
+    },
+    "f27890a35a8fd4070000a11e21fbe891579e8277": {
+      "user": "zck",
+      "action": "bad"
+    },
+    "b94d8ead8cf895f59d15140f971faad7a991bb58": {
+      "user": "zck",
+      "action": "good"
+    },
+    "6ecad9dccdabb673566538fc140043cfcae860ed": {
+      "user": "zck",
+      "action": "bad"
+    },
+    "8c83f0a86c8833de59d85efa611f72b2aba2ea88": {
+      "user": "zck",
+      "action": "good"
+    },
+    "97c79f221b706ffe0de6211c8dd760b4f662cd3c": {
+      "user": "zck",
+      "action": "bad"
+    },
+    "09a0d5321bababc1d2516d935377e761f18314cd": {
+      "user": "zck",
+      "action": "good"
+    },
+    "ee8807253c4f03d17bbd364c975ad0e74b8ebf9b": {
+      "user": "zck",
+      "action": "bad"
+    },
+    "c789ae6802746a8b8327e6dd9e4bf5477fc999c4": {
+      "user": "zck",
+      "action": "good"
+    },
+    "2352b52381b2ef42fb3ef17bcd92cacbe842348e": {
+      "user": "zck",
+      "action": "bad"
+    },
+    "ee9878b1303a12227e339a29e87199eb8833ffe7": {
+      "user": "zck",
+      "action": "good"
+    },
+    "e0313700c46f472753421e5dec45d481302d9eba": {
+      "user": "zck",
+      "action": "bad"
+    },
+    "21faa0b33dd50722d526d679e8e05811ab77d201": {
+      "user": "zck",
+      "action": "good"
+    },
+    "e56c3f252a57908e71d7108ddd97e267037157cf": {
+      "user": "zck",
+      "action": "bad"
+    },
+    "073a06cf5f72ecd0bc8cb943eb49db343b1ff266": {
+      "user": "zck",
+      "action": "good"
+    },
+    "6ed47a9d74716a3104842795b972e72aadc5a30e": {
+      "user": "zck",
       "action": "bad"
     }
   }
