@@ -11935,6 +11935,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/patneedham
+# owner: patneedham
+# group: patneedham
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/patneedham/README
+# owner: patneedham
+# group: patneedham
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/patneedham/sandbox
+# owner: patneedham
+# group: patneedham
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/patneedham/sandbox/README
+# owner: patneedham
+# group: patneedham
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/patneedham/index.cgi
+# owner: patneedham
+# group: patneedham
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/patneedham/.ssh
+# owner: patneedham
+# group: patneedham
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/patneedham/.ssh/authorized_keys
+# owner: patneedham
+# group: patneedham
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/fwuppermann
 # owner: fwuppermann
 # group: fwuppermann

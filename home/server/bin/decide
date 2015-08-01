@@ -214,8 +214,8 @@ EOF
             if echo "$SEEN" | grep -q "$IP"; then
               echo "[36mDuplicate entry from $IP. Assuming deletion."
               ACTION='d'
+              SEEN=`echo "$SEEN" | sed -e "s/$IP//"`
             else
-              SEEN="$IP|$SEEN"
               ACTION=
             fi
             
@@ -273,6 +273,8 @@ EOF
                 continue
                 ;;
         esac
+        
+        SEEN="$IP|$SEEN"
         break
     done
 done

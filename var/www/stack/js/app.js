@@ -348,6 +348,34 @@ $(function() {
     return stack.cards[stack.card].data[loc[1]][loc[0]];
   };
 
+  var getActiveString = function($s, stack) {
+    var $active = getActive($s);
+    var result = "";
+    var last = null;
+    var loc;
+
+    if (!$active.length) {
+      return "";
+    }
+
+    $active.each(function() {
+      loc = getLocation($(this));
+
+      if (last != null && loc[1] > last[1]) {
+        result += "\n";
+      }
+      
+      result += getDataAt(stack, loc).val || ' ';
+      last = loc;
+    });
+    
+    if (result && result[result.lengthx-1] == '\n') {
+      result = result.slice(0, -1);
+    }
+
+    return result;
+  };
+
   var getActiveData = function($s, stack) {
     var $active = getActive($s);
     var result = [];
@@ -358,7 +386,7 @@ $(function() {
 
     $active.each(function() {
       result.push(getDataAt(stack, getLocation($(this))));
-    })
+    });
 
     return result;
   };
@@ -675,7 +703,7 @@ $(function() {
 
     $('#gettext', $t).click(function() {
       var $io = $('[name=io]', $t);
-      $io.val(getString($s, stack));
+      $io.val(getActiveString($s, stack) || getString($s, stack));
     });
 
     $('#settext', $t).click(function() {

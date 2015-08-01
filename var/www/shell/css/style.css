@@ -76,6 +76,11 @@ pre {
   word-break: break-word;
 }
 
+#wiki {
+  display: none;
+  z-index: 100;
+}
+
 #shell {
   background: #fff;
   color: #000;
