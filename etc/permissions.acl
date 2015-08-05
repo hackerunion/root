@@ -13749,6 +13749,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/jzett
+# owner: jzett
+# group: jzett
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/jzett/README
+# owner: jzett
+# group: jzett
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jzett/sandbox
+# owner: jzett
+# group: jzett
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jzett/sandbox/README
+# owner: jzett
+# group: jzett
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jzett/index.cgi
+# owner: jzett
+# group: jzett
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jzett/.ssh
+# owner: jzett
+# group: jzett
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jzett/.ssh/authorized_keys
+# owner: jzett
+# group: jzett
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/annanican
 # owner: annanican
 # group: annanican

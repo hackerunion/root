@@ -52,7 +52,7 @@
 { "group": "server", "gid": "1337", "users": [] },
 { "group": "brandon", "gid": "1339", "users": [] },
 { "group": "hacker", "gid": "1340", "users": ["server", "brandon"] },
-{ "group": "member", "gid": "1341", "users": ["brandon", "server", "geminiimatt", "amitk", "dreamchipper", "sballan", "belimawr", "pocket", "suztomo", "kfuchs", "tsyuk01", "toby", "davidykay", "codemike", "sarvagnan", "irvingfb", "ricka", "zamansky", "joeymejias", "annanican", "arjuns", "viola", "darkseidvengeance", "nastassia", "emanuele", "danielrak", "dberg", "ahrobe", "rmd6502", "faigy", "sahar", "pav", "jsonp", "fwuppermann", "mindlessjibber", "burlivo", "jsstein", "reah", "arun", "tsax", "lehmann314159", "seanislavski", "sanket107", "dionysios", "drenerdo", "smitha", "alikafridi", "capac", "zck", "clamb", "elderlord", "saladin", "jeremy", "cyrus", "iamrphy", "b3linda", "popcat", "rfaroul", "shreyaskulkarni", "kopiter", "movarrin", "fbmore", "vasilyrud", "andywong", "mterenzio", "samyoung", "patneedham"] },
+{ "group": "member", "gid": "1341", "users": ["brandon", "server", "geminiimatt", "amitk", "dreamchipper", "sballan", "belimawr", "pocket", "suztomo", "kfuchs", "tsyuk01", "toby", "davidykay", "codemike", "sarvagnan", "irvingfb", "ricka", "zamansky", "joeymejias", "annanican", "arjuns", "viola", "darkseidvengeance", "nastassia", "emanuele", "danielrak", "dberg", "ahrobe", "rmd6502", "faigy", "sahar", "pav", "jsonp", "fwuppermann", "mindlessjibber", "burlivo", "jsstein", "reah", "arun", "tsax", "lehmann314159", "seanislavski", "sanket107", "dionysios", "drenerdo", "smitha", "alikafridi", "capac", "zck", "clamb", "elderlord", "saladin", "jeremy", "cyrus", "iamrphy", "b3linda", "popcat", "rfaroul", "shreyaskulkarni", "kopiter", "movarrin", "fbmore", "vasilyrud", "andywong", "mterenzio", "samyoung", "patneedham", "jzett"] },
 { "group": "geminiimatt", "gid": "1342", "users": [] },
 { "group": "amitk", "gid": "1343", "users": [] },
 { "group": "dreamchipper", "gid": "1344", "users": [] },
@@ -117,5 +117,6 @@
 { "group": "andywong", "gid": "1403", "users": [] },
 { "group": "mterenzio", "gid": "1404", "users": [] },
 { "group": "samyoung", "gid": "1405", "users": [] },
-{ "group": "patneedham", "gid": "1406", "users": [] }
+{ "group": "patneedham", "gid": "1406", "users": [] },
+{ "group": "jzett", "gid": "1407", "users": [] }
 ]
