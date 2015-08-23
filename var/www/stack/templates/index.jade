@@ -4,6 +4,7 @@ html(lang='en')
     title Stack Tool
     script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
     script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='/usr/lib/js/marked/dev.js')
     script(type='text/javascript', src='#{path}/js/app.js')
     script(type='text/javascript').
       $(function() {
@@ -20,6 +21,7 @@ html(lang='en')
 
     link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
     link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
+    style(type='text/css')#style
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
   body
     #stack(tabindex="1").maximize
@@ -50,6 +52,17 @@ html(lang='en')
           input(type="submit", value="Delete Card", id="deletecard")
 
         li
+          hr
+        
+        li.edit
+          strong Markdown
+
+        li.edit
+          textarea(name="markdown")
+          input(type="submit", value="Set Markdown", id="setmarkdown")
+          input(type="submit", value="Get Markdown", id="getmarkdown")
+        
+        li.edit
           hr
 
         li.edit
@@ -144,6 +157,17 @@ html(lang='en')
           textarea(name="source")
           input(type="submit", value="Set Code", id="setcode")
           input(type="submit", value="Get Code", id="getcode")
+
+        li.edit
+          hr
+        
+        li.edit
+          strong Styles
+
+        li.edit
+          textarea(name="style")
+          input(type="submit", value="Set Styles", id="setstyle")
+          input(type="submit", value="Get Styles", id="getstyle")
         
         li
           hr

@@ -698,10 +698,10 @@ group::rwx
 other::r-x
 
 # file: /srv/usr/lib/js/marked/dev.js
-# owner: 500
-# group: 497
+# owner: root
+# group: root
 user::rw-
-group::rw-
+group::r--
 other::r--
 
 # file: /srv/usr/lib/bash
@@ -2506,6 +2506,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/r0nind
+# owner: r0nind
+# group: r0nind
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/r0nind/README
+# owner: r0nind
+# group: r0nind
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/r0nind/sandbox
+# owner: r0nind
+# group: r0nind
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/r0nind/sandbox/README
+# owner: r0nind
+# group: r0nind
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/r0nind/index.cgi
+# owner: r0nind
+# group: r0nind
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/r0nind/.ssh
+# owner: r0nind
+# group: r0nind
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/r0nind/.ssh/authorized_keys
+# owner: r0nind
+# group: r0nind
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/aminethedream
 # owner: aminethedream
 # group: aminethedream
@@ -2814,6 +2863,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/njpatten
+# owner: njpatten
+# group: njpatten
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/njpatten/README
+# owner: njpatten
+# group: njpatten
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/njpatten/sandbox
+# owner: njpatten
+# group: njpatten
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/njpatten/sandbox/README
+# owner: njpatten
+# group: njpatten
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/njpatten/index.cgi
+# owner: njpatten
+# group: njpatten
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/njpatten/.ssh
+# owner: njpatten
+# group: njpatten
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/njpatten/.ssh/authorized_keys
+# owner: njpatten
+# group: njpatten
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/sballan
 # owner: sballan
 # group: sballan
@@ -2859,6 +2957,55 @@ other::r-x
 # file: /srv/home/sballan/.ssh/authorized_keys
 # owner: sballan
 # group: sballan
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/hellojas
+# owner: hellojas
+# group: hellojas
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/hellojas/README
+# owner: hellojas
+# group: hellojas
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/hellojas/sandbox
+# owner: hellojas
+# group: hellojas
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/hellojas/sandbox/README
+# owner: hellojas
+# group: hellojas
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/hellojas/index.cgi
+# owner: hellojas
+# group: hellojas
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/hellojas/.ssh
+# owner: hellojas
+# group: hellojas
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/hellojas/.ssh/authorized_keys
+# owner: hellojas
+# group: hellojas
 user::rw-
 group::rw-
 other::r--
@@ -11760,6 +11907,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/maximillian
+# owner: maximillian
+# group: maximillian
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/maximillian/README
+# owner: maximillian
+# group: maximillian
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/maximillian/sandbox
+# owner: maximillian
+# group: maximillian
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/maximillian/sandbox/README
+# owner: maximillian
+# group: maximillian
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/maximillian/index.cgi
+# owner: maximillian
+# group: maximillian
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/maximillian/.ssh
+# owner: maximillian
+# group: maximillian
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/maximillian/.ssh/authorized_keys
+# owner: maximillian
+# group: maximillian
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/zamansky
 # owner: zamansky
 # group: zamansky
@@ -12628,6 +12824,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/mattd
+# owner: mattd
+# group: mattd
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/mattd/README
+# owner: mattd
+# group: mattd
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/mattd/sandbox
+# owner: mattd
+# group: mattd
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mattd/sandbox/README
+# owner: mattd
+# group: mattd
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/mattd/index.cgi
+# owner: mattd
+# group: mattd
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mattd/.ssh
+# owner: mattd
+# group: mattd
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/mattd/.ssh/authorized_keys
+# owner: mattd
+# group: mattd
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/davidykay
 # owner: davidykay
 # group: davidykay
@@ -13086,6 +13331,55 @@ other::r-x
 # file: /srv/home/arun/.ssh/authorized_keys
 # owner: arun
 # group: arun
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/moonbreakzor
+# owner: moonbreakzor
+# group: moonbreakzor
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/moonbreakzor/README
+# owner: moonbreakzor
+# group: moonbreakzor
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/moonbreakzor/sandbox
+# owner: moonbreakzor
+# group: moonbreakzor
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/moonbreakzor/sandbox/README
+# owner: moonbreakzor
+# group: moonbreakzor
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/moonbreakzor/index.cgi
+# owner: moonbreakzor
+# group: moonbreakzor
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/moonbreakzor/.ssh
+# owner: moonbreakzor
+# group: moonbreakzor
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/moonbreakzor/.ssh/authorized_keys
+# owner: moonbreakzor
+# group: moonbreakzor
 user::rw-
 group::rw-
 other::r--
@@ -14295,6 +14589,55 @@ user::rw-
 group::rw-
 other::r--
 
+# file: /srv/home/engin
+# owner: engin
+# group: engin
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/engin/README
+# owner: engin
+# group: engin
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/engin/sandbox
+# owner: engin
+# group: engin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/engin/sandbox/README
+# owner: engin
+# group: engin
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/engin/index.cgi
+# owner: engin
+# group: engin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/engin/.ssh
+# owner: engin
+# group: engin
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/engin/.ssh/authorized_keys
+# owner: engin
+# group: engin
+user::rw-
+group::rw-
+other::r--
+
 # file: /srv/home/darkseidvengeance
 # owner: darkseidvengeance
 # group: darkseidvengeance
@@ -14956,6 +15299,55 @@ other::r-x
 # file: /srv/home/capac/.ssh/authorized_keys
 # owner: capac
 # group: capac
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jameszhao
+# owner: jameszhao
+# group: jameszhao
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/jameszhao/README
+# owner: jameszhao
+# group: jameszhao
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jameszhao/sandbox
+# owner: jameszhao
+# group: jameszhao
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jameszhao/sandbox/README
+# owner: jameszhao
+# group: jameszhao
+user::rw-
+group::rw-
+other::r--
+
+# file: /srv/home/jameszhao/index.cgi
+# owner: jameszhao
+# group: jameszhao
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jameszhao/.ssh
+# owner: jameszhao
+# group: jameszhao
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/jameszhao/.ssh/authorized_keys
+# owner: jameszhao
+# group: jameszhao
 user::rw-
 group::rw-
 other::r--

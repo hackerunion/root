@@ -84,5 +84,13 @@
 { "username": "raptoria", "password": "$1$Bgtuznnw$byHU0440W/9quQBgEHFm31", "uid": "1419", "gid": "1421", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "kavanaanand", "password": "$1$V1S13mY7$.jwQkK05E.04SkYds2yVK1", "uid": "1420", "gid": "1422", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
 { "username": "dspaces1", "password": "$1$mfu5EYUX$PivTEmkNu7.RlNiL8c3Hc.", "uid": "1421", "gid": "1423", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
-{ "username": "jkaye", "password": "$1$ZaNnGE/f$.NYLo/VTgGqpy/VpogMqb1", "uid": "1422", "gid": "1424", "info": "", "shell": "/bin/sh", "service": false, "uri": null }
+{ "username": "jkaye", "password": "$1$ZaNnGE/f$.NYLo/VTgGqpy/VpogMqb1", "uid": "1422", "gid": "1424", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "maximillian", "password": "$1$8B4u76Gl$RfpaUqjbo862vaWxNome//", "uid": "1423", "gid": "1425", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "hellojas", "password": "$1$sRav7upL$20cjXnPcewAIJAjJsntrs/", "uid": "1424", "gid": "1426", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "jameszhao", "password": "$1$5epj4ZPD$NYKs6AZAa.F5g6LgjFHN/.", "uid": "1425", "gid": "1427", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "mattd", "password": "$1$adBVbeRO$Z0Zmu1ahCGqxXR9harCD9/", "uid": "1426", "gid": "1428", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "engin", "password": "$1$uuUSwGHl$oqn/QSJaIHuTtLe4qcltj0", "uid": "1427", "gid": "1429", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "moonbreakzor", "password": "$1$J1WjJz9n$NB8CWaM2R7xr7aDvYn68a/", "uid": "1428", "gid": "1430", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "njpatten", "password": "$1$FxdW9ye/$jyKotD/r2O9QNmD2tPy1j1", "uid": "1429", "gid": "1431", "info": "", "shell": "/bin/sh", "service": false, "uri": null },
+{ "username": "r0nind", "password": "$1$ZCqxwdPa$G0PiKPkKWxjUvgPG5b8ED/", "uid": "1430", "gid": "1432", "info": "", "shell": "/bin/sh", "service": false, "uri": null }
 ]

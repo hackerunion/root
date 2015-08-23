@@ -82,7 +82,10 @@ $(function() {
 
   var renderCard = function($s, $t, stack, card){
     var $tr;
-    var $card = $("<table />").addClass("card");
+    var $card = $("<div />").addClass("card");
+    var $markdown= $("<div />").addClass("markdown").appendTo($card);
+    var $cells = $("<table />").addClass("cells").appendTo($card);
+
     var handler = function(r, c, cell) {
       return function() {
         if (!isEditMode($s) && cell.go) {
@@ -90,9 +93,13 @@ $(function() {
         }
       }
     };
+    
+    if (card.markdown) {
+      $markdown.html(marked(card.markdown));
+    }
 
     for(var r=0; r < card.data.length; r++) {
-      $tr = $("<tr />").appendTo($card);
+      $tr = $("<tr />").appendTo($cells);
 
       for(var c=0; c<card.data[r].length; c++) {
         var cell = card.data[r][c];
@@ -136,6 +143,10 @@ $(function() {
 
   var repaint = function($s, $t, stack, init) {
     toggleMode($s, $t, stack);
+
+    if (stack.style) {
+      $('#style').html(stack.style);
+    }
 
     if (init) {
       renderStack($s, $t, stack);
@@ -424,7 +435,7 @@ $(function() {
   var resetTools = function($s, $t, stack) {
     $('#diffstack', $t).off('submit');
     $('[name=mode], [name=card]', $t).off('change');
-    $('#hidetools, #showtools, #refresh, #shift, #setgo, #gettext, #settext, #savestack, #loadstack, #importstack, #exportstack, #newcard, #deletecard, #setname, #setcode, #getcode, #setfg, #setbg', $t).off('click');
+    $('#hidetools, #showtools, #refresh, #shift, #setgo, #getmarkdown, #setmarkdown, #getstyle, #setstyle, #gettext, #settext, #savestack, #loadstack, #importstack, #exportstack, #newcard, #deletecard, #setname, #setcode, #getcode, #setfg, #setbg', $t).off('click');
   }
 
   var initTools = function($s, $t, stack) {
@@ -608,6 +619,17 @@ $(function() {
       return false;
     });
     
+    $('#getstyle', $t).click(function() {
+      $("[name=style]", $t).val(stack.style || '');
+      return false;
+    });
+
+    $('#setstyle', $t).click(function() {
+      var style = $("[name=style]", $t).val().trim();
+      stack.style = style;
+      return repaint($s, $t, stack);
+    });
+    
     var getCodeObjs = function($s, $t, stack) {
       var $active = getActive($s);
       var mode = $("[name=code]", $t).val().trim();
@@ -699,6 +721,24 @@ $(function() {
       }
 
       return false;
+    });
+
+    $('#getmarkdown', $t).click(function() {
+      var $markdown = $('[name=markdown]', $t);
+      var card = stack.cards[stack.card];
+
+      $markdown.val(card.markdown || '');
+
+      return false;
+    });
+
+    $('#setmarkdown', $t).click(function() {
+      var markdown = $("[name=markdown]", $t).val().trim();
+      var card = stack.cards[stack.card];
+      
+      card.markdown = markdown;
+      
+      return repaint($s, $t, stack);
     });
 
     $('#gettext', $t).click(function() {
@@ -847,8 +887,8 @@ $(function() {
     var data = [];
     var fg = fg || "#000";
     var bg = bg || "#eee";
-    var rows = rows || 24;
-    var cols = cols || 80;
+    var rows = rows === undefined ? 24 : rows;
+    var cols = cols === undefined ? 80 : cols;
 
     for (var row=[], r=0; r<rows; row=[], r++) {
       for (var c=0; c<cols; c++) {
