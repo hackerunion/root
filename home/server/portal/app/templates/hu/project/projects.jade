@@ -1,0 +1,62 @@
+extends ../chapter/base
+
+block title-extended
+  | | Projects
+
+block nav
+  ul.right
+    li.animate
+      a(href='/nyc') home
+    li.animate
+      a(href='/nyc/members') members
+    li.animate.active
+      a(href='/nyc/projects/') projects
+    li.animate
+        a(href='/accounts/logout') logout
+    li.animate
+        a(href='/accounts/login') login
+
+block content
+  .row.cramped
+    .seven.columns
+      h2.subheader
+        | Projects are 
+        em group initiatives.
+      p.lead
+        | Browse through the directory&mdash; or start a new project.
+      ul.project-list
+        li
+          .row
+            .two.columns
+              .project-img
+                img(src!="http://lorempixel.com/g/100/100/animals?cache={% cachebuster %}")
+          
+            .ten.columns
+              .creator 
+                span.name 
+                  a(href="/null/members/?n=null") John Smith
+                  span.moderated(title!="Moderated by {{bulletin.moderated_by.get_profile.display_name}}") * 
+                span.username 
+                  | @jsmith
+                
+                span.right
+                  span.changeit  
+                    a(href="#", data-reveal-id="editBulletin").talk-edit Edit 
+                  span.timestamp {% humanize_time_diff bulletin.created %}
+          
+              h4.subheader
+                a(href="/null/posts/null")
+                      Title
+              
+              .talk-content
+                Content
+  
+      
+    .five.columns
+      .panel  
+        h4
+          | Create a Project
+        form(method='post', action='')
+          input(type="text", placeholder="Project title") 
+          textarea(placeholder="Project description", name="content").project-content-input
+          input(type='submit', value='Create Project').button.radius.full-width

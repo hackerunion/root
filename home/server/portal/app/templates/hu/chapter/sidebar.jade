@@ -1,0 +1,122 @@
+// To do list
+.alert-box.to-do    
+  a(href="").close.close-guide
+    &times;
+  .mod
+    p.lead Welcome! Let's Get Started.
+    ul
+      li
+        a(href="/accounts/settings") Complete
+        |  your profile
+      li
+        a(href="#").open-talk Introduce
+        |  yourself
+      li 
+        a(href="#").open-events Explore
+        |  local events
+      
+      li 
+        a(href="/nyc/posts/go/what-is-a-guide") Learn
+        |  about guides
+
+.mod
+  .medium.button.radius.dropdown
+    | Member Tools
+    ul
+      li
+        a(href="", data-reveal-id="sendGroupMessage") New Message&hellip;
+
+      li
+        a(href="", data-reveal-id="sendInvite") Send Invite&hellip;
+
+      li.divider
+      li
+        a(href="", data-reveal-id="doModerators") Manage Moderators
+      li
+        a(href="", data-reveal-id="doGuides") Manage Guides
+      li
+        a(href="", data-reveal-id="doMentees") Transfer Recruits
+      li.divider
+      li
+        a(href="", data-reveal-id="injectMarkup") Inject Markup
+      li
+        a(href="", data-reveal-id="banUser") Ban User
+      li.divider
+      li
+        a(href="", data-reveal-id="help") Report Abuse
+      li
+        a(href="", data-reveal-id="sendReferral") Send Invite&hellip;
+      li.divider
+      li
+        a(href="", data-reveal-id="help") Get Help
+      li.divider
+      li
+        a(href="", data-reveal-id="newMentor") Request Guide
+      li
+        a(href="", data-reveal-id="becomeLeader") Become Guide
+      li.divider
+      li
+        a(href="/accounts/settings") Edit Profile
+
+// My member card
+.mod
+  h5 Your Profile 
+    span.edit 
+      a(href="/accounts/settings") Edit
+
+  .member-card
+    .member-info
+        .row
+          .twelve.columns
+            .three.columns.pic
+              img(src!='')
+            .nine.columns
+              .name
+                | Username
+              | Social
+        
+        |Skills
+
+
+
+.mod
+  h5 Your Guide
+  .no-mentor
+    | You don't have a guide yet. 
+    a(href="", data-reveal-id="newMentor") Find one +
+
+// Actions for a mentee
+.mod
+  h5 Pending Requests
+  ul.square
+    li
+      a(href="/nyc/posts/1/")
+        | Request
+
+
+.mod
+  a(name="mailingLists").invisible 
+  h5 Mailing Lists
+  p You can contact the group by sending emails to any of these mailing lists.
+  dl
+    dt
+      input(type="checkbox").official-notice-toggle
+      | Administration
+    dd
+      a(href="#")
+      | Admin
+
+    dt 
+      input(type="checkbox").discuss-notice-toggle
+      |  General Talk
+    dd
+      a(href="#")
+        | Discuss
+
+.mod
+  h5 About chapter
+  p Description
+
+
+  .text-right
+    a(href="/petition/", target="_blank") More chapters &rarr;

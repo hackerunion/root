@@ -1,0 +1,19 @@
+extends ../base
+
+block title
+  | nyc
+
+block nav
+  ul.right
+    li(id="notifDrop").animate.active
+      a(href='/nyc')#notifHref 
+        | home
+        img(src="/static/images/notif_circle_1.png")#numNotifs
+      div(style="position:absolute;background-color:white;z-index:40;border:1px lightgrey solid;")
+        ul(id="navdropshow",style='height:200px;')
+    li.animate
+      a(href='/nyc/members') members
+    li.animate
+      a(href='/nyc/projects/') projects
+    li.animate
+      a(href='/accounts/login') login

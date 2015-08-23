@@ -1,0 +1,55 @@
+extends base
+
+block title
+  | | Welcome
+
+block header
+
+block nav
+
+block content
+  .welcome
+    .row
+      .twelve.columns
+        img(src="#{path}/img/logo/hackerunion_black.png")
+
+  .row.map
+    .eight.columns
+       h1.subheader Welcome to the Hacker Union
+       p.lead A community of Engineers, Designers, Artists. 
+         strong
+           | Builders.
+       p The Hacker Union is a global initiative to support, connect, and empower creative builders. Apply today and join the movement.
+       
+       .cities
+         a(href="/nyc/")
+           .label.newyork New York
+         a(href="/petition/")
+           .label.portland Portland
+         a(href="/petition/")
+           .label.sanfrancisco San Francisco
+         a(href="/petition/")
+           .label.boulder Boulder
+         a(href="/petition/")
+           .label.austin Austin
+         a(href="/petition/")
+           .label.seattle Seattle
+         a(href="/petition/")
+           .label & More
+
+    .four.columns      
+      h6 Join the Union
+      form(action="/", method="post")
+        .error
+          | error
+        input(type="text", value="Full Name")
+        input(type="text", value="Email")
+        input(type="password", value="Password")
+        input(type="submit", value="Request Membership").button.full-width
+      
+      hr
+      
+      strong.already
+        | Already have an account?
+      .right
+        a(href="/accounts/login").button.secondary Sign In
