@@ -1,25 +1,25 @@
 #!/usr/bin/env node
 
-var jade = require('jade');
-var querystring = require('querystring');
-
-var _ = require('/srv/lib/js/lodash');
-var body = require('/srv/lib/js/body');
-
-console.log("Status: 200");
-console.log("Content-Type: text/html");
-console.log("");
+var tiny = require('./lib/tiny');
 
 // ensure that all paths are relative to this file's actual location
 process.chdir(__dirname);
 
-try {
-  var fn = jade.compileFile('templates/hu/project/projects.jade');
+var app = tiny.cgi({
+  'path': __dirname.replace('/srv', ''),
+  'debug': true
+});
 
-  console.log(fn({
-    'path': __dirname.replace('/srv', '')
-  }));
+app.get(/main/, function(req) {
+  return tiny.template('templates/chapter/home.jade');
+});
 
-} catch(e) {
-  console.log("Error:", "<pre>", e.message, "</pre>");
-}
+app.get(/apply/, function(req) {
+  return tiny.template('templates/account/apply.jade');
+});
+
+app.get(/home|(?:)/, function(req) {
+  return tiny.template('templates/home.jade');
+});
+
+tiny.serve(app);

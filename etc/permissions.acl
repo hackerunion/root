@@ -3374,651 +3374,665 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu
+# file: /srv/home/server/portal/app/templates/account
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/account
+# file: /srv/home/server/portal/app/templates/account/card.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/change.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/apply.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/login.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/reset-thanks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/pending.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/social.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/.apply.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/.apply.jade.swo
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/skills.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/gravatar_img.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/confirm.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/set.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/account/reset.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/comment
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/account/card.jade
+# file: /srv/home/server/portal/app/templates/comment/comments.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/account/change.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/apply.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/login.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/reset-thanks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/pending.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/social.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/skills.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/gravatar_img.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/confirm.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/set.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/account/reset.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/comment
+# file: /srv/home/server/portal/app/templates/petition
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/comment/comments.jade
+# file: /srv/home/server/portal/app/templates/petition/thanks.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/petition
+# file: /srv/home/server/portal/app/templates/petition/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/event
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/petition/thanks.jade
+# file: /srv/home/server/portal/app/templates/event/bulletin.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/petition/home.jade
+# file: /srv/home/server/portal/app/templates/event/bulletin_inline.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/event
+# file: /srv/home/server/portal/app/templates/event/events.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/event/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/500.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/members
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/event/bulletin.jade
+# file: /srv/home/server/portal/app/templates/members/members.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/event/bulletin_inline.jade
+# file: /srv/home/server/portal/app/templates/base.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/event/events.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/event/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/500.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/members
+# file: /srv/home/server/portal/app/templates/chapter
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/members/members.jade
+# file: /srv/home/server/portal/app/templates/chapter/modals.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/base.jade
+# file: /srv/home/server/portal/app/templates/chapter/base.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/chapter
+# file: /srv/home/server/portal/app/templates/chapter/chapters.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/chapter/sidebar.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/chapter/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/introduction
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/chapter/modals.jade
+# file: /srv/home/server/portal/app/templates/introduction/bulletin.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/chapter/base.jade
+# file: /srv/home/server/portal/app/templates/introduction/intros.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/chapter/chapters.jade
+# file: /srv/home/server/portal/app/templates/introduction/bulletin_inline.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/chapter/sidebar.jade
+# file: /srv/home/server/portal/app/templates/introduction/bulletin_text.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/chapter/home.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/introduction
+# file: /srv/home/server/portal/app/templates/leadership
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/introduction/bulletin.jade
+# file: /srv/home/server/portal/app/templates/leadership/tasks.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/introduction/intros.jade
+# file: /srv/home/server/portal/app/templates/leadership/bulletin.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/introduction/bulletin_inline.jade
+# file: /srv/home/server/portal/app/templates/leadership/bulletin_inline.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/introduction/bulletin_text.jade
+# file: /srv/home/server/portal/app/templates/leadership/bulletin_text.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/leadership
+# file: /srv/home/server/portal/app/templates/notifications
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/leadership/tasks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/leadership/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/leadership/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/leadership/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/notifications
+# file: /srv/home/server/portal/app/templates/notifications/new_comment
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_comment
+# file: /srv/home/server/portal/app/templates/notifications/new_comment/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/notifications/new_comment/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/notifications/membership_approved
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_comment/email_txt.jade
+# file: /srv/home/server/portal/app/templates/notifications/membership_approved/email_txt.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_comment/email.jade
+# file: /srv/home/server/portal/app/templates/notifications/membership_approved/email.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/membership_approved
+# file: /srv/home/server/portal/app/templates/notifications/subscribe_list
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/membership_approved/email_txt.jade
+# file: /srv/home/server/portal/app/templates/notifications/subscribe_list/email_txt.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/membership_approved/email.jade
+# file: /srv/home/server/portal/app/templates/notifications/subscribe_list/email.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/subscribe_list
+# file: /srv/home/server/portal/app/templates/notifications/new_leadership
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/subscribe_list/email_txt.jade
+# file: /srv/home/server/portal/app/templates/notifications/new_leadership/email_txt.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/subscribe_list/email.jade
+# file: /srv/home/server/portal/app/templates/notifications/new_leadership/email.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_leadership
+# file: /srv/home/server/portal/app/templates/notifications/new_mention
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_leadership/email_txt.jade
+# file: /srv/home/server/portal/app/templates/notifications/new_mention/email_txt.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_leadership/email.jade
+# file: /srv/home/server/portal/app/templates/notifications/new_mention/email.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_mention
+# file: /srv/home/server/portal/app/templates/notifications/leadership_approved
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_mention/email_txt.jade
+# file: /srv/home/server/portal/app/templates/notifications/leadership_approved/email_txt.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/new_mention/email.jade
+# file: /srv/home/server/portal/app/templates/notifications/leadership_approved/email.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/leadership_approved
+# file: /srv/home/server/portal/app/templates/notifications/message
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/leadership_approved/email_txt.jade
+# file: /srv/home/server/portal/app/templates/notifications/message/email_txt.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/leadership_approved/email.jade
+# file: /srv/home/server/portal/app/templates/notifications/message/email.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/message
+# file: /srv/home/server/portal/app/templates/notifications/summary
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/message/email_txt.jade
+# file: /srv/home/server/portal/app/templates/notifications/summary/email_txt.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/message/email.jade
+# file: /srv/home/server/portal/app/templates/notifications/summary/email.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/summary
+# file: /srv/home/server/portal/app/templates/notifications/invite_site
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/summary/email_txt.jade
+# file: /srv/home/server/portal/app/templates/notifications/invite_site/email_txt.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/summary/email.jade
+# file: /srv/home/server/portal/app/templates/notifications/invite_site/email.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/invite_site
+# file: /srv/home/server/portal/app/templates/pending
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/invite_site/email_txt.jade
+# file: /srv/home/server/portal/app/templates/pending/bulletin.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/notifications/invite_site/email.jade
+# file: /srv/home/server/portal/app/templates/pending/bulletin_inline.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/pending
+# file: /srv/home/server/portal/app/templates/pending/pendings.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/pending/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/talk
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/pending/bulletin.jade
+# file: /srv/home/server/portal/app/templates/talk/bulletin.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/pending/bulletin_inline.jade
+# file: /srv/home/server/portal/app/templates/talk/bulletin_inline.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/pending/pendings.jade
+# file: /srv/home/server/portal/app/templates/talk/talks.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/pending/bulletin_text.jade
+# file: /srv/home/server/portal/app/templates/talk/bulletin_text.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/talk
+# file: /srv/home/server/portal/app/templates/404.html
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/404.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/500.html
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/.base.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/.home.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/templates/project
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/talk/bulletin.jade
+# file: /srv/home/server/portal/app/templates/project/bulletin.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/talk/bulletin_inline.jade
+# file: /srv/home/server/portal/app/templates/project/project.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/talk/talks.jade
+# file: /srv/home/server/portal/app/templates/project/projects.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/hu/talk/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/404.html
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/404.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/500.html
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/home.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/project
+# file: /srv/home/server/portal/app/templates/bulletin
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/hu/project/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/project/project.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/project/projects.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/hu/bulletin
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/hu/bulletin/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/index.jade
+# file: /srv/home/server/portal/app/templates/bulletin/bulletin.jade
 # owner: server
 # group: server
 user::rw-
@@ -4082,6 +4096,13 @@ group::r-x
 other::r-x
 
 # file: /srv/home/server/portal/app/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/.index.cgi.swp
 # owner: server
 # group: server
 user::rw-
@@ -4516,6 +4537,27 @@ group::r--
 other::r--
 
 # file: /srv/home/server/portal/app/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/lib
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal/app/lib/tiny.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal/app/lib/.tiny.js.swp
 # owner: server
 # group: server
 user::rw-

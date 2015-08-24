@@ -1,4 +1,4 @@
-extends base
+extends ../base
 
 block title-extended
   | | Petition Chapter
@@ -11,7 +11,7 @@ block content
   .welcome
     .row
       .twelve.columns
-        img(src="#{STATIC_URL}images/logo/hackerunion_black.png")
+        img(src="#{path}/img/logo/hackerunion_black.png")
 
   .row.cramped
     .eight.columns
@@ -26,11 +26,9 @@ block content
           {% csrf_token %}
           p
             | Email
-            #{petition_form.email.errors}
-            #{petition_form.email}
+            input(type="text")
           p
             | Postal Code
-            #{petition_form.postal_code.errors}
-            #{petition_form.postal_code}
+            input(type="text")
           .text-right
             input(type="submit", value="Sign Petition").button.full-width.secondary

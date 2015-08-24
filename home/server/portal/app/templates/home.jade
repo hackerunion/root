@@ -18,8 +18,8 @@ block content
        h1.subheader Welcome to the Hacker Union
        p.lead A community of Engineers, Designers, Artists. 
          strong
-           | Builders.
-       p The Hacker Union is a global initiative to support, connect, and empower creative builders. Apply today and join the movement.
+           | Hackers.
+       p The Hacker Union is a global initiative to support, connect, and empower creative people. Apply today and join the movement.
        
        .cities
          a(href="/nyc/")
@@ -40,16 +40,14 @@ block content
     .four.columns      
       h6 Join the Union
       form(action="/", method="post")
-        .error
-          | error
         input(type="text", value="Full Name")
         input(type="text", value="Email")
-        input(type="password", value="Password")
-        input(type="submit", value="Request Membership").button.full-width
+        input(type="submit", value="Request Account").button.full-width
       
       hr
       
-      strong.already
-        | Already have an account?
-      .right
-        a(href="/accounts/login").button.secondary Sign In
+      dl.tabs.pill
+          dd.active
+            a(href="#{link}/main") Continue As Guest
+          dd
+            a(href="#{link}/main") Sign In
