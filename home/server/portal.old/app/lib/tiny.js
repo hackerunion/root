@@ -5,64 +5,8 @@ var querystring = require('querystring');
 
 var _ = require('/srv/lib/js/lodash');
 var body = require('/srv/lib/js/body');
-var lockFile = require('/srv/lib/js/lockfile');
 
 tiny = {
-  db: function(p) {
-    var obj = {
-      'data': {},
-
-      'read': function() {
-        try {
-          obj.data = require(p);
-          return true;
-        } catch(e) {
-          obj.data = {};
-          return false;
-        }
-      },
-
-      'write': function() {
-        try {
-          fs.writeFileSync(p, JSON.stringify(obj.data, null, 2));
-          return true;
-        } catch(e) {
-          return false;
-        }
-      },
-
-      'open': function() {
-        var r1 = obj.lock();
-        var r2 = obj.read();
-        return r1 && r2;
-      },
-
-      'close': function() {
-        var r1 = obj.write();
-        var r2 = obj.unlock();
-        return r1 && r2;
-      },
-
-      'lock': function() {
-        try {
-          lockFile.lockSync(p + '.lock');
-        } catch(e) {
-          return false;
-        }
-      },
-      
-      'unlock': function() {
-        try {
-          lockFile.unlockSync(p + '.lock');
-        } catch(e) {
-          return false;
-        }
-      }
-    };
-      
-    return obj;
-  },
-
   out: function(t) {
     console.log(t);
   },
@@ -73,14 +17,9 @@ tiny = {
     throw err;
   },
 
-  headers: function(code, mime, extra) {
+  headers: function(code, mime) {
     tiny.out("Status: " + code);
     tiny.out("Content-Type: " + ( mime || "text/html"));
-
-    for (header in extra) {
-      tiny.out(header + ': ' + extra[header]);
-    }    
-
     tiny.out("");
   },
 
@@ -116,8 +55,7 @@ tiny = {
     return function(app) {
       ctx = _.clone(ctx);
       ctx.path = app['_cfg'].path || '';
-      ctx.globals = app['_cfg'].globals;
-      ctx.link = ctx.path + '?path=';
+      ctx.link = ctx.path + '?path='
 
       return {
         'code': code,
@@ -136,17 +74,6 @@ tiny = {
         'code': code,
         'mime': mime,
         'body': fs.readFileSync(path.join(app['_cfg'].path || '', pathname), 'utf-8')
-      };
-    };
-  },
-
-  redirect: function(link) {
-    return function(app) {
-      return {
-        'code': 302,
-        'mime': 'text/plain',
-        'headers': { 'Location': (app['_cfg'].path || '') + '?path=' + link },
-        'body': ''
       };
     };
   },
@@ -206,7 +133,7 @@ tiny = {
   
         var res = handle[1](req)(app);
   
-        tiny.headers(res.code, res.mime, res.headers);
+        tiny.headers(res.code, res.mime);
         tiny.out(res.body);
   
         if (app['_cfg'].debug) {

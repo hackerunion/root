@@ -1,65 +1,57 @@
 doctype html
-html
-    head
-        link(rel='stylesheet', media="screen", type='text/css', href='#{path}/css/chapters/base.css')
-        link(rel='stylesheet', media="screen", type='text/css', href='#{path}/css/redactor.css')
-        link(rel='stylesheet', media="screen", type='text/css', href='#{path}/css/app.css')
-        link(rel='stylesheet', media="screen", type='text/css', href='#{path}/css/hu.css')
+html(lang='en')
+  head
+    title hacker union
+    script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
+    script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='#{path}/js/app.js')
+    script(type='text/javascript').
+      // js here
 
-        meta(name="description", content="The Hacker Union is a global initiative to support, connect, and empower builders. Apply today and join the movement.")
-        meta(name="keywords", content="HackerUnion, Hacker, Union, Designer, Engineering, Building, Tech")
+    link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  body
+    header
+      ul#chapters
+        li
+          a(href="#{link}/nyc") nyc
+        li
+          a(href="#{link}/#{chapter}/start") [start a chapter]
+      
+      ul#actions
+        if guest
+          li
+            a(href="#{link}/#{chapter}/login") [login]
+          li
+            a(href="#{link}/#{chapter}/join") [join]
+        else
+          li
+            a(href="#{link}/#{chapter}/login") [logout]
+          li
+            a(href="#{link}/#{chapter}/account") [account]
 
-        link(rel="icon", href='#{path}/favicon.ico')
+      #branding
+        h1 Hacker Union
+        p Hack Together
+    
+    nav
+      ul
+        li
+          a(href="#{link}/#{chapter}/join") join
+        li
+          a(href="#{link}/#{chapter}/hack") hack
+        li
+          a(href="#{link}/#{chapter}/host") host
+        li
+          a(href="#{link}/#{chapter}/stuff") stuff
+        li
+          a(href="#{link}/#{chapter}/about") about
 
-        title
-          | Hacker Union
-          block title
-          block title-extended
-                
-    body
-        block header
-          .header
-            .row
-              nav.top-bar
-                ul
-                  li.name
-                    h1
-                      a(href='/').animate.logo
-                        img(src="#{path}/img/logo/hackerunion_ny.png")
-                  li.toggle-topbar
-                    a(href='#')
-                section
-                block nav
-              
-        block content
-        block pre-footer
-          script
-            var skills = [];
-            var affiliations = [];
-            var initiatives = [];
-            var members = [];
-        block footer
-            .footer
-              .row
-                .left
-                  img(src="#{path}/img/logo/hackerunion_footer.png").footerlogo
-                  p Copyright &copy; 2015 Hacker Union
-                .right
-                  .tagline
-                    | View source on 
-                    span 
-                      a(href="http://www.github.com/hackerunion/root") GitHub
+    main
+      block content
+        span 404
 
-
-                  .footerlinks
-                    span.apply
-                      a(href="#{link}/apply") Apply
-                    span
-                      a(href="/accounts/login") Sign In
-                    span
-                      a(href="http://www.twitter.com/hackerunion") Twitter
-                    span.last
-                      a(href="https://www.facebook.com/hackerunion.org") Facebook
-            script(src='#{path}/javascripts/global.js')
-            script(src='#{path}/javascripts/app.js')
-        block post-footer
+    footer
+      small
+        &copy; 2015 hacker union

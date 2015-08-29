@@ -3374,196 +3374,21 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/templates/account
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/account/card.jade
+# file: /srv/home/server/portal/app/templates/login.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/account/change.jade
+# file: /srv/home/server/portal/app/templates/.host.jade.swp
 # owner: server
 # group: server
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
-# file: /srv/home/server/portal/app/templates/account/apply.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/login.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/reset-thanks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/pending.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/social.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/.apply.jade.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/.apply.jade.swo
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/skills.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/gravatar_img.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/confirm.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/set.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/account/reset.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/comment
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/comment/comments.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/petition
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/petition/thanks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/petition/home.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/event
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/event/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/event/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/event/events.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/event/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/500.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/members
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/members/members.jade
+# file: /srv/home/server/portal/app/templates/host.jade
 # owner: server
 # group: server
 user::rw-
@@ -3577,399 +3402,63 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/chapter
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/chapter/modals.jade
+# file: /srv/home/server/portal/app/templates/.index.jade.swp
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/chapter/base.jade
+# file: /srv/home/server/portal/app/templates/index.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/chapter/chapters.jade
+# file: /srv/home/server/portal/app/templates/about.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/chapter/sidebar.jade
+# file: /srv/home/server/portal/app/templates/account.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/chapter/home.jade
+# file: /srv/home/server/portal/app/templates/stuff.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/introduction
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/introduction/bulletin.jade
+# file: /srv/home/server/portal/app/templates/start.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/introduction/intros.jade
+# file: /srv/home/server/portal/app/templates/.account.jade.swp
 # owner: server
 # group: server
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
-# file: /srv/home/server/portal/app/templates/introduction/bulletin_inline.jade
+# file: /srv/home/server/portal/app/templates/.stuff.jade.swp
 # owner: server
 # group: server
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
-# file: /srv/home/server/portal/app/templates/introduction/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/leadership
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/leadership/tasks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/leadership/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/leadership/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/leadership/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/new_comment
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/new_comment/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/new_comment/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/membership_approved
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/membership_approved/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/membership_approved/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/subscribe_list
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/subscribe_list/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/subscribe_list/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/new_leadership
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/new_leadership/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/new_leadership/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/new_mention
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/new_mention/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/new_mention/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/leadership_approved
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/leadership_approved/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/leadership_approved/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/message
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/message/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/message/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/summary
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/summary/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/summary/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/invite_site
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/notifications/invite_site/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/notifications/invite_site/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/pending
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/pending/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/pending/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/pending/pendings.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/pending/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/talk
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/talk/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/talk/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/talk/talks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/talk/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/404.html
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/404.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/500.html
+# file: /srv/home/server/portal/app/templates/join.jade
 # owner: server
 # group: server
 user::rw-
@@ -3980,108 +3469,17 @@ other::r--
 # owner: server
 # group: server
 user::rw-
-group::r--
-other::r--
+group::---
+other::---
 
-# file: /srv/home/server/portal/app/templates/home.jade
+# file: /srv/home/server/portal/app/templates/.about.jade.swp
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/.home.jade.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/project
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/project/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/project/project.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/project/projects.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/bulletin
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/templates/bulletin/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/sass
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/sass/chapters
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/sass/chapters/nyc.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/sass/chapters/base.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/sass/normalize.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/sass/_app.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/sass/_settings.scss
+# file: /srv/home/server/portal/app/templates/hack.jade
 # owner: server
 # group: server
 user::rw-
@@ -4116,328 +3514,6 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/img/notif_circle_2.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/calendar.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/event.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/notif_circle_3plus.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/mail.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/logo
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/logo/hackerunion_black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/logo/hackerunion_masthead.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/logo/hackerunion_ny.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/logo/hackerunion_footer.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/logo/social.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/chapters
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/chapters/nyc
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/chapters/nyc/hero_c.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/chapters/nyc/hero_b.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/chapters/nyc/hero_a.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/chapters/nyc/logo_white.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/post-flags.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/map.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/ambassador.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/notif_circle_3.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/notif_circle_1.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/hackerunion_footer.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/social.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/thumb.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/foundation/orbit
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/bullets.jpg
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/left-arrow.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/left-arrow-small.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/loading.gif
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/rotator-black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/mask-black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/timer-black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/right-arrow-small.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/right-arrow.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/foundation/orbit/pause-black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/select2
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/select2/spinner.gif
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/select2/select2x2.png
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/select2/select2.png
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/img/check.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/cross.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/chat.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/bulletin.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/img/star.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
 # file: /srv/home/server/portal/app/index.cgi
 # owner: server
 # group: server
@@ -4452,13 +3528,6 @@ user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/portal/app/css/spinner.gif
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
 # file: /srv/home/server/portal/app/css/style.css
 # owner: server
 # group: server
@@ -4466,70 +3535,7 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/css/chapters
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/css/chapters/nyc.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/css/chapters/base.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/css/chapters/sf.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/css/select2x2.png
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/css/select2.png
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
 # file: /srv/home/server/portal/app/css/normalize.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/css/select2.css
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/app/css/redactor.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/css/hu.css
 # owner: server
 # group: server
 user::rw-
@@ -4558,2736 +3564,6 @@ group::r--
 other::r--
 
 # file: /srv/home/server/portal/app/lib/.tiny.js.swp
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/card.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/change.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/apply.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/login.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/reset-thanks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/pending.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/social.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/skills.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/gravatar_img.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/confirm.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/set.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/account/reset.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/comment
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/comment/comments.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/petition
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/petition/thanks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/petition/home.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/event
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/event/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/event/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/event/events.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/event/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/500.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/members
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/members/members.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/base.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/chapter
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/chapter/modals.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/chapter/base.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/chapter/chapters.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/chapter/sidebar.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/chapter/home.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/introduction
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/introduction/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/introduction/intros.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/introduction/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/introduction/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/leadership
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/leadership/tasks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/leadership/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/leadership/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/leadership/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_comment
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_comment/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_comment/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/membership_approved
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/membership_approved/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/membership_approved/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/subscribe_list
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/subscribe_list/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/subscribe_list/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_leadership
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_leadership/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_leadership/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_mention
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_mention/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/new_mention/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/leadership_approved
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/leadership_approved/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/leadership_approved/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/message
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/message/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/message/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/summary
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/summary/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/summary/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/invite_site
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/invite_site/email_txt.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/notifications/invite_site/email.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/pending
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/pending/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/pending/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/pending/pendings.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/pending/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/talk
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/talk/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/talk/bulletin_inline.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/talk/talks.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/talk/bulletin_text.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/404.html
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/404.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/500.html
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/home.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/project
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/project/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/project/project.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/project/projects.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/bulletin
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/templates/bulletin/bulletin.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/tasks.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/migrations
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/migrations/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/migrations/0001_initial.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/migrations/0002_auto__chg_field_userprofile_chapter.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/backends.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/account/decorators.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/wsgi.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/tasks.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/management.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/utils.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/synergy/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/petition
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/petition/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/petition/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/petition/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/petition/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/petition/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/petition/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/petition/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/event
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/event/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/event/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/event/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/event/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/event/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/event/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/event/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/members
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/members/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/members/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/members/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/members/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/members/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/context_processors.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/dt.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/json.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/names.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/auth.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/debug.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/display.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/search.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/string.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/javascript.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/iter.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/datatypes.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/helpers.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/utils/serializers.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/templatetags
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/templatetags/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/templatetags/javascript.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/templatetags/helpers.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/management
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/management/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/management/commands
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/management/commands/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/middleware.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/lib
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/lib/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/lib/ipinfodb.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/lib/jsmin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/lib/twiliotools.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/lib/jspacker.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/common/decorators.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/utils.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/management
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/management/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/management/commands
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/management/commands/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/management/commands/syncemail.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/mail/decorators.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/chapter
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/chapter/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/chapter/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/chapter/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/chapter/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/chapter/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/chapter/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/chapter/decorators.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/introduction
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/introduction/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/introduction/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/introduction/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/introduction/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/introduction/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/introduction/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/app_settings.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership/utils.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/leadership/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/tag
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/tag/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/tag/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/tag/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/tag/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/tag/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/pending
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/pending/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/pending/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/pending/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/pending/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/pending/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/pending/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/pending/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/talk
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/talk/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/talk/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/talk/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/talk/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/talk/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/talk/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/talk/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/base
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/base/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/base/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/base/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/base/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/base/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/settings.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/project
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/project/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/project/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/project/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/project/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/project/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/project/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/project/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/api_settings.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/tests.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/models.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/__init__.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/utils.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/urls.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/views.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/admin.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/forms.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/petri/bulletin/decorators.py
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/README.md
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/LICENSE.md
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/manage.py
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/fixtures
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/fixtures/README.md
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/fixtures/initial_data.json
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/var
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/var/bin
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/var/bin/rename_tool.bash
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/var/bin/runlocal.bash
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/var/etc
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/var/etc/requirements.txt
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/config.rb
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/robots.txt
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/spinner.gif
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/chapters
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/chapters/nyc.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/chapters/base.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/chapters/sf.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/select2x2.png
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/select2.png
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/select2.css
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/redactor.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/stylesheets/hu.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/app.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/vendor
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/vendor/foundation.min.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/vendor/angular.min.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/vendor/jquery-ui-1.9.2.custom.js
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/vendor/jquery.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/vendor/modernizr.foundation.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/global.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.timePicker.min.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.reveal.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/select2.min.js
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.joyride.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/popover.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.shapeshift.min.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.tooltips.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.isotope.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.buttons.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.checkbox.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.ui.timepicker.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.placeholder.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.isotope.min.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.topbar.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.alerts.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.accordion.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.forms.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.tabs.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.history.js
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/redactor.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.navigation.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/javascripts/plugin/jquery.expander.min.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/sass
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/sass/chapters
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/sass/chapters/nyc.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/sass/chapters/base.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/sass/normalize.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/sass/_app.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/sass/_settings.scss
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/Gemfile.lock
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/notif_circle_2.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/calendar.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/event.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/notif_circle_3plus.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/mail.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/logo
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/logo/hackerunion_black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/logo/hackerunion_masthead.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/logo/hackerunion_ny.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/logo/hackerunion_footer.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/logo/social.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/chapters
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/chapters/nyc
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/chapters/nyc/hero_c.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/chapters/nyc/hero_b.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/chapters/nyc/hero_a.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/chapters/nyc/logo_white.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/post-flags.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/map.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/ambassador.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/notif_circle_3.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/notif_circle_1.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/hackerunion_footer.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/social.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/thumb.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/bullets.jpg
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/left-arrow.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/left-arrow-small.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/loading.gif
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/rotator-black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/mask-black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/timer-black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/right-arrow-small.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/right-arrow.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/foundation/orbit/pause-black.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/select2
-# owner: server
-# group: server
-user::rwx
-group::rwx
-other::rwx
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/select2/spinner.gif
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/select2/select2x2.png
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/select2/select2.png
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/check.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/cross.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/chat.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/bulletin.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/images/star.png
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/Gemfile
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/humans.txt
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/hackerunion.org-master/static/favicon.ico
 # owner: server
 # group: server
 user::rw-
@@ -15147,6 +11423,3947 @@ other::r--
 user::rwx
 group::rwx
 other::r-x
+
+# file: /srv/home/server/portal.old
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/account
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/account/card.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/change.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/apply.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/login.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/reset-thanks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/pending.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/social.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/.apply.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/.apply.jade.swo
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/skills.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/gravatar_img.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/confirm.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/set.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/account/reset.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/comment
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/comment/comments.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/petition
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/petition/thanks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/petition/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/event
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/event/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/event/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/event/events.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/event/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/500.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/members
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/members/members.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/base.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/chapter
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/chapter/modals.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/chapter/base.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/chapter/chapters.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/chapter/sidebar.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/chapter/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/introduction
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/introduction/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/introduction/intros.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/introduction/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/introduction/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/leadership
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/leadership/tasks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/leadership/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/leadership/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/leadership/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_comment
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_comment/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_comment/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/membership_approved
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/membership_approved/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/membership_approved/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/subscribe_list
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/subscribe_list/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/subscribe_list/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_leadership
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_leadership/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_leadership/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_mention
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_mention/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/new_mention/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/leadership_approved
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/leadership_approved/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/leadership_approved/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/message
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/message/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/message/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/summary
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/summary/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/summary/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/invite_site
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/notifications/invite_site/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/notifications/invite_site/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/pending
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/pending/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/pending/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/pending/pendings.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/pending/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/talk
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/talk/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/talk/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/talk/talks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/talk/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/404.html
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/404.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/500.html
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/.base.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/.home.jade.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/project
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/project/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/project/project.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/project/projects.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/templates/bulletin
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/templates/bulletin/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/sass
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/sass/chapters
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/sass/chapters/nyc.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/sass/chapters/base.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/sass/normalize.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/sass/_app.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/sass/_settings.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/.index.cgi.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/notif_circle_2.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/calendar.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/event.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/notif_circle_3plus.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/mail.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/logo
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/logo/hackerunion_black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/logo/hackerunion_masthead.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/logo/hackerunion_ny.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/logo/hackerunion_footer.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/logo/social.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/chapters
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/chapters/nyc
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/chapters/nyc/hero_c.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/chapters/nyc/hero_b.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/chapters/nyc/hero_a.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/chapters/nyc/logo_white.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/post-flags.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/map.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/ambassador.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/notif_circle_3.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/notif_circle_1.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/hackerunion_footer.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/social.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/thumb.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/bullets.jpg
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/left-arrow.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/left-arrow-small.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/loading.gif
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/rotator-black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/mask-black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/timer-black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/right-arrow-small.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/right-arrow.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/foundation/orbit/pause-black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/select2
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/select2/spinner.gif
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/select2/select2x2.png
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/select2/select2.png
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/img/check.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/cross.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/chat.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/bulletin.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/img/star.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/css/spinner.gif
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/css/chapters
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/css/chapters/nyc.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/css/chapters/base.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/css/chapters/sf.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/css/select2x2.png
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/css/select2.png
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/css/select2.css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/css/redactor.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/css/hu.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/lib
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/app/lib/tiny.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/app/lib/.tiny.js.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/card.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/change.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/apply.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/login.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/reset-thanks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/pending.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/social.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/skills.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/gravatar_img.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/confirm.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/set.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/account/reset.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/comment
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/comment/comments.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/petition
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/petition/thanks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/petition/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/event
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/event/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/event/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/event/events.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/event/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/500.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/members
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/members/members.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/base.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/chapter
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/chapter/modals.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/chapter/base.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/chapter/chapters.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/chapter/sidebar.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/chapter/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/introduction
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/introduction/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/introduction/intros.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/introduction/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/introduction/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/leadership
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/leadership/tasks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/leadership/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/leadership/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/leadership/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_comment
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_comment/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_comment/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/membership_approved
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/membership_approved/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/membership_approved/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/subscribe_list
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/subscribe_list/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/subscribe_list/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_leadership
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_leadership/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_leadership/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_mention
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_mention/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/new_mention/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/leadership_approved
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/leadership_approved/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/leadership_approved/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/message
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/message/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/message/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/summary
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/summary/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/summary/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/invite_site
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/invite_site/email_txt.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/notifications/invite_site/email.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/pending
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/pending/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/pending/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/pending/pendings.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/pending/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/talk
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/talk/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/talk/bulletin_inline.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/talk/talks.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/talk/bulletin_text.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/404.html
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/404.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/500.html
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/home.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/project
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/project/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/project/project.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/project/projects.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/bulletin
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/templates/bulletin/bulletin.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/tasks.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/migrations
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/migrations/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/migrations/0001_initial.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/migrations/0002_auto__chg_field_userprofile_chapter.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/backends.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/account/decorators.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/wsgi.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/tasks.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/management.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/utils.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/synergy/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/petition
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/petition/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/petition/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/petition/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/petition/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/petition/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/petition/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/petition/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/event
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/event/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/event/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/event/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/event/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/event/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/event/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/event/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/members
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/members/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/members/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/members/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/members/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/members/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/context_processors.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/dt.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/json.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/names.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/auth.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/debug.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/display.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/search.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/string.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/javascript.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/iter.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/datatypes.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/helpers.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/utils/serializers.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/templatetags
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/templatetags/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/templatetags/javascript.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/templatetags/helpers.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/management
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/management/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/management/commands
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/management/commands/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/middleware.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/lib
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/lib/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/lib/ipinfodb.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/lib/jsmin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/lib/twiliotools.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/lib/jspacker.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/common/decorators.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/utils.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/management
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/management/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/management/commands
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/management/commands/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/management/commands/syncemail.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/mail/decorators.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/chapter
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/chapter/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/chapter/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/chapter/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/chapter/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/chapter/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/chapter/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/chapter/decorators.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/introduction
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/introduction/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/introduction/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/introduction/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/introduction/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/introduction/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/introduction/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/app_settings.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership/utils.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/leadership/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/tag
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/tag/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/tag/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/tag/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/tag/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/tag/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/pending
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/pending/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/pending/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/pending/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/pending/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/pending/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/pending/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/pending/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/talk
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/talk/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/talk/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/talk/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/talk/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/talk/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/talk/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/talk/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/base
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/base/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/base/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/base/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/base/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/base/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/settings.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/project
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/project/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/project/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/project/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/project/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/project/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/project/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/project/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/api_settings.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/tests.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/models.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/__init__.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/utils.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/urls.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/views.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/admin.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/forms.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/petri/bulletin/decorators.py
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/README.md
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/LICENSE.md
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/manage.py
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/fixtures
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/fixtures/README.md
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/fixtures/initial_data.json
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/var
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/var/bin
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/var/bin/rename_tool.bash
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/var/bin/runlocal.bash
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/var/etc
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/var/etc/requirements.txt
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/config.rb
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/robots.txt
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/spinner.gif
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/chapters
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/chapters/nyc.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/chapters/base.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/chapters/sf.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/select2x2.png
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/select2.png
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/select2.css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/redactor.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/stylesheets/hu.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/vendor
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/vendor/foundation.min.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/vendor/angular.min.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/vendor/jquery-ui-1.9.2.custom.js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/vendor/jquery.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/vendor/modernizr.foundation.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/global.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.timePicker.min.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.reveal.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/select2.min.js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.joyride.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/popover.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.shapeshift.min.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.tooltips.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.isotope.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.buttons.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.checkbox.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.ui.timepicker.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.placeholder.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.isotope.min.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.topbar.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.alerts.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.accordion.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.forms.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.tabs.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.history.js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/redactor.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.foundation.navigation.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/javascripts/plugin/jquery.expander.min.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/sass
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/sass/chapters
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/sass/chapters/nyc.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/sass/chapters/base.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/sass/normalize.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/sass/_app.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/sass/_settings.scss
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/Gemfile.lock
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/notif_circle_2.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/calendar.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/event.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/notif_circle_3plus.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/mail.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/logo
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/logo/hackerunion_black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/logo/hackerunion_masthead.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/logo/hackerunion_ny.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/logo/hackerunion_footer.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/logo/social.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/chapters
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/chapters/nyc
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/chapters/nyc/hero_c.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/chapters/nyc/hero_b.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/chapters/nyc/hero_a.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/chapters/nyc/logo_white.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/post-flags.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/map.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/ambassador.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/notif_circle_3.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/notif_circle_1.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/hackerunion_footer.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/social.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/thumb.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/bullets.jpg
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/left-arrow.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/left-arrow-small.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/loading.gif
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/rotator-black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/mask-black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/timer-black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/right-arrow-small.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/right-arrow.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/foundation/orbit/pause-black.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/select2
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/select2/spinner.gif
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/select2/select2x2.png
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/select2/select2.png
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/check.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/cross.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/chat.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/bulletin.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/images/star.png
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/Gemfile
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/humans.txt
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/portal.old/hackerunion.org-master/static/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/server/.ssh
 # owner: server

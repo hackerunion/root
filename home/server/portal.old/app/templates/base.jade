@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        link(rel='stylesheet', media="screen", type='text/css', href='#{path}/css/chapters/base.css')
+        link(rel='stylesheet', media="screen", type='text/css', href='#{path}/css/redactor.css')
+        link(rel='stylesheet', media="screen", type='text/css', href='#{path}/css/app.css')
+        link(rel='stylesheet', media="screen", type='text/css', href='#{path}/css/hu.css')
+
+        meta(name="description", content="The Hacker Union is a global initiative to support, connect, and empower builders. Apply today and join the movement.")
+        meta(name="keywords", content="HackerUnion, Hacker, Union, Designer, Engineering, Building, Tech")
+
+        link(rel="icon", href='#{path}/favicon.ico')
+
+        title
+          | Hacker Union
+          block title
+          block title-extended
+                
+    body
+        block header
+          .header
+            .row
+              nav.top-bar
+                ul
+                  li.name
+                    h1
+                      a(href='/').animate.logo
+                        img(src="#{path}/img/logo/hackerunion_ny.png")
+                  li.toggle-topbar
+                    a(href='#')
+                section
+                block nav
+              
+        block content
+        block pre-footer
+          script
+            var skills = [];
+            var affiliations = [];
+            var initiatives = [];
+            var members = [];
+        block footer
+            .footer
+              .row
+                .left
+                  img(src="#{path}/img/logo/hackerunion_footer.png").footerlogo
+                  p Copyright &copy; 2015 Hacker Union
+                .right
+                  .tagline
+                    | View source on 
+                    span 
+                      a(href="http://www.github.com/hackerunion/root") GitHub
+
+
+                  .footerlinks
+                    span.apply
+                      a(href="#{link}/apply") Apply
+                    span
+                      a(href="/accounts/login") Sign In
+                    span
+                      a(href="http://www.twitter.com/hackerunion") Twitter
+                    span.last
+                      a(href="https://www.facebook.com/hackerunion.org") Facebook
+            script(src='#{path}/javascripts/global.js')
+            script(src='#{path}/javascripts/app.js')
+        block post-footer
