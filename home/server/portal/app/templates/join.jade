@@ -1,4 +1,40 @@
 extends base
 
 block content
-  span join
+  section
+    h1 Create Account
+    p Join the movement and get increased access to events and resources.
+    form
+      ul
+        li 
+          label Username
+          input(name="username", type="text", placeholder="Username")
+        li
+          label Password
+          input(name="password", type="password")
+        li
+          label Confirm Password
+          input(name="confirm", type="password")
+        li
+          label Email Address
+          input(name="email", type="text", placeholder="Email Address")
+        li
+          label Bio
+          textarea(rows="24", cols="80")
+           |  1. What is your technical background?
+           | 
+           |  2. How can Hacker Union help you?
+           | 
+           |  3. How can you help Hacker Union?
+           | 
+           |  4. Any links we should check out?
+        li
+          input(type="submit", value="Login")
+
+  section
+    h1 Other Options
+    ul
+      li
+        a(href="#") Sign In
+      li
+        a(href="#") Why Join?

@@ -3381,13 +3381,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/.host.jade.swp
-# owner: server
-# group: server
-user::rw-
-group::---
-other::---
-
 # file: /srv/home/server/portal/app/templates/host.jade
 # owner: server
 # group: server
@@ -3396,13 +3389,6 @@ group::r--
 other::r--
 
 # file: /srv/home/server/portal/app/templates/base.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/.index.jade.swp
 # owner: server
 # group: server
 user::rw-
@@ -3444,14 +3430,7 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/.account.jade.swp
-# owner: server
-# group: server
-user::rw-
-group::---
-other::---
-
-# file: /srv/home/server/portal/app/templates/.stuff.jade.swp
+# file: /srv/home/server/portal/app/templates/.reset.jade.swp
 # owner: server
 # group: server
 user::rw-
@@ -3459,20 +3438,6 @@ group::---
 other::---
 
 # file: /srv/home/server/portal/app/templates/join.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/templates/.base.jade.swp
-# owner: server
-# group: server
-user::rw-
-group::---
-other::---
-
-# file: /srv/home/server/portal/app/templates/.about.jade.swp
 # owner: server
 # group: server
 user::rw-
@@ -3557,13 +3522,6 @@ group::r-x
 other::r-x
 
 # file: /srv/home/server/portal/app/lib/tiny.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/lib/.tiny.js.swp
 # owner: server
 # group: server
 user::rw-
