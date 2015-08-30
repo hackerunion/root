@@ -31,6 +31,10 @@ app.get(/([a-z]{3})\/join/i, function(req) {
   return tiny.template('templates/join.jade', context(req));
 });
 
+app.get(/([a-z]{3})\/recover/i, function(req) {
+  return tiny.template('templates/recover.jade', context(req));
+});
+
 app.get(/([a-z]{3})\/account/i, function(req) {
   return tiny.template('templates/account.jade', context(req));
 });

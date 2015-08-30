@@ -3381,6 +3381,13 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/portal/app/templates/recover.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/server/portal/app/templates/host.jade
 # owner: server
 # group: server
@@ -3430,13 +3437,6 @@ user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/portal/app/templates/.reset.jade.swp
-# owner: server
-# group: server
-user::rw-
-group::---
-other::---
-
 # file: /srv/home/server/portal/app/templates/join.jade
 # owner: server
 # group: server
@@ -3459,13 +3459,6 @@ group::r-x
 other::r-x
 
 # file: /srv/home/server/portal/app/js/app.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/portal/app/.index.cgi.swp
 # owner: server
 # group: server
 user::rw-

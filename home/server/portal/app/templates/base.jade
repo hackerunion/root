@@ -15,21 +15,21 @@ html(lang='en')
     header
       ul#chapters
         li
-          a(href="#{link}/nyc") nyc
+          a(href="#{link}/nyc") NYC
         li
-          a(href="#{link}/#{chapter}/start") [start a chapter]
+          a(href="#{link}/#{chapter}/start") [Start a Chapter]
       
       ul#actions
         if guest
           li
-            a(href="#{link}/#{chapter}/login") [login]
+            a(href="#{link}/#{chapter}/login") [Login]
           li
-            a(href="#{link}/#{chapter}/join") [join]
+            a(href="#{link}/#{chapter}/join") [Join]
         else
           li
-            a(href="#{link}/#{chapter}/login") [logout]
+            a(href="#{link}/#{chapter}/login") [Logout]
           li
-            a(href="#{link}/#{chapter}/account") [account]
+            a(href="#{link}/#{chapter}/account") [Account]
 
       #branding
         h1 Hacker Union
@@ -37,16 +37,20 @@ html(lang='en')
     
     nav
       ul
+        if guest
+          li
+            a(href="#{link}/#{chapter}/join") Join
+        else
+          li
+            a(href="#{link}/#{chapter}/card") Card
         li
-          a(href="#{link}/#{chapter}/join") join
+          a(href="#{link}/#{chapter}/hack") Hack
         li
-          a(href="#{link}/#{chapter}/hack") hack
+          a(href="#{link}/#{chapter}/host") Host
         li
-          a(href="#{link}/#{chapter}/host") host
+          a(href="#{link}/#{chapter}/stuff") Stuff
         li
-          a(href="#{link}/#{chapter}/stuff") stuff
-        li
-          a(href="#{link}/#{chapter}/about") about
+          a(href="#{link}/#{chapter}/about") About
 
     main
       block content
