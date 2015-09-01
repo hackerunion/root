@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    title hacker union
+    script(type='text/javascript', src='/usr/lib/js/zepto/min.js')
+    script(type='text/javascript', src='/usr/lib/js/lodash/modern.min.js')
+    script(type='text/javascript', src='#{path}/js/app.js')
+    script(type='text/javascript').
+      // js here
+
+    link(rel='stylesheet', type='text/css', href='#{path}/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='#{path}/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  body
+    header
+      ul#chapters
+        li
+          a(href="#{link}/nyc") NYC
+        li
+          a(href="#{link}/#{chapter}/start") [Start a Chapter]
+      
+      ul#actions
+        if guest
+          li
+            a(href="#{link}/#{chapter}/login") [Login]
+          li
+            a(href="#{link}/#{chapter}/join") [Join]
+        else
+          li
+            a(href="#{link}/#{chapter}/login") [Logout]
+          li
+            a(href="#{link}/#{chapter}/account") [Account]
+
+      #branding
+        h1 Hacker Union
+        p Hack Together
+    
+    nav
+      ul
+        if guest
+          li
+            a(href="#{link}/#{chapter}/join") Join
+        else
+          li
+            a(href="#{link}/#{chapter}/card") Card
+        li
+          a(href="#{link}/#{chapter}/hack") Hack
+        li
+          a(href="#{link}/#{chapter}/host") Host
+        li
+          a(href="#{link}/#{chapter}/stuff") Stuff
+        li
+          a(href="#{link}/#{chapter}/about") About
+
+    main
+      block content
+        span 404
+
+    footer
+      small
+        &copy; 2015 hacker union

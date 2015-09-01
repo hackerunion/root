@@ -1,0 +1,34 @@
+extends base
+
+block content
+  section
+    h1 Your Account
+    p Shortcuts for configuring your Hacker Union account
+
+    section
+      h1 Your Email
+      p Update your email address.
+      form
+        ul
+          li
+            label Email Address Password
+            input(name="email", type="text", placeholder="Email Address")
+          li
+            input(type="submit", value="Change")
+
+    section
+      h1 Your Passsword
+      p Change your password.
+      form
+        ul
+          li
+            label Current Password
+            input(name="password", type="password")
+          li
+            label New Password
+            input(name="new", type="password")
+          li
+            label Confirm Password
+            input(name="confirm", type="password")
+          li
+            input(type="submit", value="Change")

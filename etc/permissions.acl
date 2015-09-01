@@ -3500,6 +3500,14 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/server/portal/app/thing
+# owner: brandon
+# group: server
+# flags: s--
+user::rwx
+group::r-x
+other::r-x
+
 # file: /srv/home/server/portal/app/favicon.ico
 # owner: server
 # group: server
@@ -3513,6 +3521,13 @@ other::r--
 user::rwx
 group::r-x
 other::r-x
+
+# file: /srv/home/server/portal/app/lib/system.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
 
 # file: /srv/home/server/portal/app/lib/tiny.js
 # owner: server
@@ -11116,217 +11131,203 @@ user::rwx
 group::rwx
 other::r-x
 
-# file: /srv/home/server/sandbox/tui
+# file: /srv/home/server/sandbox/portal
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/tui/templates
+# file: /srv/home/server/sandbox/portal/app
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/tui/templates/index.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/tui/js
+# file: /srv/home/server/sandbox/portal/app/templates
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/tui/js/app.js
+# file: /srv/home/server/sandbox/portal/app/templates/login.jade
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/tui/index.cgi
+# file: /srv/home/server/sandbox/portal/app/templates/recover.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/host.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/base.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/about.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/account.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/stuff.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/start.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/join.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/templates/hack.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/bin
+# owner: server
+# group: server
+user::rwx
+group::rwx
+other::r-x
+
+# file: /srv/home/server/sandbox/portal/app/js
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/tui/css
+# file: /srv/home/server/sandbox/portal/app/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/.index.cgi.swp
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/img
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/tui/css/style.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/tui/css/normalize.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/tui/favicon.ico
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/stack
+# file: /srv/home/server/sandbox/portal/app/index.cgi
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/stack/templates
+# file: /srv/home/server/sandbox/portal/app/css
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/stack/templates/index.jade
+# file: /srv/home/server/sandbox/portal/app/css/style.css
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/stack/js
+# file: /srv/home/server/sandbox/portal/app/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sandbox/portal/app/thing
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/stack/js/app.js
+# file: /srv/home/server/sandbox/portal/app/favicon.ico
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/stack/index.cgi
+# file: /srv/home/server/sandbox/portal/app/lib
 # owner: server
 # group: server
 user::rwx
 group::r-x
 other::r-x
 
-# file: /srv/home/server/sandbox/stack/css
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/stack/css/style.css
+# file: /srv/home/server/sandbox/portal/app/lib/.system.js.swp
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/stack/css/normalize.css
+# file: /srv/home/server/sandbox/portal/app/lib/system.js
 # owner: server
 # group: server
 user::rw-
 group::r--
 other::r--
 
-# file: /srv/home/server/sandbox/stack/favicon.ico
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/diff
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/diff/templates
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/diff/templates/index.jade
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/diff/js
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/diff/js/diff.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/diff/js/app.js
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/diff/index.cgi
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/diff/css
-# owner: server
-# group: server
-user::rwx
-group::r-x
-other::r-x
-
-# file: /srv/home/server/sandbox/diff/css/style.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/diff/css/normalize.css
-# owner: server
-# group: server
-user::rw-
-group::r--
-other::r--
-
-# file: /srv/home/server/sandbox/diff/favicon.ico
+# file: /srv/home/server/sandbox/portal/app/lib/tiny.js
 # owner: server
 # group: server
 user::rw-
@@ -15331,6 +15332,13 @@ group::r--
 other::r--
 
 # file: /srv/home/server/.vimrc
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/lib.js
 # owner: server
 # group: server
 user::rw-
@@ -22979,6 +22987,230 @@ other::r--
 # group: server
 user::rw-
 group::rw-
+other::r--
+
+# file: /srv/home/server/sbold
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/tui
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/tui/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/tui/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/tui/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/tui/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/tui/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/tui/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/tui/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/tui/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/tui/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/stack
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/stack/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/stack/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/stack/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/stack/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/stack/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/stack/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/stack/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/stack/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/stack/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/diff
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/diff/templates
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/diff/templates/index.jade
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/diff/js
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/diff/js/diff.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/diff/js/app.js
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/diff/index.cgi
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/diff/css
+# owner: server
+# group: server
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/server/sbold/diff/css/style.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/diff/css/normalize.css
+# owner: server
+# group: server
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/server/sbold/diff/favicon.ico
+# owner: server
+# group: server
+user::rw-
+group::r--
 other::r--
 
 # file: /srv/home/server/monkey2.json

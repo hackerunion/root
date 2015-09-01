@@ -1,0 +1,21 @@
+extends base
+
+block content
+  section
+    h1 Recover Account
+    p Use this form if you forget your username or password.
+    form
+      ul
+        li 
+          label Email
+          input(name="email", type="text", placeholder="Email Address")
+        li
+          input(type="submit", value="Recover")
+
+  section
+    h1 Other Options
+    ul
+      li
+        a(href="#{link}/#{chapter}/login") Sign In
+      li
+        a(href="#{link}/#{chapter}/join") Create an account
