@@ -23850,6 +23850,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/home/patneedham/.viminfo
+# owner: patneedham
+# group: patneedham
+user::rw-
+group::---
+other::---
+
 # file: /srv/home/patneedham/README
 # owner: patneedham
 # group: patneedham
@@ -23870,6 +23877,13 @@ other::r-x
 user::rw-
 group::rw-
 other::r--
+
+# file: /srv/home/patneedham/hello.cgi
+# owner: patneedham
+# group: patneedham
+user::rwx
+group::r--
+other::r-x
 
 # file: /srv/home/patneedham/index.cgi
 # owner: patneedham
