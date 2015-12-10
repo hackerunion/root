@@ -26322,6 +26322,13 @@ user::rwx
 group::r-x
 other::r-x
 
+# file: /srv/home/brandon/wiki.json
+# owner: brandon
+# group: brandon
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/brandon/.ssh
 # owner: brandon
 # group: brandon
