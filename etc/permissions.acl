@@ -25229,6 +25229,20 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/guest/.npm/registry.npmjs.org/lodash
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/registry.npmjs.org/lodash/.cache.json
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/guest/.npm/nodemon
 # owner: guest
 # group: guest
@@ -25263,6 +25277,48 @@ other::r-x
 user::rw-
 group::r--
 other::r--
+
+# file: /srv/home/guest/.npm/lodash
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/lodash/4.0.0
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/lodash/4.0.0/package.tgz
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/lodash/4.0.0/package
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/lodash/4.0.0/package/package.json
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/_locks
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
 
 # file: /srv/home/guest/index.md
 # owner: guest
