@@ -25278,6 +25278,34 @@ user::rw-
 group::r--
 other::r--
 
+# file: /srv/home/guest/.npm/nodemon/1.9.1
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/nodemon/1.9.1/package.tgz
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
+# file: /srv/home/guest/.npm/nodemon/1.9.1/package
+# owner: guest
+# group: guest
+user::rwx
+group::r-x
+other::r-x
+
+# file: /srv/home/guest/.npm/nodemon/1.9.1/package/package.json
+# owner: guest
+# group: guest
+user::rw-
+group::r--
+other::r--
+
 # file: /srv/home/guest/.npm/lodash
 # owner: guest
 # group: guest
